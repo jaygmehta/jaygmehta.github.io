@@ -13,6 +13,9 @@ nav_order: 1
 
 {%- for y in page.years %}
   <!-- <h2 class="year">{{y}}</h2> -->
+  {% comment %}
+  {% bibliography -f {{ site.scholar.bibliography }} -q @*[year={{y}}]* %}
+  {% endcomment %}
   {% bibliography -f papers -q @*[year={{y}}]* %}
 {% endfor %}
 
