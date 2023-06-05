@@ -12,7 +12,7 @@ profile:
     <p>Department of Mathematics,</p>
     <p>Sardar Patel University</p>
     <p>Vallabh Vidyanagar,</p>
-    <p>Gujarat 388 120</p>
+    <p>Gujarat 388 120, INDIA.</p>
 
 news: true  # includes a list of news items
 latest_posts: false #true  # includes a list of the newest posts
