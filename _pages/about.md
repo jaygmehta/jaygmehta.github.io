@@ -22,7 +22,7 @@ social: true  # includes social icons at the bottom of the page
 
 Welcome to my personal page!
 
-Hi, My name is Jay Mehta. I'm an Assistant Professor at the Department of Mathematics, [Sardar Patel University](https://www.spuvvn.edu/), Vallabh Vidyanagar since 2016. Before joining the university, I was a postdoctoral fellow at [The Institute of Mathematical Sciences](https://www.imsc.res.in/), Chennai.
+Hi, My name is Jay Mehta. I'm an Assistant Professor at the Department of Mathematics, [Sardar Patel University](https://www.spuvvn.edu/), Vallabh Vidyanagar, India since 2016. Before joining the university, I was a postdoctoral fellow at [The Institute of Mathematical Sciences](https://www.imsc.res.in/), Chennai, India. I did my PhD from [Harish-Chandra Research Institute](https://www.hri.res.in/), Prayagraj (Allahabad), India.
 
 For my university homepage (which I no longer have access) [click here](https://www.spuvvn.edu/team/j-g-mehta/)
 

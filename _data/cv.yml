@@ -13,7 +13,7 @@
 - title: Positions
   type: time_table
   contents:
-    - title: Assistant Professor (Mathematics)
+    - title: Assistant Professor #(Mathematics)
       institution: Department of Mathematics, Sardar Patel University, Vallabh Vidyanagar, INDIA.
       year: 2016 - present
       # description:
@@ -53,6 +53,7 @@
         - "Area: Mathematics (Number Theory)"
         - "Title of Thesis: Characterization of Certain Arithmetical Functions"
         - "Advisor: Prof. Kalyan Chakraborty"
+        - "Degree Awarded by: Homi Bhabha National Institute (HBNI)"
         # - title: Description 3.
         #   contents:
         #     - Sub-description 1.
@@ -63,13 +64,19 @@
       description:
         - "Subject: Mathematics"
         - "Percentage: 78.11%"
+    - title: B.Sc.
+      institution: V.P. and R.P.T.P. Science College, Sardar Patel University, Vallabh Vidyanagar, INDIA.
+      year: 2006
+      description:
+        - "Subject: Mathematics"
+        - "Percentage: 76.71%"
 
-- title: Open Source Projects
+- title: Research Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: UGC (Research Grant of <span>&#8377;</span> 10 lakh) #<a href="https://github.com/alshedivat/al-folio">al-folio</a>
+      year: 2018-2020
+      description: "Title: Topics in Analytic Number Theory"
 
 - title: Honors and Awards
   type: time_table
