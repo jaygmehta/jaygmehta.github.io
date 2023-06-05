@@ -4,7 +4,7 @@ permalink: /publications/
 title: publications
 description: The following are my journal publications
 years: [2023, 2022, 2020, 2017, 2016, 2015, 2014, 2012]
-yearp: [2023, 2018]
+# yearp: [2023, 2018]
 nav: true
 nav_order: 1
 ---
