@@ -33,7 +33,6 @@ For my MathSciNet (MR Reviews) profile: [click here](https://mathscinet.ams.org/
 &nbsp;
 &nbsp;
 
-
 -------------
 
 **Research interests**
