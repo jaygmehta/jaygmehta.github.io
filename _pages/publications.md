@@ -8,6 +8,18 @@ yearp: [2023]
 nav: true
 nav_order: 1
 ---
+## Preprints
+
+<div class="publications">
+
+{%- for x in page.yearp %}
+  <h2 class="year">{{x}}</h2>
+  {% bibliography -f preprints -q @*[year={{x}}]* %}
+{% endfor %}
+
+</div>
+-------------------
+
 <!-- _pages/publications.md -->
 <div class="publications">
 
@@ -21,15 +33,3 @@ nav_order: 1
 
 </div>
 
-------------------------------------------------------------------------------------------------------------------------
-
-## Preprints
-
-<div class="publications">
-
-{%- for x in page.yearp %}
-  <h2 class="year">{{x}}</h2>
-  {% bibliography -f preprints -q @*[year={{x}}]* %}
-{% endfor %}
-
-</div>
