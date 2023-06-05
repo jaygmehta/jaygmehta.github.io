@@ -14,10 +14,11 @@ nav_order: 1
 {%- for y in page.years %}
   <h2 class="year">{{y}}</h2>
   <!-- {% bibliography -f {{ site.scholar.bibliography }} -q @*[year={{y}}]* %} -->
-  {% bibliography -f papers -q @*[year={{y}}]* %}
+  {% bibliography -f papers.bib -q @*[year={{y}}]* %}
 {% endfor %}
 
 </div>
+
 ------------------------------------------------------------------------------------------------------------------------
 
 ## Preprints
@@ -26,7 +27,7 @@ nav_order: 1
 
 {%- for x in page.yearp %}
   <!-- <h2 class="year">{{x}}</h2> -->
-  {% bibliography -f preprints -q @*[year={{x}}]* %}
+  {% bibliography -f preprints.bib -q @*[year={{x}}]* %}
 {% endfor %}
 
 </div>
