@@ -12,7 +12,7 @@ nav_order: 1
 <div class="publications">
 
 {%- for y in page.years %}
-  <!-- <h2 class="year">{{y}}</h2> -->
+  <h2 class="year">{{y}}</h2>
   {% comment %}
   {% bibliography -f {{ site.scholar.bibliography }} -q @*[year={{y}}]* %}
   {% endcomment %}
@@ -28,7 +28,7 @@ nav_order: 1
 <div class="publications">
 
 {%- for x in page.yearp %}
-  <!-- <h2 class="year">{{x}}</h2> -->
+  <h2 class="year">{{x}}</h2>
   {% bibliography -f preprints -q @*[year={{x}}]* %}
 {% endfor %}
 
