@@ -2,25 +2,50 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='#'></a> Teacher, Mathematician
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Department of Mathematics,</p>
+    <p>Sardar Patel University</p>
+    <p>Vallabh Vidyanagar,</p>
+    <p>Gujarat 388 120</p>
 
 news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+latest_posts: false #true  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Welcome to my personal page!
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Hi, My name is Jay Mehta. I'm an Assistant Professor at the Department of Mathematics, [Sardar Patel University](https://www.spuvvn.edu/), Vallabh Vidyanagar since 2016. Before joining the university, I was a postdoctoral fellow at [The Institute of Mathematical Sciences](https://www.imsc.res.in/), Chennai.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+For my university homepage (which I no longer have access) [click here](https://www.spuvvn.edu/team/j-g-mehta/)
+
+For my MathSciNet (MR Reviews) profile: [click here](https://mathscinet.ams.org/mathscinet/search/author.html?mrauthid=1016163/)
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+-------------
+
+**Research interests**
+
+Number Theory, Cryptography, Elliptic Curves.
+
+-------------
+
+**Other interests**
+
+Apart of Mathematics, my interests are: Computers (general and programming, tex-ing), listening music, especially instrumentals and playing piano/keyboard. I learned playing keyboard by myself and a bit from youtube during my PhD and have absolutely no formal knowledge in playing piano. I play piano by ear. In my leisure, I play Hindi (bollywood) songs on keyboard and sometimes upload the videos of me playing on my youtube channel.
+
+My YouTube Channel (for piano covers): [mathemusics](https://www.youtube.com/@mathemusics/)
+
+My YouTube Channel (for video lectures): [Jay Sir](https://www.youtube.com/@jaysir7675/)
