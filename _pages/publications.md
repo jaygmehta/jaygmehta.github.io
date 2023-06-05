@@ -4,6 +4,7 @@ permalink: /publications/
 title: publications
 description: The following are my journal publications
 years: [2023, 2022, 2020, 2017, 2016, 2015, 2014, 2012]
+yearp: [2023, 2018]
 nav: true
 nav_order: 1
 ---
@@ -12,19 +13,18 @@ nav_order: 1
 
 {%- for y in page.years %}
   <h2 class="year">{{y}}</h2>
-  {% bibliography -f {{ site.scholar.bibliography }} -q @*[year={{y}}]* %}
+  <!-- {% bibliography -f {{ site.scholar.bibliography }} -q @*[year={{y}}]* %} -->
+  {% bibliography -f papers -q @*[year={{y}}]* %}
 {% endfor %}
 
 </div>
-
-years: [2023, 2018]
 ------------------------------------------------------------------------------------------------------------------------
 
 ## Preprints
 
 <div class="publications">
 
-{%- for y in page.years %}
+{%- for y in page.yearp %}
   <h2 class="year">{{y}}</h2>
   {% bibliography -f preprints -q @*[year={{y}}]* %}
 {% endfor %}
