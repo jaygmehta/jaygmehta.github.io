@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: Advanced Group Theory
+description: Semester III/IV (PS03EMTH54/PS04EMTH57)
 img: assets/img/12.jpg
 importance: 1
 category: work
