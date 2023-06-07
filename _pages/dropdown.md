@@ -9,7 +9,7 @@ children:
       permalink: /projects/
     - title: divider
     - title: summer courses
-      permalink: /projects/
+      permalink: /teaching/
     - title: divider
     - title: other lectures
       permalink: /teaching/
