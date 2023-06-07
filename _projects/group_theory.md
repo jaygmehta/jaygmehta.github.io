@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Advanced Group Theory
-description: Semester III/IV (PS03EMTH54/PS04EMTH57)
+description: Semester III/IV <br>
+            (PS03EMTH54/PS04EMTH57)
 img: assets/img/12.jpg
 importance: 1
 category: work
