@@ -6,11 +6,11 @@ nav_order: 6
 dropdown: true
 children: 
     - title: SPU semester courses
-      permalink: /teaching/
+      permalink: /projects/
     - title: divider
     - title: summer courses
       permalink: /projects/
     - title: divider
     - title: other lectures
-      permalink: /projects/
+      permalink: /teaching/
 ---
