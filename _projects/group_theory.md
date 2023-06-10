@@ -14,7 +14,7 @@ category: Semester III/IV
 | **Unit-IV**  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Direct products, external direct product and internal direct product, properties of internal direct product, finite abelian groups as direct product of cyclic groups, invariants of an abelian group of order  power of prime $p$, the subgroup $$G(s)$$ of an abelian group $$G$$, for an integer $$s$$ for a prime $$p$$, uniqueness of invariants, number of non-isomorphic abelian groups of a given order.                                          |
 
 <br>
-<p>Download the PDF file of lecture notes <a href="{{ PS03EMTH54.pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p>
+<p>Download the PDF file of lecture notes <a href="/assets/pdf/PS03EMTH54.pdf" target="_blank"  class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p>
 
 <!-- <p>Open a PDF file <a href="/assets/pdf/PS03EMTH54.pdf">example</a>.</p> -->
 
