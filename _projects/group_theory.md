@@ -23,10 +23,10 @@ category: Semester III/IV
 	height="800"
 />
 
-<!-- <iframe width="100%" height="800" src="https://jaygmehta.com/assets/pdf/PS03EMTH54.pdf"> -->
+<iframe width="100%" height="800" src="https://jaygmehta.com/assets/pdf/PS03EMTH54.pdf">
 
-<object data="https://jaygmehta.com/assets/pdf/PS03EMTH54.pdf" type="application/pdf" width="100%" height="800">
+<!-- <object data="https://jaygmehta.com/assets/pdf/PS03EMTH54.pdf" type="application/pdf" width="100%" height="800">
     <embed src="https://jaygmehta.com/assets/pdf/PS03EMTH54.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://jaygmehta.com/assets/pdf/PS03EMTH54.pdf">Download PDF</a>.</p>
     </embed>
-</object>
+</object> -->
