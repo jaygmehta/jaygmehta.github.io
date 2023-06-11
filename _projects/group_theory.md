@@ -13,6 +13,7 @@ category: Semester III/IV
 | **Unit-III**        | Sylow’s theorem, first proof, definition of $$p$$-Sylow subgroup, second proof of Sylow’s theorem, double cosets and its order, existence of $$p$$-Sylow subgroup in subgroups, second part of Sylow’s theorem, number of $$p$$-Sylow subgroups in a group, third part of Sylow’s theorem, examples based on Sylow’s theorems.                                                                                                                          |
 | **Unit-IV**  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Direct products, external direct product and internal direct product, properties of internal direct product, finite abelian groups as direct product of cyclic groups, invariants of an abelian group of order  power of prime $p$, the subgroup $$G(s)$$ of an abelian group $$G$$, for an integer $$s$$ for a prime $$p$$, uniqueness of invariants, number of non-isomorphic abelian groups of a given order.                                          |
 
+
 <br>
 <p>Download the PDF file of lecture notes <a href="/assets/pdf/PS03EMTH54.pdf" target="_blank"  class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p>
 
