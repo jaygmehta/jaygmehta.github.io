@@ -3,7 +3,7 @@ layout: page
 title: Advanced Group Theory
 description: Semester III (PS03EMTH54) <br>
              Semester IV (PS04EMTH57)
-img: assets/img/groupdjk34.jpg
+img: assets/img/crypto.jpg
 importance: 1
 category: Semester III/IV
 ---

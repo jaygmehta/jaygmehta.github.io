@@ -5,7 +5,7 @@ permalink: /projects/
 description: A growing collection of your cool projects.
 nav: false # true
 nav_order: 2
-display_categories: [Semester III/IV, work, fun]
+display_categories: [Semester III/IV, Semester I/II, fun]
 horizontal: false
 ---
 
