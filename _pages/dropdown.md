@@ -10,7 +10,7 @@ children:
     - title: divider
     - title: summer courses
       permalink: /publications/
-    - title: divider
-    - title: other lectures
-      permalink: /teaching/
+    # - title: divider
+    # - title: other lectures
+    #   permalink: /teaching1/
 ---

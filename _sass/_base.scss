@@ -105,6 +105,20 @@ blockquote {
   }
 }
 
+/**
+ * For teaching page
+ * Source: https://maruan.alshedivat.com/assets/css/main.css
+ */
+
+  /* Modified --global-bg-color (the color used in Maruan's site) to --global-card-bg-color. */
+  .list-group-item {
+    background-color: var(--global-card-bg-color); border-color: var(--global-divider-color);
+  }
+  .badge {
+    background-color: var(--global-theme-color); padding-left: 1rem; padding-right: 1rem;
+  }
+
+
 // Citation
 
 .citation,
@@ -530,7 +544,8 @@ footer.sticky-bottom {
   }
 
   h2.category {
-    color: var(--global-divider-color);
+    color: var(--global-theme-color);
+    // color: var(--global-divider-color);
     border-bottom: 1px solid var(--global-divider-color);
     padding-top: 0.5rem;
     margin-top: 2rem;
@@ -562,8 +577,8 @@ footer.sticky-bottom {
   }
 
   h2.year {
-    /*color: var(--global-divider-color);*/
-    color: var(rgba(173, 171, 171, 0.372));
+    // color: var(--global-divider-color);
+    color: var(grey-color);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
     margin-top: 2rem;
