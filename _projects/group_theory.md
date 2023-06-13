@@ -246,7 +246,7 @@ These videos are discussion of the course on Group Theory of MSc Sem-III of my u
 
 <p>Download the PDF file of lecture notes <a href="/assets/pdf/PS03EMTH54.pdf" target="_blank"  class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p>
 
-<iframe width="100%" height="800" src="https://jaygmehta.com/assets/pdf/PS03EMTH54.pdf">
+<iframe width="100%" height="800" src="/assets/pdf/PS03EMTH54.pdf">
 
 <!-- <object data="https://jaygmehta.com/assets/pdf/PS03EMTH54.pdf" type="application/pdf" width="100%" height="800">
     <embed src="https://jaygmehta.com/assets/pdf/PS03EMTH54.pdf">

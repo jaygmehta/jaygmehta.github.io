@@ -72,7 +72,7 @@ Below are some algorithms we studied in our course Number Theory and Cryptograph
 ## Lecture Notes
 <p>Download the PDF file of lecture notes <a href="/assets/pdf/PS04EMTH59.pdf" target="_blank"  class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p>
 
-<iframe width="100%" height="800" src="https://jaygmehta.com/assets/pdf/PS04EMTH59.pdf">
+<iframe width="100%" height="800" src="/assets/pdf/PS04EMTH59.pdf">
 
 <!-- <object data="https://jaygmehta.com/assets/pdf/PS04EMTH59.pdf" type="application/pdf" width="100%" height="800">
     <embed src="https://jaygmehta.com/assets/pdf/PS04EMTH59.pdf">
