@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Advanced Group Theory
-description: Semester III (PS03EMTH54) <br>
-             Semester IV (PS04EMTH57)
+title: Number Theory and Cryptography
+description: Semester III (PS03EMTH55) <br>
+             Semester IV (PS04EMTH59)
 img: assets/img/crypto.jpg
-importance: 1
+importance: 2
 category: Semester III/IV
 ---
 |:---------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -15,12 +15,12 @@ category: Semester III/IV
 
 <br>
 
-<p>Download the PDF file of lecture notes <a href="/assets/pdf/PS03EMTH54.pdf" target="_blank"  class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p>
+<p>Download the PDF file of lecture notes <a href="/assets/pdf/PS04EMTH59.pdf" target="_blank"  class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p>
 
-<iframe width="100%" height="800" src="https://jaygmehta.com/assets/pdf/PS03EMTH54.pdf">
+<iframe width="100%" height="800" src="https://jaygmehta.com/assets/pdf/PS04EMTH59.pdf">
 
-<!-- <object data="https://jaygmehta.com/assets/pdf/PS03EMTH54.pdf" type="application/pdf" width="100%" height="800">
-    <embed src="https://jaygmehta.com/assets/pdf/PS03EMTH54.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://jaygmehta.com/assets/pdf/PS03EMTH54.pdf">Download PDF</a>.</p>
+<!-- <object data="https://jaygmehta.com/assets/pdf/PS04EMTH59.pdf" type="application/pdf" width="100%" height="800">
+    <embed src="https://jaygmehta.com/assets/pdf/PS04EMTH59.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://jaygmehta.com/assets/pdf/PS04EMTH59.pdf">Download PDF</a>.</p>
     </embed>
 </object> -->

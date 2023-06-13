@@ -5,7 +5,7 @@ title: teaching
 description: Materials for courses you taught. Replace this text with your description.
 nav: false #true
 nav_order: 5
-display_categories: [Semester III/IV, work, fun]
+display_categories: [Semester I/II, Semester III/IV]
 horizontal: false
 ---
 
