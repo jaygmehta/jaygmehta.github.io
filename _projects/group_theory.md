@@ -2,11 +2,13 @@
 layout: page
 title: Advanced Group Theory
 description: Semester III (PS03EMTH54) <br>
-             Semester IV (PS04EMTH57)
+             same as Sem IV (PS04EMTH57)
 img: assets/img/groupdjk34.jpg
 importance: 1
-category: Semester III/IV
+category: Semester III
 ---
+<span style="font-size:1.3em;"> **Syllabus** </span>
+
 |:---------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Unit-I**          | Definition of a group, some examples of groups, some preliminary lemmas, subgroups, Lagrange’s theorem, Euler’s theorem, Fermat’s theorem, counting principle, the condition for $$HK$$ to be a subgroup, order of $$HK$$, normal subgroups, and quotient groups, characterizations of normal subgroups, homomorphism, isomorphism, first isomorphism theorem, simple group, Cauchy’s theorem for abelian groups, relation of two homomorphic groups. |
 | **Unit-II**         | Automorphism, inner automorphism, Cayley’s theorem and its applications, permutation groups, permutation as a product of disjoint cycles and transpositions, even and odd permutations, alternating group, another counting principle, conjugate classes, class equation and its applications, Cauchy’s theorem (general case), number of conjugate classes in permutation group.                                                                 |

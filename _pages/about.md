@@ -22,20 +22,15 @@ social: true  # includes social icons at the bottom of the page
 
 Welcome to my personal page!
 
-Hi, My name is Jay Mehta. I'm an Assistant Professor at the Department of Mathematics, [Sardar Patel University](https://www.spuvvn.edu/), Vallabh Vidyanagar, India since 2016. Before joining the university, I was a postdoctoral fellow at [The Institute of Mathematical Sciences](https://www.imsc.res.in/), Chennai, India. I did my PhD from [Harish-Chandra Research Institute](https://www.hri.res.in/), Prayagraj (Allahabad), India.
+Hi, My name is Jay Mehta. I'm an Assistant Professor at the Department of Mathematics, [Sardar Patel University](https://www.spuvvn.edu/), Vallabh Vidyanagar, India since 2016. Before joining the university, I was a postdoctoral fellow at [The Institute of Mathematical Sciences (IMSc)](https://www.imsc.res.in/), Chennai, India. I did my PhD from [Harish-Chandra Research Institute (HRI)](https://www.hri.res.in/), Prayagraj (Allahabad), India and the Ph.D. degree is awarded by the [Homo Bhabha National Institute (HBNI)](http://www.hbni.ac.in/).
 
-
+&nbsp;
 
 For my university homepage (which I no longer have access) [click here](https://www.spuvvn.edu/team/j-g-mehta/)
-<br>
-&nbsp;
+
 &nbsp;
 
 For my MathSciNet (MR Reviews) profile: [click here](https://mathscinet.ams.org/mathscinet/search/author.html?mrauthid=1016163/)
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 -------------
 
@@ -72,8 +67,20 @@ My YouTube Channel (for video lectures): [Jay Sir](https://www.youtube.com/@jays
         </td>
       </tr>
       <tr>
+      <tr>
           <th scope="row">
-              <i class="fa fa-map-marker"></i> 
+              <i class="fa fa-globe"></i> 
+              website
+          </th>
+        <td>       
+                  <i class="address"></i> 
+                  <a href="https://www.spuvvn.edu/team/j-g-mehta/" target="_blank">https://www.spuvvn.edu/team/j-g-mehta/</a>
+                  <br>                    
+        </td>
+      </tr>
+          <th scope="row">
+              <i class="fa fa-university"></i> 
+              <!-- <i class="fa fa-map-marker"></i>  -->
               address
           </th>
         <td>       

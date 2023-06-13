@@ -9,15 +9,8 @@ layout: default
             <p class="post-description">{{ page.description }}</p>
           </header>
 
-        </div>
-        <article>
-          {% if page.toc and page.toc.beginning %}
-          <div id="table-of-contents">
-            {% toc %}
-          </div>
-          <hr>
-          {% endif %}
-          <div id="markdown-content">
+          <article>
             {{ content }}
-          </div>
-        </article>
+          </article>
+
+        </div>
