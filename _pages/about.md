@@ -67,6 +67,7 @@ My YouTube Channel (for video lectures): [Jay Sir](https://www.youtube.com/@jays
           </th>
         <td>
                   <i class="email"></i> 
+                  jaygmehta[ät]gmail.com<br>
                   jay_mehta[ät]spuvvn.edu<br>                 
         </td>
       </tr>
