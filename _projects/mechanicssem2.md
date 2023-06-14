@@ -2,7 +2,7 @@
 layout: page
 title: Mathematical Classical Mechanics
 description: Semester II (PS02EMTH22) <br>
-             old course
+             old course <br>
              same as Sem I (PS01EMTH22)
 img: assets/img/mechanics.jpg
 importance: 2
