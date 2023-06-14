@@ -25,6 +25,15 @@ category: Semester I
 | **Unit-III**        | Connected spaces, connected subspaces of the real line, connected components, compact spaces, finite intersection property, Heine-Borel theorem for real line, second countable spaces, separable spaces.                                                                                                                          |
 | **Unit-IV**  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Regular spaces, Normal spaces, Urysohn's Lemma (statement only), Tietze's Extension Theorem (statement only), Complete metric spaces, Cantor's intersection theorem, Baire's category theorem for complete metric spaces.                                          |
 
+<br>
+
+### Reference Books
+
+1. Munkres J., Topology: A First Course, (Second Edition), Prentice Hall of India Pvt. Ltd. New Delhi, 2003.
+2. Simmons G.F., Introduction to Topology and Modern Analysis, McGraw-Hill Co., Tokyo, 1963.
+3. Willard S., General Topology, Dover Publication, 2004.
+4. Kelley J., General Topology, Graduate Texts in Mathematics, Springer-Verlag, 1975.
+
 ------------------
 
 ## Lecture Notes

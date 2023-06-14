@@ -26,6 +26,15 @@ toc:
 | **Unit-III**        | The RSA Algorithm: Euler’s formula and roots modulo pq, the RSA public key cryptosystem, implementation and security issues, primality testing, Pollard’s p-1 factorization algorithm.                                                                                                                          |
 | **Unit-IV**  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Elliptic curve cryptography: Elliptic curves, elliptic curve over finite fields, the elliptic curve discrete logarithm problem, elliptic curve cryptography.                                          |
 
+<br>
+
+### Reference Books
+
+1. Hoffstein J., Pipher J., Silverman J. H., An Introduction to Mathematical Cryptography, Undergraduate Texts in Mathematics, Springer, New York, (2008).
+2. Douglas R. Stinson, Cryptography: Theory and Practice, Second Edition, Chapman and Hall/CRC, (2005).
+3. N. Koblitz, A Course in Number Theory and Cryptography, Springer (1994).
+4. J. A. Buchmann, Introduction to Cryptography, Second Edition, Undergraduate Texts in Mathematics, Springer-Verlag, New York, (2004).
+
 ------------------
 
 ## Python Programs in Cryptography

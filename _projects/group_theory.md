@@ -26,6 +26,14 @@ toc:
 | **Unit-III**        | Sylow’s theorem, first proof, definition of $$p$$-Sylow subgroup, second proof of Sylow’s theorem, double cosets and its order, existence of $$p$$-Sylow subgroup in subgroups, second part of Sylow’s theorem, number of $$p$$-Sylow subgroups in a group, third part of Sylow’s theorem, examples based on Sylow’s theorems.                                                                                                                          |
 | **Unit-IV**  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Direct products, external direct product and internal direct product, properties of internal direct product, finite abelian groups as direct product of cyclic groups, invariants of an abelian group of order  power of prime $p$, the subgroup $$G(s)$$ of an abelian group $$G$$, for an integer $$s$$ for a prime $$p$$, uniqueness of invariants, number of non-isomorphic abelian groups of a given order.                                          |
 
+<br>
+
+### Reference Books
+
+1. Herstein, I. N., Topics in Algebra, (Second Edition), Wiley Eastern Ltd., New Delhi, 1975.
+2. Fraleigh J. B., A First Course in Abstract Algebra (Third Edition), Narosa, 1983.
+3. Gallian, J. A., Contemporary Abstract Algebra (Fourth Edition), Narosa, 2008.
+
 ------------------
 
 ## Video Lectures
@@ -111,6 +119,20 @@ These videos are discussion of the course on Group Theory of MSc Sem-III of my u
         <div id="text10" class="collapse">
         We discuss isomorphism of groups, First Isomorphism theorem (hint for the proof) and Cauchy's theorem for finite abelian groups.
         </div>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <!-- {% include video.html path="https://youtube.com/embed/hcp_KtyOkPQ" class="img-fluid rounded z-depth-1" %}
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#text23">Video Lecture 23</button>
+        <div id="text23" class="collapse">
+        We discuss Third Sylow theorem, simple groups, and applications of Sylow theorems.
+        </div> -->
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <!-- {% include video.html path="https://youtube.com/embed/hcp_KtyOkPQ" class="img-fluid rounded z-depth-1" %}
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#text23">Video Lecture 23</button>
+        <div id="text23" class="collapse">
+        We discuss Third Sylow theorem, simple groups, and applications of Sylow theorems.
+        </div> -->
     </div>
 </div>
 

@@ -26,6 +26,17 @@ category: Semester I
 | **Unit-III**        | Relation of the minimal polynomials of a linear transformation and its induced linear transformation on a quotient space, triangular matrix associated to a linear transformation. Nilpotent linear transformation. Canonical matrix associated to a nilpotent linear transformation. Existence and uniqueness of invariants of a nilpotent linear transformation. Jordan form of a linear transformation.                                                                                                                          |
 | **Unit-IV**  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Trace and its applications, Jocobson’s lemma. Transpose of a matrix. Definition of the determinant of a matrix, determinant of a triangular matrix, a matrix with equal rows, a product of matrices. Application of determinant: regularity of a matrix, Cramer’s Rule to solve system of simultaneous non-homogeneous linear equations. Quadratic forms: diagonalization of a symmetric matrix. Symmetric matrix associated to a quadratic form, classification of quadratics.                                          |
 
+<br>
+
+### Reference Books
+
+1. Herstein I. N., Topics in algebra, Wiley Eastern Ltd., New Delhi, (2nd Edition, 1975).
+2. Kwak J. H., Hong S., Linear Algebra, (Second edition), Birkhauser.
+3. Kumaresan, S., Linear Algebra: A Geometric Approach, Prentice Hall of India, 2000.
+4. Simmons G. F., Introduction to Topology and Modern Analysis, McGraw-Hill Co., Tokyo, 1963.
+5. Helson, H., Linear Algebra, (Second Edition), Hindustan Book Agency, TRIM-4, 1994.
+6. Ramachandra Rao A. and Bhimasankaram P., Linear Algebra (Second Edition), Hindustan Book Agency, TRIM.
+
 ------------------
 
 ## Lecture Notes
