@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Number Theory and Cryptography
-description: Semester III (PS03EMTH55) <br>
-             same as Sem IV (PS04EMTH59)
+description: Semester IV (PS04EMTH59) <br>
+             same as Sem III (PS03EMTH55)
 img: assets/img/crypto.jpg
-importance: 2
-category: Semester III
+importance: 3
+category: Semester IV
 # date: 2023-04-25 10:14:00-0400
 # description: an example of a blog post with table of contents on a sidebar
 # categories: sample-posts toc sidebar
@@ -79,12 +79,12 @@ Below are some algorithms we studied in our course Number Theory and Cryptograph
 ------------------
 
 ## Lecture Notes
-<p>Download the PDF file of lecture notes <a href="/assets/pdf/PS03EMTH55.pdf" target="_blank"  class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p>
+<p>Download the PDF file of lecture notes <a href="/assets/pdf/PS04EMTH59.pdf" target="_blank"  class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p>
 
-<iframe width="100%" height="800" src="/assets/pdf/PS03EMTH55.pdf">
+<iframe width="100%" height="800" src="/assets/pdf/PS04EMTH59.pdf">
 
-<!-- <object data="https://jaygmehta.com/assets/pdf/PS03EMTH55.pdf" type="application/pdf" width="100%" height="800">
-    <embed src="https://jaygmehta.com/assets/pdf/PS03EMTH55.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://jaygmehta.com/assets/pdf/PS03EMTH55.pdf">Download PDF</a>.</p>
+<!-- <object data="https://jaygmehta.com/assets/pdf/PS04EMTH59.pdf" type="application/pdf" width="100%" height="800">
+    <embed src="https://jaygmehta.com/assets/pdf/PS04EMTH59.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://jaygmehta.com/assets/pdf/PS04EMTH59.pdf">Download PDF</a>.</p>
     </embed>
 </object> -->

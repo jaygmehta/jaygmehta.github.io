@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Computer Programming and Software
-description: Semester III (PS03EMTH32) <br>
+description: Semester IV (PS04EMTH32) <br>
             old course
-            same as Sem IV (PS04EMTH32)
+            same as Sem III (PS03EMTH32)
 img: assets/img/pythonprog.jpg
 importance: 4
-category: Semester III
+category: Semester IV
 # date: 2023-04-25 10:14:00-0400
 # description: an example of a blog post with table of contents on a sidebar
 # categories: sample-posts toc sidebar

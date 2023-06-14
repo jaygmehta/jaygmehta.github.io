@@ -4,7 +4,7 @@ title: Mathematical Methods I
 description: Semester III (PS03CMTH02) <br>
              very old course
 img: assets/img/methods1.jpg
-importance: 2
+importance: 3
 category: Semester III
 # date: 2023-04-25 10:14:00-0400
 # description: an example of a blog post with table of contents on a sidebar

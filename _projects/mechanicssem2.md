@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Mathematical Classical Mechanics
-description: Semester I (PS01EMTH22) <br>
+description: Semester II (PS02EMTH22) <br>
              old course
-             same as Sem II (PS02EMTH22)
+             same as Sem I (PS01EMTH22)
 img: assets/img/mechanics.jpg
 importance: 2
-category: Semester I
+category: Semester II
 # date: 2023-04-25 10:14:00-0400
 # description: an example of a blog post with table of contents on a sidebar
 # categories: sample-posts toc sidebar
