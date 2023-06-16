@@ -8,8 +8,8 @@ children:
     - title: semester courses
       permalink: /semester-courses/
     - title: divider
-    - title: summer courses
-      permalink: /publications/
+    # - title: summer courses
+    #   permalink: /publications/
     # - title: divider
     # - title: other lectures
     #   permalink: /teaching1/

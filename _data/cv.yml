@@ -96,29 +96,58 @@
     - year: 2009
       items: 
         - Selected for the Ph.D. program at the Indian Institute of Technology (IIT) Kanpur.
-    - year: 2009
-      items: 
+    # - year: 2009
+    #   items: 
         - Cleared NBHM Written Test for Ph.D.
-    - year: Dec. 2008
-      items: 
-        - Qualified Joint CSIR-UGC NET for Junior Research Fellowship (did not avail).
     - year: 2008
       items: 
+        - Qualified Joint CSIR-UGC NET for Junior Research Fellowship (did not avail).
+    # - year: 2008
+    #   items: 
         - Qualified GATE exam with All India Rank (AIR) 201 and Percentile 92.32.
+
+- title: Visit to other Institutes
+  type: time_table
+  contents:
+    - year: 2011
+      items: 
+        - Tribhuvan University, Kirtipur, NEPAL.
+        - The Institute of Mathematical Sciences (IMSc), Chennai, INDIA.
+    - year: 2014
+      items: 
+        - Kinki University, Izuka, JAPAN.
+    - year: 2015
+      items: 
+        - Kinki University, Izuka, JAPAN.
+    - year: 2018
+      items: 
+        - Weinan Normal University (WNU), Shaanxi, CHINA.
+        - Harish-Chandra Research Institute (HRI), Prayagraj (Allahabad), INDIA.
+        - Indian Institute of Science Education and Research (IISER) Berhampur, INDIA.
+    - year: 2019
+      items: 
+        - Weinan Normal University (WNU), Shaanxi, CHINA.
+        - School of Mathematics, Shandong University (SDU), Jinan, CHINA.
+        - Indian Institute of Science Education and Research (IISER) Berhampur, INDIA.
+
+
+
+
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Crytography
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Elliptic Curve Cryptography
+        - Key Exchange
+        - Digital Signatures
+    - title: Number Theory
       items:
-        - Description 1.
-        - Description 2.
+        - Multiple Zeta Functions
+        - Analytic Number Theory
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Playing keyboard (piano), Programming (python)
