@@ -24,7 +24,7 @@
       #       - Sub-description 1.
       #       - Sub-description 2.
     - title: Postdoctoral Fellow
-      institution: The Institute of Mathematical Sciences, Chennai, INDIA.
+      institution: The Institute of Mathematical Sciences (IMSc), Chennai, INDIA.
       year: 2015 - 2016
     #   description:
     #     - Description 1.
@@ -47,10 +47,10 @@
   type: time_table
   contents:
     - title: PhD
-      institution: Harish-Chandra Research Institute, Prayagraj (Allahabad), INDIA.
+      institution: Harish-Chandra Research Institute (HRI), Prayagraj (Allahabad), INDIA.
       year: 2015
       description:
-        - "Area: Mathematics (Number Theory)"
+        - "Area: Mathematics (<strong>Number Theory</strong>)"
         - "Title of Thesis: Characterization of Certain Arithmetical Functions"
         - "Advisor: Prof. Kalyan Chakraborty"
         - "Degree Awarded by: Homi Bhabha National Institute (HBNI)"
@@ -75,19 +75,36 @@
   type: time_table
   contents:
     - title: UGC (Research Grant of <span>&#8377;</span> 10 lakh) #<a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2018-2020
+      year: 2018 - 2020
       description: "Title: Topics in Analytic Number Theory"
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2018 - 2020
       items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
+        - UGC-BSR Start Up Research Grant of <span>&#8377;</span> 10 lakh
+    - year: 2015 - 2016
       items: 
-        - Max Planck Medal
+        - Received Dept. of Atomic Energy (DAE) Fellowship for Postdoctoral at The Institute of Mathematical Sciences (IMSc), Chennai.
+    - year: 2010
+      items: 
+        - Received NBHM Travel Grant for attending CIMPA School on "Number Theory in Cryptography and its Applications" at Kathmandu University, Nepal.
+    - year: 2009 - 2015
+      items: 
+        - Received Dept. of Atomic Energy (DAE) Fellowship for Ph.D. at Harish-Chandra Research Institute (HRI), Prayagraj (Allahabad).
+    - year: 2009
+      items: 
+        - Selected for the Ph.D. program at the Indian Institute of Technology (IIT) Kanpur.
+    - year: 2009
+      items: 
+        - Cleared NBHM Written Test for Ph.D.
+    - year: Dec. 2008
+      items: 
+        - Qualified Joint CSIR-UGC NET for Junior Research Fellowship (did not avail).
+    - year: 2008
+      items: 
+        - Qualified GATE exam with All India Rank (AIR) 201 and Percentile 92.32.
 
 - title: Academic Interests
   type: nested_list
