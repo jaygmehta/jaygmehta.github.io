@@ -1,13 +1,14 @@
 ---
 layout: page
-permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+permalink: /semester-courses/
+title: Semester Courses
+description: semester courses taken at the university
 nav: false #true
 nav_order: 5
 display_categories: [Semester IV, Semester III, Semester II, Semester I]
 horizontal: false
 ---
+I use [Moodle](https://moodle.org/), a Learning Management System (LMS) or Course Management System (CMS), as a platform for my courses. If you are my current student in any of my courses, then to access the Moodle classroom of the course(s) <a href="https://jaysir.gnomio.com">click here</a> to login.
 
 <!-- pages/projects.md -->
 <div class="projects">

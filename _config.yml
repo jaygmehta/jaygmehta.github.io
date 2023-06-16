@@ -6,7 +6,7 @@ title: Dr. Jay Mehta # the website title (if blank, full name will be used inste
 first_name: Jay
 middle_name: # G.
 last_name: Mehta
-email: jaymehta@spuvvn.edu
+email: jay_mehta@spuvvn.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Assistant Professor in Mathematics
   This is a personal page of Dr. Jay Mehta.
@@ -254,13 +254,13 @@ jekyll-minifier:
 # -----------------------------------------------------------------------------
 
 jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+  enabled: [categories] # [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
   layouts:
-    year: archive-year
+    year: #archive-year
     tag: archive-tag
     category: archive-category
   permalinks:
-    year: '/blog/:year/'
+    year: #'/blog/:year/'
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 

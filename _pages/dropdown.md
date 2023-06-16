@@ -6,7 +6,7 @@ nav_order: 5
 dropdown: true
 children: 
     - title: semester courses
-      permalink: /teaching/
+      permalink: /semester-courses/
     - title: divider
     - title: summer courses
       permalink: /publications/

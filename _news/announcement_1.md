@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-Summer 2023 Online (through zoom) problem solving sessions ended.
+Summer 2023 Online (through Zoom) Problem Solving Sessions ended.
