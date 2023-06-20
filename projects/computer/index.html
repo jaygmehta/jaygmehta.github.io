@@ -127,6 +127,40 @@
         </div>
         <article>
           
+          <div id="table-of-contents">
+            <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2">
+<a href="#syllabus">Syllabus</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#reference-books">Reference Books</a></li>
+<li class="toc-entry toc-h3"><a href="#practicals">Practicals</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2">
+<a href="#programs-code">Programs’ code</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#1-to-find-the-maximum-of-a-given-list-of-numbers">1. To find the maximum of a given list of numbers.</a></li>
+<li class="toc-entry toc-h4"><a href="#2a-to-check-whether-a-given-number-is-odd-or-even">2(a). To check whether a given number is odd or even</a></li>
+<li class="toc-entry toc-h4"><a href="#2b-to-check-whether-a-given-year-is-a-leap-year-or-not">2(b). To check whether a given year is a leap year or not.</a></li>
+<li class="toc-entry toc-h4"><a href="#3-to-find-the-real-roots-of-a-quadratic-equation">3. To find the real roots of a quadratic equation.</a></li>
+<li class="toc-entry toc-h4"><a href="#4-to-compute-n-factorial-of-a-given-non-negative-integer-n">4. To compute \(n!\) (factorial of a given non-negative integer \(n\)).</a></li>
+<li class="toc-entry toc-h4"><a href="#5a-to-check-whether-a-given-number-is-prime-or-not">5(a). To check whether a given number is prime or not.</a></li>
+<li class="toc-entry toc-h4"><a href="#5b-to-list-all-prime-numbers-within-a-given-range">5(b). To list all prime numbers within a given range.</a></li>
+<li class="toc-entry toc-h4"><a href="#5c-to-factorize-a-given-number">5(c). To factorize a given number.</a></li>
+<li class="toc-entry toc-h4"><a href="#5d-to-print-the-nrm-th-prime">5(d). To print the \(n^{\rm th}\) prime.</a></li>
+<li class="toc-entry toc-h4"><a href="#6-manipulation-of-numbers-to-check-whether-a-given-number-is-perfect-or-not-to-check-whether-a-given-number-is-palindrome-or-not-to-compute-the-sum-of-digits-of-a-given-number-to-compute-the-sum-of-squares-of-the-digits-to-print-a-given-number-in-reverse-order-of-its-digits">6. Manipulation of numbers: to check whether a given number is perfect or not, to check whether a given number is palindrome or not, to compute the sum of digits of a given number, to compute the sum of squares of the digits, to print a given number in reverse order of its digits.</a></li>
+<li class="toc-entry toc-h4"><a href="#7a-to-compute-gcd-and-lcm-of-two-numbers">7(a). To compute GCD and LCM of two numbers.</a></li>
+<li class="toc-entry toc-h4"><a href="#7b-to-evaluate-the-function-phin-for-a-given-positive-integer-n">7(b). To evaluate the function \(\phi(n)\) for a given positive integer \(n\).</a></li>
+<li class="toc-entry toc-h4"><a href="#7c-to-evaluate-the-m%C3%B6bius-function-mun-for-a-given-positive-integer-n">7(c). To evaluate the Möbius function \(\mu(n)\) for a given positive integer \(n\).</a></li>
+<li class="toc-entry toc-h4"><a href="#8a-to-generate-fibonacci-sequence">8(a). To generate Fibonacci sequence.</a></li>
+<li class="toc-entry toc-h4"><a href="#8b-to-compute-the-sum-of-the-series-and-hence-evaluate-ex-sinx-cosx-tanx-sinhx-coshx-terminate-the-program-after-n-terms-of-the-series-or-terminate-the-program-at-the-desired-level-of-accuracy">8(b). To compute the sum of the series and hence evaluate \(e^x\), \(\sin(x)\), \(\cos(x)\), \(\tan(x)\), \(\sinh(x)\), \(\cosh(x)\) (terminate the program after n terms of the series or terminate the program at the desired level of accuracy).</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#lecture-notes">Lecture Notes</a></li>
+</ul>
+          </div>
+          <hr>
+          
           <div id="markdown-content">
             <h2 id="syllabus">Syllabus</h2>
 <!-- The below command span will be used if we change first line layout to page instead of post -->
@@ -178,6 +212,872 @@ and hence evaluate \(e^x\), \(\sin(x)\), \(\cos(x)\), \(\tan(x)\), \(\sinh(x)\),
   <li>Basics of Scilab 2: Plotting Cartesian, polar and parametric curves, commands for plotting functions.</li>
 </ol>
 
+<hr>
+
+<h2 id="programs-code">Programs’ code</h2>
+<p>Codes of some programs (need not be in the best and efficient form) from the above syllabus of python programming are given below. You may try it out by clicking on the Output button and on Run to execture the code.</p>
+
+<h4 id="1-to-find-the-maximum-of-a-given-list-of-numbers">1. To find the maximum of a given list of numbers.</h4>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#code1">Code</button></p>
+<div id="code1" class="collapse">
+
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr>
+<td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td>
+<td class="code"><pre><span class="n">lst</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">n</span><span class="o">=</span><span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">How many numbers are there? </span><span class="sh">'</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter {}th number: </span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)))</span>
+    <span class="n">lst</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+<span class="c1"># k=range(n)
+# print(k)
+</span><span class="n">maxi</span><span class="o">=</span><span class="n">lst</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="c1"># print(maxi)
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+    <span class="nf">if </span><span class="p">(</span><span class="n">maxi</span> <span class="o">&lt;</span> <span class="n">lst</span><span class="p">[</span><span class="n">i</span><span class="p">]):</span>
+        <span class="n">maxi</span><span class="o">=</span><span class="n">lst</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Maximum computed manually is: </span><span class="sh">'</span><span class="p">,</span> <span class="n">maxi</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Maximum number from the list is: </span><span class="sh">'</span><span class="p">,</span> <span class="nf">max</span><span class="p">(</span><span class="n">lst</span><span class="p">))</span>
+</pre></td>
+</tr></tbody></table></code></pre></figure>
+
+</div>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#output1">Output</button></p>
+<div id="output1" class="collapse">
+<iframe src="https://trinket.io/embed/python3/67694a55e5?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+</div>
+
+<hr>
+
+<h4 id="2a-to-check-whether-a-given-number-is-odd-or-even">2(a). To check whether a given number is odd or even</h4>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#code2a">Code</button></p>
+<div id="code2a" class="collapse">
+
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr>
+<td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td>
+<td class="code"><pre><span class="c1"># Program to check whether a number is odd or even
+</span><span class="n">n</span><span class="o">=</span><span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter your number: </span><span class="sh">'</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">n</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Your entered number</span><span class="sh">'</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="sh">'</span><span class="s">is even</span><span class="sh">'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Your entered number</span><span class="sh">'</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="sh">'</span><span class="s">is odd</span><span class="sh">'</span><span class="p">)</span>
+</pre></td>
+</tr></tbody></table></code></pre></figure>
+
+</div>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#output2a">Output</button></p>
+<div id="output2a" class="collapse">
+<iframe src="https://trinket.io/embed/python3/043125ffcd?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+</div>
+
+<h4 id="2b-to-check-whether-a-given-year-is-a-leap-year-or-not">2(b). To check whether a given year is a leap year or not.</h4>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#code2b">Code</button></p>
+<div id="code2b" class="collapse">
+
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr>
+<td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td>
+<td class="code"><pre><span class="c1"># Program to check if the input year is a leap year or not
+</span>
+<span class="n">year</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">"</span><span class="s">Enter a year number of your choice: </span><span class="sh">"</span><span class="p">))</span>
+
+<span class="c1">#if year%400 == 0 or (year %4==0 and year%100!=0):
+#    print('The year {} is a leap year.'.format(year))
+#else:
+#    print('The year {} is not a leap year.'.format(year))
+</span>
+<span class="nf">if </span><span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="nf">if </span><span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">year</span> <span class="o">%</span> <span class="mi">400</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">{} is a leap year</span><span class="sh">"</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">year</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">{} is not a leap year</span><span class="sh">"</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">year</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">{} is a leap year</span><span class="sh">"</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">year</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">{} is not a leap year</span><span class="sh">"</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">year</span><span class="p">))</span>
+</pre></td>
+</tr></tbody></table></code></pre></figure>
+
+</div>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#output2b">Output</button></p>
+<div id="output2b" class="collapse">
+<iframe src="https://trinket.io/embed/python3/16db0d2ca0?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+</div>
+<hr>
+
+<h4 id="3-to-find-the-real-roots-of-a-quadratic-equation">3. To find the real roots of a quadratic equation.</h4>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#code3">Code</button></p>
+<div id="code3" class="collapse">
+
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr>
+<td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td>
+<td class="code"><pre><span class="c1"># Program to find roots of quadratic equation
+</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Consider the equation of the form ax^2+bx+c=0</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="n">a</span><span class="o">=</span><span class="nf">float</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter the non-zero coefficient a of x^2: </span><span class="sh">'</span><span class="p">))</span>
+<span class="n">b</span><span class="o">=</span><span class="nf">float</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter the coefficient b of x: </span><span class="sh">'</span><span class="p">))</span>
+<span class="n">c</span><span class="o">=</span><span class="nf">float</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter the constant term c: </span><span class="sh">'</span><span class="p">))</span>
+
+<span class="n">delta</span> <span class="o">=</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">a</span> <span class="o">*</span> <span class="n">c</span>
+<span class="n">d</span><span class="o">=</span><span class="n">delta</span><span class="o">**</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+
+<span class="nf">if </span><span class="p">(</span><span class="n">delta</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">):</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The given quadratic equation {}x^2 + {}x + c =0 has no real roots</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">r1</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">b</span><span class="o">+</span><span class="n">d</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">r2</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">b</span><span class="o">-</span><span class="n">d</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The real roots of given quadratic equation {}x^2 + {}x + {} =0 are {} and {}</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">r1</span><span class="p">,</span><span class="n">r2</span><span class="p">))</span>
+</pre></td>
+</tr></tbody></table></code></pre></figure>
+
+</div>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#output3">Output</button></p>
+<div id="output3" class="collapse">
+<iframe src="https://trinket.io/embed/python3/5a2c39d825?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+</div>
+<hr>
+
+<h4 id="4-to-compute-n-factorial-of-a-given-non-negative-integer-n">4. To compute \(n!\) (factorial of a given non-negative integer \(n\)).</h4>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#code4">Code</button></p>
+<div id="code4" class="collapse">
+
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr>
+<td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td>
+<td class="code"><pre><span class="c1"># Python program to compute n factorial
+</span><span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter a non-negative integer: </span><span class="sh">'</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">n</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Please enter a non-negative integer.</span><span class="sh">'</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">n</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">0! = 1</span><span class="sh">'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">i</span><span class="o">=</span><span class="n">n</span>
+    <span class="n">nfact</span><span class="o">=</span><span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">nfact</span> <span class="o">=</span> <span class="n">nfact</span> <span class="o">*</span> <span class="n">i</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">{}! = {}</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">nfact</span><span class="p">))</span>
+</pre></td>
+</tr></tbody></table></code></pre></figure>
+
+</div>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#output4">Output</button></p>
+<div id="output4" class="collapse">
+<iframe src="https://trinket.io/embed/python3/b780273ac5?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+</div>
+<hr>
+
+<h4 id="5a-to-check-whether-a-given-number-is-prime-or-not">5(a). To check whether a given number is prime or not.</h4>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#code5a">Code</button></p>
+<div id="code5a" class="collapse">
+
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr>
+<td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td>
+<td class="code"><pre><span class="c1"># Python program to check whether a number is prime or not
+</span><span class="n">n</span><span class="o">=</span><span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter an integer n&gt;2: </span><span class="sh">'</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="nf">int</span><span class="p">((</span><span class="n">n</span><span class="o">**</span><span class="mf">0.5</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">n</span><span class="o">%</span><span class="n">i</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">The entered number {} is not prime.</span><span class="sh">"</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="k">break</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">The entered number {} is a prime number.</span><span class="sh">"</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+</pre></td>
+</tr></tbody></table></code></pre></figure>
+
+</div>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#output5a">Output</button></p>
+<div id="output5a" class="collapse">
+<iframe src="https://trinket.io/embed/python3/e4b7cf318b?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+</div>
+
+<h4 id="5b-to-list-all-prime-numbers-within-a-given-range">5(b). To list all prime numbers within a given range.</h4>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#code5b">Code</button></p>
+<div id="code5b" class="collapse">
+
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr>
+<td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td>
+<td class="code"><pre><span class="c1"># Python program to list all the prime numbers in a given range
+</span><span class="n">a</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Give the starting point a (&gt; 0) of the range: </span><span class="sh">'</span><span class="p">))</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Give the ending point b (&gt; a) of the range: </span><span class="sh">'</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">a1</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">a1</span> <span class="o">=</span> <span class="n">a</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The prime numbers between {} and {} are the following:</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">b</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">test</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nf">int</span><span class="p">((</span><span class="n">n</span><span class="o">**</span><span class="mf">0.5</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">test</span> <span class="o">=</span> <span class="mi">1</span>
+                <span class="k">break</span>
+<span class="c1">#        else:
+</span>        <span class="k">if</span> <span class="n">test</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nf">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="sh">'</span><span class="s">, </span><span class="sh">'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Please enter a valid range.</span><span class="sh">"</span><span class="p">)</span>
+</pre></td>
+</tr></tbody></table></code></pre></figure>
+
+</div>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#output5b">Output</button></p>
+<div id="output5b" class="collapse">
+<iframe src="https://trinket.io/embed/python3/0a2837f270?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+</div>
+
+<h4 id="5c-to-factorize-a-given-number">5(c). To factorize a given number.</h4>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#code5c">Code</button></p>
+<div id="code5c" class="collapse">
+
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr>
+<td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td>
+<td class="code"><pre><span class="c1"># Program to factorize a given number
+</span><span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">"</span><span class="s">Enter the number (n &gt; 1) which you want to factorize: </span><span class="sh">"</span><span class="p">))</span>
+<span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="c1">#lst.append(1)
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">lst</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="k">if</span> <span class="nf">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">The number {} is prime and it only factors are 1 and {}.</span><span class="sh">"</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">n</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The factors of {} are the following:</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>  <span class="c1"># range(len(lst)):
+</span>        <span class="nf">print</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="sh">'</span><span class="s">, </span><span class="sh">'</span><span class="p">)</span>
+<span class="c1"># Extending the program to check whether the number is perfect or not
+</span><span class="nf">print</span><span class="p">(</span><span class="sh">''</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="nf">sum</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span><span class="o">-</span><span class="n">n</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The number</span><span class="sh">'</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="sh">'</span><span class="s">is perfect</span><span class="sh">'</span><span class="p">)</span>
+</pre></td>
+</tr></tbody></table></code></pre></figure>
+
+</div>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#output5c">Output</button></p>
+<div id="output5c" class="collapse">
+<iframe src="https://trinket.io/embed/python3/20fc981595?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+</div>
+
+<h4 id="5d-to-print-the-nrm-th-prime">5(d). To print the \(n^{\rm th}\) prime.</h4>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#code5d">Code</button></p>
+<div id="code5d" class="collapse">
+
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr>
+<td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td>
+<td class="code"><pre><span class="c1"># Program to compute the nth prime number
+</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter the value of n to compute the nth prime number: </span><span class="sh">'</span><span class="p">))</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">while</span> <span class="n">c</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="nf">int</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mf">0.5</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="sh">"</span><span class="s">th prime number is </span><span class="sh">"</span><span class="p">,</span><span class="n">x</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+</pre></td>
+</tr></tbody></table></code></pre></figure>
+
+</div>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#output5d">Output</button></p>
+<div id="output5d" class="collapse">
+<iframe src="https://trinket.io/embed/python3/2d558dbf89?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+</div>
+
+<hr>
+
+<h4 id="6-manipulation-of-numbers-to-check-whether-a-given-number-is-perfect-or-not-to-check-whether-a-given-number-is-palindrome-or-not-to-compute-the-sum-of-digits-of-a-given-number-to-compute-the-sum-of-squares-of-the-digits-to-print-a-given-number-in-reverse-order-of-its-digits">6. Manipulation of numbers: to check whether a given number is perfect or not, to check whether a given number is palindrome or not, to compute the sum of digits of a given number, to compute the sum of squares of the digits, to print a given number in reverse order of its digits.</h4>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#code6">Code</button></p>
+<div id="code6" class="collapse">
+
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr>
+<td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+</pre></td>
+<td class="code"><pre><span class="c1"># Program to do various manipulation of numbers
+# We check number is perfect or not, palindrome or not, compute sum of digits, sum of squares of digits and reverse the number
+</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter the number: </span><span class="sh">'</span><span class="p">))</span>
+
+<span class="n">sumdiv</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># for storing sum of divisors
+</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nf">int</span><span class="p">(</span><span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">sumdiv</span> <span class="o">=</span> <span class="n">sumdiv</span> <span class="o">+</span> <span class="n">i</span>
+
+<span class="k">if</span> <span class="n">sumdiv</span> <span class="o">==</span> <span class="n">n</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The entered number {} is perfect</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The entered number {} is Not perfect</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+
+<span class="n">num</span> <span class="o">=</span> <span class="n">n</span>  <span class="c1"># num will be used for manipulation without disturbing n
+</span><span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># will be used to store the sum of digits of n
+</span><span class="n">sumsq</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># will be used to store the sum of squares of digits
+</span><span class="n">rev</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># will be used to reverse the number
+</span>
+<span class="k">while</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">digit</span> <span class="o">=</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">10</span>
+    <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">digit</span>
+    <span class="n">sumsq</span> <span class="o">=</span> <span class="n">sumsq</span> <span class="o">+</span> <span class="p">(</span><span class="n">digit</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">rev</span> <span class="o">=</span> <span class="p">(</span><span class="n">rev</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)</span> <span class="o">+</span> <span class="n">digit</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="n">num</span> <span class="o">//</span> <span class="mi">10</span>
+
+<span class="k">if</span> <span class="n">rev</span> <span class="o">==</span> <span class="n">n</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The entered number {} is palindrome</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The entered number {} is Not palindrome</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The sum of digits of {} is {}</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="nb">sum</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The sum of the squares of digits of {} is {}</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">sumsq</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The entered number {} in the reverse order of its digits is {}</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">rev</span><span class="p">))</span>
+</pre></td>
+</tr></tbody></table></code></pre></figure>
+
+</div>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#output6">Output</button></p>
+<div id="output6" class="collapse">
+<iframe src="https://trinket.io/embed/python3/29ff262e01?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+</div>
+
+<hr>
+
+<h4 id="7a-to-compute-gcd-and-lcm-of-two-numbers">7(a). To compute GCD and LCM of two numbers.</h4>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#code7a">Code</button></p>
+<div id="code7a" class="collapse">
+
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr>
+<td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td>
+<td class="code"><pre><span class="c1"># Program to find gcd and lcm of two numbers
+</span><span class="n">a</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter first positive integer a: </span><span class="sh">'</span><span class="p">))</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter second positive integer b: </span><span class="sh">'</span><span class="p">))</span>
+
+<span class="n">gc</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="k">def</span> <span class="nf">gcd</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">gc</span>
+    <span class="n">x1</span><span class="o">=</span><span class="n">x</span>
+    <span class="n">y1</span><span class="o">=</span><span class="n">y</span>
+    <span class="k">if</span> <span class="n">x1</span> <span class="o">%</span> <span class="n">y1</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">GCD of {} and {} computed by recurrence is {}</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">y1</span><span class="p">))</span>
+        <span class="n">gc</span> <span class="o">=</span> <span class="n">y1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nf">gcd</span><span class="p">(</span><span class="n">y1</span><span class="p">,(</span><span class="n">x1</span><span class="o">%</span><span class="n">y1</span><span class="p">))</span>
+
+
+<span class="nf">gcd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range </span><span class="p">(</span><span class="nf">min</span><span class="p">(</span><span class="nf">int</span><span class="p">(</span><span class="n">a</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span><span class="nf">int</span><span class="p">(</span><span class="n">b</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">GCD of {} and {} computed by loop is {}</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">i</span><span class="p">))</span>
+        <span class="k">break</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">LCM of {} and {} is {} (using y1)</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="nf">int</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="o">/</span><span class="n">gc</span><span class="p">)))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">LCM of {} and {} is {} (using i)</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="nf">int</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="o">/</span><span class="n">i</span><span class="p">)))</span>
+</pre></td>
+</tr></tbody></table></code></pre></figure>
+
+</div>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#output7a">Output</button></p>
+<div id="output7a" class="collapse">
+<iframe src="https://trinket.io/embed/python3/37911d82b9?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+</div>
+
+<h4 id="7b-to-evaluate-the-function-phin-for-a-given-positive-integer-n">7(b). To evaluate the function \(\phi(n)\) for a given positive integer \(n\).</h4>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#code7b">Code</button></p>
+<div id="code7b" class="collapse">
+
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr>
+<td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td>
+<td class="code"><pre><span class="c1"># Python Program to compute Euler's phi function for n &gt;= 2
+</span>
+<span class="n">g</span><span class="o">=</span><span class="mi">1</span>
+<span class="k">def</span> <span class="nf">gcd</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">g</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">g</span> <span class="o">=</span> <span class="n">y</span>
+<span class="c1">#        return y
+</span>    <span class="k">else</span><span class="p">:</span>
+        <span class="nf">gcd</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">x</span><span class="o">%</span><span class="n">y</span><span class="p">)</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter a positive integer: </span><span class="sh">'</span><span class="p">))</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+    <span class="nf">gcd</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">i</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">g</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Euler</span><span class="se">\'</span><span class="s">s function of {} is {}</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">c</span><span class="p">))</span>
+</pre></td>
+</tr></tbody></table></code></pre></figure>
+
+</div>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#output7b">Output</button></p>
+<div id="output7b" class="collapse">
+<iframe src="https://trinket.io/embed/python3/dede9fabce?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+</div>
+
+<h4 id="7c-to-evaluate-the-möbius-function-mun-for-a-given-positive-integer-n">7(c). To evaluate the Möbius function \(\mu(n)\) for a given positive integer \(n\).</h4>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#code7c">Code</button></p>
+<div id="code7c" class="collapse">
+
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr>
+<td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td>
+<td class="code"><pre><span class="c1"># Python Program to compute the mobius function mu(n)
+</span><span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter the value of n: </span><span class="sh">'</span><span class="p">))</span>
+<span class="n">u</span><span class="o">=</span><span class="mi">1</span>
+<span class="k">def</span> <span class="nf">is_prime</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="nf">int</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="n">i</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+
+<span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span><span class="mi">0</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter a valid positive integer n</span><span class="sh">'</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">n</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">u(1)=1</span><span class="sh">'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nf">is_prime</span><span class="p">(</span><span class="n">k</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span> <span class="ow">and</span> <span class="n">n</span><span class="o">%</span><span class="n">k</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">n</span><span class="o">%</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="n">k</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+                <span class="n">u</span><span class="o">=</span><span class="mi">0</span>
+                <span class="k">break</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">u</span> <span class="o">=</span> <span class="n">u</span><span class="o">*</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Mobius function u({})={}</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">u</span><span class="p">))</span>
+</pre></td>
+</tr></tbody></table></code></pre></figure>
+
+</div>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#output7c">Output</button></p>
+<div id="output7c" class="collapse">
+<iframe src="https://trinket.io/embed/python3/5b291fb708?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+</div>
+<hr>
+
+<h4 id="8a-to-generate-fibonacci-sequence">8(a). To generate Fibonacci sequence.</h4>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#code8a">Code</button></p>
+<div id="code8a" class="collapse">
+
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr>
+<td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td>
+<td class="code"><pre><span class="c1"># Python program to compute n terms of fibonacci sequence
+</span>
+<span class="k">def</span> <span class="nf">fibo</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter a positive integer.</span><span class="sh">'</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">x</span>  <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nf">fibo</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="nf">fibo</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter the term n: </span><span class="sh">'</span><span class="p">))</span>
+
+<span class="c1">#print(fibo(n))  # To print the nth fibonacci number
+</span>
+<span class="c1">#for i in range(1,n+1):  # To print first n fibonacci numbers
+#    print(fibo(i))
+</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="nf">fibo</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>  <span class="c1"># To print fibonacci numbers upto n
+</span>    <span class="nf">print</span><span class="p">(</span><span class="nf">fibo</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></td>
+</tr></tbody></table></code></pre></figure>
+
+</div>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#output8a">Output</button></p>
+<div id="output8a" class="collapse">
+<iframe src="https://trinket.io/embed/python3/b844ffd7ea?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+</div>
+
+<h4 id="8b-to-compute-the-sum-of-the-series-and-hence-evaluate-ex-sinx-cosx-tanx-sinhx-coshx-terminate-the-program-after-n-terms-of-the-series-or-terminate-the-program-at-the-desired-level-of-accuracy">8(b). To compute the sum of the series and hence evaluate \(e^x\), \(\sin(x)\), \(\cos(x)\), \(\tan(x)\), \(\sinh(x)\), \(\cosh(x)\) (terminate the program after n terms of the series or terminate the program at the desired level of accuracy).</h4>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#code8b">Code</button></p>
+<div id="code8b" class="collapse">
+
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr>
+<td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+</pre></td>
+<td class="code"><pre><span class="c1"># Python program to compute the sum of the series e^x, sin x, cos x, sinh x and cosh x upto n terms
+</span>
+<span class="kn">import</span> <span class="n">math</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter the value of x: </span><span class="sh">'</span><span class="p">))</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">'</span><span class="s">Enter the number of terms of the series n: </span><span class="sh">'</span><span class="p">))</span>
+
+<span class="c1">#x = y*math.pi/180
+</span>
+<span class="k">def</span> <span class="nf">expo</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">sumex</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">termex</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">termex</span> <span class="o">=</span> <span class="p">(</span><span class="n">termex</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="n">m</span>
+        <span class="n">sumex</span> <span class="o">=</span> <span class="n">sumex</span> <span class="o">+</span> <span class="n">termex</span>
+    <span class="k">return</span> <span class="n">sumex</span>
+
+<span class="n">sumcos</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">termcos</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">termsin</span> <span class="o">=</span> <span class="n">x</span>
+<span class="n">sumsin</span> <span class="o">=</span> <span class="n">termsin</span>
+
+<span class="c1">#i=1
+#while math.fabs(termcos) &gt; 0.0001:
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">termsin</span> <span class="o">=</span> <span class="p">(</span><span class="n">termsin</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span><span class="o">/</span><span class="p">((</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">sumsin</span> <span class="o">=</span> <span class="n">sumsin</span> <span class="o">+</span> <span class="n">termsin</span>
+    <span class="n">termcos</span> <span class="o">=</span> <span class="p">(</span><span class="n">termcos</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span><span class="o">/</span><span class="p">((</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="p">))</span>
+    <span class="n">sumcos</span> <span class="o">=</span> <span class="n">sumcos</span> <span class="o">+</span> <span class="n">termcos</span>
+<span class="c1">#    i = i + 1
+</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">''</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The computed value of e^{} upto {} terms is {}.</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="nf">expo</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The actual value of e^{} using math module is {}.</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">math</span><span class="p">.</span><span class="nf">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">''</span><span class="p">)</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The computed value of sin({}) upto {} terms is {}.</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">sumsin</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The actual value of sin({}) using math module is {}.</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">math</span><span class="p">.</span><span class="nf">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">''</span><span class="p">)</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The computed value of cos({}) upto {} terms is {}.</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">sumcos</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The actual value of cos({}) using math module is {}.</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">math</span><span class="p">.</span><span class="nf">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">''</span><span class="p">)</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The computed value of sinh({}) upto {} terms is {}.</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">n</span><span class="p">,(</span><span class="nf">expo</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">-</span><span class="nf">expo</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="n">x</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The actual value of sinh({}) using math module is {}.</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">math</span><span class="p">.</span><span class="nf">sinh</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">''</span><span class="p">)</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The computed value of cosh({}) upto {} terms is {}.</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">n</span><span class="p">,(</span><span class="nf">expo</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">+</span><span class="nf">expo</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="n">x</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">The actual value of cosh({}) using math module is {}.</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">math</span><span class="p">.</span><span class="nf">cosh</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">''</span><span class="p">)</span>
+</pre></td>
+</tr></tbody></table></code></pre></figure>
+
+</div>
+<p><button type="button" class="bibtex" data-toggle="collapse" data-target="#output8b">Output</button></p>
+<div id="output8b" class="collapse">
+<iframe src="https://trinket.io/embed/python3/5e56d21d03?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+</div>
 <hr>
 
 <h2 id="lecture-notes">Lecture Notes</h2>
