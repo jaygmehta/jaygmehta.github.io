@@ -6,7 +6,7 @@ description: If you want to get in touch, email is your best bet!
 nav: true
 nav_order: 8
 ---
-To reach me through email, through research profiles or through social media profiles scroll down to the bottom of the page and click on the social contact icons.
+To reach me through email, research profiles or through social media profiles scroll down to the bottom of the page and click on the social contact icons.
 
 -------------
 
