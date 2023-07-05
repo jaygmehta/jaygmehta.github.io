@@ -2,7 +2,7 @@
 layout: page
 permalink: /contact/
 title: contact
-description: If you want to get in touch, email is your best bet! <br> If you are in a hurry, then drop a message using the form below.
+description: If you want to get in touch, email is your best bet! If you are in a hurry, then drop a message using the form below.
 nav: true
 nav_order: 8
 ---
