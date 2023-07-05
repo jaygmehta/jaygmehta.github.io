@@ -2,11 +2,11 @@
 layout: page
 permalink: /contact/
 title: contact
-description: If you want to get in touch, email is your best bet! If you are in a hurry, then drop a message using the form below.
+description: If you want to get in touch, email is your best bet!
 nav: true
 nav_order: 8
 ---
-To reach me through email or to connect with me through research profiles or social media profiles scroll down to the bottom of the page and click on the social contact icons.
+To reach me through email, through research profiles or through social media profiles scroll down to the bottom of the page and click on the social contact icons.
 
 -------------
 
