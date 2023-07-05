@@ -17,7 +17,7 @@ profile:
 news: true  # includes a list of news items
 latest_posts: false #true  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: false # true  # includes social icons at the bottom of the page
 ---
 
 Welcome to my personal page!
@@ -36,8 +36,6 @@ For my university homepage (which I no longer have access) [click here](https://
 
 For my MathSciNet (MR Reviews) profile: [click here](https://mathscinet.ams.org/mathscinet/search/author.html?mrauthid=1016163/)
 
-To reach me through email or to connect with me through research profiles or social media profiles scroll down to the bottom of the page and click on the social contact icons.
-
 -------------
 
 **Research interests**
@@ -54,86 +52,4 @@ My YouTube Channel (for piano covers): [mathemusics](https://www.youtube.com/@ma
 
 My YouTube Channel (for video lectures): [Jay Sir](https://www.youtube.com/@jaysir7675/)
 
--------------
-
-**Contact Details**
-
-<div class="news">
-  <div class="table-responsive coordinates">
-    <table class="table table-sm table-borderless">
-      <tbody><tr>
-          <th scope="row">
-              <i class="fas fa-envelope"></i> 
-              email
-          </th>
-        <td>
-                  <i class="email"></i> 
-                  jaygmehta[ät]gmail.com<br>
-                  jay_mehta[ät]spuvvn.edu<br>                 
-        </td>
-      </tr>
-      <tr>
-      <tr>
-          <th scope="row">
-              <i class="fa fa-globe"></i> 
-              website
-          </th>
-        <td>       
-                  <i class="address"></i> 
-                  <a href="https://www.spuvvn.edu/team/j-g-mehta/" target="_blank">https://www.spuvvn.edu/team/j-g-mehta/</a>
-                  <br>                    
-        </td>
-      </tr>
-          <th scope="row">
-              <i class="fa fa-university"></i> 
-              <!-- <i class="fa fa-map-marker"></i>  -->
-              address
-          </th>
-        <td>       
-                  <i class="address"></i> 
-                  Department of Mathematics, 
-                  Sardar Patel University<br>
-                  Vallabh Vidyanagar 388 120, Gujarat, INDIA.<br>                    
-        </td>
-      </tr>
-      <tr>
-          <th scope="row">
-              <i class="fas fa-phone"></i> 
-              phone
-          </th>
-        <td>       
-                  <i class="phone"></i> 
-                  +91 2692 226870 <br>
-                  Extension: 214
-        </td>
-      </tr>
-      <tr>
-          <th scope="row">
-              <i class="fas fa-mobile"></i> 
-              mobile
-          </th>
-        <td>      
-                <i class="phone"></i> 
-                <ul>
-                  <li>First digit is square of an odd prime</li>
-                  <li>Second digit is square of the even prime</li>
-                  <li>Next two digits are obtained by raising an integer to itself (i.e., its own power)</li>
-                  <li>The next four digits form a number which is the \(n^{\rm th}\) prime, where \(n\) is the \(180^{\rm th}\) prime</li>
-                  <li>Last two digits are \(1\) less than the square of the square of the first odd prime</li>
-                </ul>
-        </td>
-      </tr>
-      <!-- <tr>
-          <th scope="row">
-              <i class="fas fa-door-open"></i> 
-              office hour
-          </th>
-        <td>       
-                  <i class="office hour"></i> 
-                  11-5      
-        </td>
-      </tr> -->
-    </tbody></table>
-  </div>
-</div>
 -------------
