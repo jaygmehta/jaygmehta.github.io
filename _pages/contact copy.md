@@ -1,9 +1,9 @@
 ---
 layout: page
-permalink: /contact/
+# permalink: /contact/
 title: contact
-description: If you want to get in touch, then email is your best bet! <br>Alternately, fill the following form and submit to  send me a quick message.
-nav: true
+description: If you want to get in touch, email is your best bet! Fill the form
+nav: false # true
 nav_order: 8
 ---
 To reach me through email, research profiles or through social media profiles scroll down to the bottom of the page and click on the social contact icons.
@@ -14,7 +14,7 @@ To reach me through email, research profiles or through social media profiles sc
     <label for="full-name">Full Name</label>
     <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
     <label for="email-address">Email Address</label>
-    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
     <label for="message">Message</label>
     <textarea rows="5" name="message" id="message" placeholder="Type your message here..." required=""></textarea>
     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
@@ -81,7 +81,6 @@ To reach me through email, research profiles or through social media profiles sc
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
-  background-color: #828282;
 }
 #fs-frm [type="button"]:focus,
 #fs-frm [type="submit"]:focus,
@@ -129,7 +128,6 @@ To reach me through email, research profiles or through social media profiles sc
   margin-right: 3%;
 }
 </style>
--------------
 
 **Contact Details**
 
