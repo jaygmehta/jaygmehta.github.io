@@ -129,7 +129,6 @@ To reach me through email or to connect with me through research profiles or soc
   margin-right: 3%;
 }
 </style>
-
 -------------
 
 **Contact Details**
