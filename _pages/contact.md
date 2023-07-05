@@ -21,7 +21,8 @@ To reach me through email or to connect with me through research profiles or soc
     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
   </fieldset>
   <input type="submit" value="Submit">
-</form><style>/* reset */
+</form>
+<style>/* reset */
 #fs-frm input,
 #fs-frm select,
 #fs-frm textarea,
