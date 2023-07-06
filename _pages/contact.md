@@ -57,25 +57,25 @@ To reach me through email, research profiles or through social media profiles sc
 #fs-frm #card-element {
   border: 1px solid rgba(0,0,0,0.2);
   <!-- background-color: rgba(255,255,255,0.9); -->
-  background-color: #828282;
+  background-color: #929292;
   padding: .75em 1rem;
   margin-bottom: 1.5rem;
 }
 #fs-frm input:focus,
 #fs-frm select:focus,
 #fs-frm textarea:focus {
-  background-color: gray;
+  background-color: #929292;
   outline-style: solid;
   outline-width: thin;
-  outline-color: gray;
+  outline-color: #929292;
   outline-offset: -1px;
-  background-color: #828282;
+  background-color: #929292;
 }
 #fs-frm [type="text"],
 #fs-frm [type="hidden"],
 #fs-frm [type="email"] {
   width: 100%;
-  background-color: gray;
+  background-color: #929292;
 }
 #fs-frm [type="button"],
 #fs-frm [type="submit"],
@@ -85,7 +85,7 @@ To reach me through email, research profiles or through social media profiles sc
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
-  background-color: #828282;
+  background-color: #929292;
 }
 #fs-frm [type="button"]:focus,
 #fs-frm [type="submit"]:focus,
@@ -98,6 +98,7 @@ To reach me through email, research profiles or through social media profiles sc
 }
 #fs-frm select {
   text-transform: none;
+  background-color: #929292;
 }
 
 #fs-frm [type="checkbox"] {
