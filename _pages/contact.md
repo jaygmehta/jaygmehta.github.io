@@ -16,7 +16,7 @@ To reach me through email, research profiles or through social media profiles sc
     <label for="email-address">Email Address</label>
     <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
     <label for="phone-number">Phone Number</label>
-    <input type="text" name="phone" id="phone-number" placeholder="<country code> <phone number> (for example +91 987654321)" required="">
+    <input type="text" name="phone" id="phone-number" placeholder="<country code> <phone number> (for example +91 9876543210)" required="">
     <label for="message">Message</label>
     <textarea rows="5" name="message" id="message" placeholder="Type your message here..." required=""></textarea>
     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
@@ -77,7 +77,7 @@ To reach me through email, research profiles or through social media profiles sc
 #fs-frm [type="hidden"],
 #fs-frm [type="email"] {
   width: 100%;
-  background-color: #929292;
+  background-color: --global-card-bg-color;
 }
 #fs-frm [type="button"],
 #fs-frm [type="submit"],

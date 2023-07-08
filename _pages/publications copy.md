@@ -1,11 +1,11 @@
 ---
 layout: page
-permalink: /publications/
+permalink: #/publications/
 title: publications
 description: The following are my publications and preprints
 years: [2023, 2022, 2020, 2017, 2016, 2015, 2014, 2012]
 yearp: [2023]
-nav: true
+nav: false #true
 nav_order: 1
 ---
 <!-- _pages/publications.md -->
@@ -24,6 +24,7 @@ nav_order: 1
 -------------------------------------------------------------------------------------------------------------------
 
 ## Preprints
+<!-- {% comment %} -->
 <div class="publications">
 
 {%- for x in page.yearp %}
@@ -32,3 +33,4 @@ nav_order: 1
 {% endfor %}
 
 </div>
+<!-- {% endcomment %} -->
