@@ -25,6 +25,10 @@
   - firstname: ["Shigeru", "S."]
     url: https://www.researchgate.net/profile/Shigeru-Kanemitsu
 
+"Sun":
+  - firstname: ["Yong", "Y."]
+    url: https://hyokadb02.jimu.kyutech.ac.jp/html/174_en.html
+
 # "Lorentz":
 #   - firstname: ["Hendrik Antoon"]
 #     url: https://en.wikipedia.org/wiki/Hendrik_Lorentz

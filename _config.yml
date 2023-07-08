@@ -274,7 +274,7 @@ jekyll-archives:
 scholar:
 
   last_name: [Mehta]
-  first_name: [Jay]
+  first_name: ["Jay", "J."]
 
   style: apa
   locale: en
