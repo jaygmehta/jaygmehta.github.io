@@ -2,7 +2,7 @@
 layout: page
 permalink: /contact/
 title: contact
-description: If you want to get in touch, then email is your best bet! <br>Alternately, fill the following form and submit to  send me a quick message.
+description: If you want to get in touch, then email is your best bet! Alternately, submit the following form to send me a quick message.
 nav: true
 nav_order: 8
 ---
@@ -12,11 +12,11 @@ To reach me through email, research profiles or through social media profiles sc
 <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mrgwgzqz" method="post">
   <fieldset id="fs-frm-inputs">
     <label for="full-name">Full Name</label>
-    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+    <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
     <label for="email-address">Email Address</label>
     <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
-    <label for="phone-number">Phone Number</label>
-    <input type="text" name="phone" id="phone-number" placeholder="<country code> <phone number> (for example +91 9876543210)" required="">
+    <label for="phone-number">Mobile Number</label>
+    <input type="tel" name="phone" id="phone-number" placeholder="your 10 digit mobile number" required="" pattern="[6789][0-9]{9}" title="Please enter a valid 10 digit mobile number">
     <label for="message">Message</label>
     <textarea rows="5" name="message" id="message" placeholder="Type your message here..." required=""></textarea>
     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
@@ -51,13 +51,16 @@ To reach me through email, research profiles or through social media profiles sc
   display: flex;
   align-items: baseline;
 }
+#fs-frm textarea {
+  background-color: inherit;
+}
 
 /* border, padding, margin, width */
 #fs-frm input,
 #fs-frm select,
 #fs-frm textarea,
 #fs-frm #card-element {
-  border: 1px solid rgba(0,0,0,0.2);
+  border: 1px solid;
   <!-- background-color: rgba(255,255,255,0.9); -->
   background-color: #929292;
   padding: .75em 1rem;
@@ -66,18 +69,18 @@ To reach me through email, research profiles or through social media profiles sc
 #fs-frm input:focus,
 #fs-frm select:focus,
 #fs-frm textarea:focus {
-  background-color: #929292;
+  background-color: inherit;
   outline-style: solid;
   outline-width: thin;
-  outline-color: #929292;
+  outline-color: inherit;
   outline-offset: -1px;
-  background-color: #929292;
 }
 #fs-frm [type="text"],
-#fs-frm [type="hidden"],
+#fs-frm [type="message"],
+#fs-frm [type="tel"],
 #fs-frm [type="email"] {
   width: 100%;
-  background-color: --global-card-bg-color;
+  background-color: inherit;
 }
 #fs-frm [type="button"],
 #fs-frm [type="submit"],
@@ -100,7 +103,7 @@ To reach me through email, research profiles or through social media profiles sc
 }
 #fs-frm select {
   text-transform: none;
-  background-color: #929292;
+  background-color: inherit;
 }
 
 #fs-frm [type="checkbox"] {
