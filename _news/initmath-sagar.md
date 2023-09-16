@@ -11,19 +11,19 @@ categories: #sample-posts
 thumbnail: assets/img/DSC6710.jpg
 ---
 <!-- This is an example post with image galleries. -->
-The Group Photo and the Souvenir of MTTS-2023 launched on the first day at [IIT (ISM) Dhanbad](https://www.iitism.ac.in/).
+The Group Photo of Init Math Sagar camp at Dr. Harisingh Gour Vishwavidyalaya, Sagar, MP.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/InitMath-Sagar/IMG5138.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/InitMathSagar/IMG_5168.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
             Group Photo: Init Math Sagar (MP), September 4-9, 2023.
         </div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/InitMath-Sagar/IMG_5138.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/InitMathSagar/volunteers.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
-            Banner of Init Math Sagar outside the Maharshi Kannad Building, Dr. Harisingh Gour Viswavidyalaya, Sagar, MP.
+            Group Photo with Resource Persons, Mentors, Volunteers, and the Local Coordinator, Init Math Sagar, MP.
         </div>
     </div>
 </div>
@@ -33,20 +33,26 @@ The Group Photo and the Souvenir of MTTS-2023 launched on the first day at [IIT 
 
 <!-- Images can be made zoomable.
 Simply add `data-zoomable` to `<img>` tags that you want to make zoomable. -->
-
-On the first Sunday, June 4th, 2023, after a week of the camp, our special visit was arranged to Moonidih Mines (one of India's largest and oldest coal-mine) by our host Prof. S. P. Tiwari Sir. Following are couple of pics one among which shows us dressed and ready for the mono-rail ride inside the inclined mines.
+<!-- 
+On the first Sunday, June 4th, 2023, after a week of the camp, our special visit was arranged to Moonidih Mines (one of India's largest and oldest coal-mine) by our host Prof. S. P. Tiwari Sir. Following are couple of pics one among which shows us dressed and ready for the mono-rail ride inside the inclined mines. -->
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/MTTS2023/IMG_20230604_095524.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/InitMathSagar/InitMath-session.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
-            Moonidih Mines: Visited on Sunday, June 4th, 2023
+            Discussing Foundations
         </div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/MTTS2023/IMG_20230604_114508.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/InitMathSagar/class.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
-            Wearing safety jacket, Helmet, safety long boots with metal rods inside. Ready to issue flashlight to take a mono-rail ride inside the inclined mines. Omkar took a selfie before we submitted our phones.
+            Ananth Sir assisting me and giving different examples to students
+        </div>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/InitMathSagar/discussion.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
+        <div class="caption">
+            Discussion time
         </div>
     </div>
 </div>
@@ -55,21 +61,21 @@ MTTS is also known for group discussions, an effective way of learning. In the p
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/MTTS2023/IMG_20230604_211437.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/InitMathSagar/teachersday.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
-            Some fun discussions during the dinner and motivating the students
+            A memento given to me by the Local Coordinator Punam Ma'am on Teacher's Day, Tuesday, 5th September, 2023 (2nd Day of Init Math)
         </div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/MTTS2023/IMG_20230607_104933.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/InitMathSagar/valedictory.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
-            Assisting group discussions of students during the sessions
+            A memento given to me by the Head of the Dept. Prof. Shukla, Dr. Harisingh Gour Vishwavidyalaya, Sagar in the Valedictory
         </div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/MTTS2023/IMG_20230608_181823.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/InitMathSagar/IMG5138.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
-            Discussing some difficulties
+            Banner of Init Math Sagar outside the Maharshi Kannad Building, Dr. Harisingh Gour Vishwavidyalaya, Sagar, MP.
         </div>
     </div>
 </div>
