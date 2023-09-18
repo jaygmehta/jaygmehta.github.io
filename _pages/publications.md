@@ -4,10 +4,12 @@ permalink: /publications/
 title: publications
 description: The following are my publications and preprints
 years: [2023, 2022, 2020, 2017, 2016, 2015, 2014, 2012]
-yearp: [2023]
+yearp: []
 nav: true
 nav_order: 1
 ---
+For my MathSciNet (MR Reviews) profile: [click here](https://mathscinet.ams.org/mathscinet/author?authorId=1016163)
+
 <!-- _pages/publications.md -->
 <div class="publications">
 

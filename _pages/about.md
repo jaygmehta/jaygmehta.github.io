@@ -34,8 +34,8 @@ For my university homepage (which I no longer have access) [click here](https://
 
 <!-- &nbsp; -->
 
-For my MathSciNet (MR Reviews) profile: [click here](https://mathscinet.ams.org/mathscinet/search/author.html?mrauthid=1016163/)
-
+<!-- For my MathSciNet (MR Reviews) profile: [click here](https://mathscinet.ams.org/mathscinet/author?authorId=1016163) -->
+<!--  -->
 -------------
 
 **Research interests**
