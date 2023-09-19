@@ -10,14 +10,19 @@ giscus_comments: false #true
 #   sidebar: true
 ---
 
-<h3 style="color: #4b9cd3;" id="mtts"><a href="https://mtts.org.in/">MTTS Courses</a></h3>
+<h3 style="color: #4b9cd3;" id="mtts"><a href="https://mtts.org.in/">Courses in MTTS Programs</a></h3>
 <!-- MTTS -->
 <div class="card mt-3">
   <div class="p-3">
     <div class="row">
       <div class="col-sm-10">
-        <h5 id="2023" class="card-title"><a href="/news/mtts-2023">Level O at IIT (ISM) Dhanbad</a></h5>
-        <h6 class="card-subtitle font-italic">Fall 2022 and Spring 2023: Head UTA</h6>
+        <h5 id="2023" class="card-title"><a href="/news/initmath-sagar">InitMath Sagar (MP)</a></h5>
+        <!-- <h6 class="card-subtitle font-italic">September 4-9, 2023 <br>
+        Dr. Harisingh Gour Vishwavidyalaya, Sagar, Madhya Pradesh -->
+        <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
+        <h6 class="card-subtitle"><br> September 4-9, 2023 <br>
+        Dr. Harisingh Gour Vishwavidyalaya, Sagar, Madhya Pradesh
+        </h6>
       </div>
       <div class="col-sm-2 text-sm-right">
         <span class="badge">
@@ -27,19 +32,22 @@ giscus_comments: false #true
     </div>
     <ul class="card-text font-weight-light list-group list-group-flush">
       <li class="list-group-item">
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-sm-9">
             In 23S, I developed a SAP (Simple-As-Possible computer) program simulator, which enabled me to autograde and create a SAP programming assignment.
           </div>
           <div class="col-sm-3">
             <a href="/projects/sapsim">SAPsim</a>&nbsp;(<a href="https://github.com/jesse-wei/SAPsim">GitHub</a>)
           </div>
-        </div>
-      </li>
+        </div> -->
+      </li><br>
       <div class="row">
       <div class="col-sm-10">
         <h5 id="2023" class="card-title"><a href="/news/mtts-2023">Level O at IIT (ISM) Dhanbad</a></h5>
-        <h6 class="card-subtitle font-italic">Fall 2022 and Spring 2023: Head UTA</h6>
+        <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
+        <h6 class="card-subtitle"><br> May 29 - June 10, 2023 <br>
+        Indian Institute of Technology (IIT) ISM Dhanbad, Jharkhand
+        </h6>
       </div>
       <div class="col-sm-2 text-sm-right">
         <span class="badge">
@@ -47,7 +55,31 @@ giscus_comments: false #true
         </span>
       </div>
     </div>
-      <li class="list-group-item">
+    <li class="list-group-item">
+        <!-- <div class="row">
+          <div class="col-sm-9">
+            In 23S, I developed a SAP (Simple-As-Possible computer) program simulator, which enabled me to autograde and create a SAP programming assignment.
+          </div>
+          <div class="col-sm-3">
+            <a href="/projects/sapsim">SAPsim</a>&nbsp;(<a href="https://github.com/jesse-wei/SAPsim">GitHub</a>)
+          </div>
+        </div> -->
+      </li><br>
+      <div class="row">
+      <div class="col-sm-10">
+        <h5 id="2023" class="card-title"> InitMath SPU (Gujarat) </h5>
+        <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
+        <h6 class="card-subtitle"><br> March 20-25, 2023 <br>
+        Department of Mathematics, Sardar Patel University, Vallabh Vidyanagar, Gujarat
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2023
+        </span>
+      </div>
+    </div>
+      <!-- <li class="list-group-item">
         <div class="row">
           <div class="col-sm-9">
             I added and wrote the autograder for a new part of the ALU implementation assignment, in which students implement flag detection in the ALU.
@@ -98,13 +130,83 @@ giscus_comments: false #true
           <div class="col-sm-3">
           </div>
         </div>
-      </li>
+      </li> -->
+    </ul>
+  </div>
+</div>
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-10">
+        <h5 id="2023" class="card-title"><a href="/news/initmath-sagar">InitMath Sagar (MP)</a></h5>
+        <!-- <h6 class="card-subtitle font-italic">September 4-9, 2023 <br>
+        Dr. Harisingh Gour Vishwavidyalaya, Sagar, Madhya Pradesh -->
+        <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
+        <h6 class="card-subtitle"><br> September 4-9, 2023 <br>
+        Dr. Harisingh Gour Vishwavidyalaya, Sagar, Madhya Pradesh
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2023
+        </span>
+      </div>
+    </div>
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">
+        <!-- <div class="row">
+          <div class="col-sm-9">
+            In 23S, I developed a SAP (Simple-As-Possible computer) program simulator, which enabled me to autograde and create a SAP programming assignment.
+          </div>
+          <div class="col-sm-3">
+            <a href="/projects/sapsim">SAPsim</a>&nbsp;(<a href="https://github.com/jesse-wei/SAPsim">GitHub</a>)
+          </div>
+        </div> -->
+      </li><br>
+      <div class="row">
+      <div class="col-sm-10">
+        <h5 id="2023" class="card-title"><a href="/news/mtts-2023">Level O at IIT (ISM) Dhanbad</a></h5>
+        <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
+        <h6 class="card-subtitle"><br> May 29 - June 10, 2023 <br>
+        Indian Institute of Technology (IIT) ISM Dhanbad, Jharkhand
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2023
+        </span>
+      </div>
+    </div>
+    <li class="list-group-item">
+        <!-- <div class="row">
+          <div class="col-sm-9">
+            In 23S, I developed a SAP (Simple-As-Possible computer) program simulator, which enabled me to autograde and create a SAP programming assignment.
+          </div>
+          <div class="col-sm-3">
+            <a href="/projects/sapsim">SAPsim</a>&nbsp;(<a href="https://github.com/jesse-wei/SAPsim">GitHub</a>)
+          </div>
+        </div> -->
+      </li><br>
+      <div class="row">
+      <div class="col-sm-10">
+        <h5 id="2023" class="card-title"> InitMath SPU (Gujarat) </h5>
+        <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
+        <h6 class="card-subtitle"><br> March 20-25, 2023 <br>
+        Department of Mathematics, Sardar Patel University, Vallabh Vidyanagar, Gujarat
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2023
+        </span>
+      </div>
+    </div>
     </ul>
   </div>
 </div>
 
 <!-- COMP 210 (Data Structures and Analysis) -->
-<div class="card mt-3">
+<!-- <div class="card mt-3">
   <div class="p-3">
     <div class="row">
       <div class="col-sm-10">
@@ -139,10 +241,10 @@ giscus_comments: false #true
       </li>
     </ul>
   </div>
-</div>
+</div> -->
 
 <!-- COMP 110 (Introduction to Programming and Data Science) -->
-<div class="card mt-3">
+<!-- <div class="card mt-3">
   <div class="p-3">
     <div class="row">
       <div class="col-sm-10">
@@ -184,7 +286,7 @@ giscus_comments: false #true
       </li>
     </ul>
   </div>
-</div>
+</div> -->
 
 <br>
 
