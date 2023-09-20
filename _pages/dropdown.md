@@ -9,7 +9,9 @@ children:
       permalink: /semester-courses/
     - title: divider
     - title: other courses
-      permalink: # /other-courses/
+      permalink: /other-courses/
+    - title: invited talks/lectures
+      permalink: # /talks-lectures/
     # - title: divider
     # - title: other lectures
     #   permalink: /teaching1/

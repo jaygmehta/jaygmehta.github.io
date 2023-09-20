@@ -20,7 +20,7 @@ giscus_comments: false #true
         <!-- <h6 class="card-subtitle font-italic">September 4-9, 2023 <br>
         Dr. Harisingh Gour Vishwavidyalaya, Sagar, Madhya Pradesh -->
         <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
-        <h6 class="card-subtitle"><br> September 4-9, 2023 <br>
+        <h6 class="card-subtitle"><br> September 04 - 09, 2023 <br>
         Dr. Harisingh Gour Vishwavidyalaya, Sagar, Madhya Pradesh
         </h6>
       </div>
@@ -69,7 +69,7 @@ giscus_comments: false #true
       <div class="col-sm-10">
         <h5 id="2023" class="card-title"> InitMath SPU (Gujarat) </h5>
         <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
-        <h6 class="card-subtitle"><br> March 20-25, 2023 <br>
+        <h6 class="card-subtitle"><br> March 20 - 25, 2023 <br>
         Department of Mathematics, Sardar Patel University, Vallabh Vidyanagar, Gujarat
         </h6>
       </div>
@@ -138,17 +138,17 @@ giscus_comments: false #true
   <div class="p-3">
     <div class="row">
       <div class="col-sm-10">
-        <h5 id="2023" class="card-title"><a href="/news/initmath-sagar">InitMath Sagar (MP)</a></h5>
+        <h5 id="2023" class="card-title">OFCM2022</h5>
         <!-- <h6 class="card-subtitle font-italic">September 4-9, 2023 <br>
         Dr. Harisingh Gour Vishwavidyalaya, Sagar, Madhya Pradesh -->
         <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
-        <h6 class="card-subtitle"><br> September 4-9, 2023 <br>
-        Dr. Harisingh Gour Vishwavidyalaya, Sagar, Madhya Pradesh
+        <h6 class="card-subtitle"><br> October 16 - November 06, 2022 <br>
+        Online Foundation Course in Mathematics (OFCM) 2022
         </h6>
       </div>
       <div class="col-sm-2 text-sm-right">
         <span class="badge">
-          2023
+          2022
         </span>
       </div>
     </div>
@@ -165,39 +165,95 @@ giscus_comments: false #true
       </li><br>
       <div class="row">
       <div class="col-sm-10">
-        <h5 id="2023" class="card-title"><a href="/news/mtts-2023">Level O at IIT (ISM) Dhanbad</a></h5>
+        <h5 id="2023" class="card-title">Level O at IIT Ropar</h5>
         <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
-        <h6 class="card-subtitle"><br> May 29 - June 10, 2023 <br>
-        Indian Institute of Technology (IIT) ISM Dhanbad, Jharkhand
+        <h6 class="card-subtitle"><br> May 23 - June 04, 2022 <br>
+        Indian Institute of Technology (IIT) Ropar, Punjab
         </h6>
       </div>
       <div class="col-sm-2 text-sm-right">
         <span class="badge">
-          2023
+          2022
         </span>
       </div>
     </div>
-    <li class="list-group-item">
-        <!-- <div class="row">
-          <div class="col-sm-9">
-            In 23S, I developed a SAP (Simple-As-Possible computer) program simulator, which enabled me to autograde and create a SAP programming assignment.
-          </div>
-          <div class="col-sm-3">
-            <a href="/projects/sapsim">SAPsim</a>&nbsp;(<a href="https://github.com/jesse-wei/SAPsim">GitHub</a>)
-          </div>
-        </div> -->
-      </li><br>
-      <div class="row">
+    </ul>
+  </div>
+</div>
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
       <div class="col-sm-10">
-        <h5 id="2023" class="card-title"> InitMath SPU (Gujarat) </h5>
+        <h5 id="2023" class="card-title">OFCM2021</h5>
+        <!-- <h6 class="card-subtitle font-italic">September 4-9, 2023 <br>
+        Dr. Harisingh Gour Vishwavidyalaya, Sagar, Madhya Pradesh -->
         <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
-        <h6 class="card-subtitle"><br> March 20-25, 2023 <br>
-        Department of Mathematics, Sardar Patel University, Vallabh Vidyanagar, Gujarat
+        <h6 class="card-subtitle"><br> September 19 - October 11, 2021 <br>
+        Online Foundation Course in Mathematics (OFCM) 2021
         </h6>
       </div>
       <div class="col-sm-2 text-sm-right">
         <span class="badge">
-          2023
+          2021
+        </span>
+      </div>
+    </div>  
+  </div>
+</div>
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-10">
+        <h5 id="2023" class="card-title">OFCM2020</h5>
+        <!-- <h6 class="card-subtitle font-italic">September 4-9, 2023 <br>
+        Dr. Harisingh Gour Vishwavidyalaya, Sagar, Madhya Pradesh -->
+        <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
+        <h6 class="card-subtitle"><br> October 04 - 24, 2020 <br>
+        Online Foundation Course in Mathematics (OFCM) 2020
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2020
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mt-3">
+  <div class="p-3">
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <div class="row">
+      <div class="col-sm-10">
+        <h5 id="2023" class="card-title">Level O at RIE Ajmer</h5>
+        <h6 class="card-subtitle font-italic"><b>Number Theory</b></h6>
+        <h6 class="card-subtitle"><br> May 20 - June 01, 2019 <br>
+        Regional Institute of Education (RIE) Ajmer, Rajasthan
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2019
+        </span>
+      </div>
+    </div>
+    </ul>
+  </div>
+</div>
+<div class="card mt-3">
+  <div class="p-3">
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <div class="row">
+      <div class="col-sm-10">
+        <h5 id="2023" class="card-title">Level O at SSN College, Chennai</h5>
+        <h6 class="card-subtitle font-italic"><b>Number Theory</b></h6>
+        <h6 class="card-subtitle"><br> May 21 - June 02, 2018 <br>
+        SSN College, Chennai, Tamil Nadu
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2018
         </span>
       </div>
     </div>
@@ -291,7 +347,7 @@ giscus_comments: false #true
 <br>
 
 <!-- ACT -->
-<h3 id="self-employed">Self-employed</h3>
+<!-- <h3 id="self-employed">Self-employed</h3>
 <div class="card mt-3">
   <div class="p-3">
     <div class="row">
@@ -336,6 +392,109 @@ giscus_comments: false #true
         </div>
       </li>
     </ul>
+  </div>
+</div> -->
+
+<h3 style="color: #4b9cd3;" id="mtts"> Courses in Other/Summer Programs </h3>
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-10">
+        <h5 id="2023" class="card-title">Summer Program in Mathematics (SPIM@KSoM-2022)</h5>
+        <!-- <h6 class="card-subtitle font-italic">September 4-9, 2023 <br>
+        Dr. Harisingh Gour Vishwavidyalaya, Sagar, Madhya Pradesh -->
+        <h6 class="card-subtitle font-italic"><b>Topology</b></h6>
+        <h6 class="card-subtitle"><br> May 09 - 14, 2022 <br>
+        Kerala School of Mathematics (KSoM), Kozhikode, Kerala
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2022
+        </span>
+      </div>
+    </div>
+    <!-- <ul class="card-text font-weight-light list-group list-group-flush">
+    <li class="list-group-item">
+      </li><br>
+      <div class="row">
+      <div class="col-sm-10">
+        <h5 id="2023" class="card-title"> InitMath SPU (Gujarat) </h5>
+        <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
+        <h6 class="card-subtitle"><br> March 20 - 25, 2023 <br>
+        Department of Mathematics, Sardar Patel University, Vallabh Vidyanagar, Gujarat
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2023
+        </span>
+      </div>
+    </div>
+    </ul> -->
+  </div>
+</div>
+
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-10">
+        <h5 id="2023" class="card-title">Refresher Course in Mathematics</h5>
+        <!-- <h6 class="card-subtitle font-italic">September 4-9, 2023 <br>
+        Dr. Harisingh Gour Vishwavidyalaya, Sagar, Madhya Pradesh -->
+        <h6 class="card-subtitle font-italic"><b>Cryptography</b></h6>
+        <h6 class="card-subtitle"><br> October 09 - 12, 2014 <br>
+        Kerala School of Mathematics (KSoM), Kozhikode, Kerala
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2014
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-10">
+        <h5 id="2023" class="card-title">Summer Program in Mathematics (SPIM-2012)</h5>
+        <!-- <h6 class="card-subtitle font-italic">September 4-9, 2023 <br>
+        Dr. Harisingh Gour Vishwavidyalaya, Sagar, Madhya Pradesh -->
+        <h6 class="card-subtitle font-italic"><b>Topology</b></h6>
+        <h6 class="card-subtitle"><br> June 16 - July 04, 2012 <br>
+        Harish-Chandra Research Institute, Prayagraj (Allahabad), Uttar Pradesh
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2012
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-10">
+        <h5 id="2023" class="card-title">Summer Program in Mathematics (SPIM-2011)</h5>
+        <!-- <h6 class="card-subtitle font-italic">September 4-9, 2023 <br>
+        Dr. Harisingh Gour Vishwavidyalaya, Sagar, Madhya Pradesh -->
+        <h6 class="card-subtitle font-italic"><b>Topology</b></h6>
+        <h6 class="card-subtitle"><br> June-July, 2011 <br>
+        Harish-Chandra Research Institute, Prayagraj (Allahabad), Uttar Pradesh
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2011
+        </span>
+      </div>
+    </div>
   </div>
 </div>
 
