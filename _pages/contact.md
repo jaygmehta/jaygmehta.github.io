@@ -140,10 +140,10 @@ To reach me through email, research profiles or through social media profiles sc
 }
 </style>
 -------------
+<div class="container mt-5"> <article> <div class="cv"> <div class="card mt-3 p-3"> <h3 class="card-title font-weight-medium">Contact Information</h3> 
+<!-- **Contact Details**
 
-**Contact Details**
-
-<div class="news">
+<div class="news"> -->
   <div class="table-responsive coordinates">
     <table class="table table-sm table-borderless">
       <tbody><tr>
@@ -172,7 +172,7 @@ To reach me through email, research profiles or through social media profiles sc
           <th scope="row">
               <i class="fa fa-university"></i> 
               <!-- <i class="fa fa-map-marker"></i>  -->
-              address
+                address  
           </th>
         <td>       
                   <i class="address"></i> 
@@ -219,10 +219,13 @@ To reach me through email, research profiles or through social media profiles sc
         </td>
       </tr> -->
     </tbody></table>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1067.4278822499389!2d72.92456288158264!3d22.55411656332074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4e737f7552e1%3A0xb7a140ae7520e80!2sP%20G%20Dept.%20of%20Business%20Studies!5e0!3m2!1sen!2sde!4v1695232343613!5m2!1sen!2sde" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805.0605182980033!2d9.980505928736244!3d53.466260609089225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b191b0d1bed7bf%3A0x9eb9debb15ee67b4!2sHamburg%20Innovation%20Port!5e0!3m2!1sen!2sde!4v1657726102181!5m2!1sen!2sde" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div> </div>  -->
+    <!-- </article> -->
   </div>
 </div>
 
-------------
+<!-- ------------ -->
 
 <!-- To reach me through email or to connect with me through research profiles or social media profiles click on the social contact icons given below. -->
 
@@ -348,7 +351,6 @@ To reach me through email, research profiles or through social media profiles sc
             {% endif %}
 
 </div>
-
 
 </div>
 
