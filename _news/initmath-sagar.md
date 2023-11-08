@@ -5,7 +5,7 @@ date: 2023-09-04
 # 07:59:00-0400
 inline: false
 related_posts: false
-description: MTTS-2023 IIT (ISM) Dhanbad camp picture gallery
+description: InitMath camp at Sagar (MP) picture gallery
 tags: #formatting images
 categories: #sample-posts
 thumbnail: assets/img/DSC6710.jpg
@@ -56,8 +56,6 @@ On the first Sunday, June 4th, 2023, after a week of the camp, our special visit
         </div>
     </div>
 </div>
-
-MTTS is also known for group discussions, an effective way of learning. In the pictures below, I can be seen assisting students' groups, listening to their problems or having a fun discussions with them. Pictures were cliced by my friend Omkar who was also one of the resident faculty at MTTS and who called me (for these discussions) as "मधुमक्खी का छत्ता"
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">

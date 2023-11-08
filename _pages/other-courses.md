@@ -13,7 +13,33 @@ giscus_comments: false #true
 <h3 style="color: #4b9cd3;" id="mtts"><a href="https://mtts.org.in/">Courses in MTTS Programs</a></h3>
 <!-- MTTS -->
 <div class="card mt-3">
-  <div class="p-3">
+  <div class="p-3"><div class="row">
+      <div class="col-sm-10">
+        <h5 id="2023" class="card-title"><a href="/news/initmath-nadaun-hp">InitMath Nadaun (Himachal Pradesh)</a></h5>
+        <!-- <h6 class="card-subtitle font-italic">October 9-14, 2023 <br>
+        Sidharth Goverment College, Nadaun, Himachal Pradesh -->
+        <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
+        <h6 class="card-subtitle"><br> October 09 - 14, 2023 <br>
+        Sidharth Goverment College, Nadaun, Himachal Pradesh
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2023
+        </span>
+      </div>
+    </div>
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">
+        <!-- <div class="row">
+          <div class="col-sm-9">
+            In 23S, I developed a SAP (Simple-As-Possible computer) program simulator, which enabled me to autograde and create a SAP programming assignment.
+          </div>
+          <div class="col-sm-3">
+            <a href="/projects/sapsim">SAPsim</a>&nbsp;(<a href="https://github.com/jesse-wei/SAPsim">GitHub</a>)
+          </div>
+        </div> -->
+      </li><br>
     <div class="row">
       <div class="col-sm-10">
         <h5 id="2023" class="card-title"><a href="/news/initmath-sagar">InitMath Sagar (MP)</a></h5>
