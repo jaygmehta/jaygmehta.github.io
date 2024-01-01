@@ -22,7 +22,7 @@ social: false # true  # includes social icons at the bottom of the page
 
 Welcome to my personal page!
 
-Hi, My name is Jay Mehta. I'm an Assistant Professor at the Department of Mathematics, [Sardar Patel University](https://www.spuvvn.edu/), Vallabh Vidyanagar, India since 2016. Before joining the university, I was a postdoctoral fellow at [The Institute of Mathematical Sciences (IMSc)](https://www.imsc.res.in/), Chennai, India. I did my PhD from [Harish-Chandra Research Institute (HRI)](https://www.hri.res.in/), Prayagraj (Allahabad), India and the Ph.D. degree is awarded by the [Homo Bhabha National Institute (HBNI)](http://www.hbni.ac.in/).
+Hi, My name is Jay Mehta. I'm an Assistant Professor at the Department of Mathematics, [Sardar Patel University](https://www.spuvvn.edu/), Vallabh Vidyanagar, India since 2016. Before joining the university, I was a postdoctoral fellow at [The Institute of Mathematical Sciences (IMSc)](https://www.imsc.res.in/), Chennai, India. I did my PhD from [Harish-Chandra Research Institute (HRI)](https://www.hri.res.in/), Prayagraj (Allahabad), India and the Ph.D. degree is awarded by the [Homi Bhabha National Institute (HBNI)](http://www.hbni.ac.in/).
 
 To accompany my teaching, I use [Moodle](https://moodle.org/), a Learning Management System (LMS) or Course Management System (CMS), as a platform for my courses in which I provide weekly quizzes, videos, lecture notes, references, NET/NBHM questions, solutions of past papers, and other such useful material. If you are my current student in any of my courses, then <a href="https://jaysir.gnomio.com">click here</a> to login to access my Moodle classroom.
 

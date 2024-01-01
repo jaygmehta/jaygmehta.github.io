@@ -11,7 +11,7 @@ categories: #sample-posts
 thumbnail: assets/img/DSC6710.jpg
 ---
 <!-- This is an example post with image galleries. -->
-The Group Photo of Init Math Sagar camp at Dr. Harisingh Gour Vishwavidyalaya, Sagar, MP.
+The Group Photo of Init Math HP camp at [Sidharth College, Nadaun, Himachal Pradesh](https://www.gcnadaun.ac.in/).
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -65,7 +65,7 @@ On the first Sunday, June 4th, 2023, after a week of the camp, our special visit
         </div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/InitMathNadaun/IMG_6501.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/InitMathNadaun/IMG_6501.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
             Felicitated by the Principal, Sidharth College, Nadaun, HP in the Valedictory
         </div>
