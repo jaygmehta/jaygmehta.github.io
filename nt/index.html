@@ -267,6 +267,50 @@
   <div id="rfeb2022Q84Incorrect" class="riHide ri-alert-danger">
     In-correct
   </div>
+<p>
+
+  </p>
+<h2>Feb 2022 (Part C) Q-83</h2>
+  <p>
+  </p>
+<h4>A positive integer \(n\) coprime to \(17\) is called a primitive root modulo \(17\) if \(n^k - 1\) is not divisible by \(17\) for all \(k\) with \(1 \le k \le 16\). Let \(a,b\) be distinct positive integers between \(1\) and \(16\). Which of the following statements are true?</h4>
+  <!-- <p>Choose 1 answer</p> -->
+  <hr>
+
+  <div id="block-feb2022Q831" style="padding: 1.0px;">
+    <label for="option-feb2022Q831" style=" padding: .5px; font-size: 1.5rem;">
+      <input type="checkbox" name="option" id="option-feb2022Q831" style="transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;">
+      \(2\) is a primitive root modulo \(17\)</label>
+  </div>
+  <hr>
+
+  <div id="block-feb2022Q832" style="padding: 1.0px;">
+    <label for="option-feb2022Q832" style=" padding: .5px; font-size: 1.5rem;">
+      <input type="checkbox" name="option" id="option-feb2022Q832" style="transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;">
+      If \(a\) is a primitive root modulo \(17\) then \(a^2\) is not necessarily a primitive root modulo \(17\)</label>
+  </div>
+  <hr>
+
+  <div id="block-feb2022Q833" style="padding: 1.0px;">
+    <label for="option-feb2022Q833" style=" padding: .5px; font-size: 1.5rem;">
+      <input type="checkbox" name="option" id="option-feb2022Q833" style="transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;">
+      If \(a, b\) are primitive roots modulo \(17\), then \(ab\) is a primitive root modulo \(17\)</label>
+  </div>
+  <hr>
+
+  <div id="block-feb2022Q834" style="padding: 1.0px;">
+    <label for="option-feb2022Q834" style=" padding: .5px; font-size: 1.5rem;">
+      <input type="checkbox" name="option" id="option-feb2022Q834" style="transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;">
+      Product of primitive roots modulo \(17\) between \(1\) to \(16\) is congruent to \(1\) modulo \(17\)</label>
+  </div>
+  <hr>
+  <button type="button" onclick="displayAnswerfeb2022Q83()" style="width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;">Submit</button>
+  <div id="rfeb2022Q83Correct" class="riHide ri-alert-success">
+    Correct
+  </div>
+  <div id="rfeb2022Q83Incorrect" class="riHide ri-alert-danger">
+    In-correct
+  </div>
 
 <!-- <a id='showanswer1'></a> -->
 <script>
@@ -319,6 +363,32 @@ function rfeb2022Q84_addClass(ele, cls) {
 }
     function rfeb2022Q84_removeClass(ele, cls) {
   if (rfeb2022Q84_hasClass(ele, cls)) {
+    var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+    ele.className = ele.className.replace(reg, ' ');
+  }
+}
+function displayAnswerfeb2022Q83() {
+  rfeb2022Q83_addClass(document.getElementById('rfeb2022Q83Correct'), 'riHide', );
+  rfeb2022Q83_addClass(document.getElementById('rfeb2022Q83Incorrect'), 'riHide', );
+    if (!document.getElementById('option-feb2022Q831').checked
+    && document.getElementById('option-feb2022Q832').checked
+    && !document.getElementById('option-feb2022Q833').checked
+    && document.getElementById('option-feb2022Q834').checked
+    ) {
+      rfeb2022Q83_removeClass(document.getElementById('rfeb2022Q83Correct'), 'riHide', )
+    }
+    else {
+    rfeb2022Q83_removeClass(document.getElementById('rfeb2022Q83Incorrect'), 'riHide', );
+  }
+  }
+   function rfeb2022Q83_hasClass(ele, cls) {
+  return !!ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+}
+function rfeb2022Q83_addClass(ele, cls) {
+  if (!rfeb2022Q83_hasClass(ele, cls)) ele.className += " " + cls;
+}
+    function rfeb2022Q83_removeClass(ele, cls) {
+  if (rfeb2022Q83_hasClass(ele, cls)) {
     var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
     ele.className = ele.className.replace(reg, ' ');
   }
