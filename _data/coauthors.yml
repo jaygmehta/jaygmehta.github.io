@@ -1,0 +1,38 @@
+"Kumar":
+  - firstname: ["Balesh", "B."]
+    url: https://www.iitrpr.ac.in/mathematics/balesh
+
+"Viswanadham":
+  - firstname: ["G.K.", "G. K.", "Kasi", "G. Kasi"]
+    url: https://math.iiserbpr.ac.in/kasi-about.php
+
+"Saha":
+  - firstname: ["Biwajyoti", "B."]
+    url: https://sites.google.com/site/biswajyotimathematics/
+
+"Chakraborty": 
+  - firstname: ["Kalyan", "K."]
+    url: https://ksom.res.in/director/
+
+  # - firstname: ["Carl Philipp Emanuel", "C. P. E."]
+  #   url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+
+"Banerjee":
+  - firstname: ["Debika", "D."]
+    url: https://www.iiitd.ac.in/debika
+
+"Kanemitsu":
+  - firstname: ["Shigeru", "S."]
+    url: https://www.researchgate.net/profile/Shigeru-Kanemitsu
+
+"Sun":
+  - firstname: ["Yong", "Y."]
+    url: https://hyokadb02.jimu.kyutech.ac.jp/html/174_en.html
+
+# "Lorentz":
+#   - firstname: ["Hendrik Antoon"]
+#     url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+
+# "Planck":
+#   - firstname: ["Max"]
+#     url: https://en.wikipedia.org/wiki/Max_Planck

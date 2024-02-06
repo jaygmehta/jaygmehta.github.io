@@ -1,0 +1,153 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Name
+      value: Jay Mehta
+    - name: Address
+      value: Department of Mathematics, Sardar Patel University, <br>
+             Vallabh Vidyanagar 388120, Gujarat, INDIA.
+    - name: Email
+      value: jaygmehta[ät]gmail(dot)com <br>
+             jay_mehta[ät]spuvvn(dot)edu
+
+- title: Positions
+  type: time_table
+  contents:
+    - title: Assistant Professor #(Mathematics)
+      institution: Department of Mathematics, Sardar Patel University, Vallabh Vidyanagar, INDIA.
+      year: 2016 - present
+      # description:
+      #   - Description 1.
+      #   - Description 2.
+      #   - title: Description 3.
+      #     contents:
+      #       - Sub-description 1.
+      #       - Sub-description 2.
+    - title: Postdoctoral Fellow
+      institution: The Institute of Mathematical Sciences (IMSc), Chennai, INDIA.
+      year: 2015 - 2016
+    #   description:
+    #     - Description 1.
+    #     - Description 2.
+
+    # - title: Director
+    #   institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
+    #   year: 1917-1933
+
+    # - title: Professor of Theoretical Physics
+    #   institution: Karl-Ferdinand University, Prague, Czechoslovakia
+    #   year: 1911 - 1917
+    #   description:
+
+    # - title: Associate Professor of Theoretical Physics
+    #   institution: University of Zurich, Zurich, Switzerland
+    #   year: 1909 - 1911
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD
+      institution: Harish-Chandra Research Institute (HRI), Prayagraj (Allahabad), INDIA.
+      year: 2015
+      description:
+        - "Area: Mathematics (<strong>Number Theory</strong>)"
+        - "Title of Thesis: Characterization of Certain Arithmetical Functions"
+        - "Advisor: Prof. Kalyan Chakraborty"
+        - "Degree Awarded by: Homi Bhabha National Institute (HBNI)"
+        # - title: Description 3.
+        #   contents:
+        #     - Sub-description 1.
+        #     - Sub-description 2.
+    - title: M.Sc.
+      institution: Department of Mathematics, Sardar Patel University, Vallabh Vidyanagar, INDIA.
+      year: 2008
+      description:
+        - "Subject: Mathematics"
+        - "Percentage: 78.11%"
+    - title: B.Sc.
+      institution: V.P. and R.P.T.P. Science College, Sardar Patel University, Vallabh Vidyanagar, INDIA.
+      year: 2006
+      description:
+        - "Subject: Mathematics"
+        - "Percentage: 76.71%"
+
+- title: Research Projects
+  type: time_table
+  contents:
+    - title: UGC (Research Grant of <span>&#8377;</span> 10 lakh) #<a href="https://github.com/alshedivat/al-folio">al-folio</a>
+      year: 2018 - 2020
+      description: "Title: Topics in Analytic Number Theory"
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2018 - 2020
+      items: 
+        - UGC-BSR Start Up Research Grant of <span>&#8377;</span> 10 lakh
+    - year: 2015 - 2016
+      items: 
+        - Received Dept. of Atomic Energy (DAE) Fellowship for Postdoctoral at The Institute of Mathematical Sciences (IMSc), Chennai.
+    - year: 2010
+      items: 
+        - Received NBHM Travel Grant for attending CIMPA School on "Number Theory in Cryptography and its Applications" at Kathmandu University, Nepal.
+    - year: 2009 - 2015
+      items: 
+        - Received Dept. of Atomic Energy (DAE) Fellowship for PhD at Harish-Chandra Research Institute (HRI), Prayagraj (Allahabad).
+    - year: 2009
+      items: 
+        - Selected for the PhD program at Indian Institute of Technology (IIT) Kanpur.
+    # - year: 2009
+    #   items: 
+        - Cleared NBHM Written Test for PhD
+    - year: 2008
+      items: 
+        - Qualified Joint CSIR-UGC NET for Junior Research Fellowship (did not avail).
+    # - year: 2008
+    #   items: 
+        - Qualified GATE exam with All India Rank (AIR) 201 and Percentile 92.32.
+
+- title: Visit to other Institutes
+  type: time_table
+  contents:
+    - year: 2011
+      items: 
+        - Tribhuvan University, Kirtipur, NEPAL.
+        - The Institute of Mathematical Sciences (IMSc), Chennai, INDIA.
+    - year: 2014
+      items: 
+        - Kinki University, Izuka, JAPAN.
+    - year: 2015
+      items: 
+        - Kinki University, Izuka, JAPAN.
+    - year: 2018
+      items: 
+        - Weinan Normal University (WNU), Shaanxi, CHINA.
+        - Harish-Chandra Research Institute (HRI), Prayagraj (Allahabad), INDIA.
+        - Indian Institute of Science Education and Research (IISER) Berhampur, INDIA.
+    - year: 2019
+      items: 
+        - Weinan Normal University (WNU), Shaanxi, CHINA.
+        - School of Mathematics, Shandong University (SDU), Jinan, CHINA.
+        - Indian Institute of Science Education and Research (IISER) Berhampur, INDIA.
+
+
+
+
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Crytography
+      items: 
+        - Elliptic Curve Cryptography
+        - Key Exchange
+        - Digital Signatures
+    - title: Number Theory
+      items:
+        - Multiple Zeta Functions
+        - Analytic Number Theory
+
+- title: Other Interests
+  type: list
+  contents:
+    - <u>Hobbies:</u> Playing keyboard (piano), Programming (python)
