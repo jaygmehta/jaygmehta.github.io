@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Number Theory and Cryptography | Dr. Jay Mehta</title>
+    <title>Number Theory Questions | Dr. Jay Mehta</title>
     <meta name="author" content="Jay  Mehta">
-    <meta name="description" content="Semester III (PS03EMTH55) &lt;br&gt; same as Sem IV (PS04EMTH59)">
+    <meta name="description" content="For Problem Solving (NET and NBHM)">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -32,13 +32,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
 
     
+    <!-- Sidebar Table of Contents -->
+    <link href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" rel="stylesheet">
+    
 
     <!-- Styles -->
     
     <link rel="shortcut icon" href="/assets/img/j.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https:jaygmehta.com/projects/cryptography/">
+    <link rel="canonical" href="https:jaygmehta.com/_pages/NT-quiz-demo/">
 
     <!-- Dark Mode -->
     
@@ -129,138 +132,227 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <!-- page.html -->
+        
+        <div class="row">
+          <!-- sidebar, which will move to the top on a small screen -->
+          <div class="col-sm-3">
+            <nav id="toc-sidebar" class="sticky-top"></nav>
+          </div>
+          <!-- main content area -->
+          <div class="col-sm-9">
+            <!-- page.html -->
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Number Theory and Cryptography</h1>
-            <p class="post-description">Semester III (PS03EMTH55) <br> same as Sem IV (PS04EMTH59)</p>
+            <h1 class="post-title">Number Theory Questions</h1>
+            <p class="post-description">For Problem Solving (NET and NBHM)</p>
           </header>
 
         </div>
         <article>
           
-          <div id="table-of-contents">
-            <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2">
-<a href="#syllabus">Syllabus</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#reference-books">Reference Books</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2">
-<a href="#python-programs-in-cryptography">Python Programs in Cryptography</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#extended-euclidean-algorithm-eea">Extended Euclidean Algorithm (EEA)</a></li>
-<li class="toc-entry toc-h3"><a href="#box-method-an-alternative-to-eea-for-coprime-integers">Box Method (an alternative to EEA for coprime integers)</a></li>
-<li class="toc-entry toc-h3"><a href="#fast-powering-algorithm-fpa-or-square-and-multiply-algorithm-sam">Fast Powering Algorithm (FPA) or Square and Multiply Algorithm (SAM)</a></li>
-<li class="toc-entry toc-h3"><a href="#shankss-babystep-giantstep-algorithm">Shanks’s (Babystep Giantstep) Algorithm</a></li>
-<li class="toc-entry toc-h3"><a href="#chinese-remainder-theorem-crt">Chinese Remainder Theorem (CRT)</a></li>
-<li class="toc-entry toc-h3"><a href="#pollards-p-1-algorithm">Pollard’s \(p-1\) Algorithm</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#lecture-notes">Lecture Notes</a></li>
-</ul>
-          </div>
-          <hr>
-          
           <div id="markdown-content">
-            <h2 id="syllabus">Syllabus</h2>
-<!-- The below command span will be used if we change first line layout to page instead of post -->
-<!-- <span style="font-size:1.3em;"> **Syllabus** </span> -->
+            
+    
+    <style type="text/css">
+        .riHide {
+  display: none;
+}
+.ri-alert-success {
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+.ri-alert-danger {
+   position: relative;
+  padding: .75rem 1.25rem;
+  margin: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  color: #ce4f4f;
+  background-color: #edd4d4;
+  border-color: #edd4d4;
+}
+</style>
+<div style="transform: scale(0.65); position: relative; top: -150px;">
+  <h2>What fraction of a day is 6 hours?</h2>
+  <h4>What fraction of a day is 6 hours?</h4>
+  <p>Choose 1 answer</p>
+  <hr>
 
-<table>
-  <tbody>
-    <tr>
-      <td><strong>Unit-I</strong></td>
-      <td>Number Theory and Discrete Logarithm Problem: Simple substitution ciphers (except cryptanalysis), divisibility and GCD, modular arithmetic, prime numbers, unique factorization and finite fields, primitive roots in finite fields. The discrete logarithm problem.</td>
-    </tr>
-    <tr>
-      <td><strong>Unit-II</strong></td>
-      <td>DLP based cryptosystems: The Diffie-Hellman key exchange, the ElGamal public key cryptosystem, difficulty of discrete log problem (DLP), a collision algorithm for the DLP, the Chinese remainder theorem, the Pohlig-Hellman algorithm.</td>
-    </tr>
-    <tr>
-      <td><strong>Unit-III</strong></td>
-      <td>The RSA Algorithm: Euler’s formula and roots modulo pq, the RSA public key cryptosystem, implementation and security issues, primality testing, Pollard’s p-1 factorization algorithm.</td>
-    </tr>
-    <tr>
-      <td>
-<strong>Unit-IV</strong>                     </td>
-      <td>Elliptic curve cryptography: Elliptic curves, elliptic curve over finite fields, the elliptic curve discrete logarithm problem, elliptic curve cryptography.</td>
-    </tr>
-  </tbody>
-</table>
+  <div id="block-11" style="padding: 1.0px;">
+    <label for="option-11" style=" padding: .5px; font-size: 1.5rem;">
+      <input type="checkbox" name="option" value="6/24" id="option-11" style="transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;">
+      6/24</label>
+    <span id="result-11"></span>
+  </div>
+  <hr>
 
-<p><br></p>
+  <div id="block-12" style="padding: 1.0px;">
+    <label for="option-12" style=" padding: .5px; font-size: 1.5rem;">
+      <input type="checkbox" name="option" value="6" id="option-12" style="transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;">
+      6</label>
+    <span id="result-12"></span>
+  </div>
+  <hr>
 
-<h3 id="reference-books">Reference Books</h3>
+  <div id="block-13" style="padding: 1.0px;">
+    <label for="option-13" style=" padding: .5px; font-size: 1.5rem;">
+      <input type="checkbox" name="option" value="1/3" id="option-13" style="transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;">
+      1/3</label>
+    <span id="result-13"></span>
+  </div>
+  <hr>
 
-<ol>
-  <li>Hoffstein J., Pipher J., Silverman J. H., An Introduction to Mathematical Cryptography, Undergraduate Texts in Mathematics, Springer, New York, (2008).</li>
-  <li>Douglas R. Stinson, Cryptography: Theory and Practice, Second Edition, Chapman and Hall/CRC, (2005).</li>
-  <li>N. Koblitz, A Course in Number Theory and Cryptography, Springer (1994).</li>
-  <li>J. A. Buchmann, Introduction to Cryptography, Second Edition, Undergraduate Texts in Mathematics, Springer-Verlag, New York, (2004).</li>
-</ol>
+  <div id="block-14" style="padding: 1.0px;">
+    <label for="option-14" style=" padding: .5px; font-size: 1.5rem;">
+      <input type="checkbox" name="option" value="1/6" id="option-14" style="transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;">
+      1/6</label>
+    <span id="result-14"></span>
+  </div>
+  <hr>
+  <button type="button" onclick="displayAnswer1()" style="width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;">Submit</button>
+  <div id="riCorrect" class="riHide ri-alert-success">
+    Correct
+  </div>
+  <div id="riIncorrect" class="riHide ri-alert-danger">
+    In-correct
+  </div>
 
-<hr>
+<p>
 
-<h2 id="python-programs-in-cryptography">Python Programs in Cryptography</h2>
-<p>Below are some algorithms we studied in our course Number Theory and Cryptography. One can execute the code by clicking on <strong>Run</strong> and find the solution of the numerical problems.</p>
+  </p>
+<h2>What fraction of a day is 5 hours?</h2>
+  <p>Choose 1 answer</p>
+  <hr>
 
-<hr>
+  <div id="block-21" style="padding: 1.0px;">
+    <label for="option-21" style=" padding: .5px; font-size: 1.5rem;">
+      <input type="checkbox" name="option" id="option-21" style="transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;">
+      6/24</label>
+    <span id="result-21"></span>
+  </div>
+  <hr>
 
-<h3 id="extended-euclidean-algorithm-eea">Extended Euclidean Algorithm (EEA)</h3>
-<p><strong>Enter a and b to compute gcd(a,b) and au + bv = gcd(a,b)</strong><br></p>
-<iframe src="https://trinket.io/embed/python3/237e52137e?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+  <div id="block-22" style="padding: 1.0px;">
+    <label for="option-22" style=" padding: .5px; font-size: 1.5rem;">
+      <input type="checkbox" name="option" id="option-22" style="transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;">
+      6</label>
+    <span id="result-22"></span>
+  </div>
+  <hr>
 
-<hr>
+  <div id="block-23" style="padding: 1.0px;">
+    <label for="option-23" style=" padding: .5px; font-size: 1.5rem;">
+      <input type="checkbox" name="option" value="1/3" id="option-23" style="transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;">
+      1/3</label>
+    <span id="result-23"></span>
+  </div>
+  <hr>
 
-<h3 id="box-method-an-alternative-to-eea-for-coprime-integers">Box Method (an alternative to EEA for coprime integers)</h3>
-<p><strong>Give a and b and program computes au+bv = 1 = gcd(a,b) using Box Method</strong><br></p>
-<iframe src="https://trinket.io/embed/python3/c5aa096759?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+  <div id="block-24" style="padding: 1.0px;">
+    <label for="option-24" style=" padding: .5px; font-size: 1.5rem;">
+      <input type="checkbox" name="option" value="1/6" id="option-24" style="transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;">
+      1/6</label>
+    <span id="result-24"></span>
+  </div>
+  <hr>
+  <button type="button" onclick="displayAnswer2()" style="width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;">Submit</button>
+  <div id="r2Correct" class="riHide ri-alert-success">
+    Correct
+  </div>
+  <div id="r2Incorrect" class="riHide ri-alert-danger">
+    In-correct
+  </div>
 
-<hr>
+<!-- <a id='showanswer1'></a> -->
+<script>
+  //    The function evaluates the answer and displays result
+  function displayAnswer1() {
+    ri_addClass(document.getElementById('riCorrect'), 'riHide', );
+  ri_addClass(document.getElementById('riIncorrect'), 'riHide', );
+    if (document.getElementById('option-11').checked
+    && !document.getElementById('option-12').checked
+    && document.getElementById('option-13').checked
+    && !document.getElementById('option-14').checked
+    ) {
+      ri_removeClass(document.getElementById('riCorrect'), 'riHide', )
+    }
+    else {
+    ri_removeClass(document.getElementById('riIncorrect'), 'riHide', );
+  }
+  }
 
-<h3 id="fast-powering-algorithm-fpa-or-square-and-multiply-algorithm-sam">Fast Powering Algorithm (FPA) or Square and Multiply Algorithm (SAM)</h3>
-<p><strong>Enter g, A, m to compute g^A (mod m) using Fast Powering Algorithm</strong><br></p>
-<iframe src="https://trinket.io/embed/python3/f3eee92dcb?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+    function ri_hasClass(ele, cls) {
+  return !!ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+}
+function ri_addClass(ele, cls) {
+  if (!ri_hasClass(ele, cls)) ele.className += " " + cls;
+}
+    function ri_removeClass(ele, cls) {
+  if (ri_hasClass(ele, cls)) {
+    var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+    ele.className = ele.className.replace(reg, ' ');
+  }
+}
+  function displayAnswer2() {
+    ri_addClass(document.getElementById('r2Correct'), 'riHide', );
+  ri_addClass(document.getElementById('r2Incorrect'), 'riHide', );
+    if (document.getElementById('option-21').checked
+    && !document.getElementById('option-22').checked
+    && !document.getElementById('option-23').checked
+    && document.getElementById('option-24').checked
+    ) {
+      r2_removeClass(document.getElementById('r2Correct'), 'riHide', )
+    }
+    else {
+    r2_removeClass(document.getElementById('r2Incorrect'), 'riHide', );
+  }
+  }
+   function r2_hasClass(ele, cls) {
+  return !!ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+}
+function r2_addClass(ele, cls) {
+  if (!ri_hasClass(ele, cls)) ele.className += " " + cls;
+}
+    function r2_removeClass(ele, cls) {
+  if (r2_hasClass(ele, cls)) {
+    var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+    ele.className = ele.className.replace(reg, ' ');
+  }
+}
+  // the functon displays the link to the correct answer
+//   function showCorrectAnswer1() {
+//     let showAnswer1 = document.createElement('p')
+//     // showAnswer1.innerHTML = 'Show Corrent Answer'
+//     showAnswer1.style.position = 'relative'
+//     showAnswer1.style.top = '-180px'
+//     showAnswer1.style.fontSize = '1.75rem'
+//     document.getElementById('showanswer1').appendChild(showAnswer1)
+//     showAnswer1.addEventListener('click', () => {
+//       document.getElementById('block-11').style.border = '3px solid limegreen'
+//       document.getElementById('result-11').style.color = 'limegreen'
+//       document.getElementById('result-11').innerHTML = 'Correct!'
+//       document.getElementById('showanswer1').removeChild(showAnswer1)
+//     })
+//   }
+</script>
+</div>
+</div>
 
-<hr>
-
-<h3 id="shankss-babystep-giantstep-algorithm">Shanks’s (Babystep Giantstep) Algorithm</h3>
-<p><strong>Program to find discrete log of h mod p to the base g using Shanks’s Babystep Giantstep Algorithm</strong><br></p>
-<iframe src="https://trinket.io/embed/python3/ab487250db?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
-
-<hr>
-
-<h3 id="chinese-remainder-theorem-crt">Chinese Remainder Theorem (CRT)</h3>
-<p><strong>Provide the number of congruences n , then enter values of ai and mi for each i = 1,2,…,n to obtain a  solution by Chinese Remainder Theorem.</strong><br></p>
-<iframe src="https://trinket.io/embed/python3/3a10443a42?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
-
-<hr>
-
-<h3 id="pollards-p-1-algorithm">Pollard’s \(p-1\) Algorithm</h3>
-<p><strong>Enter the value of \(N=pq\) (the product of two primes) to factorize.</strong><br></p>
-<iframe src="https://trinket.io/embed/python3/0a088fe3bf?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
-
-<hr>
-
-<h2 id="lecture-notes">Lecture Notes</h2>
-<p>Download the PDF file of lecture notes <a href="/assets/pdf/PS03EMTH55.pdf" target="_blank" class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p>
-
-<iframe width="100%" height="800" src="/assets/pdf/PS03EMTH55.pdf">
-
-<!-- <object data="https://jaygmehta.com/assets/pdf/PS03EMTH55.pdf" type="application/pdf" width="100%" height="800">
-    <embed src="https://jaygmehta.com/assets/pdf/PS03EMTH55.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://jaygmehta.com/assets/pdf/PS03EMTH55.pdf">Download PDF</a>.</p>
-    </embed>
-</object> -->
-</iframe>
-
+          </article>
+</div>
+        
           </div>
-        </article>
+        </div>
+        
       
-    </div>
+    
 
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
@@ -285,6 +377,9 @@ Last updated: February 06, 2024.
   <!-- Medium Zoom JS -->
   <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
   <script defer src="/assets/js/zoom.js"></script>
+  <!-- Sidebar Table of Contents -->
+  <script defer src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+
 
   <!-- Bootstrap Table -->
   <script defer src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.js"></script>
@@ -389,5 +484,6 @@ Last updated: February 06, 2024.
   }
 </script>
 
-  </body>
+  
+</body>
 </html>
