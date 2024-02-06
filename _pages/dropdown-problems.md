@@ -1,7 +1,7 @@
 ---
 layout: page
 title: problem solving
-nav: true
+nav: false
 nav_order: 6
 dropdown: true
 children: 
