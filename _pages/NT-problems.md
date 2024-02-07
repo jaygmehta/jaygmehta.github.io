@@ -38,6 +38,93 @@ toc:
 <!-- <div style='transform: scale(0.65); position: relative; top: -190px;'> -->
 <!-- <div style='transform: scale(0.75);'> -->
 
+<h3>Sep 2022 (Part C) Q-84</h3>
+  <p>
+  <h5>Consider the function \(f(n) = n^5 - 2n^3 + n\), where \(n\) is a positive integer. Which of the following statements are true?</h5>
+  <!-- <p>Choose 1 answer</p> -->
+  <hr />
+
+  <div id='block-sep2022Q841' style='padding: .5px;'>
+    <label for='option-sep2022Q841' style=' padding: .5px; font-size: 1rem;'>
+      <input type='checkbox' name='option' id='option-sep2022Q841' style='transform: scale(1.5); margin-right: 10px; vertical-align: middle; margin-top: -1px;' />
+      For every positive integer \(k\), there exists a positive integer \(n\) such that \(f(n)\) is divisible by \(2^k\).</label>
+  </div>
+  <hr />
+
+  <div id='block-sep2022Q842' style='padding: .5px;'>
+    <label for='option-sep2022Q842' style=' padding: .5px; font-size: 1rem;'>
+      <input type='checkbox' name='option' id='option-sep2022Q842' style='transform: scale(1.5); margin-right: 10px; vertical-align: middle; margin-top: -1px;' />
+      \(f(n)\) is even for every integer \(n \ge 20\).</label>
+  </div>
+  <hr />
+
+  <div id='block-sep2022Q843' style='padding: .5px;'>
+    <label for='option-sep2022Q843' style=' padding: .5px; font-size: 1rem;'>
+      <input type='checkbox' name='option' id='option-sep2022Q843' style='transform: scale(1.5); margin-right: 10px; vertical-align: middle; margin-top: -1px;' />
+      For every integer \(n \ge 20\), either \(f(n)\) is odd or \(f(n)\) is divisible by \(4\).</label>
+  </div>
+  <hr />
+
+  <div id='block-sep2022Q844' style='padding: .5px;'>
+    <label for='option-sep2022Q844' style=' padding: .5px; font-size: 1rem;'>
+      <input type='checkbox' name='option' id='option-sep2022Q844' style='transform: scale(1.5); margin-right: 10px; vertical-align: middle; margin-top: -1px;' />
+      For every odd integer \(n \ge 21\), \(f(n)\) is divisible by \(64\).</label>
+  </div>
+  <hr />
+  <button type='button' onclick='displayAnswersep2022Q84()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+  <div id="rsep2022Q84Correct" class="riHide ri-alert-success">
+    Correct
+  </div>
+  <div id="rsep2022Q84Incorrect" class="riHide ri-alert-danger">
+    In-correct
+  </div>
+
+<p>
+
+<h3>Sep 2022 (Part C) Q-83</h3>
+  <p>
+  <h5>Let \(a\) and \(b\) be positive integers with \(a > b\) and \(a+b=24\). Suppose that the following congruences have a common integer solution.
+$$2x \equiv 3a \pmod 5, \ x \equiv 4b \pmod 5.$$
+Which of the following statements are true?</h5>
+  <!-- <p>Choose 1 answer</p> -->
+  <hr />
+
+  <div id='block-sep2022Q831' style='padding: .5px;'>
+    <label for='option-sep2022Q831' style=' padding: .5px; font-size: 1rem;'>
+      <input type='checkbox' name='option' id='option-sep2022Q831' style='transform: scale(1.5); margin-right: 10px; vertical-align: middle; margin-top: -1px;' />
+      \(10 \le a-b \le 20\).</label>
+  </div>
+  <hr />
+
+  <div id='block-sep2022Q832' style='padding: .5px;'>
+    <label for='option-sep2022Q832' style=' padding: .5px; font-size: 1rem;'>
+      <input type='checkbox' name='option' id='option-sep2022Q832' style='transform: scale(1.5); margin-right: 10px; vertical-align: middle; margin-top: -1px;' />
+      \(3b > a > 2b\).</label>
+  </div>
+  <hr />
+
+  <div id='block-sep2022Q833' style='padding: .5px;'>
+    <label for='option-sep2022Q833' style=' padding: .5px; font-size: 1rem;'>
+      <input type='checkbox' name='option' id='option-sep2022Q833' style='transform: scale(1.5); margin-right: 10px; vertical-align: middle; margin-top: -1px;' />
+      \(a > 3b\).</label>
+  </div>
+  <hr />
+
+  <div id='block-sep2022Q834' style='padding: .5px;'>
+    <label for='option-sep2022Q834' style=' padding: .5px; font-size: 1rem;'>
+      <input type='checkbox' name='option' id='option-sep2022Q834' style='transform: scale(1.5); margin-right: 10px; vertical-align: middle; margin-top: -1px;' />
+      \(a-b\) is divisible by \(5\).</label>
+  </div>
+  <hr />
+  <button type='button' onclick='displayAnswersep2022Q83()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+  <div id="rsep2022Q83Correct" class="riHide ri-alert-success">
+    Correct
+  </div>
+  <div id="rsep2022Q83Incorrect" class="riHide ri-alert-danger">
+    In-correct
+  </div>
+
+<p>
 
   <h3>Feb 2022 (Part C) Q-85</h3>
   <p>
@@ -1221,7 +1308,7 @@ Let \(F_n\) be the cardinality of the set \(A_n\). Which of the following statem
 <p>
   <h3>Dec 2012 (Part C) Q-84</h3>
   <p>
-  <h5>For positive integers \(m\), let \(\phi(m)\) denote the number of integer \(k\) such that \(1 \le k \le n\) and GCD$(k,m)=1\). Then which of the following statements are necessarily true? </h5>
+  <h5>For positive integers \(m\), let \(\phi(m)\) denote the number of integer \(k\) such that \(1 \le k \le n\) and GCD\((k,m)=1\). Then which of the following statements are necessarily true? </h5>
   <!-- <p>Choose 1 answer</p> -->
   <hr />
 
@@ -1433,6 +1520,58 @@ Let \(F_n\) be the cardinality of the set \(A_n\). Which of the following statem
 <!-- <a id='showanswer1'></a> -->
 <script>
   //    The function evaluates the answer and displays result
+  function displayAnswersep2022Q84() {
+    rsep2022Q84_addClass(document.getElementById('rsep2022Q84Correct'), 'riHide', );
+  rsep2022Q84_addClass(document.getElementById('rsep2022Q84Incorrect'), 'riHide', );
+    if (document.getElementById('option-sep2022Q841').checked
+    && document.getElementById('option-sep2022Q842').checked
+    && !document.getElementById('option-sep2022Q843').checked
+    && document.getElementById('option-sep2022Q844').checked
+    ) {
+      rsep2022Q84_removeClass(document.getElementById('rsep2022Q84Correct'), 'riHide', )
+    }
+    else {
+    rsep2022Q84_removeClass(document.getElementById('rsep2022Q84Incorrect'), 'riHide', );
+  }
+  }
+   function rsep2022Q84_hasClass(ele, cls) {
+  return !!ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+}
+function rsep2022Q84_addClass(ele, cls) {
+  if (!rsep2022Q84_hasClass(ele, cls)) ele.className += " " + cls;
+}
+    function rsep2022Q84_removeClass(ele, cls) {
+  if (rsep2022Q84_hasClass(ele, cls)) {
+    var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+    ele.className = ele.className.replace(reg, ' ');
+  }
+}
+  function displayAnswersep2022Q83() {
+    rsep2022Q83_addClass(document.getElementById('rsep2022Q83Correct'), 'riHide', );
+  rsep2022Q83_addClass(document.getElementById('rsep2022Q83Incorrect'), 'riHide', );
+    if (document.getElementById('option-sep2022Q831').checked
+    && !document.getElementById('option-sep2022Q832').checked
+    && !document.getElementById('option-sep2022Q833').checked
+    && document.getElementById('option-sep2022Q834').checked
+    ) {
+      rsep2022Q83_removeClass(document.getElementById('rsep2022Q83Correct'), 'riHide', )
+    }
+    else {
+    rsep2022Q83_removeClass(document.getElementById('rsep2022Q83Incorrect'), 'riHide', );
+  }
+  }
+   function rsep2022Q83_hasClass(ele, cls) {
+  return !!ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+}
+function rsep2022Q83_addClass(ele, cls) {
+  if (!rsep2022Q83_hasClass(ele, cls)) ele.className += " " + cls;
+}
+    function rsep2022Q83_removeClass(ele, cls) {
+  if (rsep2022Q83_hasClass(ele, cls)) {
+    var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+    ele.className = ele.className.replace(reg, ' ');
+  }
+}
   function displayAnswerfeb2022Q85() {
     rfeb2022Q85_addClass(document.getElementById('rfeb2022Q85Correct'), 'riHide', );
   rfeb2022Q85_addClass(document.getElementById('rfeb2022Q85Incorrect'), 'riHide', );
