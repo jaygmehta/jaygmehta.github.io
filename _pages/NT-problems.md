@@ -8,6 +8,81 @@ nav_order: 8
 toc:
   sidebar: left
 ---
+<head>
+<style type="text/css">
+.classname {
+	box-shadow: inset 0px 1px 0px 0px #bee2f9;
+	background-color: #63b8ee;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	text-indent: 0;
+	border: 0.5px solid #3866a3;
+	display:inline-block;
+	color: #14396a;
+	font-family: arial;
+	/* font-size: 15px; */
+  font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	height: 34px;
+	/* line-height: 34px; */
+  line-height: 24px;
+	/* width: 133px; */
+  width: 153px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #7cacde;
+	margin-top: 11px;
+}
+.classname:hover {
+	background-color: #468ccf;
+}
+.classname:active {
+	position: relative;
+	top: 1px;
+}
+.css-input {
+	margin-right: 25px;
+     padding: .85em 1em;
+     height: 40px;
+     width: 150px;	
+     border-width: 2px;
+     border-color: #504f4f;
+     background-color: #FFFFFF;
+     color: #000000;
+     border-style: solid;
+     border-radius: 0px;
+     box-shadow: -1px 2px 4px rgba(59,59,59,.86);
+     text-shadow: -50px 0px 0px rgba(66,66,66,.0);
+}
+ .css-input:focus {
+     outline:none;
+}
+.error-text{
+  background: #F8D7DA;
+  padding: 7px;
+  border-radius: 3px;
+  color: #8B3E46;
+  border: 1px solid #F5C6CB;
+  display: none;
+  margin-bottom: 7px;
+  font-weight: bold;
+  width: 90%;
+  text-align: center;
+}
+
+</style>
+
+
+<form  onsubmit="return passcheck()">
+	<div class="error-text">
+	</div>
+	<span style="font-size: 15px; font-weight: bold; font-family: 'Noto Sans', sans-serif; margin-right: 15px;">To download Workshop Solution Transcript,<br/> Enter Password: </span>
+	<input type="Password" class="css-input" required id="pass1">
+	<input type="submit" class="classname" value="Download Transcript!" >
+</form>
+<p>
 <html>
     <head>
     <style type="text/css">
@@ -2456,5 +2531,26 @@ function rjune2011Q28_addClass(ele, cls) {
     ele.className = ele.className.replace(reg, ' ');
   }
 }
+</script>
+
+<script>
+	// by https://www.gxfreee.com/
+	
+	const errorText = document.querySelector(".error-text");
+	var Password ="NumTh140224";
+	function passcheck(){
+		if (document.getElementById('pass1').value != Password) {
+			errorText.style.display = "block";
+      errorText.textContent = "Incorrect Password";
+			// errorText.textContent = "ERROR! Password Not Match.";
+			return false;
+		}
+		if (document.getElementById('pass1').value == Password) {
+			// window.open("https://www.google.com", "_blank");
+      window.open("https://www.dropbox.com/scl/fi/4vpbpnyf7xct2fbxpmj1r/SPU_Workshop_14Feb_2024.pdf?rlkey=hz7yf1rhw81o380qpxo1ciaff&dl=1");
+		}
+
+	}
+	// by https://www.gxfreee.com/
 </script>
 <html/>
