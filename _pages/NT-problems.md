@@ -23,7 +23,7 @@ toc:
 	color: #14396a;
 	font-family: arial;
 	/* font-size: 15px; */
-  font-size: 12px;
+  font-size: 13.5px;
 	font-weight: bold;
 	font-style: normal;
 	height: 34px;
@@ -78,7 +78,7 @@ toc:
 <form  onsubmit="return passcheck()">
 	<div class="error-text">
 	</div>
-	<span style="font-size: 15px; font-weight: bold; font-family: 'Noto Sans', sans-serif; margin-right: 15px;">To download Workshop Solution Transcript,<br/> Enter Password: </span>
+	<span style="font-size: 15px; font-weight: bold; font-family: 'Noto Sans', sans-serif; margin-right: 15px;">To download the Workshop (NWPSM-XII) Session Transcript, click below:<br/> Enter Password: </span>
 	<input type="Password" class="css-input" required id="pass1">
 	<input type="submit" class="classname" value="Download Transcript!" >
 </form>
@@ -2547,7 +2547,7 @@ function rjune2011Q28_addClass(ele, cls) {
 		}
 		if (document.getElementById('pass1').value == Password) {
 			// window.open("https://www.google.com", "_blank");
-      window.open("https://www.dropbox.com/scl/fi/4vpbpnyf7xct2fbxpmj1r/SPU_Workshop_14Feb_2024.pdf?rlkey=hz7yf1rhw81o380qpxo1ciaff&dl=1");
+      window.open("https://www.dropbox.com/scl/fi/hev7oyr6mzjy7mszk0ffn/SPU_Workshop_14Feb_2024_Session_Transcript.pdf?rlkey=dccm47d2nsebydkgmwizyflzs&dl=1");
 		}
 
 	}
