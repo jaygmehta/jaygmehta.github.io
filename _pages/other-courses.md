@@ -13,7 +13,8 @@ giscus_comments: false #true
 <h3 style="color: #4b9cd3;" id="mtts"><a href="https://mtts.org.in/">Courses in MTTS Programs</a></h3>
 <!-- MTTS -->
 <div class="card mt-3">
-  <div class="p-3"><div class="row">
+  <div class="p-3">
+    <div class="row">
       <div class="col-sm-10">
         <h5 id="2023" class="card-title"><a href="/news/initmath-nadaun-hp">InitMath Nadaun (Himachal Pradesh)</a></h5>
         <!-- <h6 class="card-subtitle font-italic">October 9-14, 2023 <br>
@@ -40,7 +41,7 @@ giscus_comments: false #true
           </div>
         </div> -->
       </li><br>
-    <div class="row">
+      <div class="row">
       <div class="col-sm-10">
         <h5 id="2023" class="card-title"><a href="/news/initmath-sagar">InitMath Sagar (MP)</a></h5>
         <!-- <h6 class="card-subtitle font-italic">September 4-9, 2023 <br>
@@ -56,6 +57,7 @@ giscus_comments: false #true
         </span>
       </div>
     </div>
+    </ul>
     <ul class="card-text font-weight-light list-group list-group-flush">
       <li class="list-group-item">
         <!-- <div class="row">
@@ -81,7 +83,9 @@ giscus_comments: false #true
         </span>
       </div>
     </div>
-    <li class="list-group-item">
+    </ul>
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">
         <!-- <div class="row">
           <div class="col-sm-9">
             In 23S, I developed a SAP (Simple-As-Possible computer) program simulator, which enabled me to autograde and create a SAP programming assignment.
@@ -105,7 +109,10 @@ giscus_comments: false #true
         </span>
       </div>
     </div>
-      <!-- <li class="list-group-item">
+    </ul>
+  </div>
+</div>
+<!-- <li class="list-group-item">
         <div class="row">
           <div class="col-sm-9">
             I added and wrote the autograder for a new part of the ALU implementation assignment, in which students implement flag detection in the ALU.
@@ -157,9 +164,6 @@ giscus_comments: false #true
           </div>
         </div>
       </li> -->
-    </ul>
-  </div>
-</div>
 <div class="card mt-3">
   <div class="p-3">
     <div class="row">
@@ -421,7 +425,7 @@ giscus_comments: false #true
   </div>
 </div> -->
 
-<h3 style="color: #4b9cd3;" id="mtts"> Courses in Other/Summer Programs </h3>
+<h3 style="color: #4b9cd3;" id="othersummerprogram"> Courses in Other/Summer Programs </h3>
 <div class="card mt-3">
   <div class="p-3">
     <div class="row">
@@ -523,6 +527,5 @@ giscus_comments: false #true
     </div>
   </div>
 </div>
-
 <!-- Separation before Giscus comments -->
 <br>
