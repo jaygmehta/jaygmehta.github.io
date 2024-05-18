@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-Two weeks at ICT Mumbai for the MTTS-2024 Summer Program
+Two weeks at ICT Mumbai for the MTTS-2024 Summer Program.
