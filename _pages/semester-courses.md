@@ -8,7 +8,7 @@ nav_order: 5
 display_categories: [Semester IV, Semester III, Semester II, Semester I]
 horizontal: false
 ---
-I use [Moodle](https://moodle.org/), a Learning Management System (LMS) or Course Management System (CMS), as a platform for my courses. If you are my current student in any of my courses, then to access the Moodle classroom of the course(s) <a href="https://jaysir.gnomio.com">click here</a> to login.
+I use [Moodle](https://moodle.org/), a Learning Management System (LMS) or Course Management System (CMS), as a platform for my courses. If you are my current student in any of my courses, then to access the Moodle classroom of the course(s) <a href="https://class.jaygmehta.com">click here</a> to login.
 
 <!-- pages/projects.md -->
 <div class="projects">
