@@ -39,6 +39,18 @@ toc:
   }) ();
 </script> -->
 
+<div id='h5p-container'></div>
+<script type="text/javascript" src="/assets/dist/main.bundle.js"></script>
+<script>
+const el = document.getElementById('h5p-container');
+const options = {
+  h5pJsonPath:  '/H5P/question-set-17',
+  frameJs: '/assets/dist/frame.bundle.js',
+  frameCss: '/assets/dist/styles/h5p.css',
+}
+new H5PStandalone.H5P(el, options);
+</script>
+
 ## Syllabus
 <!-- The below command span will be used if we change first line layout to page instead of post -->
 <!-- <span style="font-size:1.3em;"> **Syllabus** </span> -->
