@@ -32,6 +32,25 @@ giscus_comments: false #true
         </div> -->
       <div class="row">
       <div class="col-sm-10">
+        <h5 id="2024" class="card-title">OFCM2024</h5>
+        <!-- <h6 class="card-subtitle font-italic">September 4-9, 2023 <br>
+        Dr. Harisingh Gour Vishwavidyalaya, Sagar, Madhya Pradesh -->
+        <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
+        <h6 class="card-subtitle"><br> August 18 - August 31, 2024 <br>
+        Online Foundation Course in Mathematics (OFCM) 2024
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2024
+        </span>
+      </div>
+    </div>
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">
+      </li><br>  
+      <div class="row">
+      <div class="col-sm-10">
         <h5 id="2024" class="card-title"><a href="/news/mtts-2024">Level O at ICT Mumbai</a></h5>
         <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
         <h6 class="card-subtitle"><br> May 20 - June 01, 2024 <br>
@@ -44,6 +63,7 @@ giscus_comments: false #true
         </span>
       </div>
     </div>
+    </ul>
   </div>
 </div>
 <div class="card mt-3">
