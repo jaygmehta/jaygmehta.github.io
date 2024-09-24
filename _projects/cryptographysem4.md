@@ -78,6 +78,12 @@ Below are some algorithms we studied in our course Number Theory and Cryptograph
 
 ------------------
 
+### $$\#E(\mathbb F_p)$$ and Trace of Frobenius $$t_p$$
+<strong>Enter the value of $$p$$ for $$\mathbb F_p$$ and $$A, B$$ for $$E: Y^2 = X^3 + AX + B$$ to compute the number of points on $$E$$ and the trace of Frobenius $$t_p$$.</strong><br>
+<iframe src="https://trinket.io/embed/python3/7f613f3d62cb?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+------------------
+
 ## Lecture Notes
 <p>Download the PDF file of lecture notes <a href="/assets/pdf/PS04EMTH59.pdf" target="_blank"  class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p>
 
