@@ -72,15 +72,39 @@ Below are some algorithms we studied in our course Number Theory and Cryptograph
 
 ------------------
 
+### Miller-Rabin Primality Test
+<strong>Enter the value of $$n$$ to test whether it is composite by finding a Miller-Rabin witness.</strong><br>
+<iframe src="https://trinket.io/embed/python3/4fe1ec9fd7e5?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+------------------
+
 ### Pollard's $$p-1$$ Algorithm
 <strong>Enter the value of $$N=pq$$ (the product of two primes) to factorize.</strong><br>
 <iframe src="https://trinket.io/embed/python3/0a088fe3bf?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
 
 ------------------
 
+### Adding points on elliptic curve using equation of line
+<strong>Enter the value of $$A, B$$ for $$E: Y^2 = X^3 + AX + B$$ coordinates $$x_1, y_1$$ and $$x_2,y_2$$ of points $$P$$ and $$Q$$ respectively to compute $$P\oplus Q$$.</strong><br>
+<iframe src="https://trinket.io/embed/python3/c75d4adc9dd8?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+------------------
+
+### Adding points on elliptic curve over finite field using addition formula
+<strong>Enter the value of $$A, B$$ for $$E: Y^2 = X^3 + AX + B$$ coordinates $$x_1, y_1$$ and $$x_2,y_2$$ of points $$P$$ and $$Q$$ respectively to compute $$P+Q$$.</strong><br>
+<iframe src="https://trinket.io/embed/python3/a32e119a3230?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+------------------
+
 ### $$\#E(\mathbb F_p)$$ and Trace of Frobenius $$t_p$$
 <strong>Enter the value of $$p$$ for $$\mathbb F_p$$ and $$A, B$$ for $$E: Y^2 = X^3 + AX + B$$ to compute the number of points on $$E$$ and the trace of Frobenius $$t_p$$.</strong><br>
 <iframe src="https://trinket.io/embed/python3/7f613f3d62cb?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+------------------
+
+### Double and Add algorithm to compute $$nP$$ for $$P \in E(\mathbb F_p)$$
+<strong>Enter the value of $$p$$ for $$\mathbb F_p$$, input values of $$A, B$$ for $$E: Y^2 = X^3 + AX + B$$, coordinates $$x_1, y_1$$ of a point $$P$$ and the value of $$n$$ to compute $$nP$$.</strong><br>
+<iframe src="https://trinket.io/embed/python3/912163c11b52?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen="allowfullscreen"></iframe>
 
 ------------------
 
