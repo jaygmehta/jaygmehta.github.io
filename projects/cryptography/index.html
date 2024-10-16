@@ -158,8 +158,12 @@
 <li class="toc-entry toc-h3"><a href="#fast-powering-algorithm-fpa-or-square-and-multiply-algorithm-sam">Fast Powering Algorithm (FPA) or Square and Multiply Algorithm (SAM)</a></li>
 <li class="toc-entry toc-h3"><a href="#shankss-babystep-giantstep-algorithm">Shanks’s (Babystep Giantstep) Algorithm</a></li>
 <li class="toc-entry toc-h3"><a href="#chinese-remainder-theorem-crt">Chinese Remainder Theorem (CRT)</a></li>
+<li class="toc-entry toc-h3"><a href="#miller-rabin-primality-test">Miller-Rabin Primality Test</a></li>
 <li class="toc-entry toc-h3"><a href="#pollards-p-1-algorithm">Pollard’s \(p-1\) Algorithm</a></li>
+<li class="toc-entry toc-h3"><a href="#adding-points-on-elliptic-curve-using-equation-of-line">Adding points on elliptic curve using equation of line</a></li>
+<li class="toc-entry toc-h3"><a href="#adding-points-on-elliptic-curve-over-finite-field-using-addition-formula">Adding points on elliptic curve over finite field using addition formula</a></li>
 <li class="toc-entry toc-h3"><a href="#emathbb-f_p-and-trace-of-frobenius-t_p">\(\#E(\mathbb F_p)\) and Trace of Frobenius \(t_p\)</a></li>
+<li class="toc-entry toc-h3"><a href="#double-and-add-algorithm-to-compute-np-for-p-in-emathbb-f_p">Double and Add algorithm to compute \(nP\) for \(P \in E(\mathbb F_p)\)</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#lecture-notes">Lecture Notes</a></li>
@@ -242,15 +246,39 @@
 
 <hr>
 
+<h3 id="miller-rabin-primality-test">Miller-Rabin Primality Test</h3>
+<p><strong>Enter the value of \(n\) to test whether it is composite by finding a Miller-Rabin witness.</strong><br></p>
+<iframe src="https://trinket.io/embed/python3/4fe1ec9fd7e5?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+
+<hr>
+
 <h3 id="pollards-p-1-algorithm">Pollard’s \(p-1\) Algorithm</h3>
 <p><strong>Enter the value of \(N=pq\) (the product of two primes) to factorize.</strong><br></p>
 <iframe src="https://trinket.io/embed/python3/0a088fe3bf?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
 
 <hr>
 
+<h3 id="adding-points-on-elliptic-curve-using-equation-of-line">Adding points on elliptic curve using equation of line</h3>
+<p><strong>Enter the value of \(A, B\) for \(E: Y^2 = X^3 + AX + B\) coordinates \(x_1, y_1\) and \(x_2,y_2\) of points \(P\) and \(Q\) respectively to compute \(P\oplus Q\).</strong><br></p>
+<iframe src="https://trinket.io/embed/python3/c75d4adc9dd8?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+
+<hr>
+
+<h3 id="adding-points-on-elliptic-curve-over-finite-field-using-addition-formula">Adding points on elliptic curve over finite field using addition formula</h3>
+<p><strong>Enter the value of \(A, B\) for \(E: Y^2 = X^3 + AX + B\) coordinates \(x_1, y_1\) and \(x_2,y_2\) of points \(P\) and \(Q\) respectively to compute \(P+Q\).</strong><br></p>
+<iframe src="https://trinket.io/embed/python3/a32e119a3230?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+
+<hr>
+
 <h3 id="emathbb-f_p-and-trace-of-frobenius-t_p">\(\#E(\mathbb F_p)\) and Trace of Frobenius \(t_p\)</h3>
 <p><strong>Enter the value of \(p\) for \(\mathbb F_p\) and \(A, B\) for \(E: Y^2 = X^3 + AX + B\) to compute the number of points on \(E\) and the trace of Frobenius \(t_p\).</strong><br></p>
 <iframe src="https://trinket.io/embed/python3/7f613f3d62cb?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+
+<hr>
+
+<h3 id="double-and-add-algorithm-to-compute-np-for-p-in-emathbb-f_p">Double and Add algorithm to compute \(nP\) for \(P \in E(\mathbb F_p)\)</h3>
+<p><strong>Enter the value of \(p\) for \(\mathbb F_p\), input values of \(A, B\) for \(E: Y^2 = X^3 + AX + B\), coordinates \(x_1, y_1\) of a point \(P\) and the value of \(n\) to compute \(nP\).</strong><br></p>
+<iframe src="https://trinket.io/embed/python3/912163c11b52?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen="allowfullscreen"></iframe>
 
 <hr>
 
@@ -274,7 +302,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2024 Jay  Mehta. <br> Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.<br>
-Last updated: October 02, 2024.
+Last updated: October 16, 2024.
       </div>
     </footer>
 
