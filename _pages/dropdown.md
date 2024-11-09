@@ -12,7 +12,7 @@ children:
       permalink: /other-courses/
     - title: divider
     - title: invited talks/lectures
-      permalink: # /talks-lectures/
+      permalink: /talks-lectures/
     # - title: divider
     # - title: other lectures
     #   permalink: /teaching1/
