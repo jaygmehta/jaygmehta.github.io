@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>quiz2 | Dr. Jay Mehta</title>
+    <title>invited talks/lectures | Dr. Jay Mehta</title>
     <meta name="author" content="Jay  Mehta">
-    <meta name="description" content="For practice">
+    <meta name="description" content="Other invited lectures/seminars/talks I delivered in various workshops, conferences, etc.">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -32,16 +32,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
 
     
-    <!-- Sidebar Table of Contents -->
-    <link href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" rel="stylesheet">
-    
 
     <!-- Styles -->
     
     <link rel="shortcut icon" href="/assets/img/j.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https:jaygmehta.com/_pages/NT-quiz%20copy/">
+    <link rel="canonical" href="https:jaygmehta.com/talks-lectures/">
 
     <!-- Dark Mode -->
     
@@ -103,7 +100,7 @@
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="/other-courses/">other courses</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="">invited talks/lectures</a>
+                  <a class="dropdown-item" href="/talks-lectures/">invited talks/lectures</a>
                 </div>
               </li>
               <li class="nav-item ">
@@ -134,129 +131,52 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        
-        <div class="row">
-          <!-- sidebar, which will move to the top on a small screen -->
-          <div class="col-sm-3">
-            <nav id="toc-sidebar" class="sticky-top"></nav>
-          </div>
-          <!-- main content area -->
-          <div class="col-sm-9">
-            <!-- page.html -->
+        <!-- page.html -->
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">quiz2</h1>
-            <p class="post-description">For practice</p>
+            <h1 class="post-title">invited talks/lectures</h1>
+            <p class="post-description">Other invited lectures/seminars/talks I delivered in various workshops, conferences, etc.</p>
           </header>
 
         </div>
         <article>
           
           <div id="markdown-content">
-            <h2 id="first">First</h2>
+            <table data-click-to-select="true" data-height="650" data-width="100%" data-pagination="true" data-search="true" data-toggle="table" data-url="/assets/json/talks-lectures.json">
+  <thead>
+    <tr>
+      <!-- <th data-checkbox="true"></th> -->
+      <th data-field="date" data-width="135" data-halign="left" data-valign="middle" data-align="left" data-sortable="true">Date</th>
+      <th data-field="title" data-field-align="center" data-halign="left" data-align="left" data-valign="middle" data-sortable="true">Title</th>
+      <th data-field="workshop" data-halign="left" data-align="left" data-valign="middle" data-sortable="true">Conference/ Workshop</th>
+      <th data-field="organizers" data-halign="left" data-align="left" data-valign="middle" data-sortable="true">Organizers</th>
+      <th data-field="venue" data-halign="left" data-align="left" data-valign="middle" data-sortable="true">Venue/ Location</th>
+    </tr>
+  </thead>
+</table>
 
-    
-    <style type="text/css">
-        .riHide {
-  display: none;
-}
-.ri-alert-success {
-  position: relative;
-  padding: .75rem 1.25rem;
-  margin: 1rem;
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  color: #155724;
-  background-color: #d4edda;
-  border-color: #c3e6cb;
-}
-.ri-alert-danger {
-   position: relative;
-  padding: .75rem 1.25rem;
-  margin: 1rem;
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  color: #ce4f4f;
-  background-color: #edd4d4;
-  border-color: #edd4d4;
-}
-</style>
-
-    
-<div style="margin:10px;">
-  <h2>
-    Choose 3 of the best selling albums in Australia?
-  </h2>
-  <form>
-    <input type="checkbox" id="riItem1"> Bat out of Hell - Meatloaf<br>
-    <input type="checkbox" id="riItem2"> Whispering Jack John Farmham<br>
-    <input type="checkbox" id="riItem3"> 5 to 4 - Empire Between<br>
-    <input type="checkbox" id="riItem4"> Back in Black - AC/DC<br>
-  </form>
-  <button id="riCheckanswer">
-    Check Answer
-  </button>
-  <div id="riCorrect" class="riHide ri-alert-success">
-    Correct
-  </div>
-  <div id="riIncorrect" class="riHide ri-alert-danger">
-    In-correct
-  </div>
-</div>
-        <script language="JavaScript" type="text/javascript">
-(function() {
-  // your page initialization code here
-  // the DOM will be available here
-  var e = document.getElementById('riCheckanswer');
-  e.addEventListener('click', function(event) {
-    fnCheckAnswer()
-  });
-})();
-function fnCheckAnswer() {
-  ri_addClass(document.getElementById('riCorrect'), 'riHide', );
-  ri_addClass(document.getElementById('riIncorrect'), 'riHide', );
-  if (
-    document.getElementById('riItem1').checked &&
-    document.getElementById('riItem2').checked &&
-    !document.getElementById('riItem3').checked &&
-    document.getElementById('riItem4').checked
-  ) {
-    ri_removeClass(document.getElementById('riCorrect'), 'riHide', );
-  } else {
-    ri_removeClass(document.getElementById('riIncorrect'), 'riHide', );
-  }
-}
-function ri_hasClass(ele, cls) {
-  return !!ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
-}
-function ri_addClass(ele, cls) {
-  if (!ri_hasClass(ele, cls)) ele.className += " " + cls;
-}
-function ri_removeClass(ele, cls) {
-  if (ri_hasClass(ele, cls)) {
-    var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
-    ele.className = ele.className.replace(reg, ' ');
-  }
-}
-        </script>   
-    
-
-
-<h2 id="second">Second</h2>
+<!-- <table id="talks-lectures" data-toggle="table" data-url="/assets/json/talks-lectures.json" width="500">
+  <thead>
+    <tr>
+      <th data-field="date">Date</th>
+      <th data-field="title">Title</th>
+      <th data-field="workshop">Conference/ Workshop</th>
+      <th data-field="organizers">Organizers</th>
+      <th data-field="venue">Venue/ Location</th>
+    </tr>
+  </thead>
+</table> -->
 
           </div>
         </article>
-          </div>
-        </div>
-        
       
     </div>
 
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2024 Jay  Mehta. <br> Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.<br>
-Last updated: November 07, 2024.
+Last updated: November 09, 2024.
       </div>
     </footer>
 
@@ -276,9 +196,6 @@ Last updated: November 07, 2024.
   <!-- Medium Zoom JS -->
   <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
   <script defer src="/assets/js/zoom.js"></script>
-  <!-- Sidebar Table of Contents -->
-  <script defer src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
-
 
   <!-- Bootstrap Table -->
   <script defer src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.js"></script>

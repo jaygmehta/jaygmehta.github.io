@@ -1,0 +1,269 @@
+[
+    {
+        "date": "Feb 14, 2024",
+        "title": "Problems on Number Theory",
+        "workshop": "National Workshop on Problem Solving-XII",
+        "organizers": "Department of Mathematics, Sardar Patel University",
+        "venue": "Vallabh Vidyanagar, Gujarat, India"
+    },
+    {
+        "date": "Feb 24, 2023",
+        "title": "Problems on Number Theory",
+        "workshop": "National Workshop on Problem Solving-XI",
+        "organizers": "Department of Mathematics, Sardar Patel University",
+        "venue": "Vallabh Vidyanagar, Gujarat, India"
+    },
+    {
+        "date": "Dec 22, 2022",
+        "title": "Cryptography",
+        "workshop": "National Mathematics Day Celebration",
+        "organizers": "V.P. & R.P.T.P. Science College",
+        "venue": "Vallabh Vidyanagar, Gujarat, India"
+    },
+    {
+        "date": "Aug 06, 2022 & <br> Aug 13, 2022",
+        "title": "Foundations in Mathematics",
+        "workshop": "Online Student Development Program (OSDP) in \"Geometric Approach in Real Analysis\"",
+        "organizers": "Siddharth Governement College",
+        "venue": "(Online) Nadaun, Himachal Pradesh, India"
+    },
+    {
+        "date": "July 22, 2022",
+        "title": "Group Theory",
+        "workshop": "A One Week Advanced Level Bridge Course in Mathematics",
+        "organizers": "Department of Mathematics, Ganpat University",
+        "venue": "(Online) Mehsana, Gujarat, India"
+    }
+    ,
+    {
+        "date": "June 03, 2021",
+        "title": "Problems on Number Theory",
+        "workshop": "Problem Solving in Mathematics (CSIR UGC NET Prospective)",
+        "organizers": "Dr. Subhash Science College",
+        "venue": "(Online) Junagadh, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Dec 22, 2020",
+        "title": "Cryptography",
+        "workshop": "National Mathematics Day Celebration",
+        "organizers": "Government Science College",
+        "venue": "(Online) Gandhinagar, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Sep 15, 2022",
+        "title": "Cryptography",
+        "workshop": "-- (Invited Talk) --",
+        "organizers": "St. Albert's College (Autonomous)",
+        "venue": "(Online) Ernakulum, Kerala, India"
+    }
+    ,
+    {
+        "date": "Sep 04, 2020 & <br> Sep 05, 2020",
+        "title": "Topics in Linear Algebra",
+        "workshop": "One-Week Advanced Level Bridge Course in Mathematics",
+        "organizers": "Department of Mathematics, Ganpat University",
+        "venue": "(Online) Mehsana, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Feb 18, 2020",
+        "title": "Problems on irreducibility of polynomials",
+        "workshop": "National Workshop on Problem Solving-X",
+        "organizers": "Department of Mathematics, Sardar Patel University",
+        "venue": "Vallabh Vidyanagar, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Feb 07, 2020",
+        "title": "Introduction to Cryptography: Origin, History, Overview",
+        "workshop": "Science Symposium (Sciensium-2020)",
+        "organizers": "Dr. Subhash Science College",
+        "venue": "Junagadh, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Dec 29, 2019",
+        "title": "Gaussian primes as sets characterizing additive arithmetic functions",
+        "workshop": "2nd P.C. Vaidya National Conference onMathematical Sciences",
+        "organizers": "Maharaja Krishnakumarsinhji Bhavnagar University (MKBU)",
+        "venue": "Bhavnagar, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Dec 18, 2019",
+        "title": "Elliptic Curves and their Applications in Cryptography",
+        "workshop": "International Conference on History and Development in Mathematics, with Applications in Science and Technology (ICHDMAST-2019)",
+        "organizers": "Madhuben and Bhanubhai Institute of Technology (MBIT)",
+        "venue": "Vallabh Vidyanagar, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Oct 24, 2019",
+        "title": "Set of uniqueness for additive arithmetic functions",
+        "workshop": "-- (Invited Talk) --",
+        "organizers": "Indian Institute of Science Education and Research (IISER) Berhampur",
+        "venue": "Berhampur, Odisha, India"
+    }
+    ,
+    {
+        "date": "Aug 31, 2019",
+        "title": "Number Theory",
+        "workshop": "One Day Workshop on Problem Solving for NET/ GSET",
+        "organizers": "Gujarat Arts and Science College",
+        "venue": "Ahmedabad, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Aug 28, 2019",
+        "title": "An introduction to Cryptography and its applications",
+        "workshop": "-- (Invited Talk) --",
+        "organizers": "M.U. Patel Technical High School",
+        "venue": "Vallabh Vidyanagar, Gujarat, India"
+    }
+    ,
+    {
+        "date": "May 11, 2019",
+        "title": "Applications of the Lerch zeta functions",
+        "workshop": "International Conference on \"2019 Sanmenxia Meeting on New Energy Technology-Vehicle Development\"",
+        "organizers": "SUDA Transportation Energy Saving Technology Research Institute",
+        "venue": "Sanmenxia, China"
+    }
+    ,
+    {
+        "date": "Dec 29, 2018",
+        "title": "Some Problems from Number Theory and Linear Algebra",
+        "workshop": "5th State Level Workshop on Problem Solving & Enrichment in Mathematics",
+        "organizers": "St. Xavier's College",
+        "venue": "Ahmedabad, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Dec 24, 2018 & <br> Dec 25, 2018",
+        "title": "LaTeX",
+        "workshop": "State level Workshop on LaTeX",
+        "organizers": "V.S. Patel College of Arts and Science",
+        "venue": "Bilimora, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Dec 08, 2018",
+        "title": "An introduction to Cryptography",
+        "workshop": "Institute Colloquium",
+        "organizers": "Indian Institute of Science Education and Research (IISER) Berhampur",
+        "venue": "Berhampur, Odisha, India"
+    }
+    ,
+    {
+        "date": "Sep 03, 2018",
+        "title": "Set of Uniqueness of Shifted Gaussian primes",
+        "workshop": "International Conference on \"EVs in Green Grid - Many a little makes a miracle\"",
+        "organizers": "SUDA Transportation Energy Saving Technology Research Institute",
+        "venue": "Sanmenxia, China"
+    }
+    ,
+    {
+        "date": "Aug 04, 2018",
+        "title": "Keys to Prepare for CSIR-NET Mathematical Science Examination",
+        "workshop": "One Day National Seminar on \"Keys to Prepare for CSIR-NET Mathematical Science Examination\"",
+        "organizers": "Vadodara Institute of Engineering (VIER)",
+        "venue": "Vadodara, Gujarat, India"
+    },
+    {
+        "date": "May 06, 2018",
+        "title": "Problems on Number Theory and Group Theory",
+        "workshop": "National Workshop on Problem Solving-IX",
+        "organizers": "Department of Mathematics, Sardar Patel University",
+        "venue": "Vallabh Vidyanagar, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Jan 29, 2018",
+        "title": "A Basic Introduction to Cryptography",
+        "workshop": "-- (Invited Talk) --",
+        "organizers": "M.B. Patel Science College",
+        "venue": "Anand, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Jan 20, 2018",
+        "title": "A Brief Introduction to Cryptography",
+        "workshop": "Great Russian Mathematician Sofia Kovalevsky's birthday on 15th January",
+        "organizers": "Navyug Science College",
+        "venue": "Surat, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Dec 22, 2017",
+        "title": "Cryptography: An Introduction",
+        "workshop": "National Mathematics Day Celebration",
+        "organizers": "V.P. & R.P.T.P. Science College",
+        "venue": "Vallabh Vidyanagar, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Nov 30, 2017",
+        "title": "Problem Solving Techniques in Group Theory and Number Theory",
+        "workshop": "National Workshop on \"Problem solving techniques in mathematics - II\"",
+        "organizers": "Department of Mathematics, The M.S. University of Baroda",
+        "venue": "Vadodara, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Aug 30, 2017",
+        "title": "Cryptography: beginners' introduction",
+        "workshop": "-- (Invited Talk) --",
+        "organizers": "N.V. Patel College of Pure and Applied Sciences",
+        "venue": "Vallabh Vidyanagar, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Aug 16, 2017",
+        "title": "Problem Solving - an essential skill for doing Mathematics",
+        "workshop": "Popular Lecture",
+        "organizers": "V.S. Patel College of Arts and Science",
+        "venue": "Bilimora, Gujarat, India"
+    }
+    ,
+    {
+        "date": "May 23, 2017 & <br> May 24, 2017",
+        "title": "Problems in Number Theory and Linear Algebra",
+        "workshop": "Workshop on Problem Solving Techniques in Mathematics",
+        "organizers": "V.S. Patel College of Arts and Science",
+        "venue": "Bilimora, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Jan 25, 2017 & <br> Jan 30, 2017",
+        "title": "Problems in Number Theory",
+        "workshop": "Workshop on Problem Solving Techniques in Mathematics",
+        "organizers": "Department of Mathematics, Sardar Patel University",
+        "venue": "Vallabh Vidyanagar, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Jan 16, 2017",
+        "title": "Set of uniqueness of shifted Gaussian primes",
+        "workshop": "National Seminar on Functional Analysis and Harmonic Analysis",
+        "organizers": "Department of Mathematics, Sardar Patel University",
+        "venue": "Vallabh Vidyanagar, Gujarat, India"
+    }
+    ,
+    {
+        "date": "Dec 25, 2016",
+        "title": "Cryptography: A quick introduction",
+        "workshop": "53rd annual conference of Gujarat Ganit Mandal",
+        "organizers": "Department of Mathematics, Ganpat University",
+        "venue": "Mehsana, Gujarat, India"
+    }
+    ,
+    {
+        "date": "July 14, 2014",
+        "title": "An Introduction to Cryptography",
+        "workshop": "-- (Invited Talk) --",
+        "organizers": "Kinki University",
+        "venue": "Osaka, Japan"
+    }
+    
+]
