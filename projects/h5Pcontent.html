@@ -1,7 +1,74 @@
-<div id="h5p-container-2"></div>
+
+<h1>Type: Interactive Video 1</h1>
+<h2>An interactive video, already pre-uploaded YouTube video with added questions/intereactive tasks</h2>
+<div id="h5p-container-2" style=
+"border: 2px dashed red; 
+padding: 20px; text-align: center; 
+max-width: 800px; margin: 0 auto;"></div>
 <script>
   (function() {
     let h5pContainer = document.getElementById("h5p-container-2"); // div tag ID
+    let h5pJsonPath = '/H5P/interactive-video-lecture-02-3'; // YOUR H5P FILE (THIS IS A FOLDER PATH)
+    if (!document.getElementById('h5p-bundle-js')) {
+      let script = document.createElement('script');
+      script.id = 'h5p-bundle-js';
+      script.src = '/libs/h5p/main.bundle.js';
+      h5pContainer.parentNode.insertBefore(script, h5pContainer.nextSibling);
+    }
+    window.addEventListener("load", function() {
+      const options = {
+        h5pJsonPath: h5pJsonPath,
+        frameJs: '/libs/h5p/frame.bundle.js',
+        frameCss: '/libs/h5p/styles/h5p.css',
+      }
+      new H5PStandalone.H5P(h5pContainer, options);
+    });
+  }) ();
+</script>
+
+<br>
+<br>
+<br>
+<h1>Type: Interactive Video 2</h1>
+<h2>another interactive video as above</h2>
+<div id="h5p-container-3" style=
+"border: 2px dashed red; 
+padding: 20px; text-align: center; 
+max-width: 800px; margin: 0 auto;"></div>
+<script>
+  (function() {
+    let h5pContainer = document.getElementById("h5p-container-3"); // div tag ID
+    let h5pJsonPath = '/H5P/interactive-video-lecture-08-3'; // YOUR H5P FILE (THIS IS A FOLDER PATH)
+    if (!document.getElementById('h5p-bundle-js')) {
+      let script = document.createElement('script');
+      script.id = 'h5p-bundle-js';
+      script.src = '/libs/h5p/main.bundle.js';
+      h5pContainer.parentNode.insertBefore(script, h5pContainer.nextSibling);
+    }
+    window.addEventListener("load", function() {
+      const options = {
+        h5pJsonPath: h5pJsonPath,
+        frameJs: '/libs/h5p/frame.bundle.js',
+        frameCss: '/libs/h5p/styles/h5p.css',
+      }
+      new H5PStandalone.H5P(h5pContainer, options);
+    });
+  }) ();
+</script>
+
+<br>
+<br>
+<br>
+<h1>Type: Question Set</h1>
+<h2>random 5 MCQ from a set of questions, all are required to be attempted </h2>
+
+<div id="h5p-container-6" style=
+"border: 2px dashed red; 
+padding: 20px; text-align: center; 
+max-width: 800px; margin: 0 auto;"></div>
+<script>
+  (function() {
+    let h5pContainer = document.getElementById("h5p-container-6"); // div tag ID
     let h5pJsonPath = '/H5P/question-set-61'; // YOUR H5P FILE (THIS IS A FOLDER PATH)
     if (!document.getElementById('h5p-bundle-js')) {
       let script = document.createElement('script');
@@ -22,7 +89,43 @@
 <br>
 <br>
 <br>
-<div id="h5p-container-1"></div>
+<h1>Type: Single Choice Set Question</h1>
+<h2>all MCQs (<strong>single correct answer</strong>) in the set are listed, one has to attempt all, answers are displayed after attempting each question</h2>
+
+<div id="h5p-container-5" style="border: 2px dashed red; 
+padding: 20px; text-align: center; 
+max-width: 800px; margin: 0 auto;"></div>
+<script>
+  (function() {
+    let h5pContainer = document.getElementById("h5p-container-5"); // div tag ID
+    let h5pJsonPath = '/H5P/single-choice-set-10'; // YOUR H5P FILE (THIS IS A FOLDER PATH)
+    if (!document.getElementById('h5p-bundle-js')) {
+      let script = document.createElement('script');
+      script.id = 'h5p-bundle-js';
+      script.src = '/libs/h5p/main.bundle.js';
+      h5pContainer.parentNode.insertBefore(script, h5pContainer.nextSibling);
+    }
+    window.addEventListener("load", function() {
+      const options = {
+        h5pJsonPath: h5pJsonPath,
+        frameJs: '/libs/h5p/frame.bundle.js',
+        frameCss: '/libs/h5p/styles/h5p.css',
+      }
+      new H5PStandalone.H5P(h5pContainer, options);
+    });
+  }) ();
+</script>
+
+<br>
+<br>
+<br>
+<h1>Type: Column Question</h1>
+<h2>all MCQs in the set are listed, one may attempt one or more whichever one chooses</h2>
+
+
+<div id="h5p-container-1" style="border: 2px dashed red; 
+padding: 20px; text-align: center; 
+max-width: 800px; margin: 0 auto;"></div>
 <script>
   (function() {
     let h5pContainer = document.getElementById("h5p-container-1"); // div tag ID
