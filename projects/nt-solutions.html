@@ -1,0 +1,1598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Dr. Jay Mehta" />
+  <meta name="date" content="2025-01-04" />
+  <title>Solutions to Number Theory NET Questions</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Solutions to Number Theory NET Questions</h1>
+  <p class="author">
+Dr. Jay Mehta
+  </p>
+  <p class="date">January 04, 2025</p>
+</div>
+<div id="net-dec-2023-b" class="slide section level1">
+<h1><strong>NET DEC 2023 (B):</strong></h1>
+<p>Which one of the following is equal to <span
+class="math inline">\(1^{37}+2^{37}+3^{37}+\cdots + 88^{37}\)</span> in
+<span class="math inline">\(\mathbb Z/89\mathbb Z\)</span>?</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(88\)</span> <br></li>
+<li><span class="math inline">\(-88\)</span> <br></li>
+<li><span class="math inline">\(2\)</span> <br></li>
+<li><span class="math inline">\(0\)</span> <br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>Note that <span class="math inline">\(88 \equiv -1 \pmod{89}\)</span>
+and so <span class="math inline">\(88^{37} \equiv (-1)^{37} \equiv -1
+\pmod{89}\)</span>. Therefore, <span class="math inline">\(1^{37} +
+88^{37} \equiv 0 \pmod{89}\)</span>. Similarly, <span
+class="math inline">\(87 \equiv (-2) \pmod{89}\)</span> and so <span
+class="math inline">\(88^{37} \equiv (-2)^{37} \equiv - 2^{37}
+\pmod{89}\)</span>. Therefore, <span class="math inline">\(2^{37} +
+87^{37} \equiv 0 \pmod{89}\)</span>. Thus, <span
+class="math display">\[1^{37}+2^{37}+3^{37}+\cdots + 88^{37} \equiv 0
+\pmod{89}.\]</span></p>
+</div>
+<div id="net-dec-2023-c" class="slide section level1">
+<h1><strong>NET DEC 2023 (C):</strong></h1>
+<p>Let <span class="math inline">\(n \in \mathbb Z\)</span> be such that
+<span class="math inline">\(n\)</span> is congruent to <span
+class="math inline">\(1 \mod 7\)</span> and <span
+class="math inline">\(n\)</span> is congruent to <span
+class="math inline">\(4 \mod{15}\)</span>. Which of the following
+statements are true.</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(n\)</span> is congruent to <span
+class="math inline">\(1\)</span> mod <span
+class="math inline">\(3\)</span><br></li>
+<li><span class="math inline">\(n\)</span> is congruent to <span
+class="math inline">\(1\)</span> mod <span
+class="math inline">\(35\)</span><br></li>
+<li><span class="math inline">\(n\)</span> is congruent to <span
+class="math inline">\(1\)</span> mod <span
+class="math inline">\(21\)</span><br></li>
+<li><span class="math inline">\(n\)</span> is congruent to <span
+class="math inline">\(1\)</span> mod <span
+class="math inline">\(5\)</span><br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>We solve this by CRT. Since <span class="math inline">\(n \equiv 1
+\pmod 7\)</span>, <span class="math inline">\(n\)</span> is of the form
+<span class="math inline">\(n=7k+1\)</span>. Substituting this value in
+the second congruence, we have <span class="math inline">\(7k+1 \equiv 4
+\mod{15}\)</span>. So <span class="math inline">\(7k \equiv 3
+\pmod{15}\)</span>. Multiplying both sides by <span
+class="math inline">\(2\)</span>, we get <span class="math inline">\(14k
+\equiv -k \equiv 6 \pmod{15}\)</span> and so <span
+class="math inline">\(k \equiv -6 \equiv 9 \pmod{15}\)</span>.
+Substituting this value of <span class="math inline">\(k\)</span> in
+<span class="math inline">\(n\)</span>, we get <span
+class="math display">\[n = 7k+1 \equiv 7 \cdot 9 + 1 \equiv 64
+\pmod{15\cdot 7} \equiv 64 \pmod{105}.\]</span> Therefore, <span
+class="math inline">\(n = 64 + 105m\)</span>, <span
+class="math inline">\(m \in \mathbb Z\)</span>. Hence, <span
+class="math inline">\(n \equiv 1 \pmod{3}\)</span>, <span
+class="math inline">\(n \equiv 29 \pmod{35}\)</span>, <span
+class="math inline">\(n \equiv 1 \pmod{21}\)</span>, and <span
+class="math inline">\(n \equiv 4 \pmod{5}\)</span>.</p>
+</div>
+<div id="net-sep-2022-c" class="slide section level1">
+<h1><strong>NET SEP 2022 (C):</strong></h1>
+<p>Let <span class="math inline">\(a\)</span> and <span
+class="math inline">\(b\)</span> be positive integers with <span
+class="math inline">\(a &gt; b\)</span> and <span
+class="math inline">\(a+b=24\)</span>. Suppose that the following
+congruences have a common integer solution. <span
+class="math display">\[2x \equiv 3a \pmod 5, \ x \equiv 4b \pmod
+5.\]</span> Which of the following statements are true?</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(10 \le a-b \le 20\)</span>.<br></li>
+<li><span class="math inline">\(3b &gt; a &gt; 2b\)</span>.<br></li>
+<li><span class="math inline">\(a &gt; 3b\)</span>.<br></li>
+<li><span class="math inline">\(a-b\)</span> is divisible by <span
+class="math inline">\(5\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>Multiplying the congruence <span class="math inline">\(2x \equiv 3a
+\pmod 5\)</span> by <span class="math inline">\(3\)</span> (inverse of
+<span class="math inline">\(2\)</span> modulo <span
+class="math inline">\(5\)</span>) on both the sides we get, <span
+class="math inline">\(x \equiv 4a \pmod 5\)</span>. So from the second
+congruence, we have <span class="math inline">\(4a \equiv 4b \pmod
+5\)</span>, i.e., <span class="math inline">\(5 \mid 4(a-b)\)</span>.
+Since <span class="math inline">\(5 \nmid 4\)</span>, we can say that
+<span class="math inline">\(5 \mid a-b\)</span> and hence option (d)
+correct.<br></p>
+<p>Now, <span class="math inline">\(a-b = 5y\)</span>. Since <span
+class="math inline">\(a+b = 24\)</span>, either both are odd or both
+<span class="math inline">\(a\)</span> and <span
+class="math inline">\(b\)</span> are even. Then <span
+class="math inline">\(a-b\)</span> is even and so <span
+class="math inline">\(a-b = 5y\)</span>, where <span
+class="math inline">\(y = 0,2,4,6,\ldots\)</span>. Since <span
+class="math inline">\(a&gt;b\)</span>, <span
+class="math inline">\(y=0\)</span> is not possible. Also, <span
+class="math inline">\(a\)</span> and <span
+class="math inline">\(b\)</span> being positive integers such that <span
+class="math inline">\(a+b = 24\)</span>, <span class="math inline">\(y
+\ge 6\)</span> is not possible. Hence, <span class="math inline">\(y =
+2\)</span> or <span class="math inline">\(y = 4\)</span> and so <span
+class="math inline">\(10 \le a-b \le 20\)</span>. This shows option (a)
+is correct.<br></p>
+<p>Finally, if <span class="math inline">\(y = 2\)</span>, then <span
+class="math inline">\(a - b = 10\)</span> and <span
+class="math inline">\(a+b = 24\)</span> implies <span
+class="math inline">\(2a = 34\)</span> and so <span
+class="math inline">\(a = 17\)</span> and <span class="math inline">\(b
+= 7\)</span>. Thus, <span class="math inline">\(a &gt; 3b\)</span> is
+not possible, i.e., option (c) is false. Similarly, if <span
+class="math inline">\(y = 4\)</span>, then <span class="math inline">\(a
+-b = 20\)</span> and <span class="math inline">\(a+b = 24\)</span>
+implies <span class="math inline">\(a = 22\)</span> and <span
+class="math inline">\(b = 2\)</span>. Hence, <span
+class="math inline">\(3b &gt; a\)</span> is not possible, i.e., option
+(b) is false.</p>
+</div>
+<div id="net-sep-2022-c-1" class="slide section level1">
+<h1><strong>NET SEP 2022 (C):</strong></h1>
+<p>Consider the function <span class="math inline">\(f(n) = n^5 - 2n^3 +
+n\)</span>, where <span class="math inline">\(n\)</span> is a positive
+integer. Which of the following statements are true?</p>
+<ol style="list-style-type: lower-alpha">
+<li>For every positive integer <span class="math inline">\(k\)</span>,
+there exists a positive integer <span class="math inline">\(n\)</span>
+such that <span class="math inline">\(f(n)\)</span> is divisible by
+<span class="math inline">\(2^k\)</span>.<br></li>
+<li><span class="math inline">\(f(n)\)</span> is even for every integer
+<span class="math inline">\(n \ge 20\)</span>.<br></li>
+<li>For every integer <span class="math inline">\(n \ge 20\)</span>,
+either <span class="math inline">\(f(n)\)</span> is odd or <span
+class="math inline">\(f(n)\)</span> is divisible by <span
+class="math inline">\(4\)</span>.<br></li>
+<li>For every odd integer <span class="math inline">\(n \ge 21\)</span>,
+<span class="math inline">\(f(n)\)</span> is divisible by <span
+class="math inline">\(64\)</span>.</li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>Observe that <span class="math display">\[f(n) = n^5 - 2n^3 + n = n
+(n^4 - 2n^2 + 1) = n (n^2-1)^2 = n (n-1)^2 (n+1)^2.\]</span> Note that
+<span class="math inline">\(n \mid f(n)\)</span>. Let <span
+class="math inline">\(k \in \mathbb N\)</span>, taking <span
+class="math inline">\(n = 2^k\)</span>, we have <span
+class="math inline">\(2^k \mid f(n) = f(2^k)\)</span>. Thus, option (a)
+is true.<br></p>
+<p>If <span class="math inline">\(n\)</span> is odd, then <span
+class="math inline">\((n-1)\)</span>, <span
+class="math inline">\((n+1)\)</span> are even and hence <span
+class="math inline">\(f(n)\)</span> is even. Clearly, if <span
+class="math inline">\(n\)</span> is even, then <span
+class="math inline">\(f(n)\)</span> is even. Thus, option (b) is
+correct.<br></p>
+<p>Option (c) is false because for <span class="math inline">\(n =
+22\)</span>, <span class="math inline">\(f(n) = 22 (21)^2
+(23)^2\)</span> is neither odd nor divisible by <span
+class="math inline">\(4\)</span> (it is only divisible by <span
+class="math inline">\(2\)</span>). Similarly, <span
+class="math inline">\(n = 26, 30\)</span>, etc. works.<br></p>
+<p>Let <span class="math inline">\(n\)</span> be an odd integer. Then
+<span class="math inline">\(n = 4k+1\)</span> or <span
+class="math inline">\(n=4k+3\)</span>. If <span class="math inline">\(n
+= 4k+1\)</span>, then <span class="math inline">\(n-1 = 4k\)</span> and
+so <span class="math inline">\((n-1)^2\)</span> is divisible by <span
+class="math inline">\(16\)</span>. Also, <span
+class="math inline">\((n+1)^2 = (4k+2)^2 = 4 \cdot (2k+1)^2\)</span>.
+This shows that <span class="math inline">\(f(n)\)</span> is divisible
+by <span class="math inline">\(64\)</span>. Similarly, it can be easily
+seen that <span class="math inline">\(f(n)\)</span> is divisible by
+<span class="math inline">\(64\)</span> if <span
+class="math inline">\(n=4k+3\)</span>. Thus, option (d) is correct.</p>
+</div>
+<div id="net-feb-2022-c" class="slide section level1">
+<h1><strong>NET FEB 2022 (C):</strong></h1>
+<p>Let <span class="math inline">\(p\)</span> be a prime and <span
+class="math inline">\(N_p\)</span> be the number of pairs of positive
+integers <span class="math inline">\((x,y)\)</span> such that such that
+<span class="math inline">\(\frac{1}{x} + \frac{1}{y} =
+\frac{1}{p^4}\)</span>. Which among the following are possible values of
+<span class="math inline">\(N_p\)</span>?</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(0\)</span><br></li>
+<li><span class="math inline">\(4\)</span><br></li>
+<li><span class="math inline">\(5\)</span><br></li>
+<li><span class="math inline">\(9\)</span><br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p><span class="math display">\[\begin{align*}
+\frac{1}{x} + \frac{1}{y} = \frac{1}{p^4} \Rightarrow &amp;\
+\frac{x+y}{xy} = \frac{1}{p^4}\\
+\Rightarrow &amp;\ p^4(x+y) = xy\\
+\Rightarrow &amp;\ xy - x p^4 - yp^4  = 0\\
+\Rightarrow &amp;\ x(y - p^4) - yp^4 -p^8  = p^8\\
+\Rightarrow &amp;\ x(y - p^4) - p^4(y -p^4)  = p^8\\
+\Rightarrow &amp;\ (x-p^4)(y - p^4) = p^8\\
+\Rightarrow &amp;\ ab = p^8 &amp; &amp; (\text{where } a =(x-p^4),\ b
+=(y - p^4))
+\end{align*}\]</span> Then we have the following possibilities as
+factors of <span class="math inline">\(p^8\)</span>: <span
+class="math inline">\(a = p^i, b = p^j\)</span>, where <span
+class="math inline">\(0 \le i, j \le 8\)</span> and <span
+class="math inline">\(i+j = 8\)</span>. The following are the
+possibilities. <span class="math display">\[\begin{align*}
+a = 0, b = p^8 \Rightarrow &amp;\ (x,y) = (1+p^4, p^4+p^8)\\
+a = p, b = p^7 \Rightarrow &amp;\ (x,y) = (p+p^4, p^4+p^7)\\
+a = p^2, b = p^6 \Rightarrow &amp;\ (x,y) = (p^2+p^4, p^4+p^6)\\
+a = p^3, b = p^5 \Rightarrow &amp;\ (x,y) = (p^3+p^4, p^4+p^5)\\
+a = p^4, b = p^4 \Rightarrow &amp;\ (x,y) = (p^4+p^4, p^4+p^4) =
+(2p^4,2p^4)\\
+a = p^5, b = p^3 \Rightarrow &amp;\ (x,y) = (p^5+p^4, p^4+p^3)\\
+a = p^6, b = p^2 \Rightarrow &amp;\ (x,y) = (p^6+p^4, p^4+p^2)\\
+a = p^7, b = p \Rightarrow &amp;\ (x,y) = (p^7+p^4, p^4+p)\\
+a = p^8, b = 1 \Rightarrow &amp;\ (x,y) = (p^8+p^4, p^4+1)
+\end{align*}\]</span> Thus, there are <span
+class="math inline">\(5\)</span> distinct pairs but since number of
+positive integers are asked, I am going with <span
+class="math inline">\(9\)</span>.</p>
+</div>
+<div id="net-feb-2022-c-1" class="slide section level1">
+<h1><strong>NET FEB 2022 (C):</strong></h1>
+<p>For a positive integer <span class="math inline">\(n\)</span>, let
+<span class="math inline">\(\Omega(n)\)</span> denote the number of
+prime factors of <span class="math inline">\(n\)</span> counted with
+multiplicity. For instance, <span class="math inline">\(\Omega(3) =
+1\)</span>, <span class="math inline">\(\Omega(6) = \Omega(9) =
+2\)</span>. Let <span class="math inline">\(p &gt; 3\)</span> be a prime
+number and let <span class="math inline">\(N = p(p+2)(p+4)\)</span>.
+Which of the following statements are true?</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(\Omega(N) \ge 3\)</span><br></li>
+<li>There exists primes <span class="math inline">\(p &gt; 3\)</span>
+such that <span class="math inline">\(\Omega(N) = 3\)</span><br></li>
+<li><span class="math inline">\(p\)</span> can never be the smallest
+prime divisor of <span class="math inline">\(N\)</span><br></li>
+<li><span class="math inline">\(p\)</span> can be the smallest prime
+divisor of <span class="math inline">\(N\)</span><br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>We know that a product of <span class="math inline">\(n\)</span>
+consecutive integers is divisible by <span
+class="math inline">\(n\)</span>. So product of <span
+class="math inline">\(3\)</span> consecutive integers <span
+class="math inline">\(p(p+1)(p+2)\)</span> is divisible by <span
+class="math inline">\(3\)</span>. Note that <span
+class="math inline">\(p+1\)</span> is divisible by <span
+class="math inline">\(3\)</span> if and only if <span
+class="math inline">\(p+4 = (p+1)+3\)</span> is divisible by <span
+class="math inline">\(3\)</span>. So the product <span
+class="math inline">\(N=p(p+2)(p+4)\)</span> is divisible by <span
+class="math inline">\(3\)</span>. Since <span class="math inline">\(p
+&gt; 3\)</span>, <span class="math inline">\(3\)</span> is the smallest
+prime dividing <span class="math inline">\(N\)</span> and <span
+class="math inline">\(p\)</span> cannot be the smallest prime dividing
+<span class="math inline">\(N\)</span>. So option (c) is
+<strong>correct</strong> and option (d) is
+<strong>false</strong>.<br></p>
+<p>Since <span class="math inline">\(p &gt; 3\)</span>, <span
+class="math inline">\(3 \mid (p+2)(p+4)\)</span>. So <span
+class="math inline">\(3\)</span> divides exactly one of them (but not
+both). Suppose, without the loss of generality, <span
+class="math inline">\(3 \mid (p+2)\)</span>, then <span
+class="math inline">\(p+2\)</span> is composite and so it has one more
+prime factor. Also <span class="math inline">\(p+4\)</span> has at least
+one prime factor. Therefore, <span class="math inline">\(N = p
+(p+2)(p+4)\)</span> has at least <span class="math inline">\(4\)</span>
+prime factors. Hence, <span class="math inline">\(\Omega(N) = 3\)</span>
+is not possible. So option (b) is <strong>false</strong> and option (a)
+is <strong>true</strong>.<br></p>
+</div>
+<div id="net-feb-2022-c-2" class="slide section level1">
+<h1><strong>NET FEB 2022 (C):</strong></h1>
+<p>A positive integer <span class="math inline">\(n\)</span> coprime to
+<span class="math inline">\(17\)</span> is called a primitive root
+modulo <span class="math inline">\(17\)</span> if <span
+class="math inline">\(n^k - 1\)</span> is not divisible by <span
+class="math inline">\(17\)</span> for all <span
+class="math inline">\(k\)</span> with <span class="math inline">\(1 \le
+k \le 16\)</span>. Let <span class="math inline">\(a,b\)</span> be
+distinct positive integers between <span
+class="math inline">\(1\)</span> and <span
+class="math inline">\(16\)</span>. Which of the following statements are
+true?</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(2\)</span> is a primitive root modulo
+<span class="math inline">\(17\)</span><br></li>
+<li>If <span class="math inline">\(a\)</span> is a primitive root modulo
+<span class="math inline">\(7\)</span> then <span
+class="math inline">\(a^2\)</span> is not necessarily a primitive root
+modulo <span class="math inline">\(17\)</span><br></li>
+<li>If <span class="math inline">\(a, b\)</span> are primitive roots
+modulo <span class="math inline">\(17\)</span>, then <span
+class="math inline">\(ab\)</span> is a primitive root modulo <span
+class="math inline">\(17\)</span><br></li>
+<li>Product of primitive roots modulo <span
+class="math inline">\(17\)</span> between <span
+class="math inline">\(1\)</span> to <span
+class="math inline">\(16\)</span> is congruent to <span
+class="math inline">\(1\)</span> modulo <span
+class="math inline">\(17\)</span><br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>A primitive root modulo <span class="math inline">\(n\)</span> is
+a generator of <span class="math inline">\(Z_n^*\)</span>, i.e., it has
+order <span class="math inline">\(n-1\)</span>. So a primitive root
+modulo <span class="math inline">\(17\)</span> has order <span
+class="math inline">\(16\)</span>. Here <span class="math inline">\(2^8
+\equiv 1 \pmod{17}\)</span>.<br></p></li>
+<li><p>If <span class="math inline">\(a\)</span> is a primitive root
+modulo <span class="math inline">\(17\)</span>, then <span
+class="math inline">\(a^2\)</span> cannot be a primitive root as <span
+class="math inline">\(a^2\)</span> will have order <span
+class="math inline">\(8\)</span> because <span
+class="math inline">\((a^2)^8 = 1 \pmod{17}\)</span>.<br></p></li>
+<li><p>If <span class="math inline">\(g\)</span> is a primitive root mod
+<span class="math inline">\(17\)</span>, then every element of <span
+class="math inline">\(\mathbb Z_{17}^*\)</span> can be written as a
+power of <span class="math inline">\(g\)</span>. If <span
+class="math inline">\(a\)</span> is another primitive root, then <span
+class="math inline">\(a = g^k\)</span>. But order of <span
+class="math inline">\(a = g^k\)</span> is <span
+class="math inline">\(16\)</span> if and only if <span
+class="math inline">\(\gcd(k,16) = 1\)</span>. So, if we have one
+primitive root <span class="math inline">\(g\)</span>, then we have
+<span class="math inline">\(\phi(p-1) = \phi(16) = 8\)</span> primitive
+roots given by <span class="math inline">\(g^k\)</span> where <span
+class="math inline">\(\gcd(k,16)=1\)</span>.<br></p>
+<p>Check that <span class="math inline">\(3\)</span> is a primitive root
+modulo <span class="math inline">\(17\)</span>, i.e., <span
+class="math inline">\(3^{16} \equiv 1 \pmod{17}\)</span> and <span
+class="math inline">\(3^k \neq 1 \pmod{17}\)</span> for all <span
+class="math inline">\(k &lt; 16\)</span>. Then all other primitive roots
+modulo <span class="math inline">\(17\)</span> are <span
+class="math display">\[\begin{align*}
+3^3 \equiv &amp;\  10\\
+3^5 \equiv &amp;\  5\\
+3^7 \equiv &amp;\  11\\
+3^{-7} = 3^9 \equiv &amp;\  14\\
+3^{-5} = 3^{11} \equiv &amp;\  7\\
+3^{-3} = 3^{13} \equiv &amp;\  12\\
+3^{-1} = 3^{15} \equiv &amp;\  6
+\end{align*}\]</span> Note that <span class="math inline">\(3\)</span>
+is a primitive root and <span class="math inline">\(5\)</span> is a
+primitive root but <span class="math inline">\(15\)</span> is not. So
+this option is <strong>False.</strong><br></p></li>
+<li><p>Taking product of all primitive roots modulo <span
+class="math inline">\(17\)</span>, we get <span class="math display">\[3
+\cdot 10 \cdot 5 \cdot 11 \cdot 14 \cdot 7 \cdot 12 \cdot 6 \equiv 3^1
+\cdot 3^3
+\cdot 3^5 \cdot 3^7 \cdot 3^{-7} \cdot 3^{-5} \cdot 3^{-3} \cdot 3^{-1}
+\equiv 1 \pmod{17}.\]</span> So this option is also
+<strong>true.</strong></p></li>
+</ol>
+</div>
+<div id="net-feb-2022-b" class="slide section level1">
+<h1><strong>NET FEB 2022 (B):</strong></h1>
+<p>Let <span class="math inline">\(S = \{n : 1\le n \le 999;\ 3 \mid n
+\text{ or } 37 \mid n\}\)</span>. How many integers are there in the set
+<span class="math inline">\(S^c = \{n : 1 \le n \le 999;\ n\not\in
+S\}\)</span>?</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(639\)</span><br></li>
+<li><span class="math inline">\(648\)</span><br></li>
+<li><span class="math inline">\(666\)</span><br></li>
+<li><span class="math inline">\(909\)</span><br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>Let <span class="math inline">\(M\)</span> and <span
+class="math inline">\(N\)</span> be the set of all integers from <span
+class="math inline">\(1\)</span> to <span
+class="math inline">\(999\)</span> which are divisible by <span
+class="math inline">\(3\)</span> and <span
+class="math inline">\(37\)</span> respectively. Then <span
+class="math inline">\(M=\{3, 6,\ldots,999\}\)</span>, <span
+class="math inline">\(N=\{37, 74,\ldots,999\}\)</span> and <span
+class="math inline">\(|M| = \frac{999}{3}=333\)</span>, <span
+class="math inline">\(|N| = \frac{999}{37}=27\)</span>.<br></p>
+<p>If an integer is divisible by both <span
+class="math inline">\(3\)</span> and <span
+class="math inline">\(37\)</span>, then it is divisible by <span
+class="math inline">\(3 \times 37 = 111\)</span>. Number of such
+integers between <span class="math inline">\(1\)</span> and <span
+class="math inline">\(999\)</span> are <span
+class="math inline">\(|M\cap N| = \frac{999}{111} = 9.\)</span><br></p>
+<p>Here <span class="math inline">\(S = M \cup N\)</span>. So, <span
+class="math display">\[|S| = |M \cup N| = |M| + |N| - |M \cap N| = 333 +
+27 - 9 = 360 - 9 = 351.\]</span></p>
+<p>Then <span class="math inline">\(|S^c| = 999-351 = 648.\)</span></p>
+</div>
+<div id="net-30-nov-2020-c" class="slide section level1">
+<h1><strong>NET 30 NOV 2020 (C):</strong></h1>
+<p>For positive integers <span class="math inline">\(m\)</span> and
+<span class="math inline">\(n\)</span>, let <span
+class="math inline">\(\gcd(m,n)\)</span> denote their greatest common
+divisor. Let <span class="math inline">\(m &gt; n\)</span> be such that
+<span class="math inline">\(\gcd(m,n) =1\)</span>. Which of the
+following statements are true?</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(\gcd(m-n,m+n) = 1\)</span><br></li>
+<li><span class="math inline">\(\gcd(m-n,m+n)\)</span> can have a prime
+divisor<br></li>
+<li>There exists integers <span class="math inline">\(x,y\)</span> such
+that <span class="math inline">\(nx-my = 3\)</span><br></li>
+<li><span class="math inline">\(\gcd(m-n,m+n)\)</span> can be an odd
+prime<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>Let <span class="math inline">\(d = \gcd(m-n,m+n)\)</span>. Then
+<span class="math inline">\(d\mid m-n\)</span> and <span
+class="math inline">\(d \mid m+n\)</span>. But then <span
+class="math inline">\(d\mid (m-n)+(m+n) = 2m\)</span>. Similarly, <span
+class="math inline">\(d \mid 2n\)</span>. Since <span
+class="math inline">\(d\mid 2m\)</span> and <span
+class="math inline">\(d\mid 2n\)</span>, we have <span
+class="math display">\[d\mid \gcd(2m,2n) = 2 \gcd(m,n) = 2\cdot 1 =
+2.\]</span> Therefore, <span class="math inline">\(d = 1\)</span> or
+<span class="math inline">\(d=2\)</span>. Since <span
+class="math inline">\(d=2\)</span> is a possibility, option (a) and
+option(d) are # <strong>Not true</strong> and option (b) is
+<strong>true</strong>.<br></p>
+<p>Also since <span class="math inline">\(\gcd(m,n)=1\)</span> (by
+Bezout’s identity), there exists integers <span
+class="math inline">\(x&#39;\)</span> and <span
+class="math inline">\(y&#39;\)</span> such that <span
+class="math inline">\(mx&#39;+ny&#39; = 1\)</span>. Multiplying both
+sides by <span class="math inline">\(3\)</span>, we get <span
+class="math inline">\(m(2x&#39;) - n(-3y&#39;) = 3.\)</span> Taking
+<span class="math inline">\(x = 3x&#39;\)</span>, <span
+class="math inline">\(y = -3y&#39;\)</span>, we have <span
+class="math inline">\(mx-ny=3\)</span>. So option (c) is also
+<strong>true</strong>.</p>
+</div>
+<div id="net-30-nov-2020-c-1" class="slide section level1">
+<h1><strong>NET 30 NOV 2020 (C):</strong></h1>
+<p>For a positive integer <span class="math inline">\(n\)</span>, let
+<span class="math inline">\(\varphi(n)\)</span> be the Euler’s <span
+class="math inline">\(\varphi\)</span>-function. Which of the following
+statements are true for <span class="math inline">\(n &gt;
+3\)</span>?</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(\varphi(n)\)</span> can never divided
+<span class="math inline">\(n\)</span><br></li>
+<li><span class="math inline">\(\varphi(n) \mid n \Rightarrow\)</span>
+there exists integers <span class="math inline">\(x,y\)</span> such that
+<span class="math inline">\(nx+6y = 1\)</span><br></li>
+<li><span class="math inline">\(\varphi(n) \mid n \Rightarrow\)</span>
+<span class="math inline">\(n\)</span> can have at most two distinct
+prime divisors<br></li>
+<li><span class="math inline">\(\varphi(n) \mid \varphi(nk)\)</span> for
+every positive integer <span class="math inline">\(k\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>This is false since for <span class="math inline">\(n =
+8\)</span>, <span class="math inline">\(\varphi(n)= \varphi(8) =
+4\)</span> and <span class="math inline">\(4 \mid
+n=8\)</span>.<br></p></li>
+<li><p>We know (by Bezout’s identity) that for integers <span
+class="math inline">\(a\)</span> and <span
+class="math inline">\(b\)</span> <span class="math inline">\(\gcd(a,b) =
+1\)</span> if and only if there exists integers <span
+class="math inline">\(x\)</span> and <span
+class="math inline">\(y\)</span> such that <span
+class="math inline">\(ax+by = 1\)</span>.<br />
+By this, here we have <span class="math inline">\(\gcd(n,6) =
+1\)</span>. This is false, since <span class="math inline">\(\varphi(8)
+= 4 \mid 8\)</span> but <span class="math inline">\(\gcd(8,6) \neq
+1\)</span>. In other words, if <span class="math inline">\(n=8\)</span>,
+then <span class="math inline">\(1= 8x+6y = 2(4x+3y)\)</span> is not
+possible as <span class="math inline">\(2 \mid\)</span> RHS but <span
+class="math inline">\(2 \nmid\)</span> LHS.<br></p></li>
+<li><p>This option is <strong>True</strong>. Note that <span
+class="math inline">\(\varphi(n)\)</span> is always even. So if <span
+class="math inline">\(\varphi(n)\mid n\)</span>, then <span
+class="math inline">\(n\)</span> cannot be odd. Suppose <span
+class="math inline">\(n = p^\alpha q^\beta 2^\gamma\)</span> be product
+of <span class="math inline">\(3\)</span> primes. Then <span
+class="math inline">\(\varphi(n) =
+p^{\alpha-1}q^{\beta-1}2^{\gamma-1}(p-1)(q-1)(2-1)\)</span>. Then <span
+class="math inline">\(2^{\gamma+1} \mid \varphi(n)\)</span> but <span
+class="math inline">\(2^{\gamma+1}\nmid n\)</span>. So <span
+class="math inline">\(\varepsilon(n)\)</span> cannot divide <span
+class="math inline">\(n\)</span>. So this is be true.<br></p></li>
+<li><p>Let <span class="math inline">\(n = p_1^{\alpha_1} p_2^{\alpha_2}
+\cdots p_s^{\alpha_s}\)</span>. Then <span
+class="math inline">\(\varphi(n) = p_1^{\alpha_1} p_2^{\alpha_2} \cdots
+p_s^{\alpha_s-1}(p_1-1)(p_2-2)\cdots (p_s-1)\)</span>.<br></p>
+<p>If <span class="math inline">\(k = p_1^{\beta_1} p_2^{\beta_2} \cdots
+p_s^{\beta_s} q_1^{\gamma_1}\cdots q_t^{\gamma_t}\)</span>, where <span
+class="math inline">\(\beta_i \ge 0\)</span> and <span
+class="math inline">\(\gamma_j \ge 0\)</span>, then <span
+class="math display">\[nk = p_1^{\alpha_1+\beta_1}
+p_2^{\alpha_2+\beta_2} \cdots p_s^{\alpha_s+\beta_s}q_1^{\gamma_1}\cdots
+q_t^{\gamma_t}\]</span> and so <span class="math display">\[\varphi(nk)
+= p_1^{\alpha_1+\beta_1-1} p_2^{\alpha_2+\beta_2-1} \cdots
+p_s^{\alpha_s+\beta_s-1}q_1^{\gamma_1-1}\cdots
+q_t^{\gamma_t-1}.\]</span> Clearly, <span
+class="math inline">\(\varphi(n) \mid \varphi(nk).\)</span></p></li>
+</ol>
+</div>
+<div id="net-30-nov-2020-c-2" class="slide section level1">
+<h1><strong>NET 30 NOV 2020 (C):</strong></h1>
+<p>Let <span class="math inline">\(\mathbb N = \{1,2,\ldots\}\)</span>
+denote the set of positive integers. For <span class="math inline">\(n
+\in \mathbb N\)</span>, let <span class="math display">\[A_n = \{(x,y,z)
+\in \mathbb N^3 : x^n + y^n = z^n \text{ and } z&lt; n\}.\]</span> Let
+<span class="math inline">\(F_n\)</span> be the cardinality of the set
+<span class="math inline">\(A_n\)</span>. Which of the following
+statements are true?</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(F(n)\)</span> is finite for <span
+class="math inline">\(n \ge 3\)</span><br></li>
+<li><span class="math inline">\(F(2) = \infty\)</span><br></li>
+<li><span class="math inline">\(F(n) = 0\)</span> for all <span
+class="math inline">\(n\)</span><br></li>
+<li><span class="math inline">\(F(n)\)</span> is non zero for some <span
+class="math inline">\(n &gt; 2\)</span><br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Fermat’s last theorem: There are no positive integer solutions to
+<span class="math inline">\(x^n + y^n = z^n\)</span> for <span
+class="math inline">\(n \ge 3\)</span>. So <span
+class="math inline">\(F(n) = 0\)</span> for <span
+class="math inline">\(n \ge 3\)</span>, which is a finite
+number.<br></p></li>
+<li><p>For <span class="math inline">\(F(2)\)</span>, since <span
+class="math inline">\(z &lt; 2\)</span>, we look for <span
+class="math inline">\(x, y \in \mathbb N\)</span> such that <span
+class="math inline">\(x^2+y^2 = 1\)</span>. This is not possible as
+<span class="math inline">\(x, y &gt;0\)</span>. So <span
+class="math inline">\(F(2) = 0\)</span>.<br></p></li>
+<li><p>Since <span class="math inline">\(F(n) = 0\)</span> for all <span
+class="math inline">\(n \in \mathbb N\)</span>, this option is
+correct.<br></p></li>
+<li><p>This is not possible, by Fermat’s last theorem.<br></p></li>
+</ol>
+</div>
+<div id="net-30-nov-2020-b" class="slide section level1">
+<h1><strong>NET 30 NOV 2020 (B):</strong></h1>
+<p>The last two digits of <span class="math inline">\(3^{2019}\)</span>
+are</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(27\)</span><br></li>
+<li><span class="math inline">\(37\)</span><br></li>
+<li><span class="math inline">\(57\)</span><br></li>
+<li><span class="math inline">\(67\)</span><br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>To obtain last two digits of a number, we need to compute the
+remainder obtained by dividing the number by <span
+class="math inline">\(100\)</span>.<br></p>
+<p>By Euler’s theorem, if <span class="math inline">\(a\)</span> is
+relatively prime to <span class="math inline">\(n\)</span>, then <span
+class="math inline">\(a^{\phi(n)}\equiv 1 \pmod n\)</span>. Here <span
+class="math inline">\(a=3\)</span> and <span
+class="math inline">\(n=100\)</span>. Since <span
+class="math inline">\((3,100)=1\)</span> and <span
+class="math inline">\(\phi(100)=\phi(4)\phi(25)=2 \times 20 =
+40\)</span>, we have <span class="math display">\[\begin{align*}
+&amp; 3^{40} &amp;\equiv &amp;\ 1 \pmod {100}\\
+\Rightarrow &amp; {(3^{40})}^{50} &amp;\equiv &amp;\ 1^{50} \pmod
+{100}\\
+\Rightarrow &amp; 3^{19} \cdot 3^{2000} = 3^{19} \pmod {100}.
+\end{align*}\]</span> Note that <span class="math inline">\(3^{4} \equiv
+81 \equiv -19 \pmod{100}\)</span>. Therefore, <span
+class="math inline">\(3^{8} \equiv (-19)^2 361 \equiv 61
+\pmod{100}\)</span>. Then <span class="math inline">\(3^{16} \equiv
+(61)^2 \equiv 3721 \equiv 21 \pmod{100}\)</span>. Finally, <span
+class="math display">\[3^{19} \equiv 3^3 \cdot 3^{16} \equiv 27 \cdot 21
+= 567 \equiv 67 \pmod{100}.\]</span> Thus, last two digits (i.e. the
+remainder) is <span class="math inline">\(67\)</span>.</p>
+</div>
+<div id="net-26-nov-2020-a" class="slide section level1">
+<h1><strong>NET 26 NOV 2020 (A):</strong></h1>
+<p>The sum of first <span class="math inline">\(n\)</span> even integers
+is</p>
+<ol style="list-style-type: lower-alpha">
+<li>divisible by <span class="math inline">\(n\)</span> and not <span
+class="math inline">\(n+1\)</span><br></li>
+<li>divisible by <span class="math inline">\(n+1\)</span> and not <span
+class="math inline">\(n\)</span><br></li>
+<li>divisible by both <span class="math inline">\(n\)</span> and <span
+class="math inline">\(n+1\)</span><br></li>
+<li>neither divisible by <span class="math inline">\(n\)</span> nor by
+<span class="math inline">\(n+1\)</span><br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p><span class="math display">\[2 + 4 + 6 + \cdots + 2n = 2 (1 + 2 + 3 +
+\cdots + n) = 2 \frac{n(n+1)}{2} = n(n+1).\]</span></p>
+</div>
+<div id="net-26-nov-2020-b" class="slide section level1">
+<h1><strong>NET 26 NOV 2020 (B):</strong></h1>
+<p>Which of the following is true?</p>
+<ol style="list-style-type: lower-alpha">
+<li>Every even integer <span class="math inline">\(n \ge 16\)</span>
+divides <span class="math inline">\((n-1)!+3\)</span><br></li>
+<li>Every odd integer <span class="math inline">\(n \ge 16\)</span>
+divides <span class="math inline">\((n-1)!\)</span><br></li>
+<li>Every even integer <span class="math inline">\(n \ge 16\)</span>
+divides <span class="math inline">\((n-1)!\)</span><br></li>
+<li>For every even integer <span class="math inline">\(n \ge
+16\)</span>, <span class="math inline">\(n^2\)</span> divides <span
+class="math inline">\(n!+1\)</span><br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Suppose <span class="math inline">\(n\)</span> is even and <span
+class="math inline">\(n \mid (n-1)!+3\)</span>. Since <span
+class="math inline">\(n\)</span> is even, <span class="math inline">\(2
+\mid n\)</span> and so <span class="math inline">\(2 \mid
+(n-1)!+3\)</span> which is not possible as <span
+class="math inline">\((n-1)!+3\)</span> is always odd.<br></p></li>
+<li><p>This is not true. Take <span class="math inline">\(n =
+17\)</span>. Then <span class="math inline">\(17 \nmid
+16!\)</span>.<br />
+In general, for any prime <span class="math inline">\(p\)</span>, <span
+class="math inline">\(p \nmid (p-1)!\)</span>. By Wilson’s theorem,
+<span class="math inline">\((p-1)! \equiv 1 \pmod
+p\)</span>.<br></p></li>
+<li><p>This is <strong>true</strong>. Let <span class="math inline">\(n
+= 2k\)</span> be even integer <span class="math inline">\(n \ge
+16\)</span>. Then <span class="math inline">\(n-1 = 2k-1\)</span> and
+<span class="math display">\[\begin{align*}
+(n-1)! = (2k-1)! =&amp;\ 1 \times 2 \times 3 \times \cdots \times k
+\times (k+1) \times \cdots (2k-1)\\
+=&amp;\ 2 \times k \times [ 3 \times \cdots \times (k-1) \times (k+1)
+\times \cdots \times (2k-1)].\\
+=&amp;\ 2k \times \text{some integer } m.
+\end{align*}\]</span> Hence, <span class="math inline">\(n \mid
+(n-1)!\)</span>.<br />
+Note that, if <span class="math inline">\(n\)</span> is composite <span
+class="math inline">\(n \mid (n-1)!\)</span> and more generally, <span
+class="math inline">\(\gcd(n,(n-1)!) = 1\)</span> or <span
+class="math inline">\(n\)</span>.<br></p></li>
+<li><p>This is not true as <span class="math inline">\(17^2 \nmid 17! +
+1\)</span>. For any prime <span class="math inline">\(p\)</span>, <span
+class="math inline">\(p^2 \nmid p!+1\)</span>. This is because <span
+class="math inline">\(p! = p(p-1)!\)</span> and so <span
+class="math inline">\(p!+1\)</span> is of the for <span
+class="math inline">\(kp+1\)</span> and we know that <span
+class="math inline">\(\gcd(p^m,pk+1) = 1\)</span>.</p></li>
+</ol>
+</div>
+<div id="net-26-nov-2020-b-1" class="slide section level1">
+<h1><strong>NET 26 NOV 2020 (B):</strong></h1>
+<p>Let <span class="math inline">\(\varphi(n)\)</span> be the
+cardinality of the set <span class="math inline">\(\{a \mid 1 \le a \le
+n, \ (a,n) = 1\}\)</span>, where <span
+class="math inline">\((a,n)\)</span> denotes the gcd of <span
+class="math inline">\(a\)</span> and <span
+class="math inline">\(n\)</span>. Which of the following is NOT
+true?</p>
+<ol style="list-style-type: lower-alpha">
+<li>There exists infinitely many <span class="math inline">\(n\)</span>
+such that <span class="math inline">\(\varphi(n) &gt;
+\varphi(n+1)\)</span>.<br></li>
+<li>There exists infinitely many <span class="math inline">\(n\)</span>
+such that <span class="math inline">\(\varphi(n) &lt;
+\varphi(n+1)\)</span>.<br></li>
+<li>There exists <span class="math inline">\(N \in \mathbb N\)</span>
+such that <span class="math inline">\(N &gt; 2\)</span> and for all
+<span class="math inline">\(n &gt; N\)</span>, <span
+class="math inline">\(\varphi(N) &lt; \varphi(n)\)</span>.<br></li>
+<li>The set <span class="math inline">\(\left\{\frac{\varphi(n)}{n} : n
+\in \mathbb N\right\}\)</span> has finitely many limit points.</li>
+</ol>
+<p><strong>Solution</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>This is true as for every <span class="math inline">\(n\)</span>
+prime, <span class="math inline">\(\varphi(n) = n-1 &gt;
+\varphi(n+1)\)</span> as <span class="math inline">\(n+1\)</span> is not
+prime and there are infinitely many primes. So this statement is true
+and hence it is not the correct option.<br></p></li>
+<li><p>This statement is also true when <span
+class="math inline">\(n+1\)</span> is primes. Then <span
+class="math inline">\(\varphi(n+1) = n\)</span> and <span
+class="math inline">\(n\)</span> is not prime and so <span
+class="math inline">\(\varphi(n) &lt; n = \varphi(n+1)\)</span>. So this
+is also not the correct option.<br></p></li>
+<li><p>If <span class="math inline">\(N\)</span> is odd, then <span
+class="math inline">\(\varphi(2N) = \varphi(2) \varphi(N) =
+\varphi(N)\)</span>. So for <span class="math inline">\(n = 2N\)</span>,
+the statement does not hold. Similarly, show for <span
+class="math inline">\(N\)</span> even.<br></p></li>
+<li><p>Only left option and hence it must be correct.<br></p></li>
+</ol>
+</div>
+<div id="net-dec-2019-a" class="slide section level1">
+<h1><strong>NET DEC 2019 (A):</strong></h1>
+<p>The difference between the squares of two consecutive integers is
+<span class="math inline">\(408235\)</span>. The sum of the numbers
+is</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(16324\)</span><br></li>
+<li><span class="math inline">\(27061\)</span><br></li>
+<li><span class="math inline">\(180235\)</span><br></li>
+<li><span class="math inline">\(408235\)</span><br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>The difference between two squares is <span class="math inline">\(a^2
+- b^2 = (a-b)(a+b)\)</span>. Let <span class="math inline">\(a =
+n+1\)</span> and <span class="math inline">\(b=n\)</span> be two
+consecutive numbers. Then we are given that <span
+class="math inline">\(a^2 - b^2 = (n+1 - n) (n+1 + n) = 408235\)</span>.
+Thus, <span class="math inline">\(2n+1 = a + b = 408235\)</span>.</p>
+</div>
+<div id="net-june-2019-c" class="slide section level1">
+<h1><strong>NET JUNE 2019 (C):</strong></h1>
+<p>Let <span class="math inline">\(a \in \mathbb Z\)</span> be such that
+<span class="math inline">\(a=b^2 +c^2\)</span>, where <span
+class="math inline">\(b,c \in \mathbb Z \smallsetminus \{0\}\)</span>.
+Then <span class="math inline">\(a\)</span> cannot be written as</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(pd^2\)</span>, where <span
+class="math inline">\(d \in \mathbb Z\)</span> and <span
+class="math inline">\(p\)</span> is a prime with <span
+class="math inline">\(p \equiv 1 \pmod 4\)</span><br></li>
+<li><span class="math inline">\(pd^2\)</span>, where <span
+class="math inline">\(d \in \mathbb Z\)</span> and <span
+class="math inline">\(p\)</span> is a prime with <span
+class="math inline">\(p \equiv 3 \pmod 4\)</span><br></li>
+<li><span class="math inline">\(pqd^2\)</span>, where <span
+class="math inline">\(d \in \mathbb Z\)</span> and <span
+class="math inline">\(p,q\)</span> are primes with <span
+class="math inline">\(p \equiv 1 \pmod 4\)</span>, <span
+class="math inline">\(q \equiv 3 \pmod 4\)</span><br></li>
+<li><span class="math inline">\(pqd^2\)</span>, where <span
+class="math inline">\(d \in \mathbb Z\)</span> and <span
+class="math inline">\(p,q\)</span> are primes with <span
+class="math inline">\(p, q \equiv 3 \pmod 4\)</span><br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>We know (by <strong>Fermat’s theorem on sum of two squares</strong>)
+that a prime <span class="math inline">\(p \equiv 1 \pmod 4\)</span> can
+be written as (and hence divides) sum of two squares. Also even prime
+<span class="math inline">\(2 =1^2+1^2\)</span> can be written as a sum
+of two squares.<br></p>
+<p>However, a prime <span class="math inline">\(q \equiv 3 \pmod
+4\)</span> cannot divide sum of two squares. The proof is simple and
+given below:<br></p>
+<p>Let <span class="math inline">\(q = 4k+3\)</span> and <span
+class="math inline">\(q \mid a^2+b^2\)</span>. Then <span
+class="math inline">\(a^2 \equiv -b^2 \pmod q\)</span>. So <span
+class="math display">\[a^{2(2k+1)} \equiv - b^{2(2k+1)} \pmod q
+\Rightarrow a^{4k+2} \equiv -b^{4k+2} \pmod q.\]</span> By (Euler’s or)
+Fermat’s little theorem, we have <span class="math inline">\(a^{4k+2}
+\equiv b^{4k+2} \equiv 1 \pmod{4k+3}\)</span>, where <span
+class="math inline">\(4k+3=q\)</span>, a prime. Therefore, from above
+<span class="math inline">\(1 \equiv -1 \pmod q\)</span> which is a
+contradiction.</p>
+</div>
+<div id="net-dec-2018-b" class="slide section level1">
+<h1><strong>NET DEC 2018 (B):</strong></h1>
+<p>Given integers <span class="math inline">\(a\)</span> and <span
+class="math inline">\(b\)</span>, let <span
+class="math inline">\(N_{a,b}\)</span> denote the number of positive
+integers <span class="math inline">\(k &lt; 100\)</span> such that <span
+class="math inline">\(k \equiv a \pmod 9\)</span> and <span
+class="math inline">\(k \equiv b \pmod{11}\)</span>. Then which of the
+following statements is correct?</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(N_{a,b} =1\)</span> for all integers
+<span class="math inline">\(a\)</span> and <span
+class="math inline">\(b\)</span>.<br></li>
+<li>There exists integers <span class="math inline">\(a\)</span> and
+<span class="math inline">\(b\)</span> satisfying <span
+class="math inline">\(N_{a,b} &gt; 1\)</span>.<br></li>
+<li>There exists integers <span class="math inline">\(a\)</span> and
+<span class="math inline">\(b\)</span> satisfying <span
+class="math inline">\(N_{a,b} =0\)</span>.<br></li>
+<li>There exists integers <span class="math inline">\(a\)</span> and
+<span class="math inline">\(b\)</span> satisfying <span
+class="math inline">\(N_{a,b} =\)</span> and there exists integers <span
+class="math inline">\(c\)</span> and <span
+class="math inline">\(d\)</span> satisfying <span
+class="math inline">\(N_{c,d} &gt; 1\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p><strong>Chinese Remainder Theorem:</strong> Let <span
+class="math inline">\(m_1,\ldots,m_r\)</span> be pairwise relatively
+prime integers, i.e. <span class="math inline">\((m_i,m_j)=1\)</span> if
+<span class="math inline">\(i \neq j\)</span>. Let <span
+class="math inline">\(a_1,\ldots,a_r\)</span> be arbitrary integers.
+Then the system of congruences <span
+class="math display">\[\begin{align*}
+x &amp;\ \equiv a_1 \pmod{m_1}\\
+&amp;\ \ \ \vdots\\
+x &amp;\ \equiv a_r \pmod{m_r}
+\end{align*}\]</span> has exactly one solution modulo <span
+class="math inline">\(M=m_1m_2\cdots m_r\)</span>. The solution is given
+as follows: <span class="math display">\[x=a_1M_1 b_1 + a_2 M_2 b_2 +
+\cdots + a_r M_r b_r,\]</span> where <span class="math inline">\(M_k =
+\frac{M}{m_k}\)</span> and <span class="math inline">\(b_k\)</span> is
+the solution of the congruence <span class="math inline">\(M_kx \equiv 1
+\pmod{m_k}\)</span>.</p>
+<p>Here <span class="math inline">\(a_1=a\)</span>, <span
+class="math inline">\(a_2=b\)</span>, <span
+class="math inline">\(m_1=9\)</span>, <span
+class="math inline">\(m_2=11\)</span>, and <span
+class="math inline">\(\gcd(m_1,m_2)=1\)</span>. Therefore <span
+class="math inline">\(M=m_1m_2=99\)</span> and hence (by Chinese
+Remainder Theorem) the system of congruence <span
+class="math display">\[\begin{align*}
+k \equiv &amp;\ a \pmod 9\\
+k \equiv &amp;\  b \pmod{11}
+\end{align*}\]</span> has unique solution modulo <span
+class="math inline">\(99\)</span>, i.e. there exists unique <span
+class="math inline">\(k\)</span>, <span class="math inline">\(1 \le k
+\le 99\)</span>, which satisfies both the above congruences
+simultaneously. Hence, <span class="math inline">\(N_{a,b} = 1\)</span>
+for all integers <span class="math inline">\(a\)</span> and <span
+class="math inline">\(b\)</span>.</p>
+</div>
+<div id="net-dec-2017-b" class="slide section level1">
+<h1><strong>NET DEC 2017 (B):</strong></h1>
+<p>Let <span class="math inline">\(f: \mathbb Z \to (\mathbb Z/4\mathbb
+Z) \times (\mathbb Z/6\mathbb Z)\)</span> be the function <span
+class="math inline">\(f(n) = (n \mod 4, n\mod 6)\)</span>. Then</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\((0 \mod 4, 3 \mod 6)\)</span> is in the
+image of <span class="math inline">\(f\)</span><br></li>
+<li><span class="math inline">\((a \mod 4, b \mod 6)\)</span> is in the
+image of <span class="math inline">\(f\)</span> for all even integers
+<span class="math inline">\(a\)</span> and <span
+class="math inline">\(b\)</span><br></li>
+<li>image of <span class="math inline">\(f\)</span> has exactly <span
+class="math inline">\(6\)</span> elements<br></li>
+<li>kernel of <span class="math inline">\(f= 24\mathbb
+Z\)</span><br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(f(n) = (0 \mod 4, 3 \mod 6)
+\Rightarrow n \equiv 0 \pmod 4\)</span> and <span
+class="math inline">\(n \equiv 3 \pmod 6\)</span>. Therefore, <span
+class="math inline">\(n = 6k+3=3(2k+1)\)</span>, i.e. <span
+class="math inline">\(n\)</span> is odd. On the other hand, <span
+class="math inline">\(n = 4k\)</span> which means <span
+class="math inline">\(n\)</span> is odd. This is a
+contradiction.<br></p></li>
+<li><p>By a general version of Chinese Remainder Theorem, <span
+class="math inline">\(x \equiv a \pmod m\)</span> and <span
+class="math inline">\(x \equiv b \pmod n\)</span> has a solution if
+<span class="math inline">\(\gcd(m,n) \mid a-b\)</span>. Here <span
+class="math inline">\(\gcd(4,6)=2\)</span> and since <span
+class="math inline">\(a,b\)</span> are even <span
+class="math inline">\(2 \mid a-b\)</span>. Hence, the statement is
+true.<br></p></li>
+<li><p>The elements <span class="math inline">\((1,1), (2,2), (3,3),
+(0,4), (1,5), (2,0), (3,1), (0,2)\)</span> are in image which are more
+than <span class="math inline">\(6\)</span> elements. Hence, the
+statement is not true.<br></p></li>
+<li><p><span class="math inline">\(n \in \ker f \Rightarrow 4 \mid n,\ 6
+\mid n\)</span>. Therefore, <span class="math inline">\({\rm
+lcm}(4,6)=12\mid n\)</span>. Thus, <span class="math inline">\(\ker f =
+12\mathbb Z\)</span>.</p></li>
+</ol>
+</div>
+<div id="net-june-2017-a" class="slide section level1">
+<h1><strong>NET JUNE 2017 (A):</strong></h1>
+<p>What is the remainder when <span
+class="math inline">\(3^{256}\)</span> is divided by <span
+class="math inline">\(5\)</span>?</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(1\)</span>.<br></li>
+<li><span class="math inline">\(2\)</span>.<br></li>
+<li><span class="math inline">\(3\)</span>.<br></li>
+<li><span class="math inline">\(4\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>By Euler’s theorem, if <span class="math inline">\(a\)</span> is
+relatively prime to <span class="math inline">\(n\)</span>, then <span
+class="math inline">\(a^{\phi(n)}\equiv 1 \pmod n\)</span>. Here <span
+class="math inline">\(a=3\)</span> and <span
+class="math inline">\(n=5\)</span>. Since <span
+class="math inline">\((3,5)=1\)</span> and <span
+class="math inline">\(\phi(5)=4\)</span>, we have <span
+class="math display">\[\begin{align*}
+&amp; 3^4 &amp;\equiv &amp;\ 1 \pmod 5\\
+\Rightarrow &amp; {(3^4)}^{64} &amp;\equiv &amp;\ 1^{64} \pmod 5\\
+\Rightarrow &amp; 3^{256} &amp;\equiv &amp;\ 1 \pmod 5.
+\end{align*}\]</span></p>
+</div>
+<div id="net-june-2017-b" class="slide section level1">
+<h1><strong>NET JUNE 2017 (B):</strong></h1>
+<p>Let <span class="math inline">\(S\)</span> be the set of all integers
+from <span class="math inline">\(100\)</span> to <span
+class="math inline">\(999\)</span> which are neither divisible by <span
+class="math inline">\(3\)</span> nor by <span
+class="math inline">\(5\)</span>. The number of elements in <span
+class="math inline">\(S\)</span> is</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(480\)</span>.<br></li>
+<li><span class="math inline">\(420\)</span>.<br></li>
+<li><span class="math inline">\(360\)</span>.<br></li>
+<li><span class="math inline">\(240\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>Here <span class="math inline">\(|S|=900\)</span>. Let <span
+class="math inline">\(M\)</span> and <span
+class="math inline">\(N\)</span> be the set of all integers from <span
+class="math inline">\(100\)</span> to <span
+class="math inline">\(999\)</span> which are divisible by <span
+class="math inline">\(3\)</span> and <span
+class="math inline">\(5\)</span> respectively. Then <span
+class="math inline">\(M=\{102, 105,\ldots\}\)</span>, <span
+class="math inline">\(N=\{100, 105,\ldots\}\)</span> and <span
+class="math inline">\(|M| = \frac{900}{3}=300\)</span>, <span
+class="math inline">\(|N| = \frac{900}{5}=180\)</span>.<br></p>
+<p>If we compute <span class="math inline">\(|S| - |M| - |N|\)</span>,
+then we have removed the number of integers from <span
+class="math inline">\(100\)</span> to <span
+class="math inline">\(999\)</span> which are divisible by <span
+class="math inline">\(3\)</span> and divisible by <span
+class="math inline">\(5\)</span> separately. But in this process, we
+would have removed the integers divisible <span
+class="math inline">\(3\)</span> as well as by <span
+class="math inline">\(5\)</span> (i.e. by <span
+class="math inline">\(15\)</span>). So we add the number of integers
+from <span class="math inline">\(100\)</span> to <span
+class="math inline">\(999\)</span> which are divisible by <span
+class="math inline">\(15\)</span>, i.e. <span class="math inline">\(|M
+\cap N|\)</span>. Now, <span class="math display">\[M \cap N =\{105,
+120, \ldots\} \Rightarrow |M\cap N| =\frac{900}{15}=60.\]</span> So,
+finally our answer is <span class="math inline">\(|S| - |M| - |N| +
+|M\cap N| = 900-300-180+60=480\)</span>.</p>
+</div>
+<div id="net-june-2017-b-1" class="slide section level1">
+<h1><strong>NET JUNE 2017 (B):</strong></h1>
+<p>The remainder obtained when <span
+class="math inline">\(16^{2016}\)</span> is divided by <span
+class="math inline">\(9\)</span> equals</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(1\)</span>.<br></li>
+<li><span class="math inline">\(2\)</span>.<br></li>
+<li><span class="math inline">\(3\)</span>.<br></li>
+<li><span class="math inline">\(7\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>By Euler’s theorem, if <span class="math inline">\(a\)</span> is
+relatively prime to <span class="math inline">\(n\)</span>, then <span
+class="math inline">\(a^{\phi(n)}\equiv 1 \pmod n\)</span>. Here <span
+class="math inline">\(a=16\)</span> and <span
+class="math inline">\(n=9\)</span>. Since <span
+class="math inline">\((16,9)=1\)</span> and <span
+class="math inline">\(\phi(9)=6\)</span>, we have <span
+class="math display">\[\begin{align*}
+&amp; {16}^6 &amp;\equiv &amp;\ 1 \pmod 9\\
+\Rightarrow &amp; {({16}^6)}^{336} &amp;\equiv &amp;\ 1^{336} \pmod 9\\
+\Rightarrow &amp; {16}^{2016} &amp;\equiv &amp;\ 1 \pmod 9.
+\end{align*}\]</span></p>
+</div>
+<div id="net-dec-2016-b" class="slide section level1">
+<h1><strong>NET DEC 2016 (B):</strong></h1>
+<p>Given a natural number <span class="math inline">\(n &gt;1\)</span>
+such that <span class="math inline">\((n-1)! \equiv -1 \pmod n\)</span>,
+we can conclude that</p>
+<p>(a)<span class="math inline">\(n=p^k\)</span> where <span
+class="math inline">\(p\)</span> is prime, <span
+class="math inline">\(k&gt;1\)</span>.<br> (b) <span
+class="math inline">\(n=pq\)</span> where <span
+class="math inline">\(p\)</span> and <span
+class="math inline">\(q\)</span> are distinct primes.<br> (c) <span
+class="math inline">\(n=pqr\)</span> where <span
+class="math inline">\(p,q,r\)</span> are distinct primes.<br> (d) <span
+class="math inline">\(n=p\)</span> where <span
+class="math inline">\(p\)</span> is a prime.<br></p>
+<p><strong>Solution</strong></p>
+<p>Suppose <span class="math inline">\(n=kl\)</span> for some integers
+<span class="math inline">\(k\)</span> and <span
+class="math inline">\(l\)</span>. Without loss of generality assume
+<span class="math inline">\(k&lt;n\)</span> (i.e. <span
+class="math inline">\(k\neq n\)</span>). Now, <span
+class="math inline">\((n-1)! \equiv -1 \pmod n\)</span> implies <span
+class="math inline">\(n \mid (n-1)! + 1\)</span>. Since <span
+class="math inline">\(k &lt; n\)</span>, <span class="math inline">\(k
+\mid (n-1)!\)</span>. Also, <span class="math inline">\(k \mid
+n\)</span> and <span class="math inline">\(n \mid (n-1)! +1\)</span> and
+so <span class="math inline">\(k \mid (n-1)! +1\)</span>. Hence <span
+class="math inline">\(k \mid 1\)</span> or <span
+class="math inline">\(k=1\)</span>. Thus, <span
+class="math inline">\(n\)</span> must be prime.</p>
+</div>
+<div id="net-june-2016-b" class="slide section level1">
+<h1><strong>NET JUNE 2016 (B):</strong></h1>
+<p>Which of the following statements is FALSE? There exists an integer
+<span class="math inline">\(x\)</span> such that</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(x \equiv 23 \pmod {1000}\)</span> and
+<span class="math inline">\(x \equiv 45 \pmod {6789}\)</span>.<br></li>
+<li><span class="math inline">\(x \equiv 23 \pmod {1000}\)</span> and
+<span class="math inline">\(x \equiv 54 \pmod {6789}\)</span>.<br></li>
+<li><span class="math inline">\(x \equiv 32 \pmod {1000}\)</span> and
+<span class="math inline">\(x \equiv 54 \pmod {9876}\)</span>.<br></li>
+<li><span class="math inline">\(x \equiv 32 \pmod {1000}\)</span> and
+<span class="math inline">\(x \equiv 44 \pmod {9876}\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>We know that, a system of linear congruences has solutions if and
+only if for every pair of congruences within the system <span
+class="math display">\[\begin{align*}
+x &amp;\ \equiv a_i \pmod{m_i}\\
+x &amp;\ \equiv a_j \pmod{m_j}\\
+a_i &amp;\ \equiv a_j \pmod{\text{gcd}(m_i,m_j)},
+\end{align*}\]</span> i.e. if and only if gcd<span
+class="math inline">\((m_i,m_j) \mid (a_i-a_j)\)</span>.<br></p>
+<p>Here, for the pair of congruence <span class="math inline">\(x \equiv
+32 \pmod {1000}\)</span> and <span class="math inline">\(x \equiv 54
+\pmod {9876}\)</span>, GCD<span
+class="math inline">\((1000,9876)=4\)</span> and <span
+class="math inline">\(54-23=31\)</span>. Thus, <span
+class="math inline">\(4 \nmid 31\)</span> and hence the pair of
+congruence does not have a solution.<br></p>
+<p>Also notices that <span class="math inline">\(x \equiv 32 \pmod
+{1000}\)</span> and <span class="math inline">\(x \equiv 54 \pmod
+{9876}\)</span> implies, <span class="math display">\[x = 1000 k + 32
+\quad \text{ and } \quad x = 9876k + 54.\]</span> In the first
+congruence <span class="math inline">\(4\mid 1000\)</span> and <span
+class="math inline">\(4\mid 32\)</span> and therefore <span
+class="math inline">\(4\mid x\)</span>. But in the second congruence
+<span class="math inline">\(4\mid 9876\)</span> but <span
+class="math inline">\(4 \nmid 54\)</span> and thus <span
+class="math inline">\(4\nmid\)</span> which is a contradiction. So the
+pair of congruences does not have a solution.</p>
+</div>
+<div id="net-dec-2015-c" class="slide section level1">
+<h1><strong>NET DEC 2015 (C):</strong></h1>
+<p>Which of the following intervals contains an integer satisfying the
+following three congruences:<br> <span class="math inline">\(x\equiv 2
+\pmod 5\)</span>, <span class="math inline">\(x \equiv 3 \pmod
+7\)</span> and <span class="math inline">\(x \equiv 4 \pmod
+{11}\)</span>.</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\([401,600]\)</span>.<br></li>
+<li><span class="math inline">\([601,800]\)</span>.<br></li>
+<li><span class="math inline">\([801,1000]\)</span>.<br></li>
+<li><span class="math inline">\([1001,1200]\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p><strong>Chinese Remainder Theorem:</strong> Let <span
+class="math inline">\(m_1,\ldots,m_r\)</span> be pairwise relatively
+prime integers, i.e. <span class="math inline">\((m_i,m_j)=1\)</span> if
+<span class="math inline">\(i \neq j\)</span>. Let <span
+class="math inline">\(a_1,\ldots,a_r\)</span> be arbitrary integers.
+Then the system of congruences <span
+class="math display">\[\begin{align*}
+x &amp;\ \equiv a_1 \pmod{m_1}\\
+&amp;\ \ \ \vdots\\
+x &amp;\ \equiv a_r \pmod{m_r}
+\end{align*}\]</span> has exactly one solution modulo <span
+class="math inline">\(M=m_1m_2\cdots m_r\)</span>. The solution is given
+as follows: <span class="math display">\[x=a_1M_1 b_1 + a_2 M_2 b_2 +
+\cdots + a_r M_r b_r,\]</span> where <span class="math inline">\(M_k =
+\frac{M}{m_k}\)</span> and <span class="math inline">\(b_k\)</span> is
+the solution of the congruence <span class="math inline">\(M_kx \equiv 1
+\pmod{m_k}\)</span>.<br></p>
+<p>Here (by Chinese Remainder Theorem) <span
+class="math inline">\(a_1=2\)</span>, <span
+class="math inline">\(a_2=3\)</span>, <span
+class="math inline">\(a_3=4\)</span>, <span
+class="math inline">\(m_1=5\)</span>, <span
+class="math inline">\(m_2=7\)</span>, <span
+class="math inline">\(m_3=11\)</span> and <span
+class="math inline">\(m_i\)</span>’s are are pairwise co-prime.
+Therefore <span class="math inline">\(M=m_1m_2m_3=385\)</span> and so
+<span class="math inline">\(M_1 = \frac{M}{m_1} = 77\)</span>, <span
+class="math inline">\(M_2=55\)</span>, <span
+class="math inline">\(M_3=35\)</span>.<br></p>
+<p>Now, <span class="math inline">\(b_1\)</span> is the solution of the
+congruence<br />
+<span class="math inline">\(M_1x \equiv 1 \pmod 5 \Rightarrow 77x \equiv
+2 x \equiv 1 \pmod 5\)</span>. Therefore <span
+class="math inline">\(b_1=3\)</span>. Similarly, <span
+class="math inline">\(b_2\)</span> is solution of the congruence <span
+class="math inline">\(55x \equiv 6x \equiv 1 \pmod 7\)</span>. Hence,
+<span class="math inline">\(b_2=6=-1\)</span>. Similarly, <span
+class="math inline">\(b_3=6\)</span>. Therefore the solution is <span
+class="math display">\[x \equiv  1137 \equiv -18 \pmod {385} \quad
+\text{ or } \quad x = 385k-18 = 385k +367,\]</span> where <span
+class="math inline">\(k=0,1,2,\ldots\)</span>. Substituting values of
+<span class="math inline">\(k\)</span>, we get that <span
+class="math inline">\(x\)</span> lies in the interval <span
+class="math inline">\([601,800]\)</span> and <span
+class="math inline">\([1001,1200]\)</span>.</p>
+</div>
+<div id="net-june-2015-c" class="slide section level1">
+<h1><strong>NET JUNE 2015 (C):</strong></h1>
+<p>Which of the following primes satisfy the congruence<br />
+<span class="math inline">\(a^{24} \equiv 6a +2 \mod {13}\)</span>?</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(41\)</span>.<br></li>
+<li><span class="math inline">\(47\)</span>.<br></li>
+<li><span class="math inline">\(67\)</span>.<br></li>
+<li><span class="math inline">\(83\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>By Euler’s theorem, if <span class="math inline">\(a\)</span> is
+relatively prime to <span class="math inline">\(n\)</span>, then <span
+class="math inline">\(a^{\phi(n)}\equiv 1 \pmod n\)</span>. Here <span
+class="math inline">\(n=13\)</span> and all choices of <span
+class="math inline">\(a\)</span> given are prime. Therefore <span
+class="math inline">\((a,13)=1\)</span> and <span
+class="math inline">\(\phi(13)=12\)</span>. Then <span
+class="math display">\[\begin{align*}
+&amp; a^{12} &amp;\equiv &amp;\ 1 \pmod {13}\\
+\Rightarrow &amp; {(a^{12})}^{2} &amp;\equiv &amp;\ 1^{2} \pmod {13}\\
+\Rightarrow &amp; {(a^{24})} &amp;\equiv &amp;\ 1 \pmod {13}.
+\end{align*}\]</span> Then the given congruence <span
+class="math inline">\(a^{24} \equiv 6a +2 \mod {13}\)</span> becomes
+<span class="math inline">\(6a +2\equiv 1 \mod {13}\)</span> or <span
+class="math inline">\(6a \equiv -1 \pmod {13}\)</span>. For simplicity,
+multiply both sides of the congruence by <span
+class="math inline">\(11\)</span>. Then we get <span
+class="math display">\[66a \equiv -11 \pmod{13} \quad \text{ or } \quad
+a \equiv 2 \pmod{13}.\]</span> Substituting the given choices, we
+observe that <span class="math inline">\(a=41\)</span> and <span
+class="math inline">\(a=67\)</span> satisfy the congruence <span
+class="math inline">\(a \equiv 2 \pmod{13}\)</span>.</p>
+</div>
+<div id="net-june-2014-b" class="slide section level1">
+<h1><strong>NET JUNE 2014 (B):</strong></h1>
+<p>If <span class="math inline">\(n\)</span> is a positive integer such
+that sum of all positive integers <span class="math inline">\(a\)</span>
+satisfying <span class="math inline">\(1 \le a \le n\)</span> and <span
+class="math inline">\(\gcd(a,n)=1\)</span> is equal to <span
+class="math inline">\(240 n\)</span>, then the number of summands,
+namely, <span class="math inline">\(\phi(n)\)</span>, is</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(120\)</span>.<br></li>
+<li><span class="math inline">\(124\)</span>.<br></li>
+<li><span class="math inline">\(240\)</span>.<br></li>
+<li><span class="math inline">\(480\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>We know that, if <span class="math inline">\(k &lt; n\)</span> and
+<span class="math inline">\((k,n)=1\)</span> then <span
+class="math inline">\((n-k,n)=1\)</span> (an easy exercise). The number
+of integers <span class="math inline">\(k&lt;n\)</span> such that <span
+class="math inline">\((k,n)=1\)</span> is <span
+class="math inline">\(\phi(n)\)</span>. Pairing <span
+class="math inline">\(k\)</span> and <span
+class="math inline">\(n-k\)</span> will add up to <span
+class="math inline">\(n\)</span>. So adding all these integers we get
+<span class="math inline">\(\underbrace{n+n+\cdots+n}_{\phi(n)\ {\rm
+times}}\)</span>, i.e. <span
+class="math inline">\(\frac{n\phi(n)}{2}\)</span>.<br></p>
+<p>Here, we are given that <span
+class="math inline">\(\frac{n\phi(n)}{2}=240n\)</span> which implies
+<span class="math inline">\(\phi(n)=480\)</span>.</p>
+</div>
+<div id="net-june-2014-c" class="slide section level1">
+<h1><strong>NET JUNE 2014 (C):</strong></h1>
+<p>For positive integers <span class="math inline">\(m\)</span> and
+<span class="math inline">\(n\)</span>, let <span
+class="math inline">\(F_n = 2^{2^n}+1\)</span> and <span
+class="math inline">\(G_m= 2^{2^m}-1\)</span>. Which of the following
+are true?</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(F_n\)</span> divides <span
+class="math inline">\(G_m\)</span> whenever <span
+class="math inline">\(m&gt;n\)</span>.<br></li>
+<li><span class="math inline">\(\gcd(F_n,G_m) = 1\)</span> whenever
+<span class="math inline">\(m \neq n\)</span>.<br></li>
+<li><span class="math inline">\(\gcd(F_n,F_m) = 1\)</span> whenever
+<span class="math inline">\(m \neq n\)</span>.</li>
+<li><span class="math inline">\(G_m\)</span> divides <span
+class="math inline">\(F_n\)</span> whenever <span
+class="math inline">\(m &lt; n\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>Note that the integers <span class="math inline">\(F_n\)</span> are
+called Fermat’s numbers.<br></p>
+<ol style="list-style-type: decimal">
+<li><p>For all <span class="math inline">\(m\)</span>, note that <span
+class="math inline">\(G_m = 2^{2^m}-1 = (2^{2^{m-1}})^2 - 1=
+(2^{2^{m-1}} - 1)(2^{2^{m-1}} + 1) = G_{m-1}F_{m-1}\)</span>.<br></p>
+<p>Again <span class="math inline">\(G_{m-1} = G_{m-2} F_{m-2}\)</span>
+and so <span class="math inline">\(G_m = G_{m-2}F_{m-2}F_{m-1}\)</span>.
+Therefore, if <span class="math inline">\(n &lt; m\)</span>, then
+recursively we get <span class="math display">\[G_m = G_nF_n F_{n+1}
+\cdots F_{m-2}F_{m-1}.\]</span> Therefore <span
+class="math inline">\(F_n \mid G_m\)</span> if <span
+class="math inline">\(m &gt; n\)</span>.<br></p></li>
+<li><p>Since <span class="math inline">\(F_n \mid G_m\)</span> if <span
+class="math inline">\(m &gt; n\)</span>, we conclude that <span
+class="math inline">\(\gcd(F_n,G_m) \neq 1\)</span> when <span
+class="math inline">\(m &gt; n\)</span>. Hence, this option is not
+correct.<br></p></li>
+<li><p>Note that <span class="math display">\[\begin{align*}
+F_{n+1} =&amp;\ 2^{2^{n+1}}+1\\
+=&amp;\ 2^{2^{n+1}}-1 + 2\\
+=&amp;\ \big((2^{2^n})^2 - 1\big) + 2\\
+=&amp;\ (2^{2^n}+1)(2^{2^n}-1) + 2\\
+=&amp;\ F_n \big((2^{2^{n-1}})^2 - 1\big) + 2\\
+%=&amp;\ F_n (2^{2^{n-1}}+1) (2^{2^{n-1}}-1) +2\\
+=&amp;\ F_n F_{n-1} (2^{2^{n-1}}-1) +2\\
+=&amp;\ \quad \vdots\\
+=&amp;\ F_n F_{n-1} \cdots F_1 F_0 + 2.
+\end{align*}\]</span> Thus, if <span class="math inline">\(m &lt;
+n\)</span>, then <span class="math inline">\(F_n = F_{n-1} F_{n-2}
+\cdots F_{m+1} F_m F_{m-1} \cdots F_1 F_0+2\)</span>.<br></p>
+<p>Suppose <span class="math inline">\(\gcd(F_n,F_m) = d\)</span>. Then
+<span class="math inline">\(d\mid F_n\)</span> and <span
+class="math inline">\(d_\mid F_m\)</span>. Then by above expression, we
+say that <span class="math inline">\(d \mid 2\)</span>. Therefore, <span
+class="math inline">\(d = 1\)</span> or <span
+class="math inline">\(d=2\)</span>. But since <span
+class="math inline">\(F_n\)</span> and <span
+class="math inline">\(F_m\)</span> are odd numbers, <span
+class="math inline">\(d\neq 2\)</span>. Hence, <span
+class="math inline">\(d = 1\)</span>. This options is
+<strong>correct</strong>.<br></p></li>
+<li><h1 id="not-true.-example-take-m2-and-n-3.-then"><strong>Not
+True.</strong> Example, take <span class="math inline">\(m=2\)</span>
+and <span class="math inline">\(n =3\)</span>. Then</h1>
+<p><span class="math inline">\(G_2 = 2^{2^2} - 1 = 2^4-1 = 15\)</span>
+and <span class="math inline">\(F_3 = 2^{2^3} + 1 = 2^8+1 = 256 + 1 =
+257\)</span>. Neither <span class="math inline">\(3\)</span> nor <span
+class="math inline">\(5\)</span> divides <span
+class="math inline">\(257\)</span> and hence <span
+class="math inline">\(G_2 = 15 \nmid 257 = F_3\)</span>.</p></li>
+</ol>
+</div>
+<div id="net-dec-2013-b" class="slide section level1">
+<h1><strong>NET DEC 2013 (B):</strong></h1>
+<p>For any integers <span class="math inline">\(a, b\)</span>, let <span
+class="math inline">\(N_{a,b}\)</span> denote the number of positive
+integers <span class="math inline">\(x &lt; 1000\)</span> such that
+<span class="math inline">\(x \equiv a \pmod {27}\)</span> and <span
+class="math inline">\(x \equiv b \pmod{37}\)</span>. Then,</p>
+<ol style="list-style-type: lower-alpha">
+<li>There exists <span class="math inline">\(a,b\)</span> such that
+<span class="math inline">\(N_{a,b} =0\)</span>.<br></li>
+<li>For all <span class="math inline">\(a,b\)</span>, <span
+class="math inline">\(N_{a,b} = 1\)</span>.<br></li>
+<li>For all <span class="math inline">\(a,b\)</span>, <span
+class="math inline">\(N_{a,b} &gt; 1\)</span>.<br></li>
+<li>There exists <span class="math inline">\(a, b\)</span> such that
+<span class="math inline">\(N_{a,b} =1\)</span> and there exists <span
+class="math inline">\(a,b\)</span> such that <span
+class="math inline">\(N_{a,b}=2\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p><strong>Chinese Remainder Theorem:</strong> Let <span
+class="math inline">\(m_1,\ldots,m_r\)</span> be pairwise relatively
+prime integers, i.e. <span class="math inline">\((m_i,m_j)=1\)</span> if
+<span class="math inline">\(i \neq j\)</span>. Let <span
+class="math inline">\(a_1,\ldots,a_r\)</span> be arbitrary integers.
+Then the system of congruences <span
+class="math display">\[\begin{align*}
+x &amp;\ \equiv a_1 \pmod{m_1}\\
+&amp;\ \ \ \vdots\\
+x &amp;\ \equiv a_r \pmod{m_r}
+\end{align*}\]</span> has exactly one solution modulo <span
+class="math inline">\(M=m_1m_2\cdots m_r\)</span>.<br />
+Here <span class="math inline">\(a_1=a\)</span>, <span
+class="math inline">\(a_2=b\)</span>, <span
+class="math inline">\(m_1=27\)</span>, <span
+class="math inline">\(m_2=37\)</span>, and <span
+class="math inline">\(\gcd(m_1,m_2)=1\)</span>. Therefore <span
+class="math inline">\(M=m_1m_2=999\)</span> and hence (by Chinese
+Remainder Theorem) the system of congruence <span
+class="math display">\[\begin{align*}
+k \equiv &amp;\ a \pmod {27}\\
+k \equiv &amp;\  b \pmod{37}
+\end{align*}\]</span> has unique solution modulo <span
+class="math inline">\(999\)</span>, i.e. there exists unique <span
+class="math inline">\(x\)</span>, <span class="math inline">\(1 \le x
+\le 999\)</span>, which satisfies both the above congruences
+simultaneously. Hence, <span class="math inline">\(N_{a,b} = 1\)</span>
+for all integers <span class="math inline">\(a\)</span> and <span
+class="math inline">\(b\)</span>.</p>
+</div>
+<div id="net-june-2013-a" class="slide section level1">
+<h1><strong>NET JUNE 2013 (A):</strong></h1>
+<p>What is the last digit of <span
+class="math inline">\(7^{73}\)</span>?</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(7\)</span>.<br></li>
+<li><span class="math inline">\(9\)</span>.<br></li>
+<li><span class="math inline">\(3\)</span>.<br></li>
+<li><span class="math inline">\(1\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>To obtain the last digit of a number, we need to compute the
+remainder obtained by dividing the number by <span
+class="math inline">\(10\)</span>.<br></p>
+<p>By Euler’s theorem, if <span class="math inline">\(a\)</span> is
+relatively prime to <span class="math inline">\(n\)</span>, then <span
+class="math inline">\(a^{\phi(n)}\equiv 1 \pmod n\)</span>. Here <span
+class="math inline">\(a=7\)</span> and <span
+class="math inline">\(n=10\)</span>. Since <span
+class="math inline">\((7,10)=1\)</span> and <span
+class="math inline">\(\phi(10)=4\)</span>, we have <span
+class="math display">\[\begin{align*}
+&amp; 7^4 &amp;\equiv &amp;\ 1 \pmod {10}\\
+\Rightarrow &amp; {(7^4)}^{18} &amp;\equiv &amp;\ 1^{18} \pmod {10}\\
+\Rightarrow &amp; 7 \cdot 7^{72}=7^{73} &amp;\equiv &amp;\ 7\cdot 1 =7
+\pmod {10}.
+\end{align*}\]</span></p>
+</div>
+<div id="net-june-2013-c" class="slide section level1">
+<h1><strong>NET JUNE 2013 (C):</strong></h1>
+<p>Consider the congruence <span class="math inline">\(x^n \equiv 2
+\pmod {13}\)</span>. This congruence has a solution for <span
+class="math inline">\(x\)</span> if</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(n=5\)</span>.<br></li>
+<li><span class="math inline">\(n=6\)</span>.<br></li>
+<li><span class="math inline">\(n=7\)</span>.<br></li>
+<li><span class="math inline">\(n=8\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>By Euler’s theorem, if <span class="math inline">\(a\)</span> is
+relatively prime to <span class="math inline">\(m\)</span>, then <span
+class="math inline">\(a^{\phi(n)}\equiv 1 \pmod m\)</span>. Here <span
+class="math inline">\(m=13\)</span>, <span
+class="math inline">\(\phi(13)=12\)</span> and hence if <span
+class="math inline">\(13\nmid x\)</span> then the congruence <span
+class="math inline">\(x^{12} \equiv 1 \pmod {13}\)</span> has a
+solution.</p>
+<ol style="list-style-type: decimal">
+<li><p>The congruence <span class="math inline">\(x^5 \equiv 2 \pmod
+{13}\)</span> implies <span class="math inline">\(x^{15} \equiv 2^3
+\pmod{13}\)</span>, i.e. <span class="math inline">\(x^{12} x^3 \equiv
+x^3 \equiv 2^3 \pmod{13}\)</span>. It has a solution, <span
+class="math inline">\(x=2\)</span>.<br></p></li>
+<li><p>The congruence <span class="math inline">\(x^6 \equiv 2 \pmod
+{13}\)</span> implies <span class="math inline">\(x^{12} \equiv 2^2
+\pmod{13}\)</span>, i.e. <span class="math inline">\(1\equiv 4
+\pmod{13}\)</span> which is not possible. Hence, this congruence does
+not have a solution.<br></p></li>
+<li><p>The congruence <span class="math inline">\(x^7 \equiv 2 \pmod
+{13}\)</span> implies <span class="math inline">\(x^{14} \equiv 2^2
+\pmod{13}\)</span>, i.e. <span class="math inline">\(x^{12} x^2 \equiv
+x^2 \equiv 2^2 \pmod{13}\)</span>. It has a solution, <span
+class="math inline">\(x=2\)</span>.<br></p></li>
+<li><p>The congruence <span class="math inline">\(x^8 \equiv 2 \pmod
+{13}\)</span> implies <span class="math inline">\(x^{24} \equiv 2^3
+\pmod{13}\)</span>, i.e. <span class="math inline">\(1\equiv 8
+\pmod{13}\)</span> which is not possible. Hence, this congruence does
+not have a solution.<br></p></li>
+</ol>
+</div>
+<div id="net-dec-2012-b" class="slide section level1">
+<h1><strong>NET DEC 2012 (B):</strong></h1>
+<p>The last two digits of <span class="math inline">\(7^{81}\)</span>
+are</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(07\)</span>.<br></li>
+<li><span class="math inline">\(17\)</span>.<br></li>
+<li><span class="math inline">\(37\)</span>.<br></li>
+<li><span class="math inline">\(47\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>To obtain last two digits of a number, we need to compute the
+remainder obtained by dividing the number by <span
+class="math inline">\(100\)</span>.<br></p>
+<p>By Euler’s theorem, if <span class="math inline">\(a\)</span> is
+relatively prime to <span class="math inline">\(n\)</span>, then <span
+class="math inline">\(a^{\phi(n)}\equiv 1 \pmod n\)</span>. Here <span
+class="math inline">\(a=7\)</span> and <span
+class="math inline">\(n=100\)</span>. Since <span
+class="math inline">\((7,100)=1\)</span> and <span
+class="math inline">\(\phi(100)=\phi(4)\phi(25)=2 \times 20 =
+40\)</span>, we have <span class="math display">\[\begin{align*}
+&amp; 7^{40} &amp;\equiv &amp;\ 1 \pmod {100}\\
+\Rightarrow &amp; {(7^{40})}^{2} &amp;\equiv &amp;\ 1^{2} \pmod {100}\\
+\Rightarrow &amp; 7 \cdot 7^{80} = 7^{81} &amp;\equiv &amp;\ 7 \cdot 1=
+7 \pmod {100}.
+\end{align*}\]</span> Thus, last two digits (i.e. the remainder) is
+<span class="math inline">\(07\)</span>.</p>
+</div>
+<div id="net-dec-2012-c" class="slide section level1">
+<h1><strong>NET DEC 2012 (C):</strong></h1>
+<p>For positive integers <span class="math inline">\(m\)</span>, let
+<span class="math inline">\(\phi(m)\)</span> denote the number of
+integer <span class="math inline">\(k\)</span> such that <span
+class="math inline">\(1 \le k \le n\)</span> and GCD<span
+class="math inline">\((k,m)=1\)</span>. Then which of the following
+statements are necessarily true?</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(\phi(n)\)</span> divides <span
+class="math inline">\(n\)</span> for every positive integer <span
+class="math inline">\(n\)</span>.<br></li>
+<li><span class="math inline">\(n\)</span> divides <span
+class="math inline">\(\phi\big(a^n-1\big)\)</span> for all positive
+integers <span class="math inline">\(a\)</span> and <span
+class="math inline">\(n\)</span>.<br></li>
+<li><span class="math inline">\(n\)</span> divides <span
+class="math inline">\(\phi\big(a^n-1\big)\)</span> for all positive
+integers <span class="math inline">\(a\)</span> and <span
+class="math inline">\(n\)</span> such that GCD<span
+class="math inline">\((a,n)=1\)</span>.<br></li>
+<li><span class="math inline">\(a\)</span> divides <span
+class="math inline">\(\phi\big(a^n-1\big)\)</span> for all positive
+integers <span class="math inline">\(a\)</span> and <span
+class="math inline">\(n\)</span> such that GCD<span
+class="math inline">\((a,n)=1\)</span>.</li>
+</ol>
+<p><strong>Solution</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Take <span class="math inline">\(n=10\)</span>. Then <span
+class="math inline">\(\phi(n)=4\)</span> and <span
+class="math inline">\(\phi(n) \nmid n\)</span>. Also, <span
+class="math inline">\(\phi(p)=p-1 \nmid p\)</span>.<br></p></li>
+<li><p>For <span class="math inline">\(a&gt;1\)</span>, first we show
+that order of <span class="math inline">\(a\)</span> modulo <span
+class="math inline">\(a^n-1\)</span> is <span
+class="math inline">\(n\)</span>, i.e. <span class="math inline">\({\rm
+ord}_{a^n-1}(a) = n\)</span>. Suppose <span class="math inline">\({\rm
+ord}_{a^n-1}(a)=d\)</span>. If <span class="math inline">\(d &lt;
+n\)</span> then <span class="math inline">\(a^d &lt; a^n\)</span>, so
+<span class="math inline">\(a^d-1 &lt; a^n-1\)</span>. In this case,
+<span class="math inline">\(a^d - 1 \not\equiv 0 \pmod
+{a^n-1}\)</span>.<br></p>
+<p>Now, since <span class="math inline">\((a,a^n-1)=1\)</span>, by
+Euler’s theorem <span class="math inline">\(a^{\phi(a^n-1)} \equiv 1
+\pmod{a^n-1}\)</span> or <span class="math inline">\(a^{\phi(a^n-1)}-1
+\equiv 0\pmod{a^n-1}\)</span>. Since the order of <span
+class="math inline">\(a\)</span> is <span
+class="math inline">\(n\)</span>, <span class="math inline">\(n\mid
+\phi\big(a^n-1\big)\)</span>.<br></p></li>
+<li><p>Same as above. It is true in general and therefore true for all
+<span class="math inline">\(a,n\)</span> with GCD<span
+class="math inline">\((a,n)=1\)</span>.<br></p></li>
+<li><p>Take <span class="math inline">\(a=3\)</span>, <span
+class="math inline">\(n=2\)</span>, we have <span
+class="math inline">\(a^n-1 = 9-1=8\)</span> and therefore <span
+class="math inline">\(\phi(a^n-1)=\phi(8)=4\)</span> and so <span
+class="math inline">\(a \nmid \phi(a^n-1)\)</span>. This case is not
+true.</p></li>
+</ol>
+</div>
+<div id="net-june-2012-b" class="slide section level1">
+<h1><strong>NET JUNE 2012 (B):</strong></h1>
+<p>The last digit of <span class="math inline">\((38)^{2011}\)</span>
+is</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(6\)</span>.<br></li>
+<li><span class="math inline">\(2\)</span>.<br></li>
+<li><span class="math inline">\(4\)</span>.<br></li>
+<li><span class="math inline">\(8\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>Last digit means remainder obtained on dividing the number by <span
+class="math inline">\(10\)</span>. Now, <span class="math inline">\(38
+\equiv 8 \pmod{10}\)</span>. So it is equivalent to find the last digit
+of <span class="math inline">\(8^{2011}\)</span>.</p>
+</div>
+<div id="net-june-2012-b-1" class="slide section level1">
+<h1><strong>NET JUNE 2012 (B):</strong></h1>
+<p>The number of positive divisors of <span
+class="math inline">\(50000\)</span> is</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(20\)</span>.<br></li>
+<li><span class="math inline">\(30\)</span>.<br></li>
+<li><span class="math inline">\(40\)</span>.<br></li>
+<li><span class="math inline">\(50\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>If <span class="math inline">\(n={p_1}^{\alpha_1} {p_2}^{\alpha_2}
+\cdots {p_k}^{\alpha_k}\)</span> and <span class="math inline">\(d \mid
+n\)</span> then <span class="math inline">\(d\)</span> is of the form
+<span class="math inline">\(d = {p_1}^{\beta_1} {p_2}^{\beta_2} \cdots
+{p_k}^{\beta_k}\)</span>, where <span class="math inline">\(0 \le
+\beta_i \le \alpha_i\)</span> for all <span class="math inline">\(i =
+1,2,\ldots,k\)</span>. Thus, the number of positive divisors of <span
+class="math inline">\(n\)</span> is <span
+class="math inline">\((\alpha_1+1)(\alpha_2 +1)\cdots
+(\alpha_k+1)\)</span>.<br></p>
+<p>Here, <span class="math inline">\(50000= 2^4 \times 5^5\)</span> and
+therefore the number of positive divisors of <span
+class="math inline">\(50000\)</span> is <span
+class="math inline">\((4+1)(5+1) = 5\cdot 6 =30\)</span>.</p>
+</div>
+<div id="net-june-2011-b" class="slide section level1">
+<h1><strong>NET JUNE 2011 (B):</strong></h1>
+<p>The number of elements in the set<br />
+<span class="math inline">\(\{m \mid 1 \le m \le 1000, m \text{ and }
+1000 \text{ are relatively prime}\} \text { is}\)</span></p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(100\)</span>.<br></li>
+<li><span class="math inline">\(250\)</span>.<br></li>
+<li><span class="math inline">\(300\)</span>.<br></li>
+<li><span class="math inline">\(400\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>By Euler product, <span class="math inline">\(\phi(n) = n
+\prod\limits_{p \mid n}\left(1-\frac{1}{p}\right)\)</span>.<br />
+<span class="math inline">\(\phi(1000) = 1000
+\left(1-\frac{1}{2}\right)\left(1-\frac{1}{5}\right) = 1000 \times
+\frac{1}{2} \times \frac{4}{5} = 400.\)</span></p>
+</div>
+<div id="net-june-2011-b-1" class="slide section level1">
+<h1><strong>NET JUNE 2011 (B):</strong></h1>
+<p>The unit digit of <span class="math inline">\(2^{100}\)</span> is</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(2\)</span>.<br></li>
+<li><span class="math inline">\(4\)</span>.<br></li>
+<li><span class="math inline">\(6\)</span>.<br></li>
+<li><span class="math inline">\(8\)</span>.<br></li>
+</ol>
+<p><strong>Solution</strong></p>
+<p>Note that, in general, <span class="math inline">\(2^{4k+1} \equiv
+2\pmod{10}\)</span>, <span class="math inline">\(2^{4k+2} \equiv 4\pmod
+{10}\)</span>, <span class="math inline">\(2^{4k+3} \equiv 8\pmod
+{10}\)</span>, and <span class="math inline">\(2^{4k} \equiv 6\pmod
+{10}\)</span>. Here <span class="math inline">\(100 = 4 \times
+25\)</span> is of the form <span class="math inline">\(4k\)</span>.
+Hence, the last digit of <span class="math inline">\(2^{100}\)</span> is
+<span class="math inline">\(6\)</span>.</p>
+</div>
+<div id="nbhm-msc-2018" class="slide section level1">
+<h1><strong>NBHM MSc 2018:</strong></h1>
+<p>What is the highest power of <span class="math inline">\(3\)</span>
+dividing <span class="math inline">\(1000!\)</span>?</p>
+<p><strong>Solution</strong></p>
+<p>First we count the number of terms in <span
+class="math inline">\(1000!\)</span> which are divisible by <span
+class="math inline">\(5\)</span>. They are <span
+class="math inline">\(3, 6, 9, 12, \ldots, 999\)</span>. So the total
+number of such terms is <span class="math display">\[\left\lfloor
+\frac{1000}{3}\right\rfloor = 333.\]</span></p>
+<p>Now we count the number of terms in <span
+class="math inline">\(1000!\)</span> which are divisible by <span
+class="math inline">\(3^2\)</span>. They are <span
+class="math inline">\(9, 18, 27, \ldots, 999\)</span>. These have to be
+counted twice but we considered them only once above. Totally we have
+<span class="math display">\[\left\lfloor \frac{1000}{9}\right\rfloor =
+111\]</span> such terms. Now one more power of <span
+class="math inline">\(3\)</span> appears in the terms in <span
+class="math inline">\(1000!\)</span> which are divisible by <span
+class="math inline">\(3^3\)</span>. But we counted them only twice (once
+in divisibility by <span class="math inline">\(3\)</span> and second
+time in divisibility by <span class="math inline">\(9\)</span>). So
+total number of such terms are <span class="math display">\[\left\lfloor
+\frac{1000}{3^3}\right\rfloor = 37.\]</span> Similarly, we have <span
+class="math display">\[\left\lfloor \frac{1000}{3^4}\right\rfloor = 12,
+\ \left\lfloor \frac{1000}{3^5}\right\rfloor = 4, \ \left\lfloor
+\frac{1000}{3^6}\right\rfloor = 1,\]</span> and <span
+class="math display">\[\left\lfloor \frac{1000}{3^n}\right\rfloor = 0,
+\qquad \forall\ n \ge 7.\]</span> Hence, the highest power of <span
+class="math inline">\(3\)</span> appearing in <span
+class="math inline">\(1000!\)</span> is <span
+class="math display">\[333+111+37+12+4+1 =498.\]</span></p>
+</div>
+</body>
+</html>
