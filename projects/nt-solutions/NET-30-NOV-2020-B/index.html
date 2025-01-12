@@ -10,9 +10,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mathematical Classical Mechanics | Dr. Jay Mehta</title>
+    <title>NET 30 NOV 2020 (B) | Dr. Jay Mehta</title>
     <meta name="author" content="Jay  Mehta">
-    <meta name="description" content="Semester II (PS02EMTH22) &lt;br&gt; old course &lt;br&gt; same as Sem I (PS01EMTH22)">
+    <meta name="description" content="Assistant Professor in Mathematics This is a personal page of Dr. Jay Mehta.
+">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -38,7 +39,7 @@
     <link rel="shortcut icon" href="/assets/img/j.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https:jaygmehta.com/projects/mechanicssem2/">
+    <link rel="canonical" href="https:jaygmehta.com/projects/nt-solutions/NET-30-NOV-2020-B/">
 
     <!-- Dark Mode -->
     
@@ -135,63 +136,42 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Mathematical Classical Mechanics</h1>
-            <p class="post-description">Semester II (PS02EMTH22) <br> old course <br> same as Sem I (PS01EMTH22)</p>
+            <h1 class="post-title">NET 30 NOV 2020 (B)</h1>
+            <p class="post-description"></p>
           </header>
 
         </div>
         <article>
           
           <div id="markdown-content">
-            <h2 id="syllabus">Syllabus</h2>
-<!-- The below command span will be used if we change first line layout to page instead of post -->
-<!-- <span style="font-size:1.3em;"> **Syllabus** </span> -->
+            <!-- # **NET 30 NOV 2020 (B):**  -->
 
-<table>
-  <tbody>
-    <tr>
-      <td><strong>Unit-I</strong></td>
-      <td>Constraints and their classification, principle of virtual work, de’Almbert’s principle, various forms of Lagrange’s equations of motion for holonomic systems, examples.</td>
-    </tr>
-    <tr>
-      <td><strong>Unit-II</strong></td>
-      <td>Euler-Lagrange equations in various forms (statements only), Hamilton’s variational principle, derivation of Lagrange’s equation from Hamilton’s variational principle, generalized momentum, cyclic coordinates, general conservation theorem, conservation of linear momentum and angular momentum in Lagrangian formalism and symmetry properties, energy function and conservation of total energy in Lagrangian formalism.</td>
-    </tr>
-    <tr>
-      <td><strong>Unit-III</strong></td>
-      <td>Hamilton’s canonical equation of motion, relation with Lagrange’s equation, cyclic coordinate, Routhian procedure, variational principle approach to Hamilton’s equation of motion, examples.</td>
-    </tr>
-    <tr>
-      <td>
-<strong>Unit-IV</strong>                             </td>
-      <td>Canonical transformations, generating functions, symplectic condition, infintesimal canonical transformations, examples. Poisson bracket, Lagrange bracket, formal solution of equations of motion in terms of Poisson brackets, examples.</td>
-    </tr>
-  </tbody>
-</table>
+<p>The last two digits of $3^{2019}$ are</p>
 
-<p><br></p>
+<p>(a) $27$<br>
+(b) $37$<br>
+(c) $57$<br>
+(d) $67$<br></p>
 
-<h3 id="reference-books">Reference Books</h3>
+<p><strong>Solution</strong></p>
 
-<ol>
-  <li>Goldstein H., Poole C. and Safko J., Classical Mechanics, (Third Edition), Pearson Education, Inc., Indian Low Price Edition, 2002.</li>
-  <li>Bhatia V. B., Classical Mechanics, Narosa Publishing House, 1997.</li>
-  <li>Sankara Rao K., Classical Mechanics, Prentice-Hall of India, 2005.</li>
-</ol>
+<p>To obtain last two digits of a number, we need to compute the remainder
+obtained by dividing the number by $100$.<br></p>
 
-<hr>
+<p>By Euler’s theorem, if $a$ is relatively prime to $n$, then
+$a^{\phi(n)}\equiv 1 \pmod n$. Here $a=3$ and $n=100$. Since $(3,100)=1$
+and $\phi(100)=\phi(4)\phi(25)=2 \times 20 = 40$, we have
+\(\begin{align*}
+&amp; 3^{40} &amp;\equiv &amp;\ 1 \pmod {100}\\
+\Rightarrow &amp; {(3^{40})}^{50} &amp;\equiv &amp;\ 1^{50} \pmod {100}\\
+\Rightarrow &amp; 3^{19} \cdot 3^{2000} = 3^{19} \pmod {100}.
+\end{align*}\) 
+Note that $3^{4} \equiv 81 \equiv -19 \pmod{100}$.
+Therefore, $3^{8} \equiv (-19)^2 361 \equiv 61 \pmod{100}$. Then
+$3^{16} \equiv (61)^2 \equiv 3721 \equiv 21 \pmod{100}$. Finally,
+\(3^{19} \equiv 3^3 \cdot 3^{16} \equiv 27 \cdot 21 = 567 \equiv 67 \pmod{100}.\)
+Thus, last two digits (i.e. the remainder) is $67$.</p>
 
-<h2 id="lecture-notes">Lecture Notes</h2>
-<p>Download the PDF file of lecture notes <a href="/assets/pdf/PS01EMTH22.pdf" target="_blank" class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p>
-
-<iframe width="100%" height="800" src="/assets/pdf/PS01EMTH22.pdf">
-
-<!-- <object data="https://jaygmehta.com/assets/pdf/PS01EMTH22.pdf" type="application/pdf" width="100%" height="800">
-    <embed src="https://jaygmehta.com/assets/pdf/PS01EMTH22.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://jaygmehta.com/assets/pdf/PS01EMTH22.pdf">Download PDF</a>.</p>
-    </embed>
-</object> -->
-</iframe>
 
           </div>
         </article>
