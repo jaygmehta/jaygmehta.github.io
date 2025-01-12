@@ -1,4 +1,12 @@
-# **NET 30 NOV 2020 (B):** 
+---
+layout: page
+title: NET 30 NOV 2020 (B)
+# description: another without an image
+# img:
+# importance: 3
+#category: fun
+---
+<!-- # **NET 30 NOV 2020 (B):**  -->
 
 The last two digits of $3^{2019}$ are
 
