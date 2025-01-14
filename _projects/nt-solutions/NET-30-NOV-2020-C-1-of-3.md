@@ -24,7 +24,7 @@ $d\mid 2n$, we have
 $$d\mid \gcd(2m,2n) = 2 \gcd(m,n) = 2\cdot 1 = 2.$$
 
 Therefore, $d = 1$ or $d=2$. Since $d=2$ is a possibility, option (a)
-and option(d) are # **Not true** and option (b) is **true**.<br>
+and option(d) are **not true** and option (b) is **true**.<br>
 
 Also since $\gcd(m,n)=1$ (by Bezout's identity), there exists integers
 $x'$ and $y'$ such that $mx'+ny' = 1$. Multiplying both sides by $3$, we

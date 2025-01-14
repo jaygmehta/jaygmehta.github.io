@@ -8,14 +8,14 @@ title: NET 26 NOV 2020 (B)
 <!-- # **NET 26 NOV 2020 (B): 2 of 2**  -->
 
 Let $\varphi(n)$ be the cardinality of the set
-$\{a \mid 1 \le a \le n, \ (a,n) = 1\}$, where $(a,n)$ denotes the gcd
+$\\{a \mid 1 \le a \le n, \ (a,n) = 1\\}$, where $(a,n)$ denotes the gcd
 of $a$ and $n$. Which of the following is NOT true?
 
 (a) There exists infinitely many $n$ such that $\varphi(n) > \varphi(n+1)$.<br>
 (b) There exists infinitely many $n$ such that $\varphi(n) < \varphi(n+1)$.<br>
 (c) There exists $N \in \mathbb N$ such that $N > 2$ and for all $n > N$,
 $\varphi(N) < \varphi(n)$.<br>
-(d) The set $\left\{\frac{\varphi(n)}{n} : n \in \mathbb N\right\}$ has finitely many limit points.
+(d) The set $\left\\{\frac{\varphi(n)}{n} : n \in \mathbb N\right\\}$ has finitely many limit points.
 
 **Solution**
 

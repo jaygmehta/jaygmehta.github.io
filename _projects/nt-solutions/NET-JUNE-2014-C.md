@@ -56,7 +56,7 @@ Note that the integers $F_n$ are called Fermat's numbers.<br>
     $d=2$. But since $F_n$ and $F_m$ are odd numbers, $d\neq 2$. Hence,
     $d = 1$. This options is **correct**.<br>
 
-4.  # **Not True.** Example, take $m=2$ and $n =3$. Then
+4.  **Not True.** Example, take $m=2$ and $n =3$. Then
     $G_2 = 2^{2^2} - 1 = 2^4-1 = 15$ and
     $F_3 = 2^{2^3} + 1 = 2^8+1 = 256 + 1 = 257$. Neither $3$ nor $5$
     divides $257$ and hence $G_2 = 15 \nmid 257 = F_3$.

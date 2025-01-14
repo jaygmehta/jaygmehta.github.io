@@ -8,7 +8,7 @@ title: NET JUNE 2019 (C)
 <!-- # **NET JUNE 2019 (C):**  -->
 
 Let $a \in \mathbb Z$ be such that $a=b^2 +c^2$,
-where $b,c \in \mathbb Z \smallsetminus \{0\}$. Then $a$ cannot be
+where $b,c \in \mathbb Z \smallsetminus \\{0\\}$. Then $a$ cannot be
 written as
 
 (a) $pd^2$, where $d \in \mathbb Z$ and $p$ is a prime with

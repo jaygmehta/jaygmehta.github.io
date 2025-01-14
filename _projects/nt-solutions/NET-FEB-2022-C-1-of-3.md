@@ -5,7 +5,7 @@ title: NET FEB 2022 (C)
 # img:
 # importance: 3
 ---
-# **NET FEB 2022 (C): 1 of 3** 
+<!-- # **NET FEB 2022 (C): 1 of 3**  -->
 
 Let $p$ be a prime and $N_p$ be the number of
 pairs of positive integers $(x,y)$ such that such that

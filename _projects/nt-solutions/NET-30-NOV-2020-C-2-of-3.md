@@ -21,7 +21,7 @@ true for $n > 3$?
 1.  This is false since for $n = 8$, $\varphi(n)= \varphi(8) = 4$ and
     $4 \mid n=8$.<br>
 
-2.  We know (by Bezout's identity) that for integers $a$ and $b$
+2.  We know (by Bezout's identity) that for integers $a$ and $b$, 
     $\gcd(a,b) = 1$ if and only if there exists integers $x$ and $y$
     such that $ax+by = 1$.\
     By this, here we have $\gcd(n,6) = 1$. This is false, since

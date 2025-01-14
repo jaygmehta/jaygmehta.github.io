@@ -22,7 +22,9 @@ Then which of the following statements are necessarily true?
     $\phi(p)=p-1 \nmid p$.<br>
 
 2.  For $a>1$, first we show that order of $a$ modulo $a^n-1$ is $n$,
-    i.e. ${\rm ord}_{a^n-1}(a) = n$. Suppose ${\rm ord}_{a^n-1}(a)=d$.
+    i.e. $${\rm ord}_{a^n-1}(a) = n$$. 
+    Suppose 
+    ${\rm ord}_{a^n-1}(a)=d$.
     If $d < n$ then $a^d < a^n$, so $a^d-1 < a^n-1$. In this case,
     $a^d - 1 \not\equiv 0 \pmod {a^n-1}$.<br>
 

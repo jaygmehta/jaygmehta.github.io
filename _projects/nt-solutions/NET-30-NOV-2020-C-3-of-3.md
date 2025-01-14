@@ -9,7 +9,9 @@ title: NET 30 NOV 2020 (C)
 
 Let $\mathbb N = \{1,2,\ldots\}$ denote the set
 of positive integers. For $n \in \mathbb N$, let
+
 $$A_n = \{(x,y,z) \in \mathbb N^3 : x^n + y^n = z^n \text{ and } z< n\}.$$
+
 Let $F_n$ be the cardinality of the set $A_n$. Which of the following
 statements are true?
 
