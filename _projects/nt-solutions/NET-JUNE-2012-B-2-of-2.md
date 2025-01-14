@@ -1,4 +1,11 @@
-# **NET JUNE 2012 (B): 2 of 2** 
+---
+layout: page
+title: NET JUNE 2012 (B)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET JUNE 2012 (B): 2 of 2**  -->
 
 The number of positive divisors of $50000$ is
 

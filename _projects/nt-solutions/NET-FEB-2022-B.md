@@ -1,4 +1,11 @@
-# **NET FEB 2022 (B):** 
+---
+layout: page
+title: NET FEB 2022 (B)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET FEB 2022 (B):**  -->
 
 Let $S = \{n : 1\le n \le 999;\ 3 \mid n \text{ or } 37 \mid n\}$. How many integers are there in the set $S^c = \{n : 1 \le n \le 999;\ n\not\in S\}$?
 
@@ -19,6 +26,7 @@ $3 \times 37 = 111$. Number of such integers between $1$ and $999$ are
 $|M\cap N| = \frac{999}{111} = 9.$<br>
 
 Here $S = M \cup N$. So,
+
 $$|S| = |M \cup N| = |M| + |N| - |M \cap N| = 333 + 27 - 9 = 360 - 9 = 351.$$
 
 Then $|S^c| = 999-351 = 648.$

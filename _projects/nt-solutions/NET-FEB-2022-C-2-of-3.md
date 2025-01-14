@@ -1,4 +1,11 @@
-# **NET FEB 2022 (C): 2 of 3** 
+---
+layout: page
+title: NET FEB 2022 (C)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET FEB 2022 (C): 2 of 3**  -->
 
 For a positive integer $n$, let $\Omega(n)$ denote
 the number of prime factors of $n$ counted with multiplicity. For

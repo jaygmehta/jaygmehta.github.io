@@ -1,4 +1,11 @@
-# **NET JUNE 2014 (C):** 
+---
+layout: page
+title: NET JUNE 2014 (C)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET JUNE 2014 (C):**  -->
 
 For positive integers $m$ and $n$, let
 $F_n = 2^{2^n}+1$ and $G_m= 2^{2^m}-1$. Which of the following are true?
@@ -18,7 +25,9 @@ Note that the integers $F_n$ are called Fermat's numbers.<br>
     Again $G_{m-1} = G_{m-2} F_{m-2}$ and so
     $G_m = G_{m-2}F_{m-2}F_{m-1}$. Therefore, if $n < m$, then
     recursively we get 
+
     $$G_m = G_nF_n F_{n+1} \cdots F_{m-2}F_{m-1}.$$
+    
     Therefore $F_n \mid G_m$ if $m > n$.<br>
 
 2.  Since $F_n \mid G_m$ if $m > n$, we conclude that
@@ -26,6 +35,7 @@ Note that the integers $F_n$ are called Fermat's numbers.<br>
     correct.<br>
 
 3.  Note that 
+
     $$\begin{align*}
     F_{n+1} =&\ 2^{2^{n+1}}+1\\
     =&\ 2^{2^{n+1}}-1 + 2\\
@@ -36,7 +46,8 @@ Note that the integers $F_n$ are called Fermat's numbers.<br>
     =&\ F_n F_{n-1} (2^{2^{n-1}}-1) +2\\
     =&\ \quad \vdots\\
     =&\ F_n F_{n-1} \cdots F_1 F_0 + 2.
-    \end{align*}$$ 
+    \end{align*}$$
+
     Thus, if $m < n$, then
     $F_n = F_{n-1} F_{n-2} \cdots F_{m+1} F_m F_{m-1} \cdots F_1 F_0+2$.<br>
 

@@ -1,4 +1,11 @@
-# **NET FEB 2022 (C): 3 of 3** 
+---
+layout: page
+title: NET FEB 2022 (C)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET FEB 2022 (C): 3 of 3**  -->
 
 A positive integer $n$ coprime to $17$ is called a
 primitive root modulo $17$ if $n^k - 1$ is not divisible by $17$ for all
@@ -31,6 +38,7 @@ congruent to $1$ modulo $17$<br>
     Check that $3$ is a primitive root modulo $17$, i.e.,
     $3^{16} \equiv 1 \pmod{17}$ and $3^k \neq 1 \pmod{17}$ for all
     $k < 16$. Then all other primitive roots modulo $17$ are
+
     $$\begin{align*}
     3^3 \equiv &\  10\\
     3^5 \equiv &\  5\\
@@ -40,12 +48,15 @@ congruent to $1$ modulo $17$<br>
     3^{-3} = 3^{13} \equiv &\  12\\
     3^{-1} = 3^{15} \equiv &\  6
     \end{align*}$$
+
     Note that $3$ is a primitive root and $5$ is a
     primitive root but $15$ is not. So this option is **False.**<br>
 
 4.  Taking product of all primitive roots modulo $17$, we get
+
     $$3 \cdot 10 \cdot 5 \cdot 11 \cdot 14 \cdot 7 \cdot 12 \cdot 6 \equiv 3^1 \cdot 3^3 
     \cdot 3^5 \cdot 3^7 \cdot 3^{-7} \cdot 3^{-5} \cdot 3^{-3} \cdot 3^{-1} \equiv 1 \pmod{17}.$$
+
     So this option is also **true.**
 
 

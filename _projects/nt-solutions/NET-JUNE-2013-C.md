@@ -1,4 +1,11 @@
-# **NET JUNE 2013 (C):** 
+---
+layout: page
+title: NET JUNE 2013 (C)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET JUNE 2013 (C):**  -->
 
 Consider the congruence
 $x^n \equiv 2 \pmod {13}$. This congruence has a solution for $x$ if

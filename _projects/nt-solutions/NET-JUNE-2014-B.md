@@ -1,4 +1,11 @@
-# **NET JUNE 2014 (B):** 
+---
+layout: page
+title: NET JUNE 2014 (B)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET JUNE 2014 (B):**  -->
 
 If $n$ is a positive integer such that sum of all
 positive integers $a$ satisfying $1 \le a \le n$ and $\gcd(a,n)=1$ is

@@ -1,4 +1,11 @@
-# **NET DEC 2016 (B): 1 of 2** 
+---
+layout: page
+title: NET DEC 2016 (B)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET DEC 2016 (B): 1 of 2**  -->
 
 Given a natural number $n >1$ such that
 $(n-1)! \equiv -1 \pmod n$, we can conclude that

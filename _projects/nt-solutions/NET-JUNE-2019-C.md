@@ -1,4 +1,11 @@
-# **NET JUNE 2019 (C):** 
+---
+layout: page
+title: NET JUNE 2019 (C)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET JUNE 2019 (C):**  -->
 
 Let $a \in \mathbb Z$ be such that $a=b^2 +c^2$,
 where $b,c \in \mathbb Z \smallsetminus \{0\}$. Then $a$ cannot be
@@ -24,7 +31,9 @@ However, a prime $q \equiv 3 \pmod 4$ cannot divide sum of two squares.
 The proof is simple and given below:<br>
 
 Let $q = 4k+3$ and $q \mid a^2+b^2$. Then $a^2 \equiv -b^2 \pmod q$. So
+
 $$a^{2(2k+1)} \equiv - b^{2(2k+1)} \pmod q \Rightarrow a^{4k+2} \equiv -b^{4k+2} \pmod q.$$
+
 By (Euler's or) Fermat's little theorem, we have
 $a^{4k+2} \equiv b^{4k+2} \equiv 1 \pmod{4k+3}$, where $4k+3=q$, a
 prime. Therefore, from above $1 \equiv -1 \pmod q$ which is a

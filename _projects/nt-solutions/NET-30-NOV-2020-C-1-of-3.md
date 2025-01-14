@@ -1,4 +1,11 @@
-# **NET 30 NOV 2020 (C): 1 of 3** 
+---
+layout: page
+title: NET 30 NOV 2020 (C)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET 30 NOV 2020 (C): 1 of 3**  -->
 
 For positive integers $m$ and $n$, let $\gcd(m,n)$ denote their greatest common divisor. Let $m > n$ be such
 that $\gcd(m,n) =1$. Which of the following statements are true?
@@ -13,7 +20,9 @@ that $\gcd(m,n) =1$. Which of the following statements are true?
 Let $d = \gcd(m-n,m+n)$. Then $d\mid m-n$ and $d \mid m+n$. But then
 $d\mid (m-n)+(m+n) = 2m$. Similarly, $d \mid 2n$. Since $d\mid 2m$ and
 $d\mid 2n$, we have 
+
 $$d\mid \gcd(2m,2n) = 2 \gcd(m,n) = 2\cdot 1 = 2.$$
+
 Therefore, $d = 1$ or $d=2$. Since $d=2$ is a possibility, option (a)
 and option(d) are # **Not true** and option (b) is **true**.<br>
 

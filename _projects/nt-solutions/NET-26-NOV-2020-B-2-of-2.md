@@ -1,4 +1,11 @@
-# **NET 26 NOV 2020 (B): 2 of 2** 
+---
+layout: page
+title: NET 26 NOV 2020 (B)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET 26 NOV 2020 (B): 2 of 2**  -->
 
 Let $\varphi(n)$ be the cardinality of the set
 $\{a \mid 1 \le a \le n, \ (a,n) = 1\}$, where $(a,n)$ denotes the gcd

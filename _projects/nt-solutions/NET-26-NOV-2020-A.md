@@ -1,4 +1,11 @@
-# **NET 26 NOV 2020 (A):** 
+---
+layout: page
+title: NET 26 NOV 2020 (A)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET 26 NOV 2020 (A):**  -->
 
 The sum of first $n$ even integers is
 

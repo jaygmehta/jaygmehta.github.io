@@ -1,4 +1,11 @@
-# **NET JUNE 2012 (B): 1 of 2** 
+---
+layout: page
+title: NET JUNE 2012 (B)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET JUNE 2012 (B): 1 of 2**  -->
 
 The last digit of $(38)^{2011}$ is
 

@@ -1,4 +1,11 @@
-# **NET JUNE 2011 (B): 2 of 2** 
+---
+layout: page
+title: NET JUNE 2011 (B)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET JUNE 2011 (B): 2 of 2**  -->
 
 The unit digit of $2^{100}$ is
 

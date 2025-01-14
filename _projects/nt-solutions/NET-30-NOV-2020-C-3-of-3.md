@@ -1,4 +1,11 @@
-# **NET 30 NOV 2020 (C): 3 of 3** 
+---
+layout: page
+title: NET 30 NOV 2020 (C)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET 30 NOV 2020 (C): 3 of 3**  -->
 
 Let $\mathbb N = \{1,2,\ldots\}$ denote the set
 of positive integers. For $n \in \mathbb N$, let

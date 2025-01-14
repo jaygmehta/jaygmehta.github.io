@@ -1,4 +1,11 @@
-# **NET DEC 2019 (A):** 
+---
+layout: page
+title: NET DEC 2019 (A)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET DEC 2019 (A):**  -->
 
 The difference between the squares of two
 consecutive integers is $408235$. The sum of the numbers is

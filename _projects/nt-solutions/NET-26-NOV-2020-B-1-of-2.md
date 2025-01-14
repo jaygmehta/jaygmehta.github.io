@@ -1,4 +1,11 @@
-# **NET 26 NOV 2020 (B): 1 of 2** 
+---
+layout: page
+title: NET 26 NOV 2020 (B)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET 26 NOV 2020 (B): 1 of 2**  -->
 
 Which of the following is true?
 
@@ -19,11 +26,13 @@ Which of the following is true?
 
 3.  This is **true**. Let $n = 2k$ be even integer $n \ge 16$. Then
     $n-1 = 2k-1$ and 
+    
     $$\begin{align*}
     (n-1)! = (2k-1)! =&\ 1 \times 2 \times 3 \times \cdots \times k \times (k+1) \times \cdots (2k-1)\\
     =&\ 2 \times k \times [ 3 \times \cdots \times (k-1) \times (k+1) \times \cdots \times (2k-1)].\\
     =&\ 2k \times \text{some integer } m.
-    \end{align*}$$ 
+    \end{align*}$$
+
     Hence, $n \mid (n-1)!$.\
     Note that, if $n$ is composite $n \mid (n-1)!$ and more generally,
     $\gcd(n,(n-1)!) = 1$ or $n$.<br>

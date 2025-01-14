@@ -1,4 +1,11 @@
-# **NET DEC 2012 (C):** 
+---
+layout: page
+title: NET DEC 2012 (C)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET DEC 2012 (C):**  -->
 
 For positive integers $m$, let $\phi(m)$ denote
 the number of integer $k$ such that $1 \le k \le n$ and GCD$(k,m)=1$.

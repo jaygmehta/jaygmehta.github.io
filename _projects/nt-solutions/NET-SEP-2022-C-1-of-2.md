@@ -1,9 +1,18 @@
-# **NET SEP 2022 (C): 1 of 2** 
+---
+layout: page
+title: NET SEP 2022 (C)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET SEP 2022 (C): 1 of 2**  -->
 
 Let $a$ and $b$ be positive integers with $a > b$
 and $a+b=24$. Suppose that the following congruences have a common
 integer solution. 
+
 $$2x \equiv 3a \pmod 5, \ x \equiv 4b \pmod 5.$$ 
+
 Which
 of the following statements are true?
 

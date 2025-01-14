@@ -1,4 +1,11 @@
-# **NET 30 NOV 2020 (C): 2 of 3** 
+---
+layout: page
+title: NET 30 NOV 2020 (C)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET 30 NOV 2020 (C): 2 of 3**  -->
 
 For a positive integer $n$, let $\varphi(n)$ be
 the Euler's $\varphi$-function. Which of the following statements are

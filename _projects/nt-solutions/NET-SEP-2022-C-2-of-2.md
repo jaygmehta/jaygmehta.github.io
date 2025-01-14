@@ -1,4 +1,11 @@
-# **NET SEP 2022 (C): 2 of 2** 
+---
+layout: page
+title: NET SEP 2022 (C)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET SEP 2022 (C): 2 of 2**  -->
 
 Consider the function $f(n) = n^5 - 2n^3 + n$,
 where $n$ is a positive integer. Which of the following statements are

@@ -1,4 +1,11 @@
-# **NET DEC 2017 (B):** 
+---
+layout: page
+title: NET DEC 2017 (B)
+# description: another without an image
+# img:
+# importance: 3
+---
+<!-- # **NET DEC 2017 (B):**  -->
 
 Let
 $f: \mathbb Z \to (\mathbb Z/4\mathbb Z) \times (\mathbb Z/6\mathbb Z)$
