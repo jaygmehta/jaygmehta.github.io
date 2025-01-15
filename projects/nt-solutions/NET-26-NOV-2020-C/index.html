@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>NET JUNE 2017 (B) | Dr. Jay Mehta</title>
+    <title>NET 26 NOV 2020 (C) | Dr. Jay Mehta</title>
     <meta name="author" content="Jay  Mehta">
     <meta name="description" content="Assistant Professor in Mathematics This is a personal page of Dr. Jay Mehta.
 ">
@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="/assets/img/j.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https:jaygmehta.com/projects/nt-solutions/NET-JUNE-2017-B-2-of-2/">
+    <link rel="canonical" href="https:jaygmehta.com/projects/nt-solutions/NET-26-NOV-2020-C/">
 
     <!-- Dark Mode -->
     
@@ -136,7 +136,7 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">NET JUNE 2017 (B)</h1>
+            <h1 class="post-title">NET 26 NOV 2020 (C)</h1>
             <p class="post-description"></p>
           </header>
 
@@ -144,27 +144,20 @@
         <article>
           
           <div id="markdown-content">
-            <!-- # **NET JUNE 2017 (B): 2 of 2**  -->
+            <!-- # **NET 26 NOV 2020 (C):**  -->
 
-<p>The remainder obtained when $16^{2016}$ is
-divided by $9$ equals</p>
+<p>Let $p$ be an odd prime such that $p \equiv 2 \pmod 3$. Let $\mathbb F_p$ be the field with $p$ elements. Consider the subset $E$ of $\mathbb F_p \times \mathbb F_p$ given by $E =\{(x,y) \in \mathbb F_p \times \mathbb F_p : y^2 = x^3 + 1\}$. Which of the following are true?<br></p>
 
-<p>(a) $1$.<br>
-(b) $2$.<br>
-(c) $3$.<br>
-(d) $7$.<br></p>
+<p>(a) $E$ has at least two elements<br>
+(b) $E$ has at most $2p$ elements<br>
+(c) $E$ can have $p^2$ elements<br>
+(d) $E$ has at least $2p$ elements<br></p>
 
 <p><strong>Solution</strong></p>
 
-<p>By Euler’s theorem, if $a$ is relatively prime to $n$, then
-$a^{\phi(n)}\equiv 1 \pmod n$. Here $a=16$ and $n=9$. Since $(16,9)=1$
-and $\phi(9)=6$, we have</p>
+<p>For $x = 0$, we have $y^2 = 1$ and so $y = \pm 1 \equiv 1, p-1 \pmod p$. Thus, $(0,1)$ and $(0,p-1)$ belong to $E$. Hence, $E$ has at least two elements. Thus, <strong>first</strong> option is <strong>correct</strong>.<br></p>
 
-\[\begin{align*}
-&amp; {16}^6 &amp;\equiv &amp;\ 1 \pmod 9\\
-\Rightarrow &amp; {({16}^6)}^{336} &amp;\equiv &amp;\ 1^{336} \pmod 9\\
-\Rightarrow &amp; {16}^{2016} &amp;\equiv &amp;\ 1 \pmod 9.
-\end{align*}\]
+<p>Since $x \in \mathbb F_p$, there are $p$ at most different possible values of $x$ and so $x^3+1$. But $y^2 = x^3+1$. So even if every value of $x^3+1$ gives two different square roots, then there are at most $2p$ different possible values of $y$ and hence of the points $(x,y)$. Thus, the <strong>second</strong> option is also <strong>correct</strong> and so the <strong>third and fourth options are incorrect</strong>.<br></p>
 
 
           </div>

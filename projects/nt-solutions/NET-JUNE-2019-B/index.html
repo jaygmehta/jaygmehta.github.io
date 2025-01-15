@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>NET JUNE 2017 (B) | Dr. Jay Mehta</title>
+    <title>NET JUNE 2019 (B) | Dr. Jay Mehta</title>
     <meta name="author" content="Jay  Mehta">
     <meta name="description" content="Assistant Professor in Mathematics This is a personal page of Dr. Jay Mehta.
 ">
@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="/assets/img/j.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https:jaygmehta.com/projects/nt-solutions/NET-JUNE-2017-B-2-of-2/">
+    <link rel="canonical" href="https:jaygmehta.com/projects/nt-solutions/NET-JUNE-2019-B/">
 
     <!-- Dark Mode -->
     
@@ -136,7 +136,7 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">NET JUNE 2017 (B)</h1>
+            <h1 class="post-title">NET JUNE 2019 (B)</h1>
             <p class="post-description"></p>
           </header>
 
@@ -144,28 +144,43 @@
         <article>
           
           <div id="markdown-content">
-            <!-- # **NET JUNE 2017 (B): 2 of 2**  -->
+            <!-- # **NET JUNE 2019 (B):**  -->
 
-<p>The remainder obtained when $16^{2016}$ is
-divided by $9$ equals</p>
+<p>For any integer $n \ge 1$, let <br>
+$d(n) = $ number of positive divisors of $n$ <br>
+$\nu(n) = $ number of distinct prime divisors of $n$<br>
+$\omega(n) = $ number of prime divisors of $n$ counted with multiplicity.<br></p>
 
-<p>(a) $1$.<br>
-(b) $2$.<br>
-(c) $3$.<br>
-(d) $7$.<br></p>
+<p>[For example, if $p$ is a prime, then $d(p) = 2, \nu(p) = \nu(p^2) = 1, \omega(p^2)=2$].<br></p>
+
+<p>(a) If $n \ge 1000$ and $\omega(n) \ge 2$, then $d(n) &gt; \log n$<br>
+(b) there exists $n$ such that $d(n) &gt; 3 \sqrt{n}$<br>
+(c) For every $n$, $2^{\nu(n)} \le d(n) \le 2^{\omega(n)}$<br>
+(d) if $\omega(n) = \omega(m)$, then $d(n) = d(m)$<br></p>
 
 <p><strong>Solution</strong></p>
 
-<p>By Euler’s theorem, if $a$ is relatively prime to $n$, then
-$a^{\phi(n)}\equiv 1 \pmod n$. Here $a=16$ and $n=9$. Since $(16,9)=1$
-and $\phi(9)=6$, we have</p>
+<ol>
+  <li>
+    <p>Choose a number $&gt; 1000$ which is a square of a prime, for instance, $n = 1369 = 37^2$. Then $d(n) = 3$ (as $1,37,1369$ are its only divisors). But 
+$\log(1369) &gt; \log(1000) = 3\log (10) = 3$. Thus, $d(n) &gt; \log(n)$ implies $3&gt;3$ which is not possible and hence first option is <strong>incorrect</strong>.</p>
+  </li>
+  <li>
+    <p>Note that for $d \mid n$, $d \times \frac{n}{d} = n$. Thus, if $d \mid n$ with $d \le \sqrt{n}$, then $\frac{n}{d}$ is a divisor of $n$ which is $\ge \sqrt{n}$. The number of divisors $d$ of $n$ such that $d \le \sqrt{n}$ is $\sqrt{n}$ which is in one-one correspondence between $\frac{n}{d}$. So, the total number of divisors of $n$ is $\le 2 \sqrt{n}$, i.e., $d(n) \le 2 \sqrt{n}$. Therefore, this option is also <strong>incorrect</strong>.</p>
+  </li>
+  <li>
+    <p>Let $n = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_s^{\alpha_s}$. 
+Then 
+$d(n) = (\alpha_1 + 1) (\alpha_2 + 1)\cdots (\alpha_s + 1)$. Since $\alpha_i\ge 1$ and $s \ge 1$, we have</p>
 
-\[\begin{align*}
-&amp; {16}^6 &amp;\equiv &amp;\ 1 \pmod 9\\
-\Rightarrow &amp; {({16}^6)}^{336} &amp;\equiv &amp;\ 1^{336} \pmod 9\\
-\Rightarrow &amp; {16}^{2016} &amp;\equiv &amp;\ 1 \pmod 9.
-\end{align*}\]
+\[2^s \le d(n) \le 2^{\alpha_1 +\cdots + \alpha_s}.\]
 
+    <p>That is, $2^{\nu(n)} \le d(n) \le w^{\omega(n)}$. Hence, this option is <strong>correct</strong>.</p>
+  </li>
+  <li>
+    <p>Let $n= pq$ and $m =p^2$, where $p$ and $q$ are distinct primes. For example, $n = 15 = 3 \cdot 5$ and $n = 9 = 3^2$. Then $\omega(n) = 2$ and $\omega(m) = 2$ but $d(n) = 4$ while $d(m) = 3$. Therefore, this option is <strong>incorrect</strong>.</p>
+  </li>
+</ol>
 
           </div>
         </article>
