@@ -24,7 +24,7 @@ $\omega(n) = $ number of prime divisors of $n$ counted with multiplicity.<br>
 1.  Choose a number $> 1000$ which is a square of a prime, for instance, $n = 1369 = 37^2$. Then $d(n) = 3$ (as $1,37,1369$ are its only divisors). But 
     $\log(1369) > \log(1000) = 3\log (10) = 3$. Thus, $d(n) > \log(n)$ implies $3>3$ which is not possible and hence first option is **incorrect**.
 
-2.  Note that for $d \mid n$, $d \times \frac{n}{d} = n$. Thus, if $d \mid n$ with $d \le \sqrt{n}$, then $\frac{n}{d}$ is a divisor of $n$ which is $\ge \sqrt{n}$. The number of divisors $d$ of $n$ such that $d \le \sqrt{n}$ is $\sqrt{n}$ which is in one-one correspondence between $\frac{n}{d}$. So, the total number of divisors of $n$ is $\le 2 \sqrt{n}$, i.e., $d(n) \le 2 \sqrt{n}$. Therefore, this option is also **incorrect**.
+2.  Note that for $d \mid n$, $d \times \frac{n}{d} = n$. Thus, if $d \mid n$ with $d \le \sqrt{n}$, then $\frac{n}{d}$ is a divisor of $n$ which is $\ge \sqrt{n}$. The number of divisors $d$ of $n$ such that $d \le \sqrt{n}$ is at most $\sqrt{n}$ which is in one-one correspondence between $\frac{n}{d}$. So, the total number of divisors of $n$ is $\le 2 \sqrt{n}$, i.e., $d(n) \le 2 \sqrt{n}$. Therefore, this option is also **incorrect**.
 
 3.  Let $n = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_s^{\alpha_s}$. 
     Then 
