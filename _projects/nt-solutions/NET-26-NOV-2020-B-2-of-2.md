@@ -34,5 +34,6 @@ $\varphi(N) < \varphi(n)$.<br>
     the statement does not hold. Similarly, show for $N$ even.<br>
 
 4.  Only left option and hence it must be correct.<br>
+    Also consider $\frac{\phi(n)}{n}$ for $n = p^k$, $k \in \mathbb N$. For each prime $p$, what is the limit point of the set $\left\\{\frac{\phi(p^k)}{p^k} \mid k \in \mathbb N\right\\}$?
 
 
