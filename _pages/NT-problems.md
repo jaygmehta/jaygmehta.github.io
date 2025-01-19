@@ -2818,7 +2818,7 @@ function rjune2011Q28_addClass(ele, cls) {
 	// by https://www.gxfreee.com/
 	
 	const errorText = document.querySelector(".error-text");
-	var Password ="NumTh140224";
+	var Password ="NT200125";
 	function passcheck(){
 		if (document.getElementById('pass1').value != Password) {
 			errorText.style.display = "block";
@@ -2828,7 +2828,7 @@ function rjune2011Q28_addClass(ele, cls) {
 		}
 		if (document.getElementById('pass1').value == Password) {
 			// window.open("https://www.google.com", "_blank");
-      window.open("https://www.dropbox.com/scl/fi/2ledx1t0q8oppqyzdet44/SPU_Workshop_14Feb_2024_Session_Transcript.pdf?rlkey=iqrtkb0pxcqyib9i3jx0sw8c1&dl=1");
+      window.open("https://www.dropbox.com/scl/fi/mt40qeo61qlctmn3r250p/SPU_Workshop_20_Jan_2025_Transcript.pdf?rlkey=seylru6qqvldv2t2yl6ps2inq&st=gg7uctpy&dl=1");
 		}
 
 	}
