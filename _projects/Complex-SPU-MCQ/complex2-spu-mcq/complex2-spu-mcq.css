@@ -7,6 +7,7 @@
 .cmmi-10{font-style: italic;}
 .cmsy-5{font-size:50%;}
 .cmsy-7{font-size:70%;}
+.cmbx-10{ font-weight: bold;}
 .cmbsy-10{font-weight: bold;}
 .cmbsy-10{font-weight: bold;}
 .cmbsy-10{font-weight: bold;}
@@ -18,6 +19,12 @@
 .cmbsy-5{font-weight: bold;}
 .cmex-7{font-size:70%;}
 .cmex-7x-x-71{font-size:49%;}
+.msam-7{font-size:70%;}
+.msam-5{font-size:50%;}
+.msbm-7{font-size:70%;}
+.msbm-5{font-size:50%;}
+.cmtt-10{font-family: monospace,monospace;}
+.cmti-10{ font-style: italic;}
 p{margin-top:0;margin-bottom:0}
 p.indent{text-indent:0;}
 p + p{margin-top:1em;}
@@ -39,7 +46,7 @@ h1,h2,h3,h4,h5 { line-height:1.2; }
 .sectionHead, likesectionHead { font-size: 1.5157em; }
 .subsectionHead, likesubsectionHead { font-size: 1.3195em; }
 .subsubsectionHead, likesubsubsectionHead { font-size: 1.1487em; }
- @media (prefers-color-scheme: dark) { img[src^="choice-multiple"]{filter: invert(1); } } 
+ @media (prefers-color-scheme: dark) { img[src^="complex2-spu-mcq"]{filter: invert(1); } } 
 li p.indent { text-indent: 0em }
 li p:first-child{ margin-top:0em; }
 li p:last-child, li div:last-child { margin-bottom:0.5em; }
@@ -153,5 +160,24 @@ table.equation-star { width:100%; }
 .boxed{border: 1px solid black; padding-left:2px; padding-right:2px;}
 mtd.align-odd{margin-left:2em; text-align:right;}
 mtd.align-even{margin-right:2em; text-align:left;}
+dl.enumerate-enumitem{display:grid; grid-template-columns: 3ch 1fr; align-items: top; row-gap:1ch;}
+.rotatebox{display: inline-block;}
+.uline,.uline-math{ text-decoration:underline; }
+.uuline,.uuline-math{ text-decoration:underline double; }
+span.sout, .sout-math {text-decoration: line-through }
+span.xout, .xout-math {text-decoration: line-through underline }
+span.uwave, .uwave-math {text-decoration:underline wavy; }
+span.dashuline, .dashuline-math {text-decoration:underline dashed;}
+span.dotuline, .dotuline-math {text-decoration:underline dotted;}
+.uuline-math{ border-bottom:3px double black; }
+.dashuline-math {border-bottom: 1px dashed black;}
+.dotuline-math {border-bottom: 1px dotted black;}
+#textcolor1{color:rgb(178,0,0)}
+#textcolor2{color:}
+#textcolor2{color:rgb(178,0,0)}
+#textcolor3{color:}
+#textcolor3{color:rgb(178,0,0)}
+#textcolor4{color:}
+#textcolor4{color:rgb(178,0,0)}
 /* end css.sty */
 
