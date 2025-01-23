@@ -154,5 +154,6 @@ QuizSpecifications[29][0]=true;
 QuizSpecifications[29][1]=false;
 QuizSpecifications[29][2]=false;
 QuizSpecifications[29][3]=false;
+toggle_side_menu();
 initSession();
 gotoQuestion(1);

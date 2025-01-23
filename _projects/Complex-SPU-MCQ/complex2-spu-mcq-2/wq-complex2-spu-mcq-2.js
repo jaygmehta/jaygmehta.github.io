@@ -316,5 +316,6 @@ QuizSpecifications[53][0]=false;
 QuizSpecifications[53][1]=false;
 QuizSpecifications[53][2]=true;
 QuizSpecifications[53][3]=false;
+toggle_side_menu();
 initSession();
 gotoQuestion(1);
