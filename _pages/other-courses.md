@@ -14,9 +14,104 @@ giscus_comments: false #true
 <!-- MTTS -->
 <div class="card mt-3">
   <div class="p-3">
+    <!-- <div class="row">
+      <div class="col-sm-10">
+        <h5 id="2025" class="card-title"><a href="/news/initmath-nadaun-hp">InitMath Nadaun (Himachal Pradesh)</a></h5>
+        <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
+        <h6 class="card-subtitle"><br> October 09 - 14, 2023 <br>
+        Sidharth Goverment College, Nadaun, Himachal Pradesh
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2025
+        </span>
+      </div>
+    </div> -->
+    <!-- Use blocks from below ul to ul -->
+    <ul class="card-text font-weight-light list-group list-group-flush">
+    <!-- The following two lines give a horizontal gray line, a separator of event -->
+      <!-- <li class="list-group-item">
+      </li><br> -->
+      <div class="row">
+      <div class="col-sm-10">
+      <h5 id="2025" class="card-title"> Level O at BDUT Tiruchirappalli</h5>
+        <!-- <h5 id="2025" class="card-title"><a href="/news/mtts-2025">Level O at BDUT Tiruchirappalli</a></h5> -->
+        <h6 class="card-subtitle font-italic"><b>Number Theory</b></h6>
+        <h6 class="card-subtitle"><br> May 19 - May 31, 2025 <br>
+        Bharathidasan University, Tiruchirappalli, Tamil Nadu
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2025
+        </span>
+      </div>
+    </div>
+    </ul>
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">
+      </li><br>
+      <div class="row">
+      <div class="col-sm-10">
+      <h5 id="2025" class="card-title"> InitMath Killianwali (PB)</h5>
+        <!-- <h5 id="2025" class="card-title"><a href="/news/initmath-killianwali">InitMath Killianwali (PB)</a></h5> -->
+        <h6 class="card-subtitle font-italic"><b>Real Analysis</b></h6>
+        <h6 class="card-subtitle"><br> March 24 - 29, 2025   <br>
+        Guru Nanak College, Killianwali, Punjab
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2025
+        </span>
+      </div>
+    </div>
+    </ul>
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">
+      </li><br>
+      <div class="row">
+      <div class="col-sm-10">
+      <h5 id="2025" class="card-title"> InitMath VP Science (GJ)</h5>
+        <!-- <h5 id="2025" class="card-title"><a href="/news/initmath-vpscience">InitMath VP Science (GJ)</a></h5> -->
+        <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
+        <h6 class="card-subtitle"><br> January 06 - 11, 2025 <br>
+        V.P. & R.P.T.P. Science College, Vallabh Vidyanagar, Gujarat
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2025
+        </span>
+      </div>
+    </div>
+    </ul>
+    <!-- <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">
+      </li><br>
+      <div class="row">
+      <div class="col-sm-10">
+        <h5 id="2023" class="card-title"> InitMath SPU (Gujarat) </h5>
+        <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
+        <h6 class="card-subtitle"><br> March 20 - 25, 2023 <br>
+        Department of Mathematics, Sardar Patel University, Vallabh Vidyanagar, Gujarat
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2023
+        </span>
+      </div>
+    </div>
+    </ul> -->
+  </div>
+</div>
+<div class="card mt-3">
+  <div class="p-3">
     <div class="row">
       <div class="col-sm-10">
-        <h5 id="2023" class="card-title"><a href="/news/initmath-nith-hp">InitMath NIT Hamirpur (Himachal Pradesh)</a></h5>
+        <h5 id="2024" class="card-title"><a href="/news/initmath-nith-hp">InitMath NIT Hamirpur (Himachal Pradesh)</a></h5>
         <!-- <h6 class="card-subtitle font-italic">October 9-14, 2023 <br>
         Sidharth Goverment College, Nadaun, Himachal Pradesh -->
         <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
@@ -26,7 +121,7 @@ giscus_comments: false #true
       </div>
       <div class="col-sm-2 text-sm-right">
         <span class="badge">
-          2023
+          2024
         </span>
       </div>
     </div>

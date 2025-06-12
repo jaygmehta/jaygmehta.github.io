@@ -3,7 +3,7 @@ layout: page
 permalink: /journal/
 title: journal publications
 description: Papers published in journals #The following are my publications and preprints
-years: [2023, 2022, 2020, 2017, 2016, 2015, 2014, 2012]
+years: [2025, 2023, 2022, 2020, 2017, 2016, 2015, 2014, 2012]
 # yearp: []
 # yearbc: [2023, 2025]
 nav: false #true

@@ -1,5 +1,13 @@
 [
     {
+        "date": "Jan 23, 2025",
+        "title": "Problems on Number Theory",
+        "workshop": "National Workshop on Problem Solving-XIII",
+        "organizers": "Department of Mathematics, Sardar Patel University",
+        "venue": "Vallabh Vidyanagar, Gujarat, India"
+    }
+    ,
+    {
         "date": "Nov 11, 2024",
         "title": "RSA and Primality Testing",
         "workshop": "Curry Leaf Days 2024",
