@@ -36,6 +36,50 @@ toc:
 
 ------------------
 
+## [Past Papers MCQ](/projects/Group-Theory-SPU-MCQ/index-en.html){:target="_blank"} <sub><sup><sub>(use landscape mode of phone)<sub/><sup/><sub/>
+<!-- <br> -->
+
+##### [PS03EMTH36-(13-04-2022)](/projects/Group-Theory-SPU-MCQ/PS03EMTH36-(13-04-2022).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS03EMTH36-(25-10-2021)](/projects/Group-Theory-SPU-MCQ/PS03EMTH36-(25-10-2021).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS03EMTH36-(01-01-2021)](/projects/Group-Theory-SPU-MCQ/PS03EMTH36-(01-01-2021).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS03EMTH08-(01-01-2021)](/projects/Group-Theory-SPU-MCQ/PS03EMTH08-(01-01-2021).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS03EMTH36-(25-11-2019)](/projects/Group-Theory-SPU-MCQ/PS03EMTH36-(25-11-2019).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS03EMTH36-(01-04-2019)](/projects/Group-Theory-SPU-MCQ/PS03EMTH36-(01-04-2019).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS03EMTH08-(01-04-2019)](/projects/Group-Theory-SPU-MCQ/PS03EMTH08-(01-04-2019).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS04EMTH37-(30-03-2019)](/projects/Group-Theory-SPU-MCQ/PS04EMTH37-(30-03-2019).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS03EMTH36-(03-11-2018)](/projects/Group-Theory-SPU-MCQ/PS03EMTH36-(03-11-2018).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS03EMTH08-(03-11-2018)](/projects/Group-Theory-SPU-MCQ/PS03EMTH08-(03-11-2018).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS03EMTH08-(21-04-2018)](/projects/Group-Theory-SPU-MCQ/PS03EMTH08-(21-04-2018).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS03EMTH08-(11-11-2017)](/projects/Group-Theory-SPU-MCQ/PS03EMTH08-(11-11-2017).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS03EMTH08-(21-04-2017)](/projects/Group-Theory-SPU-MCQ/PS03EMTH08-(21-04-2017).html){:target="_blank"}
+<!-- <br> -->
+
+------------------
+
 ## Video Lectures
 These videos are discussion of the course on Group Theory of MSc Sem-III of my university. The videos are provided for the students as a part of the additional viewing material during the online course taken on google meet. Any interested mathematician can watch these videos and share his/her valuable feedback or suggestions.
 
