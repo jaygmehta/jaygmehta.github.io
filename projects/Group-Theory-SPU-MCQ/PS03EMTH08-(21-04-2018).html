@@ -74,16 +74,9 @@
     <div class="quiz-questions">
       <div class="quiz-header">
        <div class="quiz-title">Group Theory  PS03EMTH08 (21-04-2018)</div><div></div>
-       <span id="question-label" class="question-label">Question</span>
-       <span id="question-number" class="question-label">1</span>
-       <span class="arrows">
-          <a onClick="nextQuestion(-1);" title="Previous unanswered question">&#x25c4;</a>
-          <span class="question-label">Questions</span>
-          <a onClick="nextQuestion(1);"  title="Next unanswered question">&#x25ba;</a>
-       </span>
       </div>
-      <div id="question1" class="question" style="display:none;">
-      <span class="question-label"></span>   
+      <div id="question1" class="question" style="display:inline;">
+      <span class="question-label">Question 1. </span>   
 
  
  
@@ -119,7 +112,7 @@ class="MathClass-rel" stretchy="false">=</mo> <mi
 >e</mi></math>?  
 
       <form id="Q1Form" onSubmit="return false;">
-        <table class="question-choices"><tr><td><input type="radio" name="Q1option"/></td>
+        <table class="question-choices"><tr><td><input type="checkbox" name="Q1option0"/></td>
 <td class="brown" >i)</td><td><div class="question-choices"><!--l. 43--><math 
  xmlns="http://www.w3.org/1998/Math/MathML"  
 display="inline" ><mi 
@@ -136,7 +129,7 @@ class="MathClass-close" stretchy="false">)</mo></math>
  id="x1-4r2"></a></div></td>
    </tr><!-- part=0, cols=1, # answers = 4 -->
 
-<tr><td><input type="radio" name="Q1option"/></td>
+<tr><td><input type="checkbox" name="Q1option1"/></td>
 <td class="brown" >ii)</td><td><div class="question-choices"><!--l. 44--><math 
  xmlns="http://www.w3.org/1998/Math/MathML"  
 display="inline" ><mi 
@@ -153,7 +146,7 @@ class="MathClass-close" stretchy="false">)</mo></math>
  id="x1-5r3"></a></div></td>
    </tr><!-- part=1, cols=1, # answers = 4 -->
 
-<tr><td><input type="radio" name="Q1option"/></td>
+<tr><td><input type="checkbox" name="Q1option2"/></td>
 <td class="brown" >iii)</td><td><div class="question-choices"><!--l. 45--><math 
  xmlns="http://www.w3.org/1998/Math/MathML"  
 display="inline" ><mfrac><mrow 
@@ -172,7 +165,7 @@ class="MathClass-close" stretchy="false">)</mo></mrow></mfrac> </math>
  id="x1-6r4"></a></div></td>
    </tr><!-- part=2, cols=1, # answers = 4 -->
 
-<tr><td><input type="radio" name="Q1option"/></td>
+<tr><td><input type="checkbox" name="Q1option3"/></td>
 <td class="brown" >iv)</td><td><div class="question-choices"><!--l. 46--><math 
  xmlns="http://www.w3.org/1998/Math/MathML"  
 display="inline" > <mfrac><mrow 
@@ -191,34 +184,42 @@ class="MathClass-close" stretchy="false">)</mo></mrow></mfrac></math></div></td>
 </table>
         <p>
           <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(1);"/>
-          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+          
         </p>
       </form>
 
       <div class="answer">
 
         <div id="q1feedback1" class="feedback">
-              <em>Choice i) is <span class="dazzle">Correct!</span></em>
-              <div></div>
+            <em>There is at least one mistake.</em><br>For example, choice i) should be <span class="dazzle">True</span>.
+            <div></div>
         </div>
 
         <div id="q1feedback2" class="feedback">
-              <em>Choice ii) is <span class="dazzle">Incorrect.</span></em>
-              <div></div>
+            <em>There is at least one mistake.</em><br>For example, choice ii) should be <span class="dazzle">True</span>.
+            <div></div>
         </div>
 
         <div id="q1feedback3" class="feedback">
-              <em>Choice iii) is <span class="dazzle">Incorrect.</span></em>
-              <div></div>
+            <em>There is at least one mistake.</em><br>For example, choice iii) should be <span class="dazzle">False</span>.
+            <div></div>
         </div>
 
         <div id="q1feedback4" class="feedback">
-              <em>Choice iv) is <span class="dazzle">Incorrect.</span></em>
-              <div></div>
+            <em>There is at least one mistake.</em><br>For example, choice iv) should be <span class="dazzle">False</span>.
+            <div></div>
+        </div>
+        <div id="q1feedback0" class="feedback"><em class="dazzle">Correct!</em>
+            <ol>
+              <li><em>True</em> </li>
+              <li><em>True</em> </li>
+              <li><em>False</em> </li>
+              <li><em>False</em> </li>
+            </ol>
         </div></div>
       </div>
-<div id="question2" class="question" style="display:none;">
-      <span class="question-label"></span>   
+<div id="question2" class="question" style="display:inline;">
+      <span class="question-label">Question 2. </span>   
 
 
  
@@ -287,7 +288,7 @@ class="MathClass-close" stretchy="false">}</mo></math></div></td>
 </table>
         <p>
           <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(2);"/>
-          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+          
         </p>
       </form>
 
@@ -313,8 +314,8 @@ class="MathClass-close" stretchy="false">}</mo></math></div></td>
               <div></div>
         </div></div>
       </div>
-<div id="question3" class="question" style="display:none;">
-      <span class="question-label"></span>   
+<div id="question3" class="question" style="display:inline;">
+      <span class="question-label">Question 3. </span>   
 
 
  
@@ -361,7 +362,7 @@ display="inline" ><mn>6</mn></math></div></td>
 </table>
         <p>
           <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(3);"/>
-          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+          
         </p>
       </form>
 
@@ -387,8 +388,8 @@ display="inline" ><mn>6</mn></math></div></td>
               <div></div>
         </div></div>
       </div>
-<div id="question4" class="question" style="display:none;">
-      <span class="question-label"></span>   
+<div id="question4" class="question" style="display:inline;">
+      <span class="question-label">Question 4. </span>   
 
 
  
@@ -428,7 +429,7 @@ display="inline" ><mn>3</mn><mn>5</mn></math></div></td>
 </table>
         <p>
           <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(4);"/>
-          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+          
         </p>
       </form>
 
@@ -454,8 +455,8 @@ display="inline" ><mn>3</mn><mn>5</mn></math></div></td>
               <div></div>
         </div></div>
       </div>
-<div id="question5" class="question" style="display:none;">
-      <span class="question-label"></span>   
+<div id="question5" class="question" style="display:inline;">
+      <span class="question-label">Question 5. </span>   
 
 
  
@@ -517,7 +518,7 @@ display="inline" ><mn>1</mn><mn>5</mn></math></div></td>
 </table>
         <p>
           <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(5);"/>
-          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+          
         </p>
       </form>
 
@@ -543,8 +544,8 @@ display="inline" ><mn>1</mn><mn>5</mn></math></div></td>
               <div></div>
         </div></div>
       </div>
-<div id="question6" class="question" style="display:none;">
-      <span class="question-label"></span>   
+<div id="question6" class="question" style="display:inline;">
+      <span class="question-label">Question 6. </span>   
 
 
  
@@ -610,7 +611,7 @@ class="MathClass-bin" stretchy="false">×</mo> <msub><mrow
 </table>
         <p>
           <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(6);"/>
-          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+          
         </p>
       </form>
 
@@ -636,8 +637,8 @@ class="MathClass-bin" stretchy="false">×</mo> <msub><mrow
               <div></div>
         </div></div>
       </div>
-<div id="question7" class="question" style="display:none;">
-      <span class="question-label"></span>   
+<div id="question7" class="question" style="display:inline;">
+      <span class="question-label">Question 7. </span>   
 
 
  
@@ -681,7 +682,7 @@ display="inline" ><mn>1</mn><mn>6</mn></math></div></td>
 </table>
         <p>
           <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(7);"/>
-          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+          
         </p>
       </form>
 
@@ -707,8 +708,8 @@ display="inline" ><mn>1</mn><mn>6</mn></math></div></td>
               <div></div>
         </div></div>
       </div>
-<div id="question8" class="question" style="display:none;">
-      <span class="question-label"></span>   
+<div id="question8" class="question" style="display:inline;">
+      <span class="question-label">Question 8. </span>   
 
 
  
@@ -764,7 +765,7 @@ class="MathClass-punc" stretchy="false">,</mo><mn>1</mn></math></div></td>
 </table>
         <p>
           <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(8);"/>
-          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+          
         </p>
       </form>
 
