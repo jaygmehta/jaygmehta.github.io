@@ -37,6 +37,44 @@ toc:
 
 ------------------
 
+## [Past Papers MCQ](/projects/NTC-SPU-MCQ/index-en.html){:target="_blank"} <sub><sup><sub>(use landscape mode of phone)<sub/><sup/><sub/>
+<!-- <br> -->
+
+##### [PS03EMTH55-(11-11-2022)](/projects/NTC-SPU-MCQ/PS03EMTH55-(11-11-2022).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS03EMTH55-(27-04-2023)](/projects/NTC-SPU-MCQ/PS03EMTH55-(27-04-2023).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS04EMTH59-(01-05-2023)](/projects/NTC-SPU-MCQ/PS04EMTH59-(01-05-2023).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS03EMTH55-(01-11-2023)](/projects/NTC-SPU-MCQ/PS03EMTH55-(01-11-2023).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS04EMTH59-(04-11-2023)](/projects/NTC-SPU-MCQ/PS04EMTH59-(04-11-2023).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS03EMTH55-(12-04-2024)](/projects/NTC-SPU-MCQ/PS03EMTH55-(12-04-2024).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS04EMTH59-(09-04-2024)](/projects/NTC-SPU-MCQ/PS04EMTH59-(09-04-2024).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS03EMTH55-(06-12-2024)](/projects/NTC-SPU-MCQ/PS03EMTH55-(06-12-2024).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS04EMTH59-(27-11-2024)](/projects/NTC-SPU-MCQ/PS04EMTH59-(27-11-2024).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS03EMTH55-(16-04-2025)](/projects/NTC-SPU-MCQ/PS03EMTH55-(16-04-2025).html){:target="_blank"}
+<!-- <br> -->
+
+##### [PS04EMTH59-(16-04-2025)](/projects/NTC-SPU-MCQ/PS04EMTH59-(16-04-2025).html){:target="_blank"}
+<!-- <br> -->
+
+------------------
+
 ## Python Programs in Cryptography
 Below are some algorithms we studied in our course Number Theory and Cryptography. One can execute the code by clicking on **Run** and find the solution of the numerical problems.
 
