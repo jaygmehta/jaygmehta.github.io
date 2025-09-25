@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'></a> Teacher 👨🏻‍🏫 📓 Mathematician ♾️
+subtitle: <a href='#'></a> Teacher 👨🏻‍🏫 📓 Mathematician 🔢 ♾️ Author ✍🏻 📖
 
 profile:
   align: right

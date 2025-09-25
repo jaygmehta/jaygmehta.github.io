@@ -5,7 +5,7 @@ title: books
 description: Published Books
 # years: [2023, 2022, 2020, 2017, 2016, 2015, 2014, 2012]
 # yearp: []
-yearb: []
+yearb: [2025]
 nav: false #true
 nav_order: 1
 ---

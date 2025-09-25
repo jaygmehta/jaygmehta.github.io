@@ -29,10 +29,47 @@ giscus_comments: false #true
       </div>
     </div> -->
     <!-- Use blocks from below ul to ul -->
+        <div class="row">
+      <div class="col-sm-10">
+        <h5 id="2025" class="card-title">InitMath NIT Hamirpur (Himachal Pradesh)</h5>
+        <!-- <h6 class="card-subtitle font-italic">October 9-14, 2023 <br>
+        Sidharth Goverment College, Nadaun, Himachal Pradesh -->
+        <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
+        <h6 class="card-subtitle"><br> September 15 - 20, 2025 <br>
+        National Institute of Technology, Himachal Pradesh
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2025
+        </span>
+      </div>
+    </div>
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      <li class="list-group-item">
+      </li>
+      <br>
+      <div class="row">
+      <div class="col-sm-10">
+        <h5 id="2025" class="card-title">OFCM2024</h5>
+        <!-- <h6 class="card-subtitle font-italic">September 4-9, 2023 <br>
+        Dr. Harisingh Gour Vishwavidyalaya, Sagar, Madhya Pradesh -->
+        <h6 class="card-subtitle font-italic"><b>Foundations in Mathematics</b></h6>
+        <h6 class="card-subtitle"><br> August 24 - September 06, 2025 <br>
+        Online Foundation Course in Mathematics (OFCM) 2025
+        </h6>
+      </div>
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          2025
+        </span>
+      </div>
+    </div>
+    </ul>
     <ul class="card-text font-weight-light list-group list-group-flush">
     <!-- The following two lines give a horizontal gray line, a separator of event -->
-      <!-- <li class="list-group-item">
-      </li><br> -->
+      <li class="list-group-item">
+      </li><br>
       <div class="row">
       <div class="col-sm-10">
       <h5 id="2025" class="card-title"> Level O at BDUT Tiruchirappalli</h5>
