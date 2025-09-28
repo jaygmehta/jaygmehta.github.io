@@ -4,7 +4,7 @@ permalink: /preprints/
 title: preprints
 description: preprints (papers under preparation)
 # years: [2023, 2022, 2020, 2017, 2016, 2015, 2014, 2012]
-yearp: [2025-26]
+yearp: [2025-26, 2026-27]
 # yearbc: [2023, 2025]
 nav: false #true
 nav_order: 1
