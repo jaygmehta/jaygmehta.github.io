@@ -110,6 +110,12 @@ Below are some algorithms we studied in our course Number Theory and Cryptograph
 
 ------------------
 
+### Square roots modulo n=pq, where p,q = 4k+3
+<strong>Program to find solution of $$x^2 \equiv c \pmod{n}$$ , where $$n=pq$$, and $$p, q \equiv 3 \pmod{4}$$ are distinct primes.</strong><br>
+<iframe src="https://trinket.io/embed/python3/3fbb912f2596?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+
+------------------
+
 ### Miller-Rabin Primality Test
 <strong>Enter the value of $$n$$ to test whether it is composite by finding a Miller-Rabin witness.</strong><br>
 <iframe src="https://trinket.io/embed/python3/4fe1ec9fd7e5?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
