@@ -10,9 +10,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>a post with twitter | Dr. Jay Mehta</title>
+    <title>NET MARCH 2025 (B) | Dr. Jay Mehta</title>
     <meta name="author" content="Jay  Mehta">
-    <meta name="description" content="an example of a blog post with twitter">
+    <meta name="description" content="Assistant Professor in Mathematics This is a personal page of Dr. Jay Mehta.
+">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -38,7 +39,7 @@
     <link rel="shortcut icon" href="/assets/img/j.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https:jaygmehta.com/blog/2020/twitter/">
+    <link rel="canonical" href="https:jaygmehta.com/projects/nt-solutions/NET-MARCH-2025-B/">
 
     <!-- Dark Mode -->
     
@@ -131,100 +132,55 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <!-- _layouts/post.html -->
+        <!-- page.html -->
+        <div class="post">
 
-<div class="post">
+          <header class="post-header">
+            <h1 class="post-title">NET MARCH 2025 (B)</h1>
+            <p class="post-description"></p>
+          </header>
 
-  <header class="post-header">
-    <h1 class="post-title">a post with twitter</h1>
-    <p class="post-meta">September 28, 2020</p>
-    <p class="post-tags">
-      <a href="/blog/2020"> <i class="fas fa-calendar fa-sm"></i> 2020 </a>
-        ·  
-        <a href="/blog/tag/formatting">
-          <i class="fas fa-hashtag fa-sm"></i> formatting</a>  
+        </div>
+        <article>
           
-        ·  
-        <a href="/blog/category/sample-posts">
-          <i class="fas fa-tag fa-sm"></i> sample-posts</a>  
-          <a href="/blog/category/external-services">
-          <i class="fas fa-tag fa-sm"></i> external-services</a>  
-          
+          <div id="markdown-content">
+            <!-- # **NET MARCH 2025 (B):**  -->
 
-    </p>
-  </header>
+<p>Let $p$ be a prime number. An element $a$ of the group $(\mathbb{Z}/p\mathbb{Z})^\times$
+is a primitive root $(\mathbb{Z}/p\mathbb{Z})^\times$ if the order of $a$ in $(\mathbb{Z}/p\mathbb{Z})^\times$ is $p-1$.
+Let $S_p$ be the number of primitive roots in $(\mathbb{Z}/p\mathbb{Z})^\times$
+and let $\varphi$ denote Euler’s $\varphi$-function.
+Which of the following statements is true?</p>
 
-  <article class="post-content">
-    
-    <div id="markdown-content">
-      <p>A sample blog page that demonstrates the inclusion of Tweets/Timelines/etc.</p>
+<p>(a) For each $p&lt;100$,
+\(\sum_{n=1}^{\infty}\left(\frac{S_p}{\varphi(p)}\right)^n\)
+converges.<br>
+(b) For each $100 \le p \le 200$,
+\(\sum_{n=1}^{\infty}\left(\frac{S_p}{\varphi(p)}\right)^n\)
+diverges.<br>
+(c) For each $p&gt;200$,
+\(\sum_{n=1}^{\infty}\left(\frac{S_p}{\varphi(p)}\right)^n\)
+converges.<br>
+(d) The element $4 \bmod 101$ in $(\mathbb{Z}/101\mathbb{Z})^\times$ is a primitive root.<br></p>
 
-<h1 id="tweet">Tweet</h1>
-<p>An example of displaying a tweet:</p>
-<div class="jekyll-twitter-plugin">
-<blockquote class="twitter-tweet">
-<p lang="sv" dir="ltr">jekyll-twitter-plugin (1.0.0): A Liquid tag plugin for Jekyll that renders Tweets from Twitter API <a href="http://t.co/m4EIQPM9h4" rel="external nofollow noopener" target="_blank">http://t.co/m4EIQPM9h4</a></p>— RubyGems (@rubygems) <a href="https://twitter.com/rubygems/status/518821243320287232?ref_src=twsrc%5Etfw" rel="external nofollow noopener" target="_blank">October 5, 2014</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p><strong>Solution</strong></p>
 
-</div>
-
-<h1 id="timeline">Timeline</h1>
-<p>An example of pulling from a timeline:</p>
-<div class="jekyll-twitter-plugin">
-<a class="twitter-timeline" data-width="500" data-tweet-limit="3" href="https://twitter.com/jekyllrb?ref_src=twsrc%5Etfw" rel="external nofollow noopener" target="_blank">Tweets by jekyllrb</a>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-
-<h1 id="additional-details">Additional Details</h1>
-<p>For more details on using the plugin visit: <a href="https://github.com/rob-murray/jekyll-twitter-plugin" rel="external nofollow noopener" target="_blank">jekyll-twitter-plugin</a></p>
-
-    </div>
-  </article>
+<p>For a prime $p$, we have $\varphi(p)=p-1$ and
+\(S_p=\varphi(p-1).\)
+Hence the series is geometric with ratio
+\(r=\frac{\varphi(p-1)}{p-1}.\)
+For any odd prime $p$, $\varphi(p-1)&lt;p-1$, so $r&lt;1$ and the series converges.
+The only exception is $p=2$, where $r=1$.<br>
+Thus (a) is false since $p=2&lt;100$.
+All primes in $[100,200]$ are odd, so (b) is false.<br>
+For all $p&gt;200$, the series converges, so (c) is true.<br>
+Finally, since $2$ has order $100$ modulo $101$, the order of $4=2^2$ is
+\(\frac{100}{\gcd(100,2)}=50\neq 100,\)
+so (d) is false.</p>
 
 
-  
-    
-    <br>
-    <hr>
-    <br>
-    <ul class="list-disc pl-8"></ul>
-
-    <!-- Adds related posts to the end of an article -->
-    <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
-    <p class="mb-2">Here are some more articles you might like to read next:</p>
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/sidebar-table-of-contents/">a post with table of contents on a sidebar</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/sidebar-table-of-contents-copy/">a post with table of contents on a sidebar</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/giscus-comments/">a post with giscus comments</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/custom-blockquotes/">a post with custom blockquotes</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/audios/">a post with audios</a>
-  </li>
-
-</div>
-
+          </div>
+        </article>
       
     </div>
 
