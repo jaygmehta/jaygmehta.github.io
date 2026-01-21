@@ -113,7 +113,7 @@ toc:
 <!-- <div style='transform: scale(0.65); position: relative; top: -190px;'> -->
 <!-- <div style='transform: scale(0.75);'> -->
 
-<h3>Dec 2023 (Part B)</h3>
+<h3>Dec 2023 (Part B) Q-48</h3>
   <p>
   <h5>Which one of the following is equal to
 $1^{37}+2^{37}+3^{37}+\cdots + 88^{37}$ in $\mathbb Z/89\mathbb Z$?</h5>
@@ -157,7 +157,7 @@ $1^{37}+2^{37}+3^{37}+\cdots + 88^{37}$ in $\mathbb Z/89\mathbb Z$?</h5>
 
 <p>
 
-<h3>Dec 2023 (Part C)</h3>
+<h3>Dec 2023 (Part C) Q-84</h3>
   <p>
   <h5>Let $n \in \mathbb Z$ be such that $n$ is
 congruent to $1 \mod 7$ and $n$ is congruent to $4 \mod{15}$. Which of
