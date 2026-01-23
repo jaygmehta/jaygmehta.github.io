@@ -156,7 +156,7 @@ Which of the following statements is true?</h5>
 
 <p>
 
-<h3>March 2025 (Part B) Q-37</h3>
+<h3>Mar 2025 (Part B) Q-37</h3>
   <p>
   <h5>Let $p$ be a prime number. An element $a$ of the group $(\mathbb{Z}/p\mathbb{Z})^\times$
 is a primitive root $(\mathbb{Z}/p\mathbb{Z})^\times$ if the order of $a$ in $(\mathbb{Z}/p\mathbb{Z})^\times$ is $p-1$.
