@@ -22,7 +22,7 @@ Which of the following is true?
 
 2.  This is not true. Take $n = 17$. Then $17 \nmid 16!$.\
     In general, for any prime $p$, $p \nmid (p-1)!$. By Wilson's
-    theorem, $(p-1)! \equiv 1 \pmod p$.<br>
+    theorem, $(p-1)! \equiv -1 \pmod p$.<br>
 
 3.  This is **true**. Let $n = 2k$ be even integer $n \ge 16$. Then
     $n-1 = 2k-1$ and 

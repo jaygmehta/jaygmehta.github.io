@@ -16,7 +16,7 @@ Which of the following statements is true?
 
 **Solution**
 
-By Wilson's theorem, $(p-1)! \equiv 1 \pmod p$, i.e., $p \mid (p-1)!+1$. So, the option (a) is *false*.
+By Wilson's theorem, $(p-1)! \equiv -1 \pmod p$, i.e., $p \mid (p-1)!+1$. So, the option (a) is *false*.
 
 Fermat's little theorem: if $p$ is a prime and $a \in \mathbb Z$ such that $\gcd(a,p) = 1$, then $a^{p-1} \equiv 1 \pmod p$. Here $a = 1234 = 2 \times 617$ and $617$ is prime. Thus, if $p>700$ is a prime, then $\gcd(1234,p) = 1$. Hence, by Fermat's theorem, $(1234)^{p-1} \equiv 1 \pmod p$, i.e., $p \mid (1234)^{p-1} - 1$. So, option (b) is **true**.
 
