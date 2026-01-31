@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>NET JUNE 2014 (C) | Dr. Jay Mehta</title>
+    <title>NET-JULY-2025-C-3-3 | Dr. Jay Mehta</title>
     <meta name="author" content="Jay  Mehta">
     <meta name="description" content="Assistant Professor in Mathematics This is a personal page of Dr. Jay Mehta.
 ">
@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="/assets/img/j.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https:jaygmehta.com/projects/nt-solutions/NET-JUNE-2014-C/">
+    <link rel="canonical" href="https:jaygmehta.com/projects/gt-solutions/NET-JULY-2025-C-3-3/">
 
     <!-- Dark Mode -->
     
@@ -136,7 +136,7 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">NET JUNE 2014 (C)</h1>
+            <h1 class="post-title">NET-JULY-2025-C-3-3</h1>
             <p class="post-description"></p>
           </header>
 
@@ -144,68 +144,32 @@
         <article>
           
           <div id="markdown-content">
-            <!-- # **NET JUNE 2014 (C):**  -->
+            <!-- # **NET DEC 2016 (B): 1 of 2**  -->
 
-<p>For positive integers $m$ and $n$, let
-$F_n = 2^{2^n}+1$ and $G_m= 2^{2^m}-1$. Which of the following are true?</p>
+<p>Let $G_1$ and $G_2$ be subgroups of a group $G$. Which of the following statements are true?</p>
 
-<p>(a) $F_n$ divides $G_m$ whenever $m&gt;n$.<br>
-(b) $\gcd(F_n,G_m) = 1$ whenever $m \neq n$.<br>
-(c) $\gcd(F_n,F_m) = 1$ whenever $m \neq n$.
-(d) $G_m$ divides $F_n$ whenever $m &lt; n$.<br></p>
+<p>(a) If $G_1$ is normal in $G$, then $(G_2G_1)/G_1 \cong G_2/(G_2 \cap G_1)$.<br>
+(b) If $H_1$ and $H_2$ are normal subgroups of $G_1$ and $G_2$, respectively, then
+\((G_1 \times G_2)/(H_1 \times H_2) \cong (G_1/H_1) \times (G_2/H_2).\)<br>
+(c) If $G_1$ is normal in $G_2$ and $G_2$ is normal in $G$, then $G_1$ is normal in $G$.<br>
+(d) Every subgroup of prime index in $G$ is normal.<br></p>
 
 <p><strong>Solution</strong></p>
 
-<p>Note that the integers $F_n$ are called Fermat’s numbers.<br></p>
-
-<ol>
-  <li>
-    <p>For all $m$, note that
-$G_m = 2^{2^m}-1 = (2^{2^{m-1}})^2 - 1= (2^{2^{m-1}} - 1)(2^{2^{m-1}} + 1) = G_{m-1}F_{m-1}$.<br></p>
-
-    <p>Again $G_{m-1} = G_{m-2} F_{m-2}$ and so
-$G_m = G_{m-2}F_{m-2}F_{m-1}$. Therefore, if $n &lt; m$, then
-recursively we get</p>
-
-\[G_m = G_nF_n F_{n+1} \cdots F_{m-2}F_{m-1}.\]
-
-    <p>Therefore $F_n \mid G_m$ if $m &gt; n$.<br></p>
-  </li>
-  <li>
-    <p>Since $F_n \mid G_m$ if $m &gt; n$, we conclude that
-$\gcd(F_n,G_m) \neq 1$ when $m &gt; n$. Hence, this option is not
-correct.<br></p>
-  </li>
-  <li>
-    <p>Note that</p>
-
-\[\begin{align*}
-F_{n+1} =&amp;\ 2^{2^{n+1}}+1\\
-=&amp;\ 2^{2^{n+1}}-1 + 2\\
-=&amp;\ \big((2^{2^n})^2 - 1\big) + 2\\
-=&amp;\ (2^{2^n}+1)(2^{2^n}-1) + 2\\
-=&amp;\ F_n \big((2^{2^{n-1}})^2 - 1\big) + 2\\
-%=&amp;\ F_n (2^{2^{n-1}}+1) (2^{2^{n-1}}-1) +2\\
-=&amp;\ F_n F_{n-1} (2^{2^{n-1}}-1) +2\\
-=&amp;\ \quad \vdots\\
-=&amp;\ F_n F_{n-1} \cdots F_1 F_0 + 2.
-\end{align*}\]
-
-    <p>Thus, if $m &lt; n$, then
-$F_n = F_{n-1} F_{n-2} \cdots F_{m+1} F_m F_{m-1} \cdots F_1 F_0+2$.<br></p>
-
-    <p>Suppose $\gcd(F_n,F_m) = d$. Then $d\mid F_n$ and $d_\mid F_m$. Then
-by above expression, we say that $d \mid 2$. Therefore, $d = 1$ or
-$d=2$. But since $F_n$ and $F_m$ are odd numbers, $d\neq 2$. Hence,
-$d = 1$. This options is <strong>correct</strong>.<br></p>
-  </li>
-  <li>
-    <p><strong>Not True.</strong> Example, take $m=2$ and $n =3$. Then
-$G_2 = 2^{2^2} - 1 = 2^4-1 = 15$ and
-$F_3 = 2^{2^3} + 1 = 2^8+1 = 256 + 1 = 257$. Neither $3$ nor $5$
-divides $257$ and hence $G_2 = 15 \nmid 257 = F_3$.</p>
-  </li>
-</ol>
+<p>The first option (a) is true as it is nothing but the second isomorphism theorem.<br>
+Define
+\(\psi : G_1 \times G_2 \to (G_1/H_1) \times (G_2/H_2), \qquad \psi(g_1, g_2) = (g_1H_1, g_2H_2).\)
+This is a surjective homomorphism. Its kernel is
+\(\ker \psi = H_1 \times H_2.\)
+By the First Isomorphism Theorem,
+\((G_1 \times G_2)/(H_1 \times H_2) \cong (G_1/H_1) \times (G_2/H_2).\)
+In general, the <strong>result</strong> is: if $H_i \trianglelefteq G_i$, then
+\(G_1 \times G_2 \times \cdots \times G_n / H_1 \times H_2 \times \cdots \times H_n \approx G_1/H_1 \times G_2/H_2 \times \cdots \times G_n/H_n.\) 
+So option (b) is true.<br>
+Note that normality is not transitive. Let $G = A_4$ and let $G_2 = {e, (1,2)(3,4), (1,3)(2,4), (1,4)(2,3)} \approx K_4$ (abelian) is normal in $G = A_4$ since every conjugate of a non-trivial element of $G_1=K_4$ in $A_4$ (or $S_4$) is again of the form $(a,b)(c,d)$ (same cycle-decomposition) which is already included $G_2$. Let $G_1 = {e, (1,2)(3,4)}$. Then $G_1$ is normal in $G_2$ as it is of index $2$. But $G_1$ is not normal in $G = A_4$ as 
+\((1,2,3) [(1,2)(3,4)] (1,3,2)= (1,3)(2,4) \not\in G_1.\)
+So option (c) is false.<br>
+Option (d) is also false because the subgroup $H = {e, \varphi}$, where $\varphi = (1,2)$ is of index $3$ (prime) in $G = S_3$, but is not normal.</p>
 
 
           </div>
