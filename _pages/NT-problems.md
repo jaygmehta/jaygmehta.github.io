@@ -2982,7 +2982,7 @@ function rjune2011Q28_addClass(ele, cls) {
 		}
 		if (document.getElementById('pass1').value == Password) {
 			// window.open("https://www.google.com", "_blank");
-      window.open("https://www.dropbox.com/scl/fi/mt40qeo61qlctmn3r250p/SPU_Workshop_20_Jan_2025_Transcript.pdf?rlkey=seylru6qqvldv2t2yl6ps2inq&st=gg7uctpy&dl=1");
+      window.open("https://www.dropbox.com/scl/fi/mt40qeo61qlctmn3r250p/SPU_Workshop_03_Feb_2026_Transcript.pdf?rlkey=seylru6qqvldv2t2yl6ps2inq&st=gg7uctpy&dl=1");
 		}
 
 	}
