@@ -8,6 +8,9 @@ children:
     - title: semester courses
       permalink: /semester-courses/
     - title: divider
+    - title: NEP courses
+      permalink: /nep-courses/
+    - title: divider
     - title: other courses
       permalink: /other-courses/
     - title: divider
