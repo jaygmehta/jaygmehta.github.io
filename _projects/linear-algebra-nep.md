@@ -41,7 +41,9 @@ category: NEP Semester I
 ------------------
 
 ## Lecture Notes
-<p>Download the PDF file of lecture notes <a href="/assets/pdf/PS01CMTH24.pdf" target="_blank"  class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p>
+<!-- <p>Download the PDF file of lecture notes <a href="/assets/pdf/PS01CMTH24.pdf" target="_blank"  class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p> -->
+
+<p>Download Lecture Notes: <br> Unit 1 <a href="/assets/pdf/P2S01NCMTH03_Unit1.pdf" target="_blank"  class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p>
 
 <!-- <iframe width="100%" height="800" src="/assets/pdf/PS01CMTH24.pdf"> -->
 
