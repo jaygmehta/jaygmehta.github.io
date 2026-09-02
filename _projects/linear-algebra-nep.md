@@ -45,6 +45,12 @@ category: NEP Semester I
 
 <p>Download Lecture Notes: <br> Unit 1 <a href="/assets/pdf/P2S01NCMTH03_Unit1.pdf" target="_blank"  class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p>
 
+<p>Unit 2 <a href="/assets/pdf/P2S01NCMTH03_Unit2.pdf" target="_blank"  class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p>
+
+<!-- <p>Unit 3 <a href="/assets/pdf/P2S01NCMTH03_Unit3.pdf" target="_blank"  class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p>
+
+<p>Unit 4 <a href="/assets/pdf/P2S01NCMTH03_Unit4.pdf" target="_blank"  class="float-none"><i class="fas fa-file-pdf" style="font-size:24px;color:red"></i></a></p> -->
+
 <!-- <iframe width="100%" height="800" src="/assets/pdf/PS01CMTH24.pdf"> -->
 
 <!-- <object data="https://jaygmehta.com/assets/pdf/PS01CMTH24.pdf" type="application/pdf" width="100%" height="800">
