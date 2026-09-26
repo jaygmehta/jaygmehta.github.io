@@ -82,73 +82,73 @@ Below are some algorithms we studied in our course Number Theory and Cryptograph
 
 ### Extended Euclidean Algorithm (EEA)
 <strong>Enter a and b to compute gcd(a,b) and au + bv = gcd(a,b)</strong><br>
-<iframe src="https://trinket.io/embed/python3/237e52137e?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+<iframe src="https://trinket.strivemath.org/embed/python3/aff64e33e54c?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ------------------
 
 ### Box Method (an alternative to EEA for coprime integers)
 <strong>Give a and b and program computes au+bv = 1 = gcd(a,b) using Box Method</strong><br>
-<iframe src="https://trinket.io/embed/python3/c5aa096759?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+<iframe src="https://trinket.strivemath.org/embed/python3/a0b072cd6bd8?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ------------------
 
 ### Fast Powering Algorithm (FPA) or Square and Multiply Algorithm (SAM)
 <strong>Enter g, A, m to compute g^A (mod m) using Fast Powering Algorithm</strong><br>
-<iframe src="https://trinket.io/embed/python3/f3eee92dcb?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+<iframe src="https://trinket.strivemath.org/embed/python3/faf9751d22ae?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ------------------
 
 ### Shanks's (Babystep Giantstep) Algorithm
 <strong>Program to find discrete log of h mod p to the base g using Shanks's Babystep Giantstep Algorithm</strong><br>
-<iframe src="https://trinket.io/embed/python3/ab487250db?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+<iframe src="https://trinket.strivemath.org/embed/python3/681e916f2084?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ------------------
 
 ### Chinese Remainder Theorem (CRT)
 <strong>Provide the number of congruences n , then enter values of ai and mi for each i = 1,2,...,n to obtain a&nbsp; solution by Chinese Remainder Theorem.</strong><br>
-<iframe src="https://trinket.strivemath.org/embed/python3/a0de6afb177d?outputOnly=true" width="100%" height="360" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.strivemath.org/embed/python3/a0de6afb177d?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ------------------
 
 ### Square roots modulo n=pq, where p,q = 4k+3
 <strong>Program to find solution of $$x^2 \equiv c \pmod{n}$$ , where $$n=pq$$, and $$p, q \equiv 3 \pmod{4}$$ are distinct primes.</strong><br>
-<iframe src="https://trinket.io/embed/python3/3fbb912f2596?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+<iframe src="https://trinket.strivemath.org/embed/python3/fa7b40e8922c?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ------------------
 
 ### Miller-Rabin Primality Test
 <strong>Enter the value of $$n$$ to test whether it is composite by finding a Miller-Rabin witness.</strong><br>
-<iframe src="https://trinket.io/embed/python3/4fe1ec9fd7e5?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.strivemath.org/embed/python3/546c96c59574?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ------------------
 
 ### Pollard's $$p-1$$ Algorithm
 <strong>Enter the value of $$N=pq$$ (the product of two primes) to factorize.</strong><br>
-<iframe src="https://trinket.io/embed/python3/0a088fe3bf?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+<iframe src="https://trinket.strivemath.org/embed/python3/a2b43c5465e2?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ------------------
 
 ### Adding points on elliptic curve using equation of line
 <strong>Enter the value of $$A, B$$ for $$E: Y^2 = X^3 + AX + B$$ coordinates $$x_1, y_1$$ and $$x_2,y_2$$ of points $$P$$ and $$Q$$ respectively to compute $$P\oplus Q$$.</strong><br>
-<iframe src="https://trinket.io/embed/python3/c75d4adc9dd8?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.strivemath.org/embed/python3/cc24f74ad932?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ------------------
 
 ### Adding points on elliptic curve over finite field using addition formula
 <strong>Enter the value of $$A, B$$ for $$E: Y^2 = X^3 + AX + B$$ coordinates $$x_1, y_1$$ and $$x_2,y_2$$ of points $$P$$ and $$Q$$ respectively to compute $$P+Q$$.</strong><br>
-<iframe src="https://trinket.io/embed/python3/a32e119a3230?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.strivemath.org/embed/python3/f0d2ab3d5f86?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ------------------
 
 ### $$\#E(\mathbb F_p)$$ and Trace of Frobenius $$t_p$$
 <strong>Enter the value of $$p$$ for $$\mathbb F_p$$ and $$A, B$$ for $$E: Y^2 = X^3 + AX + B$$ to compute the number of points on $$E$$ and the trace of Frobenius $$t_p$$.</strong><br>
-<iframe src="https://trinket.io/embed/python3/7f613f3d62cb?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.strivemath.org/embed/python3/c47cfc750627?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ------------------
 
 ### Double and Add algorithm to compute $$nP$$ for $$P \in E(\mathbb F_p)$$
 <strong>Enter the value of $$p$$ for $$\mathbb F_p$$, input values of $$A, B$$ for $$E: Y^2 = X^3 + AX + B$$, coordinates $$x_1, y_1$$ of a point $$P$$ and the value of $$n$$ to compute $$nP$$.</strong><br>
-<iframe src="https://trinket.io/embed/python3/912163c11b52?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen="allowfullscreen"></iframe>
+<iframe src="https://trinket.strivemath.org/embed/python3/153199689ad6?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ------------------
 
