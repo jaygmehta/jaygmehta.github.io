@@ -106,7 +106,7 @@ Below are some algorithms we studied in our course Number Theory and Cryptograph
 
 ### Chinese Remainder Theorem (CRT)
 <strong>Provide the number of congruences n , then enter values of ai and mi for each i = 1,2,...,n to obtain a&nbsp; solution by Chinese Remainder Theorem.</strong><br>
-<iframe src="https://trinket.io/embed/python3/3a10443a42?outputOnly=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+<iframe src="https://trinket.strivemath.org/embed/python3/a0de6afb177d?outputOnly=true" width="100%" height="360" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ------------------
 
