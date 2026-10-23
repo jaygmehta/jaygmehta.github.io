@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Catalog</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7f6;
+            color: #26332f;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            margin: 0 0 8px;
+            color: #22695c;
+        }
+
+        header p {
+            margin: 0;
+            color: #64748b;
+        }
+
+        .search-area {
+            display: grid;
+            grid-template-columns: 1fr 220px;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        input,
+        input[type="search"],
+        select {
+            width: 100%;
+            min-width: 0;
+            padding: 12px;
+            border: 1px solid #b9c7c2;
+            border-radius: 6px;
+            background-color: #ffffff !important;
+            color: #26332f !important;
+            font-family: inherit;
+            font-size: 16px;
+            opacity: 1;
+        }
+
+        input::placeholder {
+            color: #64748b !important;
+            opacity: 1;
+        }
+
+        input:focus,
+        select:focus {
+            outline: 2px solid #22695c;
+            outline-offset: 1px;
+            border-color: #22695c;
+        }
+
+        .summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin: 15px 0;
+            color: #52635d;
+            font-size: 14px;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            border: 1px solid #e1e8e5;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+        }
+
+        th,
+        td {
+            padding: 13px 12px;
+            border-bottom: 1px solid #e5ebe8;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #22695c;
+            color: #ffffff;
+            white-space: nowrap;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        th:hover {
+            background: #185447;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f8faf9;
+        }
+
+        tbody tr:hover {
+            background: #edf6f2;
+        }
+
+        .empty {
+            text-align: center;
+            padding: 28px;
+            color: #64748b;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            background: #22695c;
+            color: #ffffff;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        button:hover:not(:disabled) {
+            background: #185447;
+        }
+
+        button:disabled {
+            background: #cbd5d1;
+            cursor: not-allowed;
+        }
+
+        #pageInfo {
+            color: #52635d;
+            font-size: 14px;
+        }
+
+        .notice {
+            margin-top: 18px;
+            padding: 12px;
+            border-radius: 6px;
+            background: #f0f7f4;
+            color: #52635d;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 650px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .search-area {
+                grid-template-columns: 1fr;
+            }
+
+            th,
+            td {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h1>Library Book Catalog</h1>
+            <p>Search books by accession number, title, author, or classification number.</p>
+        </header>
+
+        <section class="search-area" aria-label="Book search controls">
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search multiple words, e.g. number theory burton..."
+                aria-label="Search books"
+                autocomplete="off"
+            >
+
+            <select id="searchField" aria-label="Choose search field">
+                <option value="all">Search all fields</option>
+                <option value="serial">Serial No.</option>
+                <option value="accession">Accession No.</option>
+                <option value="classification">Classification No.</option>
+                <option value="title">Title</option>
+                <option value="author">Author</option>
+            </select>
+        </section>
+
+        <div class="summary">
+            <span id="resultCount">Loading books...</span>
+
+            <label>
+                Books per page:
+                <select id="pageSize" style="width: auto; padding: 7px;">
+                    <option value="10">10</option>
+                    <option value="25" selected>25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th data-key="serial">Serial No. ↕</th>
+                        <th data-key="accession">Accession No. ↕</th>
+                        <th data-key="classification">Classification No. ↕</th>
+                        <th data-key="title">Title ↕</th>
+                        <th data-key="author">Author ↕</th>
+                    </tr>
+                </thead>
+
+                <tbody id="bookTable">
+                    <tr>
+                        <td colspan="5" class="empty">Loading books...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <nav class="pagination" aria-label="Table pagination">
+            <button id="prevBtn" type="button">Previous</button>
+            <span id="pageInfo">Page 1</span>
+            <button id="nextBtn" type="button">Next</button>
+        </nav>
+
+        <div class="notice" id="dataNotice">
+            Loading catalog data.
+        </div>
+    </main>
+
+    <script>
+        // Records are loaded only from Library-Catalog-Students.csv.
+        let books = [];
+        let filteredBooks = [];
+        let currentPage = 1;
+        let sortKey = "serial";
+        let sortDirection = 1;
+
+        const searchInput = document.getElementById("searchInput");
+        const searchField = document.getElementById("searchField");
+        const pageSizeSelect = document.getElementById("pageSize");
+        const bookTable = document.getElementById("bookTable");
+        const resultCount = document.getElementById("resultCount");
+        const pageInfo = document.getElementById("pageInfo");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const dataNotice = document.getElementById("dataNotice");
+
+        // Convert CSV text into book records.
+        // Supports quoted values containing commas or line breaks.
+        function parseCSV(text) {
+            const rows = [];
+            let row = [];
+            let value = "";
+            let inQuotes = false;
+
+            text = text.replace(/^\uFEFF/, "");
+
+            for (let i = 0; i < text.length; i++) {
+                const char = text[i];
+                const next = text[i + 1];
+
+                if (char === '"' && inQuotes && next === '"') {
+                    value += '"';
+                    i++;
+                } else if (char === '"') {
+                    inQuotes = !inQuotes;
+                } else if (char === "," && !inQuotes) {
+                    row.push(value);
+                    value = "";
+                } else if ((char === "\n" || char === "\r") && !inQuotes) {
+                    if (char === "\r" && next === "\n") {
+                        i++;
+                    }
+
+                    row.push(value);
+
+                    if (row.some(cell => cell.trim() !== "")) {
+                        rows.push(row);
+                    }
+
+                    row = [];
+                    value = "";
+                } else {
+                    value += char;
+                }
+            }
+
+            row.push(value);
+
+            if (row.some(cell => cell.trim() !== "")) {
+                rows.push(row);
+            }
+
+            if (rows.length < 2) {
+                return [];
+            }
+
+            const headers = rows[0].map(header =>
+                header.trim().toLowerCase().replace(/[^a-z0-9]/g, "")
+            );
+
+            function findColumn(possibleNames, fallbackIndex) {
+                const index = headers.findIndex(header =>
+                    possibleNames.includes(header)
+                );
+
+                return index >= 0 ? index : fallbackIndex;
+            }
+
+            const columns = {
+                serial: findColumn(
+                    ["serialno", "serial", "srno", "sno", "slno"],
+                    0
+                ),
+                accession: findColumn(
+                    ["accessionno", "accession", "accessionnumber"],
+                    1
+                ),
+                classification: findColumn(
+                    ["classificationno", "classification", "classno"],
+                    2
+                ),
+                title: findColumn(
+                    ["title", "booktitle", "bookname"],
+                    3
+                ),
+                author: findColumn(
+                    ["author", "authors", "authorname"],
+                    4
+                )
+            };
+
+            return rows.slice(1).map((cells, index) => ({
+                serial: getCell(cells, columns.serial) || String(index + 1),
+                accession: getCell(cells, columns.accession),
+                classification: getCell(cells, columns.classification),
+                title: getCell(cells, columns.title),
+                author: getCell(cells, columns.author)
+            })).filter(book =>
+                book.accession || book.title || book.author
+            );
+        }
+
+        function getCell(cells, index) {
+            if (index < 0 || index >= cells.length) {
+                return "";
+            }
+
+            return String(cells[index] ?? "").trim();
+        }
+
+        // Load Library-Catalog-Students.csv from the same folder as index.html.
+        async function loadBooks() {
+            try {
+                const response = await fetch("Library-Catalog-Students.csv", {
+                    cache: "no-store"
+                });
+
+                if (!response.ok) {
+                    throw new Error("Could not load Library-Catalog-Students.csv");
+                }
+
+                const csvText = await response.text();
+                const csvBooks = parseCSV(csvText);
+
+                if (csvBooks.length === 0) {
+                    throw new Error("The CSV file has no valid book records");
+                }
+
+                books = csvBooks;
+                dataNotice.textContent =
+                    "Catalog loaded from Library-Catalog-Students.csv. Search across your book records below.";
+            } catch (error) {
+                books = [];
+                dataNotice.textContent =
+                    "Could not load Library-Catalog-Students.csv. Put this CSV file in the same folder as this HTML file and open the page through a local web server. " +
+                    "Details: " + error.message;
+            }
+
+            applySearch();
+        }
+
+        function normalize(value) {
+            return String(value ?? "").toLocaleLowerCase().trim();
+        }
+
+        function applySearch() {
+            // Split the query into words so users can search multiple fields
+            // in any order, e.g. "number theory burton" or "burton number theory".
+            const queryTerms = normalize(searchInput.value)
+                .split(/\s+/)
+                .filter(Boolean);
+            const field = searchField.value;
+
+            filteredBooks = books.filter(book => {
+                const values = field === "all"
+                    ? Object.values(book)
+                    : [book[field]];
+                const searchableText = values.map(normalize);
+
+                // Every query word must match, but words may match different columns.
+                // This makes word order irrelevant while narrowing the results.
+                return queryTerms.every(term =>
+                    searchableText.some(value => value.includes(term))
+                );
+            });
+
+            sortBooks();
+            currentPage = 1;
+            renderTable();
+        }
+
+        function sortBooks() {
+            filteredBooks.sort((a, b) => {
+                const first = String(a[sortKey] ?? "");
+                const second = String(b[sortKey] ?? "");
+
+                const result = first.localeCompare(
+                    second,
+                    undefined,
+                    {
+                        numeric: true,
+                        sensitivity: "base"
+                    }
+                );
+
+                return result * sortDirection;
+            });
+        }
+
+        function renderTable() {
+            const pageSize = Number(pageSizeSelect.value);
+            const totalResults = filteredBooks.length;
+            const totalPages = Math.max(
+                1,
+                Math.ceil(totalResults / pageSize)
+            );
+
+            if (currentPage > totalPages) {
+                currentPage = totalPages;
+            }
+
+            const start = (currentPage - 1) * pageSize;
+            const visibleBooks = filteredBooks.slice(
+                start,
+                start + pageSize
+            );
+
+            bookTable.replaceChildren();
+
+            if (visibleBooks.length === 0) {
+                const row = document.createElement("tr");
+                const cell = document.createElement("td");
+
+                cell.colSpan = 5;
+                cell.className = "empty";
+                cell.textContent = "No books found. Try another search.";
+
+                row.appendChild(cell);
+                bookTable.appendChild(row);
+            } else {
+                visibleBooks.forEach(book => {
+                    const row = document.createElement("tr");
+
+                    [
+                        book.serial,
+                        book.accession,
+                        book.classification,
+                        book.title,
+                        book.author
+                    ].forEach(value => {
+                        const cell = document.createElement("td");
+
+                        // textContent prevents CSV text being treated as HTML.
+                        cell.textContent = value || "—";
+                        row.appendChild(cell);
+                    });
+
+                    bookTable.appendChild(row);
+                });
+            }
+
+            resultCount.textContent =
+                `Showing ${totalResults === 0 ? 0 : start + 1}–` +
+                `${Math.min(start + pageSize, totalResults)} of ` +
+                `${totalResults} matching books (${books.length} total books)`;
+
+            pageInfo.textContent =
+                `Page ${currentPage} of ${totalPages}`;
+
+            prevBtn.disabled = currentPage <= 1;
+            nextBtn.disabled = currentPage >= totalPages;
+        }
+
+        // Search as the user types.
+        searchInput.addEventListener("input", applySearch);
+        searchField.addEventListener("change", applySearch);
+
+        pageSizeSelect.addEventListener("change", () => {
+            currentPage = 1;
+            renderTable();
+        });
+
+        prevBtn.addEventListener("click", () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderTable();
+            }
+        });
+
+        nextBtn.addEventListener("click", () => {
+            const pageSize = Number(pageSizeSelect.value);
+            const totalPages = Math.max(
+                1,
+                Math.ceil(filteredBooks.length / pageSize)
+            );
+
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderTable();
+            }
+        });
+
+        // Click a column heading to sort by that column.
+        document.querySelectorAll("th[data-key]").forEach(header => {
+            header.addEventListener("click", () => {
+                const key = header.dataset.key;
+
+                if (sortKey === key) {
+                    sortDirection *= -1;
+                } else {
+                    sortKey = key;
+                    sortDirection = 1;
+                }
+
+                sortBooks();
+                currentPage = 1;
+                renderTable();
+            });
+        });
+
+        loadBooks();
+    </script>
+</body>
+</html>
