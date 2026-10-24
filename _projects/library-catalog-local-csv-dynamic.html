@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Catalog</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7f6;
+            color: #26332f;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            margin: 0 0 8px;
+            color: #22695c;
+        }
+
+        header p {
+            margin: 0;
+            color: #64748b;
+        }
+
+        .search-area {
+            display: grid;
+            grid-template-columns: 1fr 220px;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        input,
+        input[type="search"],
+        select {
+            width: 100%;
+            min-width: 0;
+            padding: 12px;
+            border: 1px solid #b9c7c2;
+            border-radius: 6px;
+            background-color: #ffffff !important;
+            color: #26332f !important;
+            font-family: inherit;
+            font-size: 16px;
+            opacity: 1;
+        }
+
+        input::placeholder {
+            color: #64748b !important;
+            opacity: 1;
+        }
+
+        input:focus,
+        select:focus {
+            outline: 2px solid #22695c;
+            outline-offset: 1px;
+            border-color: #22695c;
+        }
+
+        .summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin: 15px 0;
+            color: #52635d;
+            font-size: 14px;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            border: 1px solid #e1e8e5;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+        }
+
+        th,
+        td {
+            padding: 13px 12px;
+            border-bottom: 1px solid #e5ebe8;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #22695c;
+            color: #ffffff;
+            white-space: nowrap;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        th:hover {
+            background: #185447;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f8faf9;
+        }
+
+        tbody tr:hover {
+            background: #edf6f2;
+        }
+
+        .empty {
+            text-align: center;
+            padding: 28px;
+            color: #64748b;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            background: #22695c;
+            color: #ffffff;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        button:hover:not(:disabled) {
+            background: #185447;
+        }
+
+        button:disabled {
+            background: #cbd5d1;
+            cursor: not-allowed;
+        }
+
+        #pageInfo {
+            color: #52635d;
+            font-size: 14px;
+        }
+
+        .notice {
+            margin-top: 18px;
+            padding: 12px;
+            border-radius: 6px;
+            background: #f0f7f4;
+            color: #52635d;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 650px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .search-area {
+                grid-template-columns: 1fr;
+            }
+
+            th,
+            td {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h1>Library Book Catalog</h1>
+            <p>Search and sort books using any column in your catalogue.</p>
+        </header>
+
+        <section class="search-area" aria-label="Book search controls">
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search multiple words, e.g. number theory burton..."
+                aria-label="Search books"
+                autocomplete="off"
+            >
+
+            <select id="searchField" aria-label="Choose search field">
+                <option value="all">Search all fields</option>
+            </select>
+        </section>
+
+        <div class="summary">
+            <span id="resultCount">Loading books...</span>
+
+            <label>
+                Books per page:
+                <select id="pageSize" style="width: auto; padding: 7px;">
+                    <option value="10">10</option>
+                    <option value="25" selected>25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="table-wrap">
+            <table>
+                <thead id="bookHead">
+                    <tr>
+                        <th class="empty">Loading column headings...</th>
+                    </tr>
+                </thead>
+                <tbody id="bookTable">
+                    <tr>
+                        <td class="empty">Loading books...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <nav class="pagination" aria-label="Table pagination">
+            <button id="prevBtn" type="button">Previous</button>
+            <span id="pageInfo">Page 1</span>
+            <button id="nextBtn" type="button">Next</button>
+        </nav>
+
+        <div class="notice" id="dataNotice">
+            Loading catalog data.
+        </div>
+    </main>
+
+    <script>
+        // LOCAL CSV SETUP:
+        // Keep this HTML file and Library-Catalog.csv in the same folder.
+        // Run a local web server and open this page through http://localhost:8000/.
+        const LOCAL_CSV_FILE = "Library-Catalog.csv";
+
+        let books = [];
+        let filteredBooks = [];
+        let columnNames = [];
+        let currentPage = 1;
+        let sortKey = 0;
+        let sortDirection = 1;
+
+        const searchInput = document.getElementById("searchInput");
+        const searchField = document.getElementById("searchField");
+        const pageSizeSelect = document.getElementById("pageSize");
+        const bookTable = document.getElementById("bookTable");
+        const bookHead = document.getElementById("bookHead");
+        const resultCount = document.getElementById("resultCount");
+        const pageInfo = document.getElementById("pageInfo");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const dataNotice = document.getElementById("dataNotice");
+
+        // Convert CSV text into records using every column heading in row 1.
+        // Supports quoted values containing commas, quotes, or line breaks.
+        function parseCSV(text) {
+            const rows = [];
+            let row = [];
+            let value = "";
+            let inQuotes = false;
+
+            text = text.replace(/^\uFEFF/, "");
+
+            for (let i = 0; i < text.length; i++) {
+                const char = text[i];
+                const next = text[i + 1];
+
+                if (char === '"' && inQuotes && next === '"') {
+                    value += '"';
+                    i++;
+                } else if (char === '"') {
+                    inQuotes = !inQuotes;
+                } else if (char === "," && !inQuotes) {
+                    row.push(value);
+                    value = "";
+                } else if ((char === "\n" || char === "\r") && !inQuotes) {
+                    if (char === "\r" && next === "\n") i++;
+                    row.push(value);
+                    if (row.some(cell => cell.trim() !== "")) rows.push(row);
+                    row = [];
+                    value = "";
+                } else {
+                    value += char;
+                }
+            }
+
+            row.push(value);
+            if (row.some(cell => cell.trim() !== "")) rows.push(row);
+            if (rows.length < 2) return { headers: [], records: [] };
+
+            const headers = rows[0].map((header, index) => {
+                const cleaned = header.trim();
+                return cleaned || `Column ${index + 1}`;
+            });
+
+            const records = rows.slice(1).map(cells =>
+                headers.map((_, index) => getCell(cells, index))
+            ).filter(cells => cells.some(cell => cell !== ""));
+
+            return { headers, records };
+        }
+
+        function getCell(cells, index) {
+            if (index < 0 || index >= cells.length) {
+                return "";
+            }
+
+            return String(cells[index] ?? "").trim();
+        }
+
+        // Load catalogue records from the local CSV file in the same folder.
+        async function loadBooks() {
+            try {
+                const response = await fetch(LOCAL_CSV_FILE, { cache: "no-store" });
+                if (!response.ok) {
+                    throw new Error("Could not load " + LOCAL_CSV_FILE + " (HTTP " + response.status + "). Check that the CSV file is in the same folder as this HTML file and that its filename matches exactly.");
+                }
+
+                const parsed = parseCSV(await response.text());
+                if (!parsed.headers.length || !parsed.records.length) {
+                    throw new Error("No valid book records were found. Check that the published link returns CSV data and the first row contains column headings.");
+                }
+
+                columnNames = parsed.headers;
+                books = parsed.records;
+                buildDynamicColumns();
+                dataNotice.textContent = "Catalogue loaded from the local CSV file. Table columns and search fields are generated from the CSV header row.";
+            } catch (error) {
+                books = [];
+                columnNames = [];
+                buildDynamicColumns();
+                dataNotice.textContent =
+                    "Could not load the local catalogue CSV. Make sure the CSV file is in the same folder, its filename is exactly " + LOCAL_CSV_FILE + ", and you opened this page through a local web server. Details: " + error.message;
+            }
+
+            applySearch();
+        }
+
+        // Rebuild table headings and search choices from the CSV header row.
+        // Adding a new column to the sheet will therefore not require HTML edits.
+        function buildDynamicColumns() {
+            bookHead.replaceChildren();
+            bookTable.replaceChildren();
+            searchField.replaceChildren();
+
+            const allOption = document.createElement("option");
+            allOption.value = "all";
+            allOption.textContent = "Search all fields";
+            searchField.appendChild(allOption);
+
+            columnNames.forEach((name, index) => {
+                const option = document.createElement("option");
+                option.value = String(index);
+                option.textContent = name;
+                searchField.appendChild(option);
+            });
+
+            if (columnNames.length) {
+                const row = document.createElement("tr");
+                columnNames.forEach((name, index) => {
+                    const th = document.createElement("th");
+                    th.textContent = name + " ↕";
+                    th.dataset.index = String(index);
+                    th.title = "Click to sort by " + name;
+                    th.addEventListener("click", () => {
+                        if (sortKey === index) sortDirection *= -1;
+                        else { sortKey = index; sortDirection = 1; }
+                        sortBooks();
+                        currentPage = 1;
+                        renderTable();
+                    });
+                    row.appendChild(th);
+                });
+                bookHead.appendChild(row);
+            }
+        }
+
+        function normalize(value) {
+            return String(value ?? "").toLocaleLowerCase().trim();
+        }
+
+        function applySearch() {
+            // All words must match somewhere in the selected fields; word order is irrelevant.
+            const queryTerms = normalize(searchInput.value).split(/\s+/).filter(Boolean);
+            const selectedField = searchField.value;
+
+            filteredBooks = books.filter(book => {
+                const values = selectedField === "all" ? book : [book[Number(selectedField)]];
+                const searchableText = values.map(normalize);
+                return queryTerms.every(term => searchableText.some(value => value.includes(term)));
+            });
+
+            sortBooks();
+            currentPage = 1;
+            renderTable();
+        }
+
+        function sortBooks() {
+            filteredBooks.sort((a, b) => {
+                const first = String(a[sortKey] ?? "");
+                const second = String(b[sortKey] ?? "");
+                return first.localeCompare(second, undefined, { numeric: true, sensitivity: "base" }) * sortDirection;
+            });
+        }
+
+        function renderTable() {
+            const pageSize = Number(pageSizeSelect.value);
+            const totalResults = filteredBooks.length;
+            const totalPages = Math.max(
+                1,
+                Math.ceil(totalResults / pageSize)
+            );
+
+            if (currentPage > totalPages) {
+                currentPage = totalPages;
+            }
+
+            const start = (currentPage - 1) * pageSize;
+            const visibleBooks = filteredBooks.slice(
+                start,
+                start + pageSize
+            );
+
+            bookTable.replaceChildren();
+
+            if (visibleBooks.length === 0) {
+                const row = document.createElement("tr");
+                const cell = document.createElement("td");
+
+                cell.colSpan = Math.max(1, columnNames.length);
+                cell.className = "empty";
+                cell.textContent = "No books found. Try another search.";
+
+                row.appendChild(cell);
+                bookTable.appendChild(row);
+            } else {
+                visibleBooks.forEach(book => {
+                    const row = document.createElement("tr");
+
+                    book.forEach(value => {
+                        const cell = document.createElement("td");
+                        // textContent prevents CSV text being treated as HTML.
+                        cell.textContent = value || "—";
+                        row.appendChild(cell);
+                    });
+
+                    bookTable.appendChild(row);
+                });
+            }
+
+            resultCount.textContent =
+                `Showing ${totalResults === 0 ? 0 : start + 1}–` +
+                `${Math.min(start + pageSize, totalResults)} of ` +
+                `${totalResults} matching books (${books.length} total books)`;
+
+            pageInfo.textContent =
+                `Page ${currentPage} of ${totalPages}`;
+
+            prevBtn.disabled = currentPage <= 1;
+            nextBtn.disabled = currentPage >= totalPages;
+        }
+
+        // Search as the user types.
+        searchInput.addEventListener("input", applySearch);
+        searchField.addEventListener("change", applySearch);
+
+        pageSizeSelect.addEventListener("change", () => {
+            currentPage = 1;
+            renderTable();
+        });
+
+        prevBtn.addEventListener("click", () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderTable();
+            }
+        });
+
+        nextBtn.addEventListener("click", () => {
+            const pageSize = Number(pageSizeSelect.value);
+            const totalPages = Math.max(
+                1,
+                Math.ceil(filteredBooks.length / pageSize)
+            );
+
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderTable();
+            }
+        });
+
+        loadBooks();
+    </script>
+</body>
+</html>
