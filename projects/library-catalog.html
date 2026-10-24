@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library Book Catalog</title>
+    <title>NBHM Library Book Catalog</title>
 
     <style>
         * {
@@ -201,8 +201,9 @@
 <body>
     <main class="container">
         <header>
-            <h1>Library Book Catalog</h1>
-            <p>Search books by accession number, title, author, or classification number.</p>
+            <h1>NBHM Library Book Catalog</h1>
+            <h3>Department of Mathematics, Sardar Patel University</h3>
+            <p>Search and sort books using any column in your catalogue.</p>
         </header>
 
         <section class="search-area" aria-label="Book search controls">
@@ -216,11 +217,6 @@
 
             <select id="searchField" aria-label="Choose search field">
                 <option value="all">Search all fields</option>
-                <option value="serial">Serial No.</option>
-                <option value="accession">Accession No.</option>
-                <option value="classification">Classification No.</option>
-                <option value="title">Title</option>
-                <option value="author">Author</option>
             </select>
         </section>
 
@@ -240,19 +236,14 @@
 
         <div class="table-wrap">
             <table>
-                <thead>
+                <thead id="bookHead">
                     <tr>
-                        <th data-key="serial">Serial No. ↕</th>
-                        <th data-key="accession">Accession No. ↕</th>
-                        <th data-key="classification">Classification No. ↕</th>
-                        <th data-key="title">Title ↕</th>
-                        <th data-key="author">Author ↕</th>
+                        <th class="empty">Loading column headings...</th>
                     </tr>
                 </thead>
-
                 <tbody id="bookTable">
                     <tr>
-                        <td colspan="5" class="empty">Loading books...</td>
+                        <td class="empty">Loading books...</td>
                     </tr>
                 </tbody>
             </table>
@@ -270,25 +261,35 @@
     </main>
 
     <script>
-        // Records are loaded only from Library-Catalog-Students.csv.
+        // GOOGLE SHEETS SETUP:
+        // 1. In Google Sheets, use File > Share > Publish to web.
+        // 2. Select the catalogue worksheet and choose CSV format.
+        // 3. Copy the published CSV URL and replace the placeholder below.
+        // Keep only public catalogue information in the published worksheet.
+        const GOOGLE_SHEETS_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTtpxP-cbtJN6U64H8OF7_ROSE3B-5kaLe6DFGiAlL2tmM0j9fXvOzYBi42hmQxYoNRJlIyU608gdLN/pub?gid=0&single=true&output=csv";
+        //const response = await fetch("Library-Catalog-Students.csv");
+
+        // Records are loaded from the published Google Sheets CSV URL.
         let books = [];
         let filteredBooks = [];
+        let columnNames = [];
         let currentPage = 1;
-        let sortKey = "serial";
+        let sortKey = 0;
         let sortDirection = 1;
 
         const searchInput = document.getElementById("searchInput");
         const searchField = document.getElementById("searchField");
         const pageSizeSelect = document.getElementById("pageSize");
         const bookTable = document.getElementById("bookTable");
+        const bookHead = document.getElementById("bookHead");
         const resultCount = document.getElementById("resultCount");
         const pageInfo = document.getElementById("pageInfo");
         const prevBtn = document.getElementById("prevBtn");
         const nextBtn = document.getElementById("nextBtn");
         const dataNotice = document.getElementById("dataNotice");
 
-        // Convert CSV text into book records.
-        // Supports quoted values containing commas or line breaks.
+        // Convert CSV text into records using every column heading in row 1.
+        // Supports quoted values containing commas, quotes, or line breaks.
         function parseCSV(text) {
             const rows = [];
             let row = [];
@@ -310,16 +311,9 @@
                     row.push(value);
                     value = "";
                 } else if ((char === "\n" || char === "\r") && !inQuotes) {
-                    if (char === "\r" && next === "\n") {
-                        i++;
-                    }
-
+                    if (char === "\r" && next === "\n") i++;
                     row.push(value);
-
-                    if (row.some(cell => cell.trim() !== "")) {
-                        rows.push(row);
-                    }
-
+                    if (row.some(cell => cell.trim() !== "")) rows.push(row);
                     row = [];
                     value = "";
                 } else {
@@ -328,59 +322,19 @@
             }
 
             row.push(value);
+            if (row.some(cell => cell.trim() !== "")) rows.push(row);
+            if (rows.length < 2) return { headers: [], records: [] };
 
-            if (row.some(cell => cell.trim() !== "")) {
-                rows.push(row);
-            }
+            const headers = rows[0].map((header, index) => {
+                const cleaned = header.trim();
+                return cleaned || `Column ${index + 1}`;
+            });
 
-            if (rows.length < 2) {
-                return [];
-            }
+            const records = rows.slice(1).map(cells =>
+                headers.map((_, index) => getCell(cells, index))
+            ).filter(cells => cells.some(cell => cell !== ""));
 
-            const headers = rows[0].map(header =>
-                header.trim().toLowerCase().replace(/[^a-z0-9]/g, "")
-            );
-
-            function findColumn(possibleNames, fallbackIndex) {
-                const index = headers.findIndex(header =>
-                    possibleNames.includes(header)
-                );
-
-                return index >= 0 ? index : fallbackIndex;
-            }
-
-            const columns = {
-                serial: findColumn(
-                    ["serialno", "serial", "srno", "sno", "slno"],
-                    0
-                ),
-                accession: findColumn(
-                    ["accessionno", "accession", "accessionnumber"],
-                    1
-                ),
-                classification: findColumn(
-                    ["classificationno", "classification", "classno"],
-                    2
-                ),
-                title: findColumn(
-                    ["title", "booktitle", "bookname"],
-                    3
-                ),
-                author: findColumn(
-                    ["author", "authors", "authorname"],
-                    4
-                )
-            };
-
-            return rows.slice(1).map((cells, index) => ({
-                serial: getCell(cells, columns.serial) || String(index + 1),
-                accession: getCell(cells, columns.accession),
-                classification: getCell(cells, columns.classification),
-                title: getCell(cells, columns.title),
-                author: getCell(cells, columns.author)
-            })).filter(book =>
-                book.accession || book.title || book.author
-            );
+            return { headers, records };
         }
 
         function getCell(cells, index) {
@@ -391,35 +345,77 @@
             return String(cells[index] ?? "").trim();
         }
 
-        // Load Library-Catalog-Students.csv from the same folder as index.html.
+        // Load catalogue records from the published Google Sheets CSV URL.
         async function loadBooks() {
             try {
-                const response = await fetch("Library-Catalog-Students.csv", {
-                    cache: "no-store"
-                });
+                if (!GOOGLE_SHEETS_CSV_URL ||
+                    GOOGLE_SHEETS_CSV_URL === "PASTE_YOUR_PUBLISHED_GOOGLE_SHEETS_CSV_URL_HERE") {
+                    throw new Error("Please paste your published Google Sheets CSV URL into GOOGLE_SHEETS_CSV_URL near the top of the script.");
+                }
+                //const response = await fetch("Library-Catalog-Students.csv");
 
+                const response = await fetch(GOOGLE_SHEETS_CSV_URL, { cache: "no-store" });
                 if (!response.ok) {
-                    throw new Error("Could not load Library-Catalog-Students.csv");
+                    throw new Error("Google Sheets did not return the CSV successfully (HTTP " + response.status + "). Check that the sheet is published as CSV.");
                 }
 
-                const csvText = await response.text();
-                const csvBooks = parseCSV(csvText);
-
-                if (csvBooks.length === 0) {
-                    throw new Error("The CSV file has no valid book records");
+                const parsed = parseCSV(await response.text());
+                if (!parsed.headers.length || !parsed.records.length) {
+                    throw new Error("No valid book records were found. Check that the published link returns CSV data and the first row contains column headings.");
                 }
 
-                books = csvBooks;
-                dataNotice.textContent =
-                    "Catalog loaded from Library-Catalog-Students.csv. Search across your book records below.";
+                columnNames = parsed.headers;
+                books = parsed.records;
+                buildDynamicColumns();
+                dataNotice.textContent = "Catalog loaded from Google Sheets. Table columns and search fields are generated from the first row of your sheet.";
             } catch (error) {
                 books = [];
+                columnNames = [];
+                buildDynamicColumns();
                 dataNotice.textContent =
-                    "Could not load Library-Catalog-Students.csv. Put this CSV file in the same folder as this HTML file and open the page through a local web server. " +
-                    "Details: " + error.message;
+                    "Could not load the catalogue from Google Sheets. Check that you pasted the published CSV URL (not the normal edit/share link), that the worksheet is published, and that you have an internet connection. Details: " + error.message;
             }
 
             applySearch();
+        }
+
+        // Rebuild table headings and search choices from the CSV header row.
+        // Adding a new column to the sheet will therefore not require HTML edits.
+        function buildDynamicColumns() {
+            bookHead.replaceChildren();
+            bookTable.replaceChildren();
+            searchField.replaceChildren();
+
+            const allOption = document.createElement("option");
+            allOption.value = "all";
+            allOption.textContent = "Search all fields";
+            searchField.appendChild(allOption);
+
+            columnNames.forEach((name, index) => {
+                const option = document.createElement("option");
+                option.value = String(index);
+                option.textContent = name;
+                searchField.appendChild(option);
+            });
+
+            if (columnNames.length) {
+                const row = document.createElement("tr");
+                columnNames.forEach((name, index) => {
+                    const th = document.createElement("th");
+                    th.textContent = name + " ↕";
+                    th.dataset.index = String(index);
+                    th.title = "Click to sort by " + name;
+                    th.addEventListener("click", () => {
+                        if (sortKey === index) sortDirection *= -1;
+                        else { sortKey = index; sortDirection = 1; }
+                        sortBooks();
+                        currentPage = 1;
+                        renderTable();
+                    });
+                    row.appendChild(th);
+                });
+                bookHead.appendChild(row);
+            }
         }
 
         function normalize(value) {
@@ -427,24 +423,14 @@
         }
 
         function applySearch() {
-            // Split the query into words so users can search multiple fields
-            // in any order, e.g. "number theory burton" or "burton number theory".
-            const queryTerms = normalize(searchInput.value)
-                .split(/\s+/)
-                .filter(Boolean);
-            const field = searchField.value;
+            // All words must match somewhere in the selected fields; word order is irrelevant.
+            const queryTerms = normalize(searchInput.value).split(/\s+/).filter(Boolean);
+            const selectedField = searchField.value;
 
             filteredBooks = books.filter(book => {
-                const values = field === "all"
-                    ? Object.values(book)
-                    : [book[field]];
+                const values = selectedField === "all" ? book : [book[Number(selectedField)]];
                 const searchableText = values.map(normalize);
-
-                // Every query word must match, but words may match different columns.
-                // This makes word order irrelevant while narrowing the results.
-                return queryTerms.every(term =>
-                    searchableText.some(value => value.includes(term))
-                );
+                return queryTerms.every(term => searchableText.some(value => value.includes(term)));
             });
 
             sortBooks();
@@ -456,17 +442,7 @@
             filteredBooks.sort((a, b) => {
                 const first = String(a[sortKey] ?? "");
                 const second = String(b[sortKey] ?? "");
-
-                const result = first.localeCompare(
-                    second,
-                    undefined,
-                    {
-                        numeric: true,
-                        sensitivity: "base"
-                    }
-                );
-
-                return result * sortDirection;
+                return first.localeCompare(second, undefined, { numeric: true, sensitivity: "base" }) * sortDirection;
             });
         }
 
@@ -494,7 +470,7 @@
                 const row = document.createElement("tr");
                 const cell = document.createElement("td");
 
-                cell.colSpan = 5;
+                cell.colSpan = Math.max(1, columnNames.length);
                 cell.className = "empty";
                 cell.textContent = "No books found. Try another search.";
 
@@ -504,15 +480,8 @@
                 visibleBooks.forEach(book => {
                     const row = document.createElement("tr");
 
-                    [
-                        book.serial,
-                        book.accession,
-                        book.classification,
-                        book.title,
-                        book.author
-                    ].forEach(value => {
+                    book.forEach(value => {
                         const cell = document.createElement("td");
-
                         // textContent prevents CSV text being treated as HTML.
                         cell.textContent = value || "—";
                         row.appendChild(cell);
@@ -561,24 +530,6 @@
                 currentPage++;
                 renderTable();
             }
-        });
-
-        // Click a column heading to sort by that column.
-        document.querySelectorAll("th[data-key]").forEach(header => {
-            header.addEventListener("click", () => {
-                const key = header.dataset.key;
-
-                if (sortKey === key) {
-                    sortDirection *= -1;
-                } else {
-                    sortKey = key;
-                    sortDirection = 1;
-                }
-
-                sortBooks();
-                currentPage = 1;
-                renderTable();
-            });
         });
 
         loadBooks();
