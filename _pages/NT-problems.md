@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /nt/
+permalink: /ntold/
 title: Number Theory Problems
 description: For Problem Solving (NET and NBHM)
 nav: false

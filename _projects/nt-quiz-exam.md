@@ -1,0 +1,1297 @@
+---
+layout: page
+permalink: /nt/
+title: Number Theory Problems
+description: For Problem Solving (NET and NBHM)
+nav: false
+nav_order: 8
+# toc:
+#   sidebar: left
+---
+
+<style>
+.transcript, .scoreboard, .mode-box, .menu, .quiz, .summary {
+  background: var(--global-card-bg-color, #fff);
+  color: var(--global-text-color, inherit);
+  border: 1px solid var(--global-divider-color, #e5e7eb);
+  border-radius: 12px;
+}
+.transcript {
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.1rem;
+}
+.transcript p { margin: 0 0 .7rem; font-weight: 600; }
+.transcript input[type="password"] {
+  padding: .55rem .7rem;
+  border: 1px solid var(--global-divider-color, #c5c9d1);
+  border-radius: 8px;
+  margin-right: .5rem;
+  background: var(--global-bg-color, #fff);
+  color: var(--global-text-color, inherit);
+}
+.transcript button, .quiz button.check, #finish-quiz, .mode label {
+  padding: .5rem .9rem;
+  border: 0;
+  border-radius: 8px;
+  background: var(--global-theme-color, #3b82c4);
+  color: var(--global-hover-text-color, #fff);
+  font-weight: 600;
+  cursor: pointer;
+}
+.quiz .show-solution, #reset-quiz {
+  padding: .5rem .9rem;
+  border-radius: 8px;
+  border: 1px solid var(--global-divider-color, #dbe3ee);
+  background: transparent;
+  color: var(--global-text-color, inherit);
+  font-weight: 600;
+  cursor: pointer;
+}
+.transcript .error {
+  display: none;
+  margin: .7rem 0 0;
+  padding: .55rem .8rem;
+  border-radius: 8px;
+  background: #f8d7da;
+  color: #8b3e46;
+}
+.mode-box {
+  margin: 0 0 1rem;
+  padding: 1rem 1.15rem 1.05rem;
+  text-align: center;
+}
+.mode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .7rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.mode legend { padding: 0; font-weight: 600; }
+.mode-choices { display: flex; justify-content: center; gap: .7rem; }
+.mode label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 7.5rem;
+  margin: 0;
+  border: 1px solid var(--global-divider-color, #dbe3ee);
+  background: transparent;
+  color: var(--global-text-color, inherit);
+}
+.mode input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+.mode label:has(input:checked) {
+  background: var(--global-theme-color, #3b82c4);
+  color: var(--global-hover-text-color, #fff);
+  border-color: transparent;
+}
+.mode label:focus-within { outline: 2px solid var(--global-theme-color, #3b82c4); outline-offset: 2px; }
+.scheme { margin: .85rem 0 0; color: var(--global-text-color-light, #4b5563); }
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+.menu {
+  position: sticky;
+  top: .5rem;
+  max-height: calc(100vh - 1.5rem);
+  overflow: auto;
+  padding: .35rem;
+}
+.menu button {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: .45rem .6rem;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+}
+.menu button[aria-current="true"] { background: color-mix(in srgb, var(--global-theme-color, #3b82c4) 16%, transparent); }
+.menu button.right { background: #d4edda; color: #155724; }
+.menu button.wrong { background: #f8d7da; color: #8b3e46; }
+.menu button.blank { background: #f3f4f6; }
+.menu button.saved { box-shadow: inset 3px 0 0 var(--global-theme-color, #3b82c4); }
+.quiz { padding: 1.1rem 1.25rem 1.25rem; margin: 0; }
+.quiz .ask { margin: .35rem 0 0; color: var(--global-text-color-light, #4b5563); font-weight: 600; }
+.quiz .solution {
+  margin-top: .8rem;
+  padding-top: .8rem;
+  border-top: 1px solid var(--global-divider-color, #e5e7eb);
+}
+@media (max-width: 720px) {
+  .layout { grid-template-columns: 1fr; }
+  .menu { position: static; max-height: 240px; }
+}
+.quiz-top { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; }
+.quiz h3 { margin: 0; }
+.quiz .worth { color: var(--global-text-color-light, #6b7280); font-size: .9rem; white-space: nowrap; }
+.quiz .stem { margin: .7rem 0 .75rem; }
+.quiz label {
+  display: flex;
+  gap: .7rem;
+  align-items: flex-start;
+  padding: .55rem .7rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.quiz label:hover { background: color-mix(in srgb, var(--global-theme-color, #3b82c4) 12%, transparent); }
+.quiz input { margin-top: .25rem; }
+.quiz.graded label { cursor: default; }
+.quiz.graded label.key, .quiz.graded label.key:hover { background: #d4edda; }
+.quiz.graded label.miss, .quiz.graded label.miss:hover { background: #f8d7da; }
+.quiz .result { margin: .7rem 0 0; padding: .55rem .8rem; border-radius: 8px; }
+.quiz .ok { background: #d4edda; color: #155724; }
+.quiz .bad { background: #f8d7da; color: #8b3e46; }
+.quiz .need { background: #fff4d6; color: #7a5b00; }
+.scoreboard {
+  position: sticky;
+  top: .5rem;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem 1rem;
+  align-items: center;
+  padding: .85rem 1rem;
+  margin: 0 0 1rem;
+}
+.scoreboard strong { font-size: 1.15rem; }
+.scoreboard .detail { color: var(--global-text-color-light, #4b5563); }
+html[data-theme='dark'] .menu button.right,
+html[data-theme='dark'] .quiz.graded label.key,
+html[data-theme='dark'] .quiz.graded label.key:hover,
+html[data-theme='dark'] .quiz .ok {
+  background: #1c3d2a;
+  color: #c8f5d4;
+}
+html[data-theme='dark'] .menu button.wrong,
+html[data-theme='dark'] .quiz.graded label.miss,
+html[data-theme='dark'] .quiz.graded label.miss:hover,
+html[data-theme='dark'] .quiz .bad,
+html[data-theme='dark'] .transcript .error {
+  background: #4a2428;
+  color: #ffd0d4;
+}
+html[data-theme='dark'] .menu button.blank { background: #2a2d31; color: var(--global-text-color); }
+html[data-theme='dark'] .quiz .need { background: #3d3420; color: #ffe7a3; }
+html[data-theme='dark'] .summary .got { color: #8fd9a8; }
+html[data-theme='dark'] .summary .zero,
+html[data-theme='dark'] .summary .neg { color: #f0a8a8; }
+.summary { margin: 1.5rem 0 2rem; }
+.summary ol { padding-left: 1.3rem; }
+.summary li { margin: .25rem 0; }
+.summary .got { color: #155724; }
+.summary .zero { color: #8b3e46; }
+.summary .neg { color: #8b3e46; }
+</style>
+
+<section class="mode-box">
+  <fieldset class="mode">
+    <legend>Mode</legend>
+    <div class="mode-choices">
+      <label><input type="radio" name="quiz-mode" value="practice" checked> Practice</label>
+      <label><input type="radio" name="quiz-mode" value="exam"> Exam</label>
+    </div>
+  </fieldset>
+  <p class="scheme">Part A: +2, wrong −0.5. Part B: +3, wrong −0.75. Part C: +4.75 only when every correct option is selected, otherwise 0. A blank answer scores 0.</p>
+</section>
+
+<form class="transcript" onsubmit="return passcheck()">
+  <p>To download the Workshop (NWPSM-XIV) session transcript, enter the password.</p>
+  <input type="password" id="pass1" required>
+  <button type="submit">Download transcript</button>
+  <p class="error"></p>
+</form>
+
+<div class="scoreboard" id="scoreboard">
+  <strong id="score-now">Score: 0</strong>
+  <span class="detail" id="score-detail">Check a problem to add its mark.</span>
+</div>
+<div class="layout">
+<nav class="menu" aria-label="Questions">
+<button type="button" aria-current="true">NET JUL 2025 (B)</button>
+<button type="button" aria-current="false">NET MAR 2025 (B)</button>
+<button type="button" aria-current="false">NET DEC 2023 (B)</button>
+<button type="button" aria-current="false">NET DEC 2023 (C)</button>
+<button type="button" aria-current="false">NET SEP 2022 (C) · 1</button>
+<button type="button" aria-current="false">NET SEP 2022 (C) · 2</button>
+<button type="button" aria-current="false">NET FEB 2022 (C) · 1</button>
+<button type="button" aria-current="false">NET FEB 2022 (C) · 2</button>
+<button type="button" aria-current="false">NET FEB 2022 (C) · 3</button>
+<button type="button" aria-current="false">NET FEB 2022 (B)</button>
+<button type="button" aria-current="false">NET 30 NOV 2020 (C) · 1</button>
+<button type="button" aria-current="false">NET 30 NOV 2020 (C) · 2</button>
+<button type="button" aria-current="false">NET 30 NOV 2020 (C) · 3</button>
+<button type="button" aria-current="false">NET 30 NOV 2020 (B)</button>
+<button type="button" aria-current="false">NET 26 NOV 2020 (C)</button>
+<button type="button" aria-current="false">NET 26 NOV 2020 (A)</button>
+<button type="button" aria-current="false">NET 26 NOV 2020 (B) · 1</button>
+<button type="button" aria-current="false">NET 26 NOV 2020 (B) · 2</button>
+<button type="button" aria-current="false">NET DEC 2019 (A)</button>
+<button type="button" aria-current="false">NET JUN 2019 (B)</button>
+<button type="button" aria-current="false">NET JUN 2019 (C)</button>
+<button type="button" aria-current="false">NET DEC 2018 (B)</button>
+<button type="button" aria-current="false">NET DEC 2017 (B)</button>
+<button type="button" aria-current="false">NET JUN 2017 (A)</button>
+<button type="button" aria-current="false">NET JUN 2017 (B) · 1</button>
+<button type="button" aria-current="false">NET JUN 2017 (B) · 2</button>
+<button type="button" aria-current="false">NET DEC 2016 (B)</button>
+<button type="button" aria-current="false">NET JUN 2016 (B)</button>
+<button type="button" aria-current="false">NET DEC 2015 (C)</button>
+<button type="button" aria-current="false">NET JUN 2015 (C)</button>
+<button type="button" aria-current="false">NET JUN 2014 (B)</button>
+<button type="button" aria-current="false">NET JUN 2014 (C)</button>
+<button type="button" aria-current="false">NET DEC 2013 (B)</button>
+<button type="button" aria-current="false">NET JUN 2013 (A)</button>
+<button type="button" aria-current="false">NET JUN 2013 (C)</button>
+<button type="button" aria-current="false">NET DEC 2012 (B)</button>
+<button type="button" aria-current="false">NET DEC 2012 (C)</button>
+<button type="button" aria-current="false">NET JUN 2012 (B) · 1</button>
+<button type="button" aria-current="false">NET JUN 2012 (B) · 2</button>
+<button type="button" aria-current="false">NET JUN 2011 (B) · 1</button>
+<button type="button" aria-current="false">NET JUN 2011 (B) · 2</button>
+</nav>
+<div class="stage">
+{% raw %}
+<article class="quiz" id="july2025b" data-correct="1" data-kind="B" data-full="3" data-penalty="-0.75">
+  <div class="quiz-top"><h3>1. NET JUL 2025 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">Which of the following statements is true?</div>
+  <label><input type="radio" name="july2025b"> $p\mid 1 + (p-1)!$ for some odd prime $p$.</label>
+  <label><input type="radio" name="july2025b"> $p \mid (1234)^{p-1} - 1$ for all primes $p &gt; 700$.</label>
+  <label><input type="radio" name="july2025b"> There exists $a \in \mathbb Z$ and a prime $p &gt; 11$ such that $p \nmid a^p - a$.</label>
+  <label><input type="radio" name="july2025b"> $p \nmid \frac{(p^2)!}{(p!)^2}$ for some odd prime $p$.</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>By Wilson's theorem, $(p-1)! \equiv -1 \pmod p$, i.e., $p \mid (p-1)!+1$. So, the option (a) is false.<br>
+Fermat's little theorem: if $p$ is a prime and $a \in \mathbb Z$ such that $\gcd(a,p) = 1$, then $a^{p-1} \equiv 1 \pmod p$. Here $a = 1234 = 2 \times 617$ and $617$ is prime. Thus, if $p&gt;700$ is a prime, then $\gcd(1234,p) = 1$. Hence, by Fermat's theorem, $(1234)^{p-1} \equiv 1 \pmod p$, i.e., $p \mid (1234)^{p-1} - 1$. So, option (b) is \textbf{true}.<br>
+Multiplying $p$ to both sides in Fermat's theorem, we get $a^p \equiv a \pmod p$ if $\gcd(a,p) = 1$. If $\gcd(a,p) \neq 1$, then $p \mid a$ and so $a\equiv 0 \pmod p$ and also $a^p \equiv 0 \equiv a \pmod p$. Thus, for any integer $a$ and any prime $p$, we have Fermat's little theorem (version 2): $a^p \equiv a \pmod p$, i.e., $p \mid a^{p} - a$. So, option (c) is false.<br>
+Note that, for any odd prime $p$, $p^2 \mid (p!)^2$, but $p^3 \nmid (p!)^2$. However, $p^3 \mid (p^2)!$. Hence, $p \mid \frac{(p^2)!}{(p!)^2}$ for all (odd) primes $p$. So, option (d) is false.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="mar2025b" data-correct="2" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>2. NET MAR 2025 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">Let $p$ be a prime number. An element $a$ of the group $(\mathbb{Z}/p\mathbb{Z})^\times$
+is a primitive root $(\mathbb{Z}/p\mathbb{Z})^\times$ if the order of $a$ in $(\mathbb{Z}/p\mathbb{Z})^\times$ is $p-1$.
+Let $S_p$ be the number of primitive roots in $(\mathbb{Z}/p\mathbb{Z})^\times$
+and let $\varphi$ denote Euler's $\varphi$-function.
+Which of the following statements is true?</div>
+  <label><input type="radio" name="mar2025b"> For each $p&lt;100$,
+$
+\sum_{n=1}^{\infty}\left(\frac{S_p}{\varphi(p)}\right)^n
+$
+converges.</label>
+  <label><input type="radio" name="mar2025b"> For each $100 \le p \le 200$,
+$
+\sum_{n=1}^{\infty}\left(\frac{S_p}{\varphi(p)}\right)^n
+$
+diverges.</label>
+  <label><input type="radio" name="mar2025b"> For each $p&gt;200$,
+$
+\sum_{n=1}^{\infty}\left(\frac{S_p}{\varphi(p)}\right)^n
+$
+converges.</label>
+  <label><input type="radio" name="mar2025b"> The element $4 \bmod 101$ in $(\mathbb{Z}/101\mathbb{Z})^\times$ is a primitive root.</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>For a prime $p$, we have $\varphi(p)=p-1$ and
+$$
+S_p=\varphi(p-1).
+$$
+Hence the series is geometric with ratio
+$$
+r=\frac{\varphi(p-1)}{p-1}.
+$$
+For any odd prime $p$, $\varphi(p-1)&lt;p-1$, so $r&lt;1$ and the series converges.
+The only exception is $p=2$, where $r=1$.<br>
+Thus (a) is false since $p=2&lt;100$.
+All primes in $[100,200]$ are odd, so (b) is false.<br>
+For all $p&gt;200$, the series converges, so (c) is true.<br>
+Finally, since $2$ has order $100$ modulo $101$, the order of $4=2^2$ is
+$$
+\frac{100}{\gcd(100,2)}=50\neq 100,
+$$
+so (d) is false.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="dec2023b" data-correct="3" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>3. NET DEC 2023 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">Which one of the following is equal to $1^{37}+2^{37}+3^{37}+\cdots + 88^{37}$ in $\mathbb Z/89\mathbb Z$?</div>
+  <label><input type="radio" name="dec2023b"> $88$</label>
+  <label><input type="radio" name="dec2023b"> $-88$</label>
+  <label><input type="radio" name="dec2023b"> $2$</label>
+  <label><input type="radio" name="dec2023b"> $0$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>Note that $88 \equiv -1 \pmod{89}$ and so $88^{37} \equiv (-1)^{37} \equiv -1 \pmod{89}$. Therefore, $1^{37} + 88^{37} \equiv 0 \pmod{89}$. Similarly, $87 \equiv (-2) \pmod{89}$ and so $88^{37} \equiv (-2)^{37} \equiv - 2^{37} \pmod{89}$. Therefore, $2^{37} + 87^{37} \equiv 0 \pmod{89}$. Thus,
+$$1^{37}+2^{37}+3^{37}+\cdots + 88^{37} \equiv 0 \pmod{89}.$$</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="dec2023c" data-correct="0,2" data-kind="C" data-full="4.75" data-penalty="0" hidden>
+  <div class="quiz-top"><h3>4. NET DEC 2023 (C)</h3><span class="worth">+4.75 if complete, otherwise 0</span></div>
+  <p class="ask">Choose all that apply</p>
+  <div class="stem">Let $n \in \mathbb Z$ be such that $n$ is congruent to $1 \mod 7$ and $n$ is congruent to $4 \mod{15}$. Which of the following statements are true.</div>
+  <label><input type="checkbox" name="dec2023c"> $n$ is congruent to $1$ mod $3$</label>
+  <label><input type="checkbox" name="dec2023c"> $n$ is congruent to $1$ mod $35$</label>
+  <label><input type="checkbox" name="dec2023c"> $n$ is congruent to $1$ mod $21$</label>
+  <label><input type="checkbox" name="dec2023c"> $n$ is congruent to $1$ mod $5$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>We solve this by CRT. Since $n \equiv 1 \pmod 7$, $n$ is of the form $n=7k+1$. Substituting this value in the second congruence, we have $7k+1 \equiv 4 \mod{15}$. So $7k \equiv 3 \pmod{15}$. Multiplying both sides by $2$, we get $14k \equiv -k \equiv 6 \pmod{15}$ and so $k \equiv -6 \equiv 9 \pmod{15}$. Substituting this value of $k$ in $n$, we get
+$$n = 7k+1 \equiv 7 \cdot 9 + 1 \equiv 64 \pmod{15\cdot 7} \equiv 64 \pmod{105}.$$
+Therefore, $n = 64 + 105m$, $m \in \mathbb Z$. Hence, $n \equiv 1 \pmod{3}$, $n \equiv 29 \pmod{35}$, $n \equiv 1 \pmod{21}$, and $n \equiv 4 \pmod{5}$.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="sep2022c1" data-correct="0,3" data-kind="C" data-full="4.75" data-penalty="0" hidden>
+  <div class="quiz-top"><h3>5. NET SEP 2022 (C)</h3><span class="worth">+4.75 if complete, otherwise 0</span></div>
+  <p class="ask">Choose all that apply</p>
+  <div class="stem">Let $a$ and $b$ be positive integers with $a &gt; b$ and $a+b=24$. Suppose that the following congruences have a common integer solution.
+$$2x \equiv 3a \pmod 5, \ x \equiv 4b \pmod 5.$$
+Which of the following statements are true?</div>
+  <label><input type="checkbox" name="sep2022c1"> $10 \le a-b \le 20$.</label>
+  <label><input type="checkbox" name="sep2022c1"> $3b &gt; a &gt; 2b$.</label>
+  <label><input type="checkbox" name="sep2022c1"> $a &gt; 3b$.</label>
+  <label><input type="checkbox" name="sep2022c1"> $a-b$ is divisible by $5$.</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>Multiplying the congruence $2x \equiv 3a \pmod 5$ by $3$ (inverse of $2$ modulo $5$) on both the sides we get, $x \equiv 4a \pmod 5$. So from the second congruence, we have $4a \equiv 4b \pmod 5$, i.e., $5 \mid 4(a-b)$. Since $5 \nmid 4$, we can say that $5 \mid a-b$ and hence option (d) correct. <br>
+Now, $a-b = 5y$. Since $a+b = 24$, either both are odd or both $a$ and $b$ are even. Then $a-b$ is even and so $a-b = 5y$, where $y = 0,2,4,6,\ldots$. Since $a&gt;b$, $y=0$ is not possible. Also, $a$ and $b$ being positive integers such that $a+b = 24$, $y \ge 6$ is not possible. Hence, $y = 2$ or $y = 4$ and so $10 \le a-b \le 20$. This shows option (a) is correct. <br>
+Finally, if $y = 2$, then $a - b = 10$ and $a+b = 24$ implies $2a = 34$ and so $a = 17$ and $b = 7$. Thus, $a &gt; 3b$ is not possible, i.e., option (c) is false. Similarly, if $y = 4$, then $a -b = 20$ and $a+b = 24$ implies $a = 22$ and $b = 2$. Hence, $3b &gt; a$ is not possible, i.e., option (b) is false.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="sep2022c2" data-correct="0,1,3" data-kind="C" data-full="4.75" data-penalty="0" hidden>
+  <div class="quiz-top"><h3>6. NET SEP 2022 (C)</h3><span class="worth">+4.75 if complete, otherwise 0</span></div>
+  <p class="ask">Choose all that apply</p>
+  <div class="stem">Consider the function $f(n) = n^5 - 2n^3 + n$, where $n$ is a positive integer. Which of the following statements are true?</div>
+  <label><input type="checkbox" name="sep2022c2"> For every positive integer $k$, there exists a positive integer $n$ such that $f(n)$ is divisible by $2^k$.</label>
+  <label><input type="checkbox" name="sep2022c2"> $f(n)$ is even for every integer $n \ge 20$.</label>
+  <label><input type="checkbox" name="sep2022c2"> For every integer $n \ge 20$, either $f(n)$ is odd or $f(n)$ is divisible by $4$.</label>
+  <label><input type="checkbox" name="sep2022c2"> For every odd integer $n \ge 21$, $f(n)$ is divisible by $64$.</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>Observe that
+$$f(n) = n^5 - 2n^3 + n = n (n^4 - 2n^2 + 1) = n (n^2-1)^2 = n (n-1)^2 (n+1)^2.$$
+Note that $n \mid f(n)$. Let $k \in \mathbb N$, taking $n = 2^k$, we have $2^k \mid f(n) = f(2^k)$. Thus, option (a) is true.<br>
+If $n$ is odd, then $(n-1)$, $(n+1)$ are even and hence $f(n)$ is even. Clearly, if $n$ is even, then $f(n)$ is even. Thus, option (b) is correct.<br>
+Option (c) is false because for $n = 22$, $f(n) = 22 (21)^2 (23)^2$ is neither odd nor divisible by $4$ (it is only divisible by $2$). Similarly, $n = 26, 30$, etc. works.<br>
+Let $n$ be an odd integer. Then $n = 4k+1$ or $n=4k+3$. If $n = 4k+1$, then $n-1 = 4k$ and so $(n-1)^2$ is divisible by $16$. Also, $(n+1)^2 = (4k+2)^2 = 4 \cdot (2k+1)^2$. This shows that $f(n)$ is divisible by $64$. Similarly, it can be easily seen that $f(n)$ is divisible by $64$ if $n=4k+3$. Thus, option (d) is correct.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="feb2022c1" data-correct="3" data-kind="C" data-full="4.75" data-penalty="0" hidden>
+  <div class="quiz-top"><h3>7. NET FEB 2022 (C)</h3><span class="worth">+4.75 if complete, otherwise 0</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">Let $p$ be a prime and $N_p$ be the number of pairs of positive integers $(x,y)$ such that such that $\frac{1}{x} + \frac{1}{y} = \frac{1}{p^4}$. Which among the following are possible values of $N_p$?</div>
+  <label><input type="radio" name="feb2022c1"> $0$</label>
+  <label><input type="radio" name="feb2022c1"> $4$</label>
+  <label><input type="radio" name="feb2022c1"> $5$</label>
+  <label><input type="radio" name="feb2022c1"> $9$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>\begin{align*}
+&amp;\ \frac{1}{x} + \frac{1}{y} = \frac{1}{p^4}<br>
+\Rightarrow &amp;\ \frac{x+y}{xy} = \frac{1}{p^4}<br>
+\Rightarrow &amp;\ p^4(x+y) = xy<br>
+\Rightarrow &amp;\ xy - x p^4 - yp^4 = 0<br>
+\Rightarrow &amp;\ x(y - p^4) - yp^4 -p^8 = p^8<br>
+\Rightarrow &amp;\ x(y - p^4) - p^4(y -p^4) = p^8<br>
+\Rightarrow &amp;\ (x-p^4)(y - p^4) = p^8<br>
+\Rightarrow &amp;\ ab = p^8 &amp; &amp; (a =(x-p^4),\ b =(y - p^4))
+\end{align*}
+Then we have the following possibilities as factors of $p^8$: $a = p^i, b = p^j$, where $0 \le i, j \le 8$ and $i+j = 8$. The following are the possibilities.
+\begin{align*}
+a = 0, b = p^8 \Rightarrow &amp;\ (x,y) = (1+p^4, p^4+p^8)<br>
+a = p, b = p^7 \Rightarrow &amp;\ (x,y) = (p+p^4, p^4+p^7)<br>
+a = p^2, b = p^6 \Rightarrow &amp;\ (x,y) = (p^2+p^4, p^4+p^6)<br>
+a = p^3, b = p^5 \Rightarrow &amp;\ (x,y) = (p^3+p^4, p^4+p^5)<br>
+a = p^4, b = p^4 \Rightarrow &amp;\ (x,y) = (p^4+p^4, p^4+p^4) = (2p^4,2p^4)<br>
+a = p^5, b = p^3 \Rightarrow &amp;\ (x,y) = (p^5+p^4, p^4+p^3)<br>
+a = p^6, b = p^2 \Rightarrow &amp;\ (x,y) = (p^6+p^4, p^4+p^2)<br>
+a = p^7, b = p \Rightarrow &amp;\ (x,y) = (p^7+p^4, p^4+p)<br>
+a = p^8, b = 1 \Rightarrow &amp;\ (x,y) = (p^8+p^4, p^4+1)
+\end{align*}
+Thus, there are $5$ distinct pairs but since number of positive integers are asked, I am going with $9$.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="feb2022c2" data-correct="0,2" data-kind="C" data-full="4.75" data-penalty="0" hidden>
+  <div class="quiz-top"><h3>8. NET FEB 2022 (C)</h3><span class="worth">+4.75 if complete, otherwise 0</span></div>
+  <p class="ask">Choose all that apply</p>
+  <div class="stem">For a positive integer $n$, let $\Omega(n)$ denote the number of prime factors of $n$ counted with multiplicity. For instance, $\Omega(3) = 1$, $\Omega(6) = \Omega(9) = 2$. Let $p &gt; 3$ be a prime number and let $N = p(p+2)(p+4)$. Which of the following statements are true?</div>
+  <label><input type="checkbox" name="feb2022c2"> $\Omega(N) \ge 3$</label>
+  <label><input type="checkbox" name="feb2022c2"> There exists primes $p &gt; 3$ such that $\Omega(N) = 3$</label>
+  <label><input type="checkbox" name="feb2022c2"> $p$ can never be the smallest prime divisor of $N$</label>
+  <label><input type="checkbox" name="feb2022c2"> $p$ can be the smallest prime divisor of $N$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>We know that a product of $n$ consecutive integers is divisible by $n$. So product of $3$ consecutive integers $p(p+1)(p+2)$ is divisible by $3$. Note that $p+1$ is divisible by $3$ if and only if $p+4 = (p+1)+3$ is divisible by $3$. So the product $N=p(p+2)(p+4)$ is divisible by $3$. Since $p &gt; 3$, $3$ is the smallest prime dividing $N$ and $p$ cannot be the smallest prime dividing $N$. So option (c) is \textbf{correct} and option (d) is \textbf{false}.<br>
+Since $p &gt; 3$, $3 \mid (p+2)(p+4)$. So $3$ divides exactly one of them (but not both). Suppose, without the loss of generality, $3 \mid (p+2)$, then $p+2$ is composite and so it has one more prime factor. Also $p+4$ has at least one prime factor. Therefore, $N = p (p+2)(p+4)$ has at least $4$ prime factors. Hence, $\Omega(N) = 3$ is not possible. So option (b) is \textbf{false} and option (a) is \textbf{true}.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="feb2022c3" data-correct="1,3" data-kind="C" data-full="4.75" data-penalty="0" hidden>
+  <div class="quiz-top"><h3>9. NET FEB 2022 (C)</h3><span class="worth">+4.75 if complete, otherwise 0</span></div>
+  <p class="ask">Choose all that apply</p>
+  <div class="stem">A positive integer $n$ coprime to $17$ is called a primitive root modulo $17$ if $n^k - 1$ is not divisible by $17$ for all $k$ with $1 \le k \le 16$. Let $a,b$ be distinct positive integers between $1$ and $16$. Which of the following statements are true?</div>
+  <label><input type="checkbox" name="feb2022c3"> $2$ is a primitive root modulo $17$</label>
+  <label><input type="checkbox" name="feb2022c3"> If $a$ is a primitive root modulo $17$ then $a^2$ is not necessarily a primitive root modulo $17$</label>
+  <label><input type="checkbox" name="feb2022c3"> If $a, b$ are primitive roots modulo $17$, then $ab$ is a primitive root modulo $17$</label>
+  <label><input type="checkbox" name="feb2022c3"> Product of primitive roots modulo $17$ between $1$ to $16$ is congruent to $1$ modulo $17$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>\begin{enumerate}[nosep,label=(\alph*)]
+\item A primitive root modulo $n$ is a generator of $Z_n^*$, i.e., it has order $n-1$. So a primitive root modulo $17$ has order $16$. Here $2^8 \equiv 1 \pmod{17}$.
+\item If $a$ is a primitive root modulo $17$, then $a^2$ cannot be a primitive root as $a^2$ will have order $8$ because $(a^2)^8 = 1 \pmod{17}$.
+\item If $g$ is a primitive root mod $17$, then every element of $\mathbb Z_{17}^*$ can be written as a power of $g$. If $a$ is another primitive root, then $a = g^k$. But order of $a = g^k$ is $16$ if and only if $\gcd(k,16) = 1$. So, if we have one primitive root $g$, then we have $\phi(p-1) = \phi(16) = 8$ primitive roots given by $g^k$ where $\gcd(k,16)=1$.<br>
+Check that $3$ is a primitive root modulo $17$, i.e., $3^{16} \equiv 1 \pmod{17}$ and $3^k \neq 1 \pmod{17}$ for all $k &lt; 16$. Then all other primitive roots modulo $17$ are
+\begin{align*}
+3^3 \equiv &amp;\ 10<br>
+3^5 \equiv &amp;\ 5<br>
+3^7 \equiv &amp;\ 11<br>
+3^{-7} = 3^9 \equiv &amp;\ 14<br>
+3^{-5} = 3^{11} \equiv &amp;\ 7<br>
+3^{-3} = 3^{13} \equiv &amp;\ 12<br>
+3^{-1} = 3^{15} \equiv &amp;\ 6
+\end{align*}
+Note that $3$ is a primitive root and $5$ is a primitive root but $15$ is not. So this option is \textbf{False.}
+\item Taking product of all primitive roots modulo $17$, we get
+$$3 \cdot 10 \cdot 5 \cdot 11 \cdot 14 \cdot 7 \cdot 12 \cdot 6 \equiv 3^1 \cdot 3^3
+\cdot 3^5 \cdot 3^7 \cdot 3^{-7} \cdot 3^{-5} \cdot 3^{-3} \cdot 3^{-1} \equiv 1 \pmod{17}.$$
+So this option is also \textbf{true.}
+
+\end{enumerate}</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="feb2022b" data-correct="1" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>10. NET FEB 2022 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">Let $S = \{n : 1\le n \le 999;\ 3 \mid n \text{ or } 37 \mid n\}$. How many integers are there in the set $S^c = \{n : 1 \le n \le 999;\ n\not\in S\}$?</div>
+  <label><input type="radio" name="feb2022b"> $639$</label>
+  <label><input type="radio" name="feb2022b"> $648$</label>
+  <label><input type="radio" name="feb2022b"> $666$</label>
+  <label><input type="radio" name="feb2022b"> $909$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>Let $M$ and $N$ be the set of all integers from $1$ to $999$ which are divisible by $3$ and $37$ respectively. Then $M=\{3, 6,\ldots,999\}$, $N=\{37, 74,\ldots,999\}$ and $|M| = \frac{999}{3}=333$, $|N| = \frac{999}{37}=27$.<br>
+If an integer is divisible by both $3$ and $37$, then it is divisible by $3 \times 37 = 111$. Number of such integers between $1$ and $999$ are $|M\cap N| = \frac{999}{111} = 9.$<br>
+Here $S = M \cup N$. So,
+$$|S| = |M \cup N| = |M| + |N| - |M \cap N| = 333 + 27 - 9 = 360 - 9 = 351.$$
+Then $|S^c| = 999-351 = 648.$</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="30nov2020c1" data-correct="1,2" data-kind="C" data-full="4.75" data-penalty="0" hidden>
+  <div class="quiz-top"><h3>11. NET 30 NOV 2020 (C)</h3><span class="worth">+4.75 if complete, otherwise 0</span></div>
+  <p class="ask">Choose all that apply</p>
+  <div class="stem">For positive integers $m$ and $n$, let $\gcd(m,n)$ denote their greatest common divisor. Let $m &gt; n$ be such that $\gcd(m,n) =1$. Which of the following statements are true?</div>
+  <label><input type="checkbox" name="30nov2020c1"> $\gcd(m-n,m+n) = 1$</label>
+  <label><input type="checkbox" name="30nov2020c1"> $\gcd(m-n,m+n)$ can have a prime divisor</label>
+  <label><input type="checkbox" name="30nov2020c1"> There exists integers $x,y$ such that $nx-my = 3$</label>
+  <label><input type="checkbox" name="30nov2020c1"> $\gcd(m-n,m+n)$ can be an odd prime</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>Let $d = \gcd(m-n,m+n)$. Then $d\mid m-n$ and $d \mid m+n$. But then $d\mid (m-n)+(m+n) = 2m$. Similarly, $d \mid 2n$. Since $d\mid 2m$ and $d\mid 2n$, we have
+$$d\mid \gcd(2m,2n) = 2 \gcd(m,n) = 2\cdot 1 = 2.$$
+Therefore, $d = 1$ or $d=2$. Since $d=2$ is a possibility, option (a) and option(d) are \textbf{not true} and ption (b) is \textbf{true}.<br>
+Also since $\gcd(m,n)=1$ (by Bezout's identity), there exists integers $x'$ and $y'$ such that $mx'+ny' = 1$. Multiplying both sides by $3$, we get $m(2x') - n(-3y') = 3.$ Taking $x = 3x'$, $y = -3y'$, we have $mx-ny=3$. So option (c) is also \textbf{true}.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="30nov2020c2" data-correct="2,3" data-kind="C" data-full="4.75" data-penalty="0" hidden>
+  <div class="quiz-top"><h3>12. NET 30 NOV 2020 (C)</h3><span class="worth">+4.75 if complete, otherwise 0</span></div>
+  <p class="ask">Choose all that apply</p>
+  <div class="stem">For a positive integer $n$, let $\varphi(n)$ be the Euler's $\varphi$-function. Which of the following statements are true for $n &gt; 3$?</div>
+  <label><input type="checkbox" name="30nov2020c2"> $\varphi(n)$ can never divided $n$</label>
+  <label><input type="checkbox" name="30nov2020c2"> $\varphi(n) \mid n \Rightarrow$ there exists integers $x,y$ such that $nx+6y = 1$</label>
+  <label><input type="checkbox" name="30nov2020c2"> $\varphi(n) \mid n \Rightarrow$ $n$ can have at most two distinct prime divisors</label>
+  <label><input type="checkbox" name="30nov2020c2"> $\varphi(n) \mid \varphi(nk)$ for every positive integer $k$.</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>\begin{enumerate}[nosep,label=(\alph*)]
+\item This is false since for $n = 8$, $\varphi(n)= \varphi(8) = 4$ and $4 \mid n=8$.
+\item We know (by Bezout's identity) that for integers $a$ and $b$ $\gcd(a,b) = 1$ if and only if there exists integers $x$ and $y$ such that $ax+by = 1$. <br>
+By this, here we have $\gcd(n,6) = 1$. This is false, since $\varphi(8) = 4 \mid 8$ but $\gcd(8,6) \neq 1$. In other words, if $n=8$, then $1= 8x+6y = 2(4x+3y)$ is not possible as $2 \mid $ RHS but $2 \nmid$ LHS.
+\item This option is \textbf{True}. Note that $\varphi(n)$ is always even. So if $\varphi(n)\mid n$, then $n$ cannot be odd. Suppose $n = p^\alpha q^\beta 2^\gamma$ be product of $3$ primes. Then $\varphi(n) = p^{\alpha-1}q^{\beta-1}2^{\gamma-1}(p-1)(q-1)(2-1)$. Then $2^{\gamma+1} \mid \varphi(n)$ but $2^{\gamma+1}\nmid n$. So $\varepsilon(n)$ cannot divide $n$. So this is be true.
+\item Let $n = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_s^{\alpha_s}$. Then $\varphi(n) = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_s^{\alpha_s-1}(p_1-1)(p_2-2)\cdots (p_s-1)$.<br>
+If $k = p_1^{\beta_1} p_2^{\beta_2} \cdots p_s^{\beta_s} q_1^{\gamma_1}\cdots q_t^{\gamma_t}$, where $\beta_i \ge 0$ and $\gamma_j \ge 0$, then
+$$nk = p_1^{\alpha_1+\beta_1} p_2^{\alpha_2+\beta_2} \cdots p_s^{\alpha_s+\beta_s}q_1^{\gamma_1}\cdots q_t^{\gamma_t}$$
+and so $$\varphi(nk) = p_1^{\alpha_1+\beta_1-1} p_2^{\alpha_2+\beta_2-1} \cdots p_s^{\alpha_s+\beta_s-1}q_1^{\gamma_1-1}\cdots q_t^{\gamma_t-1}.$$
+Clearly, $\varphi(n) \mid \varphi(nk).$
+\end{enumerate}</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="30nov2020c3" data-correct="0,2" data-kind="C" data-full="4.75" data-penalty="0" hidden>
+  <div class="quiz-top"><h3>13. NET 30 NOV 2020 (C)</h3><span class="worth">+4.75 if complete, otherwise 0</span></div>
+  <p class="ask">Choose all that apply</p>
+  <div class="stem">Let $\mathbb N = \{1,2,\ldots\}$ denote the set of positive integers. For $n \in \mathbb N$, let
+$$A_n = \{(x,y,z) \in \mathbb N^3 : x^n + y^n = z^n \text{ and } z&lt; n\}.$$
+Let $F_n$ be the cardinality of the set $A_n$. Which of the following statements are true?</div>
+  <label><input type="checkbox" name="30nov2020c3"> $F(n)$ is finite for $n \ge 3$</label>
+  <label><input type="checkbox" name="30nov2020c3"> $F(2) = \infty$</label>
+  <label><input type="checkbox" name="30nov2020c3"> $F(n) = 0$ for all $n$</label>
+  <label><input type="checkbox" name="30nov2020c3"> $F(n)$ is non zero for some $n &gt; 2$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>\begin{enumerate}[nosep,label=(\alph*)]
+\item Fermat's last theorem: There are no positive integer solutions to $x^n + y^n = z^n$ for $n \ge 3$. So $F(n) = 0$ for $n \ge 3$, which is a finite number.
+\item For $F(2)$, since $z &lt; 2$, we look for $x, y \in \mathbb N$ such that $x^2+y^2 = 1$. This is not possible as $x, y &gt;0$. So $F(2) = 0$.
+\item Since $F(n) = 0$ for all $n \in \mathbb N$, this option is correct.
+\item This is not possible, by Fermat's last theorem.
+\end{enumerate}</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="30nov2020b" data-correct="3" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>14. NET 30 NOV 2020 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">The last two digits of $3^{2019}$ are</div>
+  <label><input type="radio" name="30nov2020b"> $27$</label>
+  <label><input type="radio" name="30nov2020b"> $37$</label>
+  <label><input type="radio" name="30nov2020b"> $57$</label>
+  <label><input type="radio" name="30nov2020b"> $67$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>To obtain last two digits of a number, we need to compute the remainder obtained by dividing the number by $100$.<br>
+By Euler's theorem, if $a$ is relatively prime to $n$, then $a^{\phi(n)}\equiv 1 \pmod n$. Here $a=3$ and $n=100$. Since $(3,100)=1$ and $\phi(100)=\phi(4)\phi(25)=2 \times 20 = 40$, we have
+$$\begin{aligned}
+&amp; 3^{40} &amp;\equiv &amp;\ 1 \pmod {100}<br>
+\Rightarrow &amp; {(3^{40})}^{50} &amp;\equiv &amp;\ 1^{50} \pmod {100}<br>
+\Rightarrow &amp; 3^{19} \cdot 3^{2000} = 3^{19} \pmod {100}.
+\end{aligned}$$
+Note that $3^{4} \equiv 81 \equiv -19 \pmod{100}$. Therefore, $3^{8} \equiv (-19)^2 361 \equiv 61 \pmod{100}$. Then $3^{16} \equiv (61)^2 \equiv 3721 \equiv 21 \pmod{100}$. Finally,
+$$3^{19} \equiv 3^3 \cdot 3^{16} \equiv 27 \cdot 21 = 567 \equiv 67 \pmod{100}.$$
+Thus, last two digits (i.e. the remainder) is $67$.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="26nov2020c" data-correct="0,1" data-kind="C" data-full="4.75" data-penalty="0" hidden>
+  <div class="quiz-top"><h3>15. NET 26 NOV 2020 (C)</h3><span class="worth">+4.75 if complete, otherwise 0</span></div>
+  <p class="ask">Choose all that apply</p>
+  <div class="stem">Let $p$ be an odd prime such that $p \equiv 2 \pmod 3$. Let $\mathbb F_p$ be the field with $p$ elements. Consider the subset $E$ of $\mathbb F_p \times \mathbb F_p$ given by $E =\{(x,y) \in \mathbb F_p \times \mathbb F_p : y^2 = x^3 + 1\}$. Which of the following are true?</div>
+  <label><input type="checkbox" name="26nov2020c"> $E$ has at least two elements</label>
+  <label><input type="checkbox" name="26nov2020c"> $E$ has at most $2p$ elements</label>
+  <label><input type="checkbox" name="26nov2020c"> $E$ can have $p^2$ elements</label>
+  <label><input type="checkbox" name="26nov2020c"> $E$ has at least $2p$ elements</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>For $x = 0$, we have $y^2 = 1$ and so $y = \pm 1 \equiv 1, p-1 \pmod p$. Thus, $(0,1)$ and $(0,p-1)$ belong to $E$. Hence, $E$ has at least two elements. Thus, \textbf{first} option is \textbf{correct}. <br>
+Since $x \in \mathbb F_p$, there are $p$ at most different possible values of $x$ and so $x^3+1$. But $y^2 = x^3+1$. So even if every value of $x^3+1$ gives two different square roots, then there are at most $2p$ different possible values of $y$ and hence of the points $(x,y)$. Thus, the \textbf{second} option is also \textbf{correct} and so the \textbf{third and fourth options are incorrect}.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="26nov2020a" data-correct="2" data-kind="A" data-full="2" data-penalty="-0.5" hidden>
+  <div class="quiz-top"><h3>16. NET 26 NOV 2020 (A)</h3><span class="worth">+2, wrong −0.5</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">The sum of first $n$ even integers is</div>
+  <label><input type="radio" name="26nov2020a"> divisible by $n$ and not $n+1$</label>
+  <label><input type="radio" name="26nov2020a"> divisible by $n+1$ and not $n$</label>
+  <label><input type="radio" name="26nov2020a"> divisible by both $n$ and $n+1$</label>
+  <label><input type="radio" name="26nov2020a"> neither divisible by $n$ nor by $n+1$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>$$2 + 4 + 6 + \cdots + 2n = 2 (1 + 2 + 3 + \cdots + n) = 2 \frac{n(n+1)}{2} = n(n+1).$$</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="26nov2020b1" data-correct="2" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>17. NET 26 NOV 2020 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">Which of the following is true?</div>
+  <label><input type="radio" name="26nov2020b1"> Every even integer $n \ge 16$ divides $(n-1)!+3$</label>
+  <label><input type="radio" name="26nov2020b1"> Every odd integer $n \ge 16$ divides $(n-1)!$</label>
+  <label><input type="radio" name="26nov2020b1"> Every even integer $n \ge 16$ divides $(n-1)!$</label>
+  <label><input type="radio" name="26nov2020b1"> For every even integer $n \ge 16$, $n^2$ divides $n!+1$.</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>\begin{enumerate}[nosep,label=(\alph*)]
+\item
+Suppose $n$ is even and $n \mid (n-1)!+3$. Since $n$ is even, $2 \mid n$ and so $2 \mid (n-1)!+3$ which is not possible as $(n-1)!+3$ is always odd.
+\item This is not true. Take $n = 17$. Then $17 \nmid 16!$.<br>
+In general, for any prime $p$, $p \nmid (p-1)!$. By Wilson's theorem, $(p-1)! \equiv -1 \pmod p$.
+\item This is \textbf{true}. Let $n = 2k$ be even integer $n \ge 16$. Then $n-1 = 2k-1$ and
+\begin{align*}
+&amp;\ (n-1)! = (2k-1)!<br> =&amp;\ 1 \times 2 \times 3 \times \cdots \times k \times (k+1) \times \cdots (2k-1)<br>
+=&amp;\ 2 \times k \times [ 3 \times \cdots \times (k-1) \times (k+1) \times \cdots \times (2k-1)].<br>
+=&amp;\ 2k \times \text{some integer } m.
+\end{align*}
+Hence, $n \mid (n-1)!$.<br>
+Note that, if $n$ is composite $n \mid (n-1)!$ and more generally, $\gcd(n,(n-1)!) = 1$ or $n$.
+\item This is not true as $17^2 \nmid 17! + 1$. For any prime $p$, $p^2 \nmid p!+1$. This is because $p! = p(p-1)!$ and so $p!+1$ is of the for $kp+1$ and we know that $\gcd(p^m,pk+1) = 1$.
+\end{enumerate}</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="26nov2020b2" data-correct="3" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>18. NET 26 NOV 2020 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">Let $\varphi(n)$ be the cardinality of the set $\{a \mid 1 \le a \le n, \ (a,n) = 1\}$, where $(a,n)$ denotes the gcd of $a$ and $n$. Which of the following is NOT true?</div>
+  <label><input type="radio" name="26nov2020b2"> There exists infinitely many $n$ such that $\varphi(n) &gt; \varphi(n+1)$.</label>
+  <label><input type="radio" name="26nov2020b2"> There exists infinitely many $n$ such that $\varphi(n) &lt; \varphi(n+1)$.</label>
+  <label><input type="radio" name="26nov2020b2"> There exists $N \in \mathbb N$ such that $N &gt; 2$ and for all $n &gt; N$, $\varphi(N) &lt; \varphi(n)$.</label>
+  <label><input type="radio" name="26nov2020b2"> The set $\left\{\frac{\varphi(n)}{n} : n \in \mathbb N\right\}$ has finitely many limit points.</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>\begin{enumerate}[nosep,label=(\alph*)]
+\item This is true as for every $n$ prime, $\varphi(n) = n-1 &gt; \varphi(n+1)$ as $n+1$ is not prime and there are infinitely many primes. So this statement is true and hence it is not the correct option.
+\item This statement is also true when $n+1$ is primes. Then $\varphi(n+1) = n$ and $n$ is not prime and so $\varphi(n) &lt; n = \varphi(n+1)$. So this is also not the correct option.
+\item If $N$ is odd, then $\varphi(2N) = \varphi(2) \varphi(N) = \varphi(N)$. So for $n = 2N$, the statement does not hold. Similarly, show for $N$ even.
+\item Only left option and hence it must be correct.
+\end{enumerate}</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="dec2019a" data-correct="3" data-kind="A" data-full="2" data-penalty="-0.5" hidden>
+  <div class="quiz-top"><h3>19. NET DEC 2019 (A)</h3><span class="worth">+2, wrong −0.5</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">The difference between the squares of two consecutive integers is $408235$. The sum of the numbers is</div>
+  <label><input type="radio" name="dec2019a"> $16324$</label>
+  <label><input type="radio" name="dec2019a"> $27061$</label>
+  <label><input type="radio" name="dec2019a"> $180235$</label>
+  <label><input type="radio" name="dec2019a"> $408235$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>The difference between two squares is $a^2 - b^2 = (a-b)(a+b)$. Let $a = n+1$ and $b=n$ be two consecutive numbers. Then we are given that $a^2 - b^2 = (n+1 - n) (n+1 + n) = 408235$. Thus, $2n+1 = a + b = 408235$.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="june2019b" data-correct="2" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>20. NET JUN 2019 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">For any integer $n \ge 1$, let <br>
+$d(n) = $ number of positive divisors of $n$ <br>
+$\nu(n) = $ number of distinct prime divisors of $n$<br>
+$\omega(n) = $ number of prime divisors of $n$ counted with multiplicity.
+
+\noindent
+[For example, if $p$ is a prime, then $d(p) = 2, \nu(p) = \nu(p^2) = 1, \omega(p^2)=2$].</div>
+  <label><input type="radio" name="june2019b"> If $n \ge 1000$ and $\omega(n) \ge 2$, then $d(n) &gt; \log n$</label>
+  <label><input type="radio" name="june2019b"> there exists $n$ such that $d(n) &gt; 3 \sqrt{n}$</label>
+  <label><input type="radio" name="june2019b"> For every $n$, $2^{\nu(n)} \le d(n) \le 2^{\omega(n)}$</label>
+  <label><input type="radio" name="june2019b"> if $\omega(n) = \omega(m)$, then $d(n) = d(m)$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>\begin{enumerate}
+\item Choose a number $&gt; 1000$ which is a square of a prime, for instance, $n = 1369 = 37^2$. Then $d(n) = 3$ (as $1,37,1369$ are its only divisors). But
+$\log(1369) &gt; \log(1000) = 3\log (10) = 3$. Thus, $d(n) &gt; \log(n)$ implies $3&gt;3$ which is not possible and hence first option is \textbf{incorrect}.
+\item Note that for $d \mid n$, $d \times \frac{n}{d} = n$. Thus, if $d \mid n$ with $d \le \sqrt{n}$, then $\frac{n}{d}$ is a divisor of $n$ which is $\ge \sqrt{n}$. The number of divisors $d$ of $n$ such that $d \le \sqrt{n}$ is at most $\sqrt{n}$ which is in one-one correspondence between $\frac{n}{d}$. So, the total number of divisors of $n$ is $\le 2 \sqrt{n}$, i.e., $d(n) \le 2 \sqrt{n}$. Therefore, this option is also \textbf{incorrect}.
+\item Let $n = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_s^{\alpha_s}$. Then $d(n) = (\alpha_1 + 1) (\alpha_2 + 1)\cdots (\alpha_s + 1)$. Since $\alpha_i\ge 1$ and $s \ge 1$, we have
+$$2^s \le d(n) \le 2^{\alpha_1 +\cdots + \alpha_s}.$$
+That is, $2^{\nu(n)} \le d(n) \le w^{\omega(n)}$. Hence, this option is \textbf{correct}.
+\item Let $n= pq$ and $m =p^2$, where $p$ and $q$ are distinct primes. For example, $n = 15 = 3 \cdot 5$ and $n = 9 = 3^2$. Then $\omega(n) = 2$ and $\omega(m) = 2$ but $d(n) = 4$ while $d(m) = 3$. Therefore, this option is \textbf{incorrect}.
+\end{enumerate}</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="june2019c" data-correct="1,2,3" data-kind="C" data-full="4.75" data-penalty="0" hidden>
+  <div class="quiz-top"><h3>21. NET JUN 2019 (C)</h3><span class="worth">+4.75 if complete, otherwise 0</span></div>
+  <p class="ask">Choose all that apply</p>
+  <div class="stem">Let $a \in \mathbb Z$ be such that $a=b^2 +c^2$, where $b,c \in \mathbb Z \smallsetminus \{0\}$. Then $a$ cannot be written as</div>
+  <label><input type="checkbox" name="june2019c"> $pd^2$, where $d \in \mathbb Z$ and $p$ is a prime with $p \equiv 1 \pmod 4$</label>
+  <label><input type="checkbox" name="june2019c"> $pd^2$, where $d \in \mathbb Z$ and $p$ is a prime with $p \equiv 3 \pmod 4$</label>
+  <label><input type="checkbox" name="june2019c"> $pqd^2$, where $d \in \mathbb Z$ and $p,q$ are primes with $p \equiv 1 \pmod 4$, $q \equiv 3 \pmod 4$</label>
+  <label><input type="checkbox" name="june2019c"> $pqd^2$, where $d \in \mathbb Z$ and $p,q$ are primes with $p, q \equiv 3 \pmod 4$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>We know (by \textbf{Fermat's theorem on sum of two squares}) that a prime $p \equiv 1 \pmod 4$ can be written as (and hence divides) sum of two squares. Also even prime $2 =1^2+1^2$ can be written as a sum of two squares.<br>
+However, a prime $q \equiv 3 \pmod 4$ cannot divide sum of two squares. The proof is simple and given below:<br>
+Let $q = 4k+3$ and $q \mid a^2+b^2$. Then $a^2 \equiv -b^2 \pmod q$. So
+$$ a^{2(2k+1)} \equiv - b^{2(2k+1)} \pmod q \Rightarrow a^{4k+2} \equiv -b^{4k+2} \pmod q.$$
+By (Euler's or) Fermat's little theorem, we have $a^{4k+2} \equiv b^{4k+2} \equiv 1 \pmod{4k+3}$, where $4k+3=q$, a prime. Therefore, from above $1 \equiv -1 \pmod q$ which is a contradiction.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="dec2018b" data-correct="0" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>22. NET DEC 2018 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">Given integers $a$ and $b$, let $N_{a,b}$ denote the number of positive integers $k &lt; 100$ such that $k \equiv a \pmod 9$ and $k \equiv b \pmod{11}$. Then which of the following statements is correct?</div>
+  <label><input type="radio" name="dec2018b"> $N_{a,b} =1$ for all integers $a$ and $b$.</label>
+  <label><input type="radio" name="dec2018b"> There exists integers $a$ and $b$ satisfying $N_{a,b} &gt; 1$.</label>
+  <label><input type="radio" name="dec2018b"> There exists integers $a$ and $b$ satisfying $N_{a,b} =0$.</label>
+  <label><input type="radio" name="dec2018b"> There exists integers $a$ and $b$ satisfying $N_{a,b} =$ and there exists integers $c$ and $d$ satisfying $N_{c,d} &gt; 1$.</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>\textbf{Chinese Remainder Theorem:} Let $m_1,\ldots,m_r$ be pairwise relatively prime integers, i.e. $(m_i,m_j)=1$ if $i \neq j$. Let $a_1,\ldots,a_r$ be arbitrary integers. Then the system of congruences
+\begin{align*}
+x &amp;\ \equiv a_1 \pmod{m_1}<br>
+&amp;\ \ \ \vdots<br>
+x &amp;\ \equiv a_r \pmod{m_r}
+\end{align*}
+has exactly one solution modulo $M=m_1m_2\cdots m_r$. The solution is given as follows:
+$$x=a_1M_1 b_1 + a_2 M_2 b_2 + \cdots + a_r M_r b_r,$$
+where $M_k = \frac{M}{m_k}$ and $b_k$ is the solution of the congruence $M_kx \equiv 1 \pmod{m_k}$.<br>
+Here $a_1=a$, $a_2=b$, $m_1=9$, $m_2=11$, and $\gcd(m_1,m_2)=1$. Therefore $M=m_1m_2=99$ and hence (by Chinese Remainder Theorem) the system of congruence
+\begin{align*}
+k \equiv &amp;\ a \pmod 9<br>
+k \equiv &amp;\ b \pmod{11}
+\end{align*}
+has unique solution modulo $99$, i.e. there exists unique $k$, $1 \le k \le 99$, which satisfies both the above congruences simultaneously. Hence, $N_{a,b} = 1$ for all integers $a$ and $b$.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="dec2017b" data-correct="1" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>23. NET DEC 2017 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">Let $f:\mathbb Z \to (\mathbb Z/4\mathbb Z) \times (\mathbb Z/6\mathbb Z)$ be the function $f(n) = (n \mod 4, n\mod 6)$. Then</div>
+  <label><input type="radio" name="dec2017b"> $(0 \mod 4, 3 \mod 6)$ is in the image of $f$</label>
+  <label><input type="radio" name="dec2017b"> $(a \mod 4, b \mod 6)$ is in the image of $f$ for all even integers $a$ and $b$</label>
+  <label><input type="radio" name="dec2017b"> image of $f$ has exactly $6$ elements</label>
+  <label><input type="radio" name="dec2017b"> kernel of $f= 24\mathbb Z$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>\begin{enumerate}[nosep,label=(\alph*)]
+\item $f(n) = (0 \mod 4, 3 \mod 6) \Rightarrow n \equiv 0 \pmod 4$ and $n \equiv 3 \pmod 6$. Therefore, $n = 6k+3=3(2k+1)$, i.e. $n$ is odd. On the other hand, $n = 4k$ which means $n$ is odd. This is a contradiction.
+\item By a general version of Chinese Remainder Theorem, $x \equiv a \pmod m$ and $x \equiv b \pmod n$ has a solution if $\gcd(m,n) \mid a-b$. Here $\gcd(4,6)=2$ and since $a,b$ are even $2 \mid a-b$. Hence, the statement is true.
+\item The elements $(1,1), (2,2), (3,3), (0,4), (1,5), (2,0), (3,1), (0,2)$ are in image which are more than $6$ elements. Hence, the statement is not true.
+\item $n \in \ker f \Rightarrow 4 \mid n,\ 6 \mid n$. Therefore, ${\rm lcm}(4,6)=12\mid n$. Thus, $\ker f = 12\mathbb Z$.
+\end{enumerate}</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="june2017a" data-correct="0" data-kind="A" data-full="2" data-penalty="-0.5" hidden>
+  <div class="quiz-top"><h3>24. NET JUN 2017 (A)</h3><span class="worth">+2, wrong −0.5</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">What is the remainder when $3^{256}$ is divided by $5$?</div>
+  <label><input type="radio" name="june2017a"> $1$</label>
+  <label><input type="radio" name="june2017a"> $2$</label>
+  <label><input type="radio" name="june2017a"> $3$</label>
+  <label><input type="radio" name="june2017a"> $4$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>By Euler's theorem, if $a$ is relatively prime to $n$, then $a^{\phi(n)}\equiv 1 \pmod n$. Here $a=3$ and $n=5$. Since $(3,5)=1$ and $\phi(5)=4$, we have
+$$\begin{aligned}
+&amp; 3^4 &amp;\equiv &amp;\ 1 \pmod 5<br>
+\Rightarrow &amp; {(3^4)}^{64} &amp;\equiv &amp;\ 1^{64} \pmod 5<br>
+\Rightarrow &amp; 3^{256} &amp;\equiv &amp;\ 1 \pmod 5.
+\end{aligned}$$</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="june2017b1" data-correct="0" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>25. NET JUN 2017 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">Let $S$ be the set of all integers from $100$ to $999$ which are neither divisible by $3$ nor by $5$. The number of elements in $S$ is</div>
+  <label><input type="radio" name="june2017b1"> $480$</label>
+  <label><input type="radio" name="june2017b1"> $420$</label>
+  <label><input type="radio" name="june2017b1"> $360$</label>
+  <label><input type="radio" name="june2017b1"> $240$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>Here $|S|=900$. Let $M$ and $N$ be the set of all integers from $100$ to $999$ which are divisible by $3$ and $5$ respectively. Then $M=\{102, 105,\ldots\}$, $N=\{100, 105,\ldots\}$ and $|M| = \frac{900}{3}=300$, $|N| = \frac{900}{5}=180$.<br>
+If we compute $|S| - |M| - |N|$, then we have removed the number of integers from $100$ to $999$ which are divisible by $3$ and divisible by $5$ separately. But in this process, we would have removed the integers divisible $3$ as well as by $5$ (i.e. by $15$). So we add the number of integers from $100$ to $999$ which are divisible by $15$, i.e. $|M \cap N|$. Now,
+$$M \cap N =\{105, 120, \ldots\} \Rightarrow |M\cap N| =\frac{900}{15}=60.$$
+So, finally our answer is $|S| - |M| - |N| + |M\cap N| = 900-300-180+60=480$.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="june2017b2" data-correct="0" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>26. NET JUN 2017 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">The remainder obtained when $16^{2016}$ is divided by $9$ equals</div>
+  <label><input type="radio" name="june2017b2"> $1$</label>
+  <label><input type="radio" name="june2017b2"> $2$</label>
+  <label><input type="radio" name="june2017b2"> $3$</label>
+  <label><input type="radio" name="june2017b2"> $7$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>By Euler's theorem, if $a$ is relatively prime to $n$, then $a^{\phi(n)}\equiv 1 \pmod n$. Here $a=16$ and $n=9$. Since $(16,9)=1$ and $\phi(9)=6$, we have
+$$\begin{aligned}
+&amp; {16}^6 &amp;\equiv &amp;\ 1 \pmod 9<br>
+\Rightarrow &amp; {({16}^6)}^{336} &amp;\equiv &amp;\ 1^{336} \pmod 9<br>
+\Rightarrow &amp; {16}^{2016} &amp;\equiv &amp;\ 1 \pmod 9.
+\end{aligned}$$</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="dec2016b" data-correct="3" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>27. NET DEC 2016 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">Given a natural number $n &gt;1$ such that $(n-1)! \equiv -1 \pmod n$, we can conclude that</div>
+  <label><input type="radio" name="dec2016b"> $n=p^k$ where $p$ is prime, $k&gt;1$.</label>
+  <label><input type="radio" name="dec2016b"> $n=pq$ where $p$ and $q$ are distinct primes.</label>
+  <label><input type="radio" name="dec2016b"> $n=pqr$ where $p,q,r$ are distinct primes.</label>
+  <label><input type="radio" name="dec2016b"> $n=p$ where $p$ is a prime.</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>Suppose $n=kl$ for some integers $k$ and $l$. Without loss of generality assume $k&lt;n$ (i.e. $k\neq n$). Now, $(n-1)! \equiv -1 \pmod n$ implies $n \mid (n-1)! + 1$. Since $k &lt; n$, $k \mid (n-1)!$. Also, $k \mid n$ and $n \mid (n-1)! +1$ and so $k \mid (n-1)! +1$. Hence $k \mid 1$ or $k=1$. Thus, $n$ must be prime.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="june2016b" data-correct="2" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>28. NET JUN 2016 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">Which of the following statements is FALSE? There exists an integer $x$ such that</div>
+  <label><input type="radio" name="june2016b"> $x \equiv 23 \pmod {1000}$ and $x \equiv 45 \pmod {6789}$.</label>
+  <label><input type="radio" name="june2016b"> $x \equiv 23 \pmod {1000}$ and $x \equiv 54 \pmod {6789}$.</label>
+  <label><input type="radio" name="june2016b"> $x \equiv 32 \pmod {1000}$ and $x \equiv 54 \pmod {9876}$.</label>
+  <label><input type="radio" name="june2016b"> $x \equiv 32 \pmod {1000}$ and $x \equiv 44 \pmod {9876}$.</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>We know that, a system of linear congruences has solutions if and only if for every pair of congruences within the system
+\begin{align*}
+x &amp;\ \equiv a_i \pmod{m_i}<br>
+x &amp;\ \equiv a_j \pmod{m_j}<br>
+a_i &amp;\ \equiv a_j \pmod{\text{gcd}(m_i,m_j)},
+\end{align*}
+i.e. if and only if gcd$(m_i,m_j) \mid (a_i-a_j)$.<br>
+Here, for the pair of congruence $x \equiv 32 \pmod {1000}$ and $x \equiv 54 \pmod {9876}$, GCD$(1000,9876)=4$ and $54-23=31$. Thus, $4 \nmid 31$ and hence the pair of congruence does not have a solution.<br>
+Also notices that $x \equiv 32 \pmod {1000}$ and $x \equiv 54 \pmod {9876}$ implies,
+$$x = 1000 k + 32 \quad \text{ and } \quad x = 9876k + 54.$$
+In the first congruence $4\mid 1000$ and $4\mid 32$ and therefore $4\mid x$. But in the second congruence $4\mid 9876$ but $4 \nmid 54$ and thus $4\nmid $ which is a contradiction. So the pair of congruences does not have a solution.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="dec2015c" data-correct="1,3" data-kind="C" data-full="4.75" data-penalty="0" hidden>
+  <div class="quiz-top"><h3>29. NET DEC 2015 (C)</h3><span class="worth">+4.75 if complete, otherwise 0</span></div>
+  <p class="ask">Choose all that apply</p>
+  <div class="stem">Which of the following intervals contains an integer satisfying the following three congruences:<br>
+$x\equiv 2 \pmod 5$, $x \equiv 3 \pmod 7$ and $x \equiv 4 \pmod {11}$.</div>
+  <label><input type="checkbox" name="dec2015c"> $[401,600]$.</label>
+  <label><input type="checkbox" name="dec2015c"> $[601,800]$.</label>
+  <label><input type="checkbox" name="dec2015c"> $[801,1000]$.</label>
+  <label><input type="checkbox" name="dec2015c"> $[1001,1200]$.</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>\textbf{Chinese Remainder Theorem:} Let $m_1,\ldots,m_r$ be pairwise relatively prime integers, i.e. $(m_i,m_j)=1$ if $i \neq j$. Let $a_1,\ldots,a_r$ be arbitrary integers. Then the system of congruences
+\begin{align*}
+x &amp;\ \equiv a_1 \pmod{m_1}<br>
+&amp;\ \ \ \vdots<br>
+x &amp;\ \equiv a_r \pmod{m_r}
+\end{align*}
+has exactly one solution modulo $M=m_1m_2\cdots m_r$. The solution is given as follows:
+$$x=a_1M_1 b_1 + a_2 M_2 b_2 + \cdots + a_r M_r b_r,$$
+where $M_k = \frac{M}{m_k}$ and $b_k$ is the solution of the congruence $M_kx \equiv 1 \pmod{m_k}$.<br>
+Here (by Chinese Remainder Theorem) $a_1=2$, $a_2=3$, $a_3=4$, $m_1=5$, $m_2=7$, $m_3=11$ and $m_i$'s are are pairwise co-prime. Therefore $M=m_1m_2m_3=385$ and so $M_1 = \frac{M}{m_1} = 77$, $M_2=55$, $M_3=35$.<br>
+Now, $b_1$ is the solution of the congruence<br>
+$M_1x \equiv 1 \pmod 5 \Rightarrow 77x \equiv 2 x \equiv 1 \pmod 5$. Therefore $b_1=3$.
+Similarly, $b_2$ is solution of the congruence $55x \equiv 6x \equiv 1 \pmod 7$. Hence, $b_2=6=-1$. Similarly, $b_3=6$. Therefore the solution is
+$$x \equiv 1137 \equiv -18 \pmod {385} \quad \text{ or } \quad x = 385k-18 = 385k +367,$$
+where $k=0,1,2,\ldots$. Substituting values of $k$, we get that $x$ lies in the interval $[601,800]$ and $[1001,1200]$.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="june2015c" data-correct="0,2" data-kind="C" data-full="4.75" data-penalty="0" hidden>
+  <div class="quiz-top"><h3>30. NET JUN 2015 (C)</h3><span class="worth">+4.75 if complete, otherwise 0</span></div>
+  <p class="ask">Choose all that apply</p>
+  <div class="stem">Which of the following primes satisfy the congruence<br> $a^{24} \equiv 6a +2 \mod {13}$\;?</div>
+  <label><input type="checkbox" name="june2015c"> $41$</label>
+  <label><input type="checkbox" name="june2015c"> $47$</label>
+  <label><input type="checkbox" name="june2015c"> $67$</label>
+  <label><input type="checkbox" name="june2015c"> $83$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>By Euler's theorem, if $a$ is relatively prime to $n$, then $a^{\phi(n)}\equiv 1 \pmod n$. Here $n=13$ and all choices of $a$ given are prime. Therefore $(a,13)=1$ and $\phi(13)=12$. Then
+$$\begin{aligned}
+&amp; a^{12} &amp;\equiv &amp;\ 1 \pmod {13}<br>
+\Rightarrow &amp; {(a^{12})}^{2} &amp;\equiv &amp;\ 1^{2} \pmod {13}<br>
+\Rightarrow &amp; {(a^{24})} &amp;\equiv &amp;\ 1 \pmod {13}.
+\end{aligned}$$
+Then the given congruence $a^{24} \equiv 6a +2 \mod {13}$ becomes $6a +2\equiv 1 \mod {13}$ or $6a \equiv -1 \pmod {13}$. For simplicity, multiply both sides of the congruence by $11$. Then we get
+$$66a \equiv -11 \pmod{13} \quad \text{ or } \quad a \equiv 2 \pmod{13}.$$
+Substituting the given choices, we observe that $a=41$ and $a=67$ satisfy the congruence $a \equiv 2 \pmod{13}$.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="june2014b" data-correct="3" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>31. NET JUN 2014 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">If $n$ is a positive integer such that sum of all positive integers $a$ satisfying $1 \le a \le n$ and GCD$(a,n)=1$ is equal to $240 n$, then the number of summands, namely, $\phi(n)$, is</div>
+  <label><input type="radio" name="june2014b"> $120$</label>
+  <label><input type="radio" name="june2014b"> $124$</label>
+  <label><input type="radio" name="june2014b"> $240$</label>
+  <label><input type="radio" name="june2014b"> $480$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>We know that, if $k &lt; n$ and $(k,n)=1$ then $(n-k,n)=1$ (an easy exercise). The number of integers $k&lt;n$ such that $(k,n)=1$ is $\phi(n)$. Pairing $k$ and $n-k$ will add up to $n$. So adding all these integers we get $\underbrace{n+n+\cdots+n}_{\phi(n)\ {\rm times}}$, i.e. $\frac{n\phi(n)}{2}$.<br>
+Here, we are given that $\frac{n\phi(n)}{2}=240n$ which implies $\phi(n)=480$.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="june2014c" data-correct="0,2" data-kind="C" data-full="4.75" data-penalty="0" hidden>
+  <div class="quiz-top"><h3>32. NET JUN 2014 (C)</h3><span class="worth">+4.75 if complete, otherwise 0</span></div>
+  <p class="ask">Choose all that apply</p>
+  <div class="stem">For positive integers $m$ and $n$, let $F_n = 2^{2^n}+1$ and $G_m= 2^{2^m}-1$. Which of the following are true?</div>
+  <label><input type="checkbox" name="june2014c"> $F_n$ divides $G_m$ whenever $m&gt;n$.</label>
+  <label><input type="checkbox" name="june2014c"> $\gcd(F_n,G_m) = 1$ whenever $m \neq n$.</label>
+  <label><input type="checkbox" name="june2014c"> $\gcd(F_n,F_m) = 1$ whenever $m \neq n$.</label>
+  <label><input type="checkbox" name="june2014c"> $G_m$ divides $F_n$ whenever $m &lt; n$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>Note that the integers $F_n$ are called Fermat's numbers.
+\begin{enumerate}[nosep,label=(\alph*)]
+\item For all $m$, note that $G_m = 2^{2^m}-1 = (2^{2^{m-1}})^2 - 1= (2^{2^{m-1}} - 1)(2^{2^{m-1}} + 1) = G_{m-1}F_{m-1}$. <br>
+Again $G_{m-1} = G_{m-2} F_{m-2}$ and so $G_m = G_{m-2}F_{m-2}F_{m-1}$. Therefore, if $n &lt; m$, then recursively we get
+$$G_m = G_nF_n F_{n+1} \cdots F_{m-2}F_{m-1}.$$
+Therefore $F_n \mid G_m$ if $m &gt; n$.
+\item Since $F_n \mid G_m$ if $m &gt; n$, we conclude that $\gcd(F_n,G_m) \neq 1$ when $m &gt; n$. Hence, this option is not correct.
+\item Note that
+\begin{align*}
+F_{n+1} =&amp;\ 2^{2^{n+1}}+1<br>
+=&amp;\ 2^{2^{n+1}}-1 + 2<br>
+=&amp;\ \big((2^{2^n})^2 - 1\big) + 2<br>
+=&amp;\ (2^{2^n}+1)(2^{2^n}-1) + 2<br>
+=&amp;\ F_n \big((2^{2^{n-1}})^2 - 1\big) + 2<br>
+
+=&amp;\ F_n F_{n-1} (2^{2^{n-1}}-1) +2<br>
+=&amp;\ \quad \vdots<br>
+=&amp;\ F_n F_{n-1} \cdots F_1 F_0 + 2.
+\end{align*}
+Thus, if $m &lt; n$, then $F_n = F_{n-1} F_{n-2} \cdots F_{m+1} F_m F_{m-1} \cdots F_1 F_0+2$.<br>
+Suppose $\gcd(F_n,F_m) = d$. Then $d\mid F_n$ and $d_\mid F_m$. Then by above expression, we say that $d \mid 2$. Therefore, $d = 1$ or $d=2$. But since $F_n$ and $F_m$ are odd numbers, $d\neq 2$. Hence, $d = 1$. This options is \textbf{correct}.
+\item \textbf{Not True.} Example, take $m=2$ and $n =3$. Then $G_2 = 2^{2^2} - 1 = 2^4-1 = 15$ and $F_3 = 2^{2^3} + 1 = 2^8+1 = 256 + 1 = 257$. Neither $3$ nor $5$ divides $257$ and hence $G_2 = 15 \nmid 257 = F_3$.
+\end{enumerate}</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="dec2013b" data-correct="1" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>33. NET DEC 2013 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">For any integers $a, b$, let $N_{a,b}$ denote the number of positive integers $x &lt; 1000$ such that $x \equiv a \pmod {27}$ and $x \equiv b \pmod{37}$. Then,</div>
+  <label><input type="radio" name="dec2013b"> There exists $a,b$ such that $N_{a,b} =0$.</label>
+  <label><input type="radio" name="dec2013b"> For all $a,b$, $N_{a,b} = 1$.</label>
+  <label><input type="radio" name="dec2013b"> For all $a,b$, $N_{a,b} &gt; 1$.</label>
+  <label><input type="radio" name="dec2013b"> There exists $a, b$ such that $N_{a,b} =1$ and there exists $a,b$ such that $N_{a,b}=2 $.</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>\textbf{Chinese Remainder Theorem:} Let $m_1,\ldots,m_r$ be pairwise relatively prime integers, i.e. $(m_i,m_j)=1$ if $i \neq j$. Let $a_1,\ldots,a_r$ be arbitrary integers. Then the system of congruences
+\begin{align*}
+x &amp;\ \equiv a_1 \pmod{m_1}<br>
+&amp;\ \ \ \vdots<br>
+x &amp;\ \equiv a_r \pmod{m_r}
+\end{align*}
+has exactly one solution modulo $M=m_1m_2\cdots m_r$.<br>
+Here $a_1=a$, $a_2=b$, $m_1=27$, $m_2=37$, and $\gcd(m_1,m_2)=1$. Therefore $M=m_1m_2=999$ and hence (by Chinese Remainder Theorem) the system of congruence
+\begin{align*}
+k \equiv &amp;\ a \pmod {27}<br>
+k \equiv &amp;\ b \pmod{37}
+\end{align*}
+has unique solution modulo $999$, i.e. there exists unique $x$, $1 \le x \le 999$, which satisfies both the above congruences simultaneously. Hence, $N_{a,b} = 1$ for all integers $a$ and $b$.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="june2013a" data-correct="0" data-kind="A" data-full="2" data-penalty="-0.5" hidden>
+  <div class="quiz-top"><h3>34. NET JUN 2013 (A)</h3><span class="worth">+2, wrong −0.5</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">What is the last digit of $7^{73}$?</div>
+  <label><input type="radio" name="june2013a"> $7$</label>
+  <label><input type="radio" name="june2013a"> $9$</label>
+  <label><input type="radio" name="june2013a"> $3$</label>
+  <label><input type="radio" name="june2013a"> $1$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>To obtain the last digit of a number, we need to compute the remainder obtained by dividing the number by $10$.<br>
+By Euler's theorem, if $a$ is relatively prime to $n$, then $a^{\phi(n)}\equiv 1 \pmod n$. Here $a=7$ and $n=10$. Since $(7,10)=1$ and $\phi(10)=4$, we have
+$$\begin{aligned}
+&amp; 7^4 &amp;\equiv &amp;\ 1 \pmod {10}<br>
+\Rightarrow &amp; {(7^4)}^{18} &amp;\equiv &amp;\ 1^{18} \pmod {10}<br>
+\Rightarrow &amp; 7 \cdot 7^{72}=7^{73} &amp;\equiv &amp;\ 7\cdot 1 =7 \pmod {10}.
+\end{aligned}$$</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="june2013c" data-correct="0,2" data-kind="C" data-full="4.75" data-penalty="0" hidden>
+  <div class="quiz-top"><h3>35. NET JUN 2013 (C)</h3><span class="worth">+4.75 if complete, otherwise 0</span></div>
+  <p class="ask">Choose all that apply</p>
+  <div class="stem">Consider the congruence $x^n \equiv 2 \pmod {13}$. This congruence has a solution for $x$ if</div>
+  <label><input type="checkbox" name="june2013c"> $n=5$.</label>
+  <label><input type="checkbox" name="june2013c"> $n=6$.</label>
+  <label><input type="checkbox" name="june2013c"> $n=7$.</label>
+  <label><input type="checkbox" name="june2013c"> $n=8$.</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>We know that, if $e$ is an integer such that $\gcd(e,p-1)=1$, then the congruence $x^e \equiv c \pmod p$ has a unique solution given by $x \equiv c^d \pmod p$, where $d$ is inverse of $e$ modulo $p-1$, i.e., $ed \equiv 1 \pmod {p-1}$. Here $\gcd(5,12) = \gcd(7,12) = 1$. So they are correct options. But why other options ($6$ and $8$) are not correct? For this we the following alternative argument may be given.<br>
+By Euler's theorem, if $a$ is relatively prime to $m$, then $a^{\phi(n)}\equiv 1 \pmod m$. Here $m=13$, $\phi(13)=12$ and hence if $13\nmid x$ then the congruence $x^{12} \equiv 1 \pmod {13}$ has a solution.
+\begin{enumerate}[label=(\alph*),nosep]
+\item The congruence $x^5 \equiv 2 \pmod {13}$ implies $x^{15} \equiv 2^3 \pmod{13}$, i.e. $x^{12} x^3 \equiv x^3 \equiv 2^3 \pmod{13}$. It has a solution, $x=2$.
+\item The congruence $x^6 \equiv 2 \pmod {13}$ implies $x^{12} \equiv 2^2 \pmod{13}$, i.e. $1\equiv 4 \pmod{13}$ which is not possible. Hence, this congruence does not have a solution.
+\item The congruence $x^7 \equiv 2 \pmod {13}$ implies $x^{14} \equiv 2^2 \pmod{13}$, i.e. $x^{12} x^2 \equiv x^2 \equiv 2^2 \pmod{13}$. It has a solution, $x=2$.
+\item The congruence $x^8 \equiv 2 \pmod {13}$ implies $x^{24} \equiv 2^3 \pmod{13}$, i.e. $1\equiv 8 \pmod{13}$ which is not possible. Hence, this congruence does not have a solution.
+\end{enumerate}</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="dec2012b" data-correct="0" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>36. NET DEC 2012 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">The last two digits of $7^{81}$ are</div>
+  <label><input type="radio" name="dec2012b"> $07$.</label>
+  <label><input type="radio" name="dec2012b"> $17$.</label>
+  <label><input type="radio" name="dec2012b"> $37$.</label>
+  <label><input type="radio" name="dec2012b"> $47$.</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>To obtain last two digits of a number, we need to compute the remainder obtained by dividing the number by $100$.<br>
+By Euler's theorem, if $a$ is relatively prime to $n$, then $a^{\phi(n)}\equiv 1 \pmod n$. Here $a=7$ and $n=100$. Since $(7,100)=1$ and $\phi(100)=\phi(4)\phi(25)=2 \times 20 = 40$, we have
+$$\begin{aligned}
+&amp; 7^{40} &amp;\equiv &amp;\ 1 \pmod {100}<br>
+\Rightarrow &amp; {(7^{40})}^{2} &amp;\equiv &amp;\ 1^{2} \pmod {100}<br>
+\Rightarrow &amp; 7 \cdot 7^{80} = 7^{81} &amp;\equiv &amp;\ 7 \cdot 1= 7 \pmod {100}.
+\end{aligned}$$
+Thus, last two digits (i.e. the remainder) is $07$.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="dec2012c" data-correct="1,2" data-kind="C" data-full="4.75" data-penalty="0" hidden>
+  <div class="quiz-top"><h3>37. NET DEC 2012 (C)</h3><span class="worth">+4.75 if complete, otherwise 0</span></div>
+  <p class="ask">Choose all that apply</p>
+  <div class="stem">For positive integers $m$, let $\phi(m)$ denote the number of integer $k$ such that $1 \le k \le n$ and GCD$(k,m)=1$. Then which of the following statements are necessarily true?</div>
+  <label><input type="checkbox" name="dec2012c"> $\phi(n)$ divides $n$ for every positive integer $n$.</label>
+  <label><input type="checkbox" name="dec2012c"> $n$ divides $\phi\big(a^n-1\big)$ for all positive integers $a$ and $n$.</label>
+  <label><input type="checkbox" name="dec2012c"> $n$ divides $\phi\big(a^n-1\big)$ for all positive integers $a$ and $n$ such that GCD$(a,n)=1$.</label>
+  <label><input type="checkbox" name="dec2012c"> $a$ divides $\phi\big(a^n-1\big)$ for all positive integers $a$ and $n$ such that GCD$(a,n)=1$.</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>\begin{enumerate}[label=(\alph*),nosep]
+\item Take $n=10$. Then $\phi(n)=4$ and $\phi(n) \nmid n$. Also, $\phi(p)=p-1 \nmid p$.
+\item For $a&gt;1$, first we show that order of $a$ modulo $a^n-1$ is $n$, i.e. ${\rm ord}_{a^n-1}(a) = n$. Suppose ${\rm ord}_{a^n-1}(a)=d$. If $d &lt; n$ then $a^d &lt; a^n$, so $a^d-1 &lt; a^n-1$. In this case, $a^d - 1 \not\equiv 0 \pmod {a^n-1}$.<br>
+Now, since $(a,a^n-1)=1$, by Euler's theorem $a^{\phi(a^n-1)} \equiv 1 \pmod{a^n-1}$ or $a^{\phi(a^n-1)}-1 \equiv 0\pmod{a^n-1}$. Since the order of $a$ is $n$, $n\mid \phi\big(a^n-1\big)$.
+\item Same as above. It is true in general and therefore true for all $a,n$ with GCD$(a,n)=1$.
+\item Take $a=3$, $n=2$, we have $a^n-1 = 9-1=8$ and therefore $\phi(a^n-1)=\phi(8)=4$ and so $a \nmid \phi(a^n-1)$. This case is not true.
+\end{enumerate}</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="june2012b1" data-correct="1" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>38. NET JUN 2012 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">The last digit of $(38)^{2011}$ is</div>
+  <label><input type="radio" name="june2012b1"> $6$</label>
+  <label><input type="radio" name="june2012b1"> $2$</label>
+  <label><input type="radio" name="june2012b1"> $4$</label>
+  <label><input type="radio" name="june2012b1"> $8$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>Last digit means remainder obtained on dividing the number by $10$. Now, $38 \equiv 8 \pmod{10}$. So it is equivalent to find the last digit of $8^{2011}$.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="june2012b2" data-correct="1" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>39. NET JUN 2012 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">The number of positive divisors of $50000$ is</div>
+  <label><input type="radio" name="june2012b2"> $20$</label>
+  <label><input type="radio" name="june2012b2"> $30$</label>
+  <label><input type="radio" name="june2012b2"> $40$</label>
+  <label><input type="radio" name="june2012b2"> $50$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>If $n={p_1}^{\alpha_1} {p_2}^{\alpha_2} \cdots {p_k}^{\alpha_k}$ and $d \mid n$ then $d$ is of the form $d = {p_1}^{\beta_1} {p_2}^{\beta_2} \cdots {p_k}^{\beta_k}$, where $0 \le \beta_i \le \alpha_i$ for all $i = 1,2,\ldots,k$. Thus, the number of positive divisors of $n$ is $(\alpha_1+1)(\alpha_2 +1)\cdots (\alpha_k+1)$.<br>
+Here, $50000= 2^4 \times 5^5$ and therefore the number of positive divisors of $50000$ is $(4+1)(5+1) = 5\cdot 6 =30$.</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="june2011b1" data-correct="3" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>40. NET JUN 2011 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">The number of elements in the set
+$\{m \mid 1 \le m \le 1000, m \text{ and } 1000 \text{ are relatively prime}\} \text { is}$</div>
+  <label><input type="radio" name="june2011b1"> $100$.</label>
+  <label><input type="radio" name="june2011b1"> $250$.</label>
+  <label><input type="radio" name="june2011b1"> $300$.</label>
+  <label><input type="radio" name="june2011b1"> $400$.</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>By Euler product, $\phi(n) = n \prod\limits_{p \mid n}\left(1-\frac{1}{p}\right)$.<br>
+$\phi(1000) = 1000 \left(1-\frac{1}{2}\right)\left(1-\frac{1}{5}\right) = 1000 \times \frac{1}{2} \times \frac{4}{5} = 400.$</div>
+  <p class="result" hidden></p>
+</article>
+<article class="quiz" id="june2011b2" data-correct="2" data-kind="B" data-full="3" data-penalty="-0.75" hidden>
+  <div class="quiz-top"><h3>41. NET JUN 2011 (B)</h3><span class="worth">+3, wrong −0.75</span></div>
+  <p class="ask">Choose one</p>
+  <div class="stem">The unit digit of $2^{100}$ is</div>
+  <label><input type="radio" name="june2011b2"> $2$</label>
+  <label><input type="radio" name="june2011b2"> $4$</label>
+  <label><input type="radio" name="june2011b2"> $6$</label>
+  <label><input type="radio" name="june2011b2"> $8$</label>
+  <button type="button" class="check">Check</button>
+  <button type="button" class="show-solution" hidden>Show solution</button>
+  <div class="solution" hidden>Note that, in general, $2^{4k+1} \equiv 2\pmod{10}$, $2^{4k+2} \equiv 4\pmod {10}$, $2^{4k+3} \equiv 8\pmod {10}$, and $2^{4k} \equiv 6\pmod {10}$. Here $100 = 4 \times 25$ is of the form $4k$. Hence, the last digit of $2^{100}$ is $6$.</div>
+  <p class="result" hidden></p>
+</article>
+{% endraw %}
+</div>
+</div>
+
+<section class="summary" id="quiz-summary" hidden>
+  <h2 id="final-score"></h2>
+  <p id="final-detail"></p>
+  <ol id="mark-list"></ol>
+</section>
+
+<p>
+  <button type="button" id="finish-quiz">Finish and show total</button>
+  <button type="button" class="secondary" id="reset-quiz">Start again</button>
+</p>
+
+<script>
+const cards = [...document.querySelectorAll(".quiz")];
+const menuButtons = [...document.querySelectorAll(".menu button")];
+let examOpen = false;
+
+function mode() {
+  return document.querySelector('input[name="quiz-mode"]:checked').value;
+}
+
+function fmt(n) {
+  return (Math.round(n * 100) / 100).toFixed(2).replace(/\.00$/, "").replace(/(\.\d)0$/, "$1");
+}
+
+function signed(n) {
+  const text = fmt(n);
+  if (n > 0) return "+" + text;
+  return text.replace("-", "−");
+}
+
+function pickedIndexes(card) {
+  return [...card.querySelectorAll("input")].flatMap((el, i) => (el.checked ? [i] : []));
+}
+
+function showQuestion(index) {
+  cards.forEach((card, i) => { card.hidden = i !== index; });
+  menuButtons.forEach((button, i) => {
+    button.setAttribute("aria-current", i === index ? "true" : "false");
+  });
+}
+
+function award(card, picked, correct) {
+  if (!picked.length) return 0;
+  const ok = picked.length === correct.length && picked.every((i) => correct.includes(i));
+  return ok ? Number(card.dataset.full) : Number(card.dataset.penalty);
+}
+
+function grade(card, fromFinish) {
+  const correct = card.dataset.correct.split(",").filter(Boolean).map(Number);
+  const picked = pickedIndexes(card);
+  const result = card.querySelector(".result");
+  const index = cards.indexOf(card);
+  if (!picked.length && !fromFinish && card.dataset.graded !== "1") {
+    result.hidden = false;
+    result.className = "result need";
+    result.textContent = "Select an answer first.";
+    return;
+  }
+  if (card.dataset.graded !== "1") {
+    card.dataset.graded = "1";
+    card.dataset.blank = picked.length ? "0" : "1";
+    card.dataset.scored = String(award(card, picked, correct));
+    card.querySelectorAll("input").forEach((el) => { el.disabled = true; });
+    card.querySelector(".check").disabled = true;
+  }
+  const open = mode() === "practice" || examOpen;
+  const value = Number(card.dataset.scored || 0);
+  const button = menuButtons[index];
+  button.classList.remove("right", "wrong", "blank", "saved");
+  if (!open) {
+    button.classList.add("saved");
+    result.hidden = false;
+    result.className = "result";
+    result.textContent = "Saved. Marks stay hidden until you finish.";
+    return;
+  }
+  card.classList.add("graded");
+  [...card.querySelectorAll("label")].forEach((label, i) => {
+    label.classList.remove("key", "miss");
+    if (correct.includes(i)) label.classList.add("key");
+    else if (picked.includes(i)) label.classList.add("miss");
+  });
+  if (card.dataset.blank === "1") button.classList.add("blank");
+  else if (value > 0) button.classList.add("right");
+  else button.classList.add("wrong");
+  result.hidden = false;
+  result.className = "result " + (value > 0 ? "ok" : "bad");
+  if (card.dataset.blank === "1") result.textContent = "Not answered · 0";
+  else if (value > 0) result.textContent = "Correct · " + signed(value);
+  else if (value < 0) result.textContent = "Incorrect · " + signed(value);
+  else result.textContent = "Incorrect · 0";
+  const solution = card.querySelector(".show-solution");
+  if (solution) solution.hidden = false;
+}
+
+function totals() {
+  const possible = cards.reduce((sum, card) => sum + Number(card.dataset.full), 0);
+  const earned = cards.reduce((sum, card) => sum + Number(card.dataset.scored || 0), 0);
+  const graded = cards.filter((card) => card.dataset.graded === "1").length;
+  return {
+    possible: Math.round(possible * 100) / 100,
+    earned: Math.round(earned * 100) / 100,
+    graded: graded
+  };
+}
+
+function showRunning() {
+  const { possible, earned, graded } = totals();
+  if (mode() === "exam" && !examOpen) {
+    document.getElementById("score-now").textContent = "Answered: " + graded + " / " + cards.length;
+    document.getElementById("score-detail").textContent = "Marks stay hidden until you finish.";
+    return;
+  }
+  document.getElementById("score-now").textContent = "Score: " + signed(earned);
+  document.getElementById("score-detail").textContent = "Maximum if all correct: " + fmt(possible) + ".";
+}
+
+function showFinal() {
+  examOpen = true;
+  cards.forEach((card) => grade(card, true));
+  const { possible, earned } = totals();
+  document.getElementById("final-score").textContent = "Total: " + signed(earned);
+  document.getElementById("final-detail").textContent = "Maximum if all correct: " + fmt(possible) + ".";
+  document.getElementById("mark-list").innerHTML = cards.map((card) => {
+    const got = Number(card.dataset.scored || 0);
+    const title = card.querySelector("h3").textContent;
+    const tone = got > 0 ? "got" : "zero";
+    return '<li class="' + tone + '">' + title + " — " + signed(got) + "</li>";
+  }).join("");
+  document.getElementById("quiz-summary").hidden = false;
+  showRunning();
+  document.getElementById("score-detail").textContent = "Quiz finished. Maximum if all correct: " + fmt(possible) + ".";
+  document.getElementById("quiz-summary").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function resetQuiz() {
+  examOpen = false;
+  cards.forEach((card) => {
+    delete card.dataset.graded;
+    delete card.dataset.scored;
+    delete card.dataset.blank;
+    card.classList.remove("graded");
+    card.querySelectorAll("input").forEach((el) => { el.disabled = false; el.checked = false; });
+    card.querySelector(".check").disabled = false;
+    card.querySelectorAll("label").forEach((label) => label.classList.remove("key", "miss"));
+    const result = card.querySelector(".result");
+    result.hidden = true;
+    result.textContent = "";
+    result.className = "result";
+    const solution = card.querySelector(".show-solution");
+    const note = card.querySelector(".solution");
+    if (solution) {
+      solution.hidden = true;
+      solution.textContent = "Show solution";
+    }
+    if (note) note.hidden = true;
+  });
+  menuButtons.forEach((button) => button.classList.remove("right", "wrong", "blank", "saved"));
+  document.getElementById("quiz-summary").hidden = true;
+  showQuestion(0);
+  showRunning();
+}
+
+cards.forEach((card) => {
+  card.querySelector(".check").addEventListener("click", () => {
+    grade(card, false);
+    showRunning();
+  });
+  const solution = card.querySelector(".show-solution");
+  if (solution) {
+    solution.addEventListener("click", () => {
+      const note = card.querySelector(".solution");
+      note.hidden = !note.hidden;
+      solution.textContent = note.hidden ? "Show solution" : "Hide solution";
+    });
+  }
+});
+menuButtons.forEach((button, index) => {
+  button.addEventListener("click", () => showQuestion(index));
+});
+document.getElementById("finish-quiz").addEventListener("click", showFinal);
+document.getElementById("reset-quiz").addEventListener("click", resetQuiz);
+document.querySelectorAll('input[name="quiz-mode"]').forEach((input) => {
+  input.addEventListener("change", resetQuiz);
+});
+showQuestion(0);
+showRunning();
+
+function passcheck() {
+  const error = document.querySelector(".transcript .error");
+  if (document.getElementById("pass1").value !== "NT030226") {
+    error.style.display = "block";
+    error.textContent = "Incorrect password";
+    return false;
+  }
+  window.open("https://www.dropbox.com/scl/fi/b5jdrqah663mbniyqr3gl/SPU_Workshop_03_Feb_2026_Transcript.pdf?rlkey=14pmnvlzeureb1kc35l7fxd93&st=49w9sy76&dl=1");
+  error.style.display = "none";
+  return false;
+}
+</script>
